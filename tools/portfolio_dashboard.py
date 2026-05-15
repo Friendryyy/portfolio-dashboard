@@ -210,8 +210,12 @@ def _sheets_service():
     # ── Cloud mode: use Service Account from st.secrets ──────────────────────
     if "gcp_service_account" in st.secrets:
         from google.oauth2 import service_account
+        sa_info = dict(st.secrets["gcp_service_account"])
+        # Fix literal \n in private_key (common Streamlit Secrets paste issue)
+        if "private_key" in sa_info:
+            sa_info["private_key"] = sa_info["private_key"].replace("\\n", "\n")
         creds = service_account.Credentials.from_service_account_info(
-            dict(st.secrets["gcp_service_account"]),
+            sa_info,
             scopes=SCOPES,
         )
         return build("sheets", "v4", credentials=creds)

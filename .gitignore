@@ -1,0 +1,10 @@
+# Google OAuth credentials — ห้าม push ขึ้น GitHub เด็ดขาด
+tools/credentials.json
+tools/token.json
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env

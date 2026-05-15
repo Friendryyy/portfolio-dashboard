@@ -72,9 +72,28 @@ st.markdown("""
     border-radius: 14px;
     padding: 18px 22px;
     margin: 4px 0;
-    transition: border-color 0.2s;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
   }
-  .metric-card:hover { border-color: rgba(99, 102, 241, 0.5); }
+  .metric-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: rgba(99, 102, 241, 0.5);
+  }
+  .metric-card.card-value::before { background: linear-gradient(90deg, #6366f1, #818cf8); }
+  .metric-card.card-cost::before  { background: linear-gradient(90deg, #64748b, #94a3b8); }
+  .metric-card.card-gain-pos::before { background: linear-gradient(90deg, #00d4aa, #34d399); box-shadow: 0 0 12px rgba(0,212,170,0.5); }
+  .metric-card.card-gain-neg::before { background: linear-gradient(90deg, #f87171, #ef4444); }
+  .metric-card.card-hold::before  { background: linear-gradient(90deg, #ffd166, #f59e0b); }
+  .metric-card.card-cash::before  { background: linear-gradient(90deg, #38bdf8, #0ea5e9); }
+  .metric-card.card-gain-pos {
+    border-color: rgba(0, 212, 170, 0.3);
+    box-shadow: 0 0 20px rgba(0, 212, 170, 0.08);
+  }
+  .metric-card:hover { border-color: rgba(99, 102, 241, 0.5); transform: translateY(-1px); }
   .mc-label {
     font-size: 0.7rem;
     color: #6b7280;
@@ -447,6 +466,18 @@ def _plotly_base() -> dict:
 PALETTE = ["#6366f1", "#00d4aa", "#ffd166", "#f87171", "#a78bfa",
            "#34d399", "#fb923c", "#60a5fa", "#e879f9", "#4ade80"]
 
+TICKER_COLORS = {
+    "NVDA": "#76b900",   # NVIDIA green
+    "RKLB": "#00d4aa",   # teal
+    "SOFI": "#6366f1",   # indigo
+    "GOOGL": "#4285f4",  # Google blue
+    "PLTR": "#f87171",   # red
+    "AMZN": "#fb923c",   # Amazon orange
+    "NVO":  "#e879f9",   # purple
+    "UNH":  "#38bdf8",   # sky blue
+    "CASH": "#64748b",   # slate
+}
+
 INDICES = {
     "S&P 500 (SPY)":   "SPY",
     "NASDAQ (QQQ)":    "QQQ",
@@ -648,18 +679,19 @@ def render_overview(df: pd.DataFrame, tx_df: pd.DataFrame):
 
     # ── Top metrics ──────────────────────────────────────────────────────────
     c1, c2, c3, c4, c5 = st.columns(5)
+    gain_card_cls = "card-gain-pos" if stock_gain >= 0 else "card-gain-neg"
     metrics = [
-        ("💼 Portfolio Value", f"${total_value:,.2f}", None, "neu"),
-        ("💵 Invested (Cost)", f"${stock_cost:,.2f}", None, "neu"),
+        ("💼 Portfolio Value", f"${total_value:,.2f}", None, "neu", "card-value"),
+        ("💵 Invested (Cost)", f"${stock_cost:,.2f}", None, "neu", "card-cost"),
         ("📈 Unrealized P/L", f"{_sign(stock_gain)}${abs(stock_gain):,.2f}",
-         f"{_sign(gain_pct)}{gain_pct:.2f}%", "pos" if stock_gain >= 0 else "neg"),
-        ("🏦 Holdings", f"{len(stock_df)}", None, "neu"),
-        ("💵 Cash", f"${cash_val:,.2f}", f"{cash_val/total_value*100:.1f}% of port" if total_value > 0 else None, "neu"),
+         f"{_sign(gain_pct)}{gain_pct:.2f}%", "pos" if stock_gain >= 0 else "neg", gain_card_cls),
+        ("🏦 Holdings", f"{len(stock_df)}", None, "neu", "card-hold"),
+        ("💵 Cash", f"${cash_val:,.2f}", f"{cash_val/total_value*100:.1f}% of port" if total_value > 0 else None, "neu", "card-cash"),
     ]
-    for col, (label, val, delta, cls) in zip([c1, c2, c3, c4, c5], metrics):
+    for col, (label, val, delta, cls, card_cls) in zip([c1, c2, c3, c4, c5], metrics):
         d_html = f'<div class="mc-delta {cls}">{delta}</div>' if delta else ""
         col.markdown(
-            f'<div class="metric-card">'
+            f'<div class="metric-card {card_cls}">'
             f'<div class="mc-label">{label}</div>'
             f'<div class="mc-value">{val}</div>'
             f'{d_html}</div>',
@@ -710,11 +742,12 @@ def render_overview(df: pd.DataFrame, tx_df: pd.DataFrame):
 
     with col_pie:
         pie_df = df[df["total_value"] > 0]
+        pie_colors = [TICKER_COLORS.get(t, PALETTE[i % len(PALETTE)]) for i, t in enumerate(pie_df["ticker"])]
         fig_pie = go.Figure(go.Pie(
             labels=pie_df["ticker"],
             values=pie_df["total_value"].round(2),
             hole=0.6,
-            marker=dict(colors=PALETTE[:len(pie_df)], line=dict(color="#0a0d1a", width=2)),
+            marker=dict(colors=pie_colors, line=dict(color="#0a0d1a", width=2)),
             textinfo="percent+label",
             textfont=dict(size=11, family="Inter"),
             hovertemplate="<b>%{label}</b><br>$%{value:,.2f}<br>%{percent}<extra></extra>",

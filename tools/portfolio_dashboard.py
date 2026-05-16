@@ -1207,12 +1207,12 @@ def render_dca(df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = False):
 
         pr1, pr2, pr3, pr4 = st.columns(4)
         def _ps_card(col, label, val, sub="", color="#f1f5f9"):
+            sub_html = f'<div style="font-size:0.78rem;color:#6b7280;margin-top:4px;">{sub}</div>' if sub else ""
             col.markdown(
                 f'<div class="metric-card" style="text-align:center;">'
                 f'<div class="mc-label">{label}</div>'
                 f'<div style="font-family:JetBrains Mono,monospace;font-size:1.3rem;font-weight:700;color:{color};">{val}</div>'
-                f'{"<div style=\'font-size:0.78rem;color:#6b7280;margin-top:4px;\'>"+sub+"</div>" if sub else ""}'
-                f'</div>',
+                f'{sub_html}</div>',
                 unsafe_allow_html=True,
             )
         _ps_card(pr1, "💸 Max Loss ยอมรับได้", _m(max_loss_usd), f"{risk_pct}% ของพอร์ต", "#f87171")
@@ -1604,19 +1604,20 @@ def render_charts(df: pd.DataFrame):
         fig.update_yaxes(title_text="Volume", row=row_vol, col=1,
                          gridcolor="rgba(99,102,241,0.08)")
 
-    base = _plotly_base()
     fig.update_layout(
         height=560, showlegend=True,
-        xaxis_rangeslider_visible=False,
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#94a3b8", family="Inter, sans-serif", size=12),
+        margin=dict(t=20, b=20, l=10, r=10),
         legend=dict(orientation="h", y=1.04, x=0, bgcolor="rgba(0,0,0,0)", font=dict(size=11)),
-        **{k: v for k, v in base.items() if k not in ("xaxis", "yaxis")},
-        paper_bgcolor=base["paper_bgcolor"],
-        plot_bgcolor=base["plot_bgcolor"],
-        font=base["font"],
-        margin=base["margin"],
     )
-    fig.update_xaxes(gridcolor="rgba(99,102,241,0.08)", showgrid=True)
-    fig.update_yaxes(tickprefix="$", gridcolor="rgba(99,102,241,0.08)", row=row_cs if show_vol else None)
+    fig.update_xaxes(gridcolor="rgba(99,102,241,0.08)", showgrid=True, rangeslider_visible=False)
+    if show_vol:
+        fig.update_yaxes(tickprefix="$", gridcolor="rgba(99,102,241,0.08)", row=1, col=1)
+        fig.update_yaxes(gridcolor="rgba(99,102,241,0.08)", row=2, col=1)
+    else:
+        fig.update_yaxes(tickprefix="$", gridcolor="rgba(99,102,241,0.08)")
     st.plotly_chart(fig, use_container_width=True)
 
     st.caption(f"S1/R1/S2/R2 = Classic Pivot Points · Entry = ต้นทุนเฉลี่ย ${avg_cost:.2f} · RSI(14) = {rsi:.0f} · {ma_lbl}")

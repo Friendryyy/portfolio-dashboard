@@ -521,6 +521,70 @@ PERIOD_MAP = {
     "ALL": ("5y",  "1wk"),
 }
 
+CHART_PERIODS = {"1M": "1mo", "3M": "3mo", "6M": "6mo", "1Y": "1y", "2Y": "2y"}
+
+
+@st.cache_data(ttl=3600)
+def load_technicals(ticker: str, period: str = "6mo") -> dict:
+    """OHLCV + SMA 20/50/200 + RSI(14) + Classic Pivot Points."""
+    import yfinance as yf
+    try:
+        hist = yf.Ticker(ticker).history(period=period, auto_adjust=True)
+        if hist.empty or len(hist) < 21:
+            return {}
+        close = hist["Close"]
+        sma20  = close.rolling(20).mean()
+        sma50  = close.rolling(50).mean()
+        sma200 = close.rolling(200).mean()
+        delta = close.diff()
+        gain = delta.clip(lower=0).rolling(14).mean()
+        loss = (-delta.clip(upper=0)).rolling(14).mean()
+        rs   = gain / loss
+        rsi  = float((100 - 100 / (1 + rs)).iloc[-1])
+        prev = hist.iloc[-2]
+        P  = (float(prev["High"]) + float(prev["Low"]) + float(prev["Close"])) / 3
+        S1 = 2*P - float(prev["High"])
+        R1 = 2*P - float(prev["Low"])
+        S2 = P - (float(prev["High"]) - float(prev["Low"]))
+        R2 = P + (float(prev["High"]) - float(prev["Low"]))
+        hist = hist.copy()
+        hist["SMA20"]  = sma20
+        hist["SMA50"]  = sma50
+        hist["SMA200"] = sma200
+        def _last(s): return float(s.iloc[-1]) if not s.isna().iloc[-1] else None
+        return {
+            "hist": hist, "rsi": rsi,
+            "pivot": P, "S1": S1, "R1": R1, "S2": S2, "R2": R2,
+            "sma20": _last(sma20), "sma50": _last(sma50), "sma200": _last(sma200),
+        }
+    except Exception:
+        return {}
+
+
+def _tech_status(price: float, rsi: float, S1: float, R1: float, sma200) -> str:
+    near_sup = price <= S1 * 1.04
+    near_res = price >= R1 * 0.97
+    above200 = sma200 and price > sma200
+    if rsi > 70 and near_res:
+        return "🔴 Overbought"
+    elif rsi < 30 and near_sup:
+        return "🟢 Oversold"
+    elif rsi >= 50 and above200:
+        return "🟢 Bullish"
+    elif rsi < 40:
+        return "🔴 Bearish"
+    return "🟡 Neutral"
+
+
+def _ma_label(price: float, sma20, sma50, sma200) -> str:
+    if sma200 and price > sma200:
+        return "↑ SMA200"
+    if sma50 and price > sma50:
+        return "↑ SMA50"
+    if sma20 and price > sma20:
+        return "↑ SMA20"
+    return "↓ Below MAs"
+
 
 @st.cache_data(ttl=300)
 def load_portfolio_history(tx_records: tuple, cash: float, period: str) -> pd.DataFrame:
@@ -814,6 +878,52 @@ def render_overview(df: pd.DataFrame, tx_df: pd.DataFrame, fx_rate: float = 35.0
     fig_bar.update_xaxes(tickprefix="$")
     st.plotly_chart(fig_bar, use_container_width=True)
 
+    # ── Technical Snapshot table ─────────────────────────────────────────────
+    st.markdown("<div class='section-title' style='margin-top:20px;'>📡 Technical Snapshot — แนวรับ / แนวต้าน / RSI</div>", unsafe_allow_html=True)
+    tech_rows = []
+    with st.spinner("Loading technical data..."):
+        for _, row in stock_df.iterrows():
+            t = row["ticker"]
+            price = float(row["price"])
+            tech = load_technicals(t, "6mo")
+            if not tech:
+                continue
+            rsi   = tech["rsi"]
+            S1, R1 = tech["S1"], tech["R1"]
+            status = _tech_status(price, rsi, S1, R1, tech["sma200"])
+            ma_lbl = _ma_label(price, tech["sma20"], tech["sma50"], tech["sma200"])
+            rsi_color = "#f87171" if rsi > 70 else "#00d4aa" if rsi < 30 else "#ffd166"
+            tech_rows.append({
+                "Ticker": t,
+                "Price": price,
+                "Support (S1)": S1,
+                "Resist (R1)":  R1,
+                "RSI": rsi,
+                "MA Trend": ma_lbl,
+                "Status": status,
+            })
+    if tech_rows:
+        tech_df = pd.DataFrame(tech_rows).set_index("Ticker")
+        def _color_rsi(val):
+            if isinstance(val, float):
+                if val > 70: return "color: #f87171"
+                if val < 30: return "color: #00d4aa"
+            return "color: #ffd166"
+        styled_t = (
+            tech_df.style
+            .format({"Price": "${:.2f}", "Support (S1)": "${:.2f}", "Resist (R1)": "${:.2f}", "RSI": "{:.0f}"})
+            .map(_color_rsi, subset=["RSI"])
+            .set_properties(**{
+                "background-color": "rgba(30,33,64,0.6)",
+                "color": "#e2e8f0",
+                "border": "1px solid rgba(99,102,241,0.12)",
+                "font-family": "JetBrains Mono, monospace",
+                "font-size": "0.82rem",
+            })
+        )
+        st.dataframe(styled_t, use_container_width=True)
+        st.caption("S1/R1 = Classic Pivot Points (yesterday's OHLC) · RSI 14-day · คลิก Charts tab เพื่อดู candlestick chart ของแต่ละหุ้น")
+
     st.markdown("---")
     render_performance_chart(df, tx_df)
 
@@ -1069,6 +1179,50 @@ def render_dca(df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = False):
     fig.update_xaxes(title="ราคาที่ซื้อ ($)", tickprefix="$")
     fig.update_yaxes(title="ต้นทุนเฉลี่ยใหม่ ($)", tickprefix="$")
     st.plotly_chart(fig, use_container_width=True)
+
+    # ── Position Sizing ───────────────────────────────────────────────────────
+    st.markdown("<div class='section-title' style='margin-top:8px;'>⚖️ Position Sizing — คำนวณจากความเสี่ยงที่รับได้</div>", unsafe_allow_html=True)
+    port_val = df["total_value"].sum()
+    ps1, ps2, ps3 = st.columns(3)
+    with ps1:
+        risk_pct = st.slider("ความเสี่ยงต่อ trade (%)", 0.5, 5.0, 1.0, 0.5,
+                             help="กี่ % ของพอร์ตที่ยอมขาดทุนได้ถ้า stop-loss โดน")
+    with ps2:
+        ps_entry = st.number_input("Entry Price ($)", min_value=0.01, value=round(default_p, 2),
+                                   step=0.01, format="%.2f", key="ps_entry")
+    with ps3:
+        tech_snap = load_technicals(selected, "6mo")
+        default_sl = round(tech_snap["S1"], 2) if tech_snap else round(default_p * 0.92, 2)
+        ps_stop = st.number_input("Stop-Loss ($)", min_value=0.01, value=default_sl,
+                                  step=0.01, format="%.2f", key="ps_stop",
+                                  help="ค่าเริ่มต้นคือ S1 (Classic Pivot Support)")
+
+    if ps_entry > ps_stop > 0:
+        max_loss_usd   = port_val * risk_pct / 100
+        risk_per_share = ps_entry - ps_stop
+        ps_shares      = max_loss_usd / risk_per_share
+        ps_cost        = ps_shares * ps_entry
+        cur_alloc      = row["total_value"] / port_val * 100
+        new_alloc_ps   = (row["total_value"] + ps_cost) / (port_val + ps_cost) * 100
+
+        pr1, pr2, pr3, pr4 = st.columns(4)
+        def _ps_card(col, label, val, sub="", color="#f1f5f9"):
+            col.markdown(
+                f'<div class="metric-card" style="text-align:center;">'
+                f'<div class="mc-label">{label}</div>'
+                f'<div style="font-family:JetBrains Mono,monospace;font-size:1.3rem;font-weight:700;color:{color};">{val}</div>'
+                f'{"<div style=\'font-size:0.78rem;color:#6b7280;margin-top:4px;\'>"+sub+"</div>" if sub else ""}'
+                f'</div>',
+                unsafe_allow_html=True,
+            )
+        _ps_card(pr1, "💸 Max Loss ยอมรับได้", _m(max_loss_usd), f"{risk_pct}% ของพอร์ต", "#f87171")
+        _ps_card(pr2, "📉 Risk ต่อ Share", f"${risk_per_share:.2f}", f"entry - stop")
+        _ps_card(pr3, "📦 ซื้อได้", f"{ps_shares:.2f} shares", _m(ps_cost))
+        _ps_card(pr4, "📊 Alloc หลังซื้อ", f"{new_alloc_ps:.1f}%",
+                 f"ปัจจุบัน {cur_alloc:.1f}%",
+                 "#f87171" if new_alloc_ps > 30 else "#ffd166" if new_alloc_ps > 20 else "#00d4aa")
+    else:
+        st.warning("Stop-loss ต้องต่ำกว่า Entry price")
 
 
 # ── Tab 4: Compounding Effect Calculator ─────────────────────────────────────────
@@ -1333,6 +1487,141 @@ def render_transactions(tx_df: pd.DataFrame, current_tickers: set):
                 st.markdown(rows_html, unsafe_allow_html=True)
 
 
+# ── Tab 6: Charts & Technical Analysis ───────────────────────────────────────────
+def render_charts(df: pd.DataFrame):
+    stock_df = df[df["ticker"] != "CASH"]
+    tickers  = stock_df["ticker"].tolist()
+    names    = stock_df["name"].tolist()
+
+    # ── Controls ─────────────────────────────────────────────────────────────
+    cc1, cc2, cc3 = st.columns([2, 1, 2])
+    with cc1:
+        sel_idx  = st.selectbox("เลือกหุ้น", range(len(tickers)),
+                                format_func=lambda i: f"{tickers[i]}  —  {names[i]}",
+                                key="chart_ticker")
+        selected = tickers[sel_idx]
+        row      = stock_df[stock_df["ticker"] == selected].iloc[0]
+        avg_cost = float(row["avg_cost"])
+        price    = float(row["price"])
+    with cc2:
+        period_label = st.selectbox("Period", list(CHART_PERIODS.keys()), index=2, key="chart_period")
+        period_yf    = CHART_PERIODS[period_label]
+    with cc3:
+        ma_opts = st.multiselect("Moving Averages", ["SMA20", "SMA50", "SMA200"],
+                                 default=["SMA20", "SMA50", "SMA200"], key="chart_mas")
+
+    show_vol = st.checkbox("แสดง Volume", value=True, key="chart_vol")
+
+    # ── Load data ─────────────────────────────────────────────────────────────
+    with st.spinner(f"Loading {selected} data..."):
+        tech = load_technicals(selected, period_yf)
+
+    if not tech:
+        st.error(f"ไม่สามารถดึงข้อมูลของ {selected} ได้")
+        return
+
+    hist  = tech["hist"]
+    S1, R1, S2, R2, pivot = tech["S1"], tech["R1"], tech["S2"], tech["R2"], tech["pivot"]
+    rsi   = tech["rsi"]
+
+    # ── S/R Summary cards ─────────────────────────────────────────────────────
+    status = _tech_status(price, rsi, S1, R1, tech["sma200"])
+    ma_lbl = _ma_label(price, tech["sma20"], tech["sma50"], tech["sma200"])
+    sc1, sc2, sc3, sc4, sc5 = st.columns(5)
+    def _scard(col, lbl, val, color="#f1f5f9"):
+        col.markdown(
+            f'<div class="metric-card" style="text-align:center;padding:12px 8px;">'
+            f'<div class="mc-label">{lbl}</div>'
+            f'<div style="font-family:JetBrains Mono,monospace;font-size:1.1rem;font-weight:700;color:{color};">{val}</div>'
+            f'</div>', unsafe_allow_html=True)
+    _scard(sc1, "🟢 Support S1", f"${S1:.2f}", "#00d4aa")
+    _scard(sc2, "🔴 Resist R1",  f"${R1:.2f}", "#f87171")
+    _scard(sc3, "📊 Pivot",      f"${pivot:.2f}", "#a5b4fc")
+    rsi_color = "#f87171" if rsi > 70 else "#00d4aa" if rsi < 30 else "#ffd166"
+    _scard(sc4, "📈 RSI (14)",   f"{rsi:.0f}", rsi_color)
+    _scard(sc5, "🧭 Status",     status)
+
+    # ── Candlestick Chart ─────────────────────────────────────────────────────
+    st.markdown("<div class='section-title' style='margin-top:16px;'>Candlestick Chart</div>", unsafe_allow_html=True)
+
+    if show_vol:
+        from plotly.subplots import make_subplots
+        fig = make_subplots(rows=2, cols=1, shared_xaxes=True,
+                            row_heights=[0.75, 0.25], vertical_spacing=0.03)
+        row_cs, row_vol = 1, 2
+    else:
+        fig = go.Figure()
+        row_cs = None
+
+    cs_kwargs = dict(row=row_cs, col=1) if show_vol else {}
+
+    fig.add_trace(go.Candlestick(
+        x=hist.index,
+        open=hist["Open"], high=hist["High"],
+        low=hist["Low"],  close=hist["Close"],
+        name=selected,
+        increasing=dict(line=dict(color="#00d4aa"), fillcolor="rgba(0,212,170,0.7)"),
+        decreasing=dict(line=dict(color="#f87171"), fillcolor="rgba(248,113,113,0.7)"),
+    ), **cs_kwargs)
+
+    ma_styles = {
+        "SMA20":  ("#ffd166", 1.5),
+        "SMA50":  ("#a5b4fc", 1.8),
+        "SMA200": ("#fb923c", 2.0),
+    }
+    for ma in ma_opts:
+        if ma in hist.columns:
+            color, width = ma_styles[ma]
+            fig.add_trace(go.Scatter(
+                x=hist.index, y=hist[ma],
+                name=ma, mode="lines",
+                line=dict(color=color, width=width),
+                hovertemplate=f"{ma}: $%{{y:.2f}}<extra></extra>",
+            ), **cs_kwargs)
+
+    # Lines
+    line_cfg = [
+        (avg_cost, "#ffd166", "dash",  f"Entry ${avg_cost:.2f}",  "bottom left"),
+        (S1,       "#00d4aa", "dot",   f"S1 ${S1:.2f}",           "bottom right"),
+        (R1,       "#f87171", "dot",   f"R1 ${R1:.2f}",           "top right"),
+        (S2,       "rgba(0,212,170,0.4)", "dashdot", f"S2 ${S2:.2f}", "bottom right"),
+        (R2,       "rgba(248,113,113,0.4)", "dashdot", f"R2 ${R2:.2f}", "top right"),
+    ]
+    hline_fn = fig.add_hline if not show_vol else lambda **kw: fig.add_hline(row=row_cs, col=1, **kw)
+    for y_val, color, dash, ann_text, ann_pos in line_cfg:
+        hline_fn(y=y_val, line_dash=dash, line_color=color,
+                 annotation_text=ann_text, annotation_font_color=color,
+                 annotation_position=ann_pos)
+
+    if show_vol:
+        colors_vol = ["#00d4aa" if c >= o else "#f87171"
+                      for c, o in zip(hist["Close"], hist["Open"])]
+        fig.add_trace(go.Bar(
+            x=hist.index, y=hist["Volume"],
+            name="Volume", marker_color=colors_vol,
+            hovertemplate="Volume: %{y:,.0f}<extra></extra>",
+        ), row=row_vol, col=1)
+        fig.update_yaxes(title_text="Volume", row=row_vol, col=1,
+                         gridcolor="rgba(99,102,241,0.08)")
+
+    base = _plotly_base()
+    fig.update_layout(
+        height=560, showlegend=True,
+        xaxis_rangeslider_visible=False,
+        legend=dict(orientation="h", y=1.04, x=0, bgcolor="rgba(0,0,0,0)", font=dict(size=11)),
+        **{k: v for k, v in base.items() if k not in ("xaxis", "yaxis")},
+        paper_bgcolor=base["paper_bgcolor"],
+        plot_bgcolor=base["plot_bgcolor"],
+        font=base["font"],
+        margin=base["margin"],
+    )
+    fig.update_xaxes(gridcolor="rgba(99,102,241,0.08)", showgrid=True)
+    fig.update_yaxes(tickprefix="$", gridcolor="rgba(99,102,241,0.08)", row=row_cs if show_vol else None)
+    st.plotly_chart(fig, use_container_width=True)
+
+    st.caption(f"S1/R1/S2/R2 = Classic Pivot Points · Entry = ต้นทุนเฉลี่ย ${avg_cost:.2f} · RSI(14) = {rsi:.0f} · {ma_lbl}")
+
+
 # ── Sidebar ───────────────────────────────────────────────────────────────────────
 def render_sidebar():
     with st.sidebar:
@@ -1380,11 +1669,12 @@ def main():
 
     current_tickers = set(df[df["ticker"] != "CASH"]["ticker"].tolist())
 
-    tab1, tab2, tab3, tab4, tab5 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
         "📊 Overview",
         "🎯 Allocation",
         "🧮 DCA Calc",
         "📈 Compounding",
+        "📉 Charts",
         "📋 Transactions",
     ])
 
@@ -1397,6 +1687,8 @@ def main():
     with tab4:
         render_compound(df, fx_rate, show_thb)
     with tab5:
+        render_charts(df)
+    with tab6:
         render_transactions(tx_df, current_tickers)
 
 

@@ -20,6 +20,32 @@ TARGETS_FILE = TOOLS_DIR / "portfolio_targets.json"
 SPREADSHEET_ID = "1JC_SMTlWNBwuqDne3MJ229CAOWRw5KMDZeQM8_Vcr4s"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 
+
+@st.cache_data(ttl=3600)
+def get_usd_thb() -> float:
+    try:
+        import yfinance as yf
+        hist = yf.Ticker("USDTHB=X").history(period="2d")
+        if not hist.empty:
+            return float(hist["Close"].iloc[-1])
+    except Exception:
+        pass
+    return 35.0
+
+
+def fmt_usd(val: float) -> str:
+    return f"${val:,.2f}"
+
+
+def fmt_thb(val: float, fx: float) -> str:
+    return f"฿{val * fx:,.0f}"
+
+
+def fmt_money(val: float, fx: float, show_thb: bool) -> str:
+    if show_thb:
+        return f"฿{val * fx:,.0f}"
+    return f"${val:,.2f}"
+
 # ── Page config ─────────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="💼 My Portfolio",
@@ -667,26 +693,29 @@ def render_performance_chart(df: pd.DataFrame, tx_df: pd.DataFrame):
 
 
 # ── Tab 1: Portfolio Overview ─────────────────────────────────────────────────────
-def render_overview(df: pd.DataFrame, tx_df: pd.DataFrame):
+def render_overview(df: pd.DataFrame, tx_df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = False):
     stock_df = df[df["ticker"] != "CASH"]
     cash_df = df[df["ticker"] == "CASH"]
 
-    total_value = df["total_value"].sum()          # รวม cash
-    stock_cost  = stock_df["total_cost"].sum()     # ต้นทุนหุ้นอย่างเดียว
-    stock_gain  = stock_df["gain_loss"].sum()      # กำไรหุ้นอย่างเดียว
+    total_value = df["total_value"].sum()
+    stock_cost  = stock_df["total_cost"].sum()
+    stock_gain  = stock_df["gain_loss"].sum()
     gain_pct    = (stock_gain / stock_cost * 100) if stock_cost > 0 else 0
     cash_val    = cash_df["total_value"].sum() if not cash_df.empty else 0
+
+    def _m(v): return fmt_money(v, fx_rate, show_thb)
 
     # ── Top metrics ──────────────────────────────────────────────────────────
     c1, c2, c3, c4, c5 = st.columns(5)
     gain_card_cls = "card-gain-pos" if stock_gain >= 0 else "card-gain-neg"
+    gain_val = f"{_sign(stock_gain)}{_m(abs(stock_gain))}"
+    cash_pct = f"{cash_val/total_value*100:.1f}% of port" if total_value > 0 else None
     metrics = [
-        ("💼 Portfolio Value", f"${total_value:,.2f}", None, "neu", "card-value"),
-        ("💵 Invested (Cost)", f"${stock_cost:,.2f}", None, "neu", "card-cost"),
-        ("📈 Unrealized P/L", f"{_sign(stock_gain)}${abs(stock_gain):,.2f}",
-         f"{_sign(gain_pct)}{gain_pct:.2f}%", "pos" if stock_gain >= 0 else "neg", gain_card_cls),
+        ("💼 Portfolio Value", _m(total_value), None, "neu", "card-value"),
+        ("💵 Invested (Cost)", _m(stock_cost), None, "neu", "card-cost"),
+        ("📈 Unrealized P/L", gain_val, f"{_sign(gain_pct)}{gain_pct:.2f}%", "pos" if stock_gain >= 0 else "neg", gain_card_cls),
         ("🏦 Holdings", f"{len(stock_df)}", None, "neu", "card-hold"),
-        ("💵 Cash", f"${cash_val:,.2f}", f"{cash_val/total_value*100:.1f}% of port" if total_value > 0 else None, "neu", "card-cash"),
+        ("💵 Cash", _m(cash_val), cash_pct, "neu", "card-cash"),
     ]
     for col, (label, val, delta, cls, card_cls) in zip([c1, c2, c3, c4, c5], metrics):
         d_html = f'<div class="mc-delta {cls}">{delta}</div>' if delta else ""
@@ -921,96 +950,287 @@ def render_allocation(df: pd.DataFrame, saved: dict):
 
 
 # ── Tab 3: DCA Calculator ─────────────────────────────────────────────────────────
-def render_dca(df: pd.DataFrame):
-    st.markdown("<div class='section-title'>DCA Average Cost Calculator</div>", unsafe_allow_html=True)
+def render_dca(df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = False):
+    def _m(v): return fmt_money(v, fx_rate, show_thb)
+    currency = "฿" if show_thb else "$"
 
     stock_df = df[df["ticker"] != "CASH"]
+
+    # ── Input section ────────────────────────────────────────────────────────
+    st.markdown("<div class='section-title'>เลือกหุ้นและจำนวนที่ต้องการซื้อ</div>", unsafe_allow_html=True)
     col_in, col_out = st.columns([1, 1], gap="large")
 
     with col_in:
-        selected = st.selectbox("Select Stock", stock_df["ticker"].tolist(), key="dca_ticker")
+        tickers = stock_df["ticker"].tolist()
+        names   = stock_df["name"].tolist()
+        options = [f"{t}  —  {n}" for t, n in zip(tickers, names)]
+        sel_idx = st.selectbox("หุ้น", range(len(options)), format_func=lambda i: options[i], key="dca_ticker")
+        selected = tickers[sel_idx]
         row = stock_df[stock_df["ticker"] == selected].iloc[0]
         default_p = float(row["price"]) if row["price"] > 0 else float(row["avg_cost"])
 
-        buy_price = st.number_input("Buy Price ($)", min_value=0.01, value=round(default_p, 2),
-                                    step=0.01, format="%.4f", key="dca_price")
-        method = st.radio("Buy by", ["Shares", "Dollar Amount"], horizontal=True, key="dca_method")
-
-        if method == "Shares":
-            buy_qty = st.number_input("Shares", min_value=0.0001, value=1.0, step=0.5, format="%.4f", key="dca_qty")
-            buy_cost = buy_qty * buy_price
-        else:
-            buy_cost = st.number_input("Amount ($)", min_value=1.0, value=500.0, step=50.0, format="%.2f", key="dca_amt")
-            buy_qty = buy_cost / buy_price
-
         st.markdown(
-            f'<div class="glass-card" style="margin-top:12px;">'
-            f'<div style="color:#6b7280; font-size:0.7rem; letter-spacing:1px; text-transform:uppercase;">Current</div>'
-            f'<div style="font-family:JetBrains Mono,monospace; color:#e2e8f0; margin-top:6px;">'
-            f'{row["shares"]:.4f} shares @ <span style="color:#ffd166;">${row["avg_cost"]:.2f}</span><br>'
-            f'Cost: <b>${row["total_cost"]:,.2f}</b></div></div>',
-            unsafe_allow_html=True,
-        )
-
-    # Calc
-    cur_shares, cur_avg, cur_cost = row["shares"], row["avg_cost"], row["total_cost"]
-    new_shares = cur_shares + buy_qty
-    new_cost = cur_cost + buy_cost
-    new_avg = new_cost / new_shares
-    avg_delta = new_avg - cur_avg
-    avg_delta_pct = avg_delta / cur_avg * 100
-    avg_arrow = "↑" if avg_delta > 0 else "↓"
-    avg_color = "#f87171" if avg_delta > 0 else "#00d4aa"
-    vs_price = (buy_price - new_avg) / new_avg * 100
-    vs_color = _gc(vs_price)
-
-    port_total_ex = df["total_value"].sum() - row["total_value"]
-    new_pos_val = new_shares * buy_price
-    new_alloc = new_pos_val / (port_total_ex + new_pos_val) * 100 if (port_total_ex + new_pos_val) > 0 else 0
-
-    with col_out:
-        st.markdown(
-            f'<div class="dca-card">'
-            f'<div style="color:#6366f1; font-size:0.7rem; letter-spacing:1px; text-transform:uppercase; margin-bottom:4px;">Purchase</div>'
-            f'🛒 {buy_qty:.4f} sh @ <span style="color:#ffd166;">${buy_price:.2f}</span> = <b>${buy_cost:,.2f}</b>'
-            f'<div class="dca-sep"></div>'
-            f'<div style="color:#6366f1; font-size:0.7rem; letter-spacing:1px; text-transform:uppercase; margin-bottom:4px;">After Purchase</div>'
-            f'📦 Shares &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <b>{new_shares:.4f}</b><br>'
-            f'💰 New Avg &nbsp;&nbsp;&nbsp;&nbsp;: <b style="color:{avg_color};">${new_avg:.2f}</b>'
-            f' &nbsp;<span style="color:{avg_color};">{avg_arrow} {avg_delta:+.2f} ({avg_delta_pct:+.2f}%)</span><br>'
-            f'💵 Total Cost &nbsp;: <b>${new_cost:,.2f}</b><br>'
-            f'📊 New Alloc &nbsp;&nbsp;: <b style="color:#a5b4fc;">{new_alloc:.1f}%</b>'
-            f'<div class="dca-sep"></div>'
-            f'📈 vs Buy Price: <b style="color:{vs_color};">{_sign(vs_price)}{vs_price:.2f}%</b>'
-            f'<span style="color:#4b5563; font-size:0.8rem;"> ({"upside" if vs_price>=0 else "downside"} from new avg)</span>'
+            f'<div class="glass-card" style="display:flex; gap:32px; align-items:center; margin-bottom:12px;">'
+            f'<div><div style="color:#6b7280;font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;">ถืออยู่</div>'
+            f'<div style="font-size:1.3rem;font-weight:700;color:#f1f5f9;font-family:JetBrains Mono,monospace;">{row["shares"]:.4f} <span style="font-size:0.8rem;color:#6b7280;">shares</span></div></div>'
+            f'<div><div style="color:#6b7280;font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;">ต้นทุนเฉลี่ย</div>'
+            f'<div style="font-size:1.3rem;font-weight:700;color:#ffd166;font-family:JetBrains Mono,monospace;">${row["avg_cost"]:.2f}</div></div>'
+            f'<div><div style="color:#6b7280;font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;">ต้นทุนรวม</div>'
+            f'<div style="font-size:1.3rem;font-weight:700;color:#a5b4fc;font-family:JetBrains Mono,monospace;">{_m(row["total_cost"])}</div></div>'
             f'</div>',
             unsafe_allow_html=True,
         )
 
-    # Sensitivity chart
-    st.markdown("<div class='section-title' style='margin-top:20px;'>Avg Cost Sensitivity</div>", unsafe_allow_html=True)
+        buy_price = st.number_input(f"ราคาที่จะซื้อ ($)", min_value=0.01, value=round(default_p, 2),
+                                    step=0.01, format="%.2f", key="dca_price",
+                                    help="ค่าเริ่มต้นคือราคาตลาดปัจจุบัน")
+
+        method = st.radio("ซื้อโดยระบุ", ["จำนวนเงิน ($)", "จำนวนหุ้น (shares)"], horizontal=True, key="dca_method")
+        if method == "จำนวนเงิน ($)":
+            buy_cost = st.number_input("จำนวนเงิน ($)", min_value=1.0, value=500.0, step=50.0,
+                                       format="%.2f", key="dca_amt")
+            buy_qty = buy_cost / buy_price
+        else:
+            buy_qty = st.number_input("จำนวนหุ้น", min_value=0.0001, value=1.0, step=0.5,
+                                      format="%.4f", key="dca_qty")
+            buy_cost = buy_qty * buy_price
+
+        st.caption(f"→ ซื้อ {buy_qty:.4f} shares มูลค่า {_m(buy_cost)}")
+
+    # ── Calculations ─────────────────────────────────────────────────────────
+    cur_shares, cur_avg, cur_cost = row["shares"], row["avg_cost"], row["total_cost"]
+    new_shares = cur_shares + buy_qty
+    new_cost   = cur_cost + buy_cost
+    new_avg    = new_cost / new_shares
+    avg_delta  = new_avg - cur_avg
+    avg_delta_pct = avg_delta / cur_avg * 100
+    avg_color  = "#f87171" if avg_delta > 0 else "#00d4aa"
+    avg_arrow  = "↑" if avg_delta > 0 else "↓"
+    vs_price   = (buy_price - new_avg) / new_avg * 100
+    vs_color   = _gc(vs_price)
+    port_total_ex = df["total_value"].sum() - row["total_value"]
+    new_pos_val   = new_shares * buy_price
+    new_alloc     = new_pos_val / (port_total_ex + new_pos_val) * 100 if (port_total_ex + new_pos_val) > 0 else 0
+
+    # ── Result cards ─────────────────────────────────────────────────────────
+    with col_out:
+        st.markdown("<div class='section-title'>ผลลัพธ์หลังซื้อ</div>", unsafe_allow_html=True)
+        r1, r2 = st.columns(2)
+        r3, r4 = st.columns(2)
+
+        def _result_card(col, label, value, sub="", color="#f1f5f9"):
+            col.markdown(
+                f'<div class="metric-card" style="text-align:center;padding:16px 12px;">'
+                f'<div class="mc-label">{label}</div>'
+                f'<div style="font-family:JetBrains Mono,monospace;font-size:1.4rem;font-weight:700;color:{color};line-height:1.2;">{value}</div>'
+                f'{"<div style=\"font-size:0.78rem;color:#6b7280;margin-top:4px;\">"+sub+"</div>" if sub else ""}'
+                f'</div>',
+                unsafe_allow_html=True,
+            )
+
+        _result_card(r1, "📦 จำนวนหุ้นหลังซื้อ", f"{new_shares:.4f} sh")
+        _result_card(r2, "💰 ต้นทุนเฉลี่ยใหม่", f"${new_avg:.2f}",
+                     f'{avg_arrow} {avg_delta:+.2f} ({avg_delta_pct:+.2f}%)', avg_color)
+        _result_card(r3, "💵 ต้นทุนรวมหลังซื้อ", _m(new_cost))
+        _result_card(r4, "📊 สัดส่วนใหม่ในพอร์ต", f"{new_alloc:.1f}%", "", "#a5b4fc")
+
+        st.markdown(
+            f'<div class="glass-card" style="margin-top:8px;text-align:center;">'
+            f'<div style="color:#6b7280;font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">ราคาตลาด vs ต้นทุนใหม่</div>'
+            f'<div style="font-family:JetBrains Mono,monospace;font-size:1.6rem;font-weight:700;color:{vs_color};">'
+            f'{_sign(vs_price)}{vs_price:.2f}%</div>'
+            f'<div style="color:#6b7280;font-size:0.8rem;">{"📈 ราคาตลาดสูงกว่าต้นทุนใหม่" if vs_price >= 0 else "📉 ราคาตลาดต่ำกว่าต้นทุนใหม่"}</div>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+
+    # ── Sensitivity chart ────────────────────────────────────────────────────
+    st.markdown("<div class='section-title' style='margin-top:20px;'>Sensitivity — ถ้าซื้อในราคาต่างกัน ต้นทุนเฉลี่ยจะเปลี่ยนอย่างไร?</div>", unsafe_allow_html=True)
     px_range = [buy_price * (0.5 + i * 0.05) for i in range(21)]
-    avgs = [(cur_cost + buy_cost) / (cur_shares + buy_cost / p) for p in px_range if p > 0]
+    avgs_y = [(cur_cost + (buy_cost if method == "จำนวนเงิน ($)" else buy_qty * p)) /
+              (cur_shares + (buy_cost / p if method == "จำนวนเงิน ($)" else buy_qty))
+              for p in px_range if p > 0]
     fig = go.Figure()
     fig.add_trace(go.Scatter(
-        x=px_range[:len(avgs)], y=avgs,
+        x=px_range[:len(avgs_y)], y=avgs_y,
         mode="lines+markers",
-        line=dict(color="#6366f1", width=2),
-        marker=dict(size=5, color="#6366f1"),
-        fill="tozeroy", fillcolor="rgba(99,102,241,0.06)",
-        hovertemplate="Buy @ $%{x:.2f}<br>New Avg: $%{y:.2f}<extra></extra>",
+        line=dict(color="#6366f1", width=2.5),
+        marker=dict(size=6, color="#6366f1"),
+        fill="tozeroy", fillcolor="rgba(99,102,241,0.07)",
+        hovertemplate="ซื้อ @ $%{x:.2f}<br>ต้นทุนใหม่: $%{y:.2f}<extra></extra>",
+        name="New Avg Cost",
     ))
     fig.add_hline(y=cur_avg, line_dash="dash", line_color="#ffd166",
-                  annotation_text=f"Current ${cur_avg:.2f}", annotation_font_color="#ffd166")
-    fig.add_vline(x=buy_price, line_dash="dot", line_color="#6b7280",
-                  annotation_text=f"Buy @ ${buy_price:.2f}", annotation_font_color="#6b7280")
-    fig.update_layout(height=280, showlegend=False, **_plotly_base())
-    fig.update_xaxes(title="Buy Price ($)")
-    fig.update_yaxes(title="New Avg Cost ($)")
+                  annotation_text=f"ต้นทุนเดิม ${cur_avg:.2f}", annotation_font_color="#ffd166",
+                  annotation_position="top left")
+    fig.add_vline(x=buy_price, line_dash="dot", line_color="#00d4aa",
+                  annotation_text=f"ราคาที่เลือก ${buy_price:.2f}", annotation_font_color="#00d4aa")
+    fig.update_layout(height=300, showlegend=False, **_plotly_base())
+    fig.update_xaxes(title="ราคาที่ซื้อ ($)", tickprefix="$")
+    fig.update_yaxes(title="ต้นทุนเฉลี่ยใหม่ ($)", tickprefix="$")
     st.plotly_chart(fig, use_container_width=True)
 
 
-# ── Tab 4: Transaction History ────────────────────────────────────────────────────
+# ── Tab 4: Compounding Effect Calculator ─────────────────────────────────────────
+def render_compound(df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = False):
+    def _m(v): return fmt_money(v, fx_rate, show_thb)
+
+    st.markdown("<div class='section-title'>Compounding Effect — พลังของดอกเบี้ยทบต้น</div>", unsafe_allow_html=True)
+
+    total_val = df["total_value"].sum()
+
+    # ── Inputs ────────────────────────────────────────────────────────────────
+    ic1, ic2 = st.columns(2, gap="large")
+    with ic1:
+        st.markdown("##### ⚙️ ตั้งค่าการลงทุน")
+        initial = st.number_input("เงินเริ่มต้น ($)", min_value=0.0, value=round(total_val, 0),
+                                   step=100.0, format="%.0f",
+                                   help="ค่าเริ่มต้นคือมูลค่าพอร์ตปัจจุบัน")
+        monthly = st.number_input("DCA รายเดือน ($)", min_value=0.0, value=500.0, step=50.0, format="%.0f")
+        years   = st.slider("ระยะเวลาการลงทุน (ปี)", min_value=1, max_value=50, value=30)
+
+    with ic2:
+        st.markdown("##### 📈 ผลตอบแทนและการเปรียบเทียบ")
+        annual_r = st.slider("ผลตอบแทนคาดหวัง (% ต่อปี)", min_value=1.0, max_value=40.0, value=15.0, step=0.5,
+                              help="พอร์ต Growth Stocks โดยเฉลี่ยอยู่ที่ 12-20% ต่อปีในระยะยาว")
+        compare_opts = {
+            "S&P 500 (~10%/yr)": 10.0,
+            "QQQ NASDAQ (~13%/yr)": 13.0,
+            "SET Index (~7%/yr)": 7.0,
+            "เงินฝากธนาคาร (~1.5%/yr)": 1.5,
+        }
+        compare_label = st.selectbox("เปรียบเทียบกับ", list(compare_opts.keys()))
+        compare_r = compare_opts[compare_label]
+
+    # ── Calculate year-by-year ────────────────────────────────────────────────
+    monthly_r   = annual_r / 100 / 12
+    monthly_cr  = compare_r / 100 / 12
+    total_invested = initial + monthly * 12 * years
+
+    port_vals, comp_vals, inv_vals, year_labels = [], [], [], []
+    pv, cv = float(initial), float(initial)
+    for y in range(1, years + 1):
+        for _ in range(12):
+            pv = pv * (1 + monthly_r) + monthly
+            cv = cv * (1 + monthly_cr) + monthly
+        port_vals.append(pv)
+        comp_vals.append(cv)
+        inv_vals.append(initial + monthly * 12 * y)
+        year_labels.append(y)
+
+    final_val    = port_vals[-1]
+    final_gain   = final_val - total_invested
+    final_gain_p = (final_gain / total_invested * 100) if total_invested > 0 else 0
+    comp_final   = comp_vals[-1]
+
+    # ── Summary cards ─────────────────────────────────────────────────────────
+    st.markdown("<div class='section-title' style='margin-top:16px;'>ผลลัพธ์หลังจาก {} ปี</div>".format(years), unsafe_allow_html=True)
+    sc1, sc2, sc3, sc4 = st.columns(4)
+    def _scard(col, label, val, sub="", color="#f1f5f9"):
+        col.markdown(
+            f'<div class="metric-card" style="text-align:center;">'
+            f'<div class="mc-label">{label}</div>'
+            f'<div style="font-family:JetBrains Mono,monospace;font-size:1.3rem;font-weight:700;color:{color};">{val}</div>'
+            f'{"<div style=\"font-size:0.78rem;color:#6b7280;margin-top:4px;\">"+sub+"</div>" if sub else ""}'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+
+    _scard(sc1, "💰 มูลค่าพอร์ตสุดท้าย", _m(final_val), f"@ {annual_r}%/yr", "#00d4aa")
+    _scard(sc2, "💵 เงินลงทุนสะสมรวม",   _m(total_invested))
+    _scard(sc3, "📈 กำไรสุทธิ",           _m(final_gain), f"+{final_gain_p:.0f}%", "#34d399")
+    _scard(sc4, "📊 vs " + compare_label.split("(")[0].strip(),
+           _m(comp_final), f"@ {compare_r}%/yr", "#a5b4fc")
+
+    # ── Chart ─────────────────────────────────────────────────────────────────
+    st.markdown("<div class='section-title' style='margin-top:20px;'>กราฟการเติบโตรายปี</div>", unsafe_allow_html=True)
+
+    display_mult = fx_rate if show_thb else 1.0
+    pv_disp  = [v * display_mult for v in port_vals]
+    cv_disp  = [v * display_mult for v in comp_vals]
+    inv_disp = [v * display_mult for v in inv_vals]
+    prefix   = "฿" if show_thb else "$"
+
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        x=year_labels, y=inv_disp,
+        name="เงินลงทุนสะสม",
+        mode="lines",
+        line=dict(color="#64748b", width=1.5, dash="dot"),
+        fill="tozeroy", fillcolor="rgba(100,116,139,0.05)",
+        hovertemplate=f"ปีที่ %{{x}}<br>ลงทุนสะสม: {prefix}%{{y:,.0f}}<extra></extra>",
+    ))
+    fig.add_trace(go.Scatter(
+        x=year_labels, y=cv_disp,
+        name=compare_label,
+        mode="lines",
+        line=dict(color="#a5b4fc", width=2),
+        hovertemplate=f"ปีที่ %{{x}}<br>{compare_label}: {prefix}%{{y:,.0f}}<extra></extra>",
+    ))
+    fig.add_trace(go.Scatter(
+        x=year_labels, y=pv_disp,
+        name=f"พอร์ตของเรา ({annual_r}%/yr)",
+        mode="lines",
+        line=dict(color="#00d4aa", width=3),
+        fill="tonexty", fillcolor="rgba(0,212,170,0.06)",
+        hovertemplate=f"ปีที่ %{{x}}<br>พอร์ต: {prefix}%{{y:,.0f}}<extra></extra>",
+    ))
+
+    fig.update_layout(
+        height=420,
+        legend=dict(orientation="h", y=1.05, x=0, bgcolor="rgba(0,0,0,0)", font=dict(size=12)),
+        hovermode="x unified",
+        **_plotly_base(),
+    )
+    fig.update_yaxes(tickprefix=prefix, title=f"มูลค่า ({prefix})")
+    fig.update_xaxes(title="ปีที่ลงทุน", dtick=5)
+    st.plotly_chart(fig, use_container_width=True)
+
+    # ── Milestone table ───────────────────────────────────────────────────────
+    st.markdown("<div class='section-title'>Milestones — จุดสำคัญในเส้นทาง</div>", unsafe_allow_html=True)
+    milestones = [1, 3, 5, 10, 15, 20, 25, 30, years] if years not in [1,3,5,10,15,20,25,30] else [1, 3, 5, 10, 15, 20, 25, 30]
+    milestones = sorted(set(m for m in milestones if 1 <= m <= years))
+
+    rows = []
+    for y in milestones:
+        pv_y = port_vals[y - 1]
+        cv_y = comp_vals[y - 1]
+        iv_y = inv_vals[y - 1]
+        gain_y = pv_y - iv_y
+        rows.append({
+            "ปีที่": y,
+            f"มูลค่าพอร์ต ({prefix})": pv_y * display_mult,
+            f"เงินลงทุนสะสม ({prefix})": iv_y * display_mult,
+            f"กำไรสุทธิ ({prefix})": gain_y * display_mult,
+            "กำไร (%)": (gain_y / iv_y * 100) if iv_y > 0 else 0,
+            f"vs {compare_label.split('(')[0].strip()} ({prefix})": cv_y * display_mult,
+        })
+    ms_df = pd.DataFrame(rows).set_index("ปีที่")
+    num_cols = [c for c in ms_df.columns if c != "กำไร (%)"]
+    fmt_dict = {c: f"{prefix}{{:,.0f}}" for c in num_cols}
+    fmt_dict["กำไร (%)"] = "{:+.0f}%"
+
+    def _color_gain(val):
+        if isinstance(val, (int, float)):
+            return f"color: {'#00d4aa' if val >= 0 else '#f87171'}"
+        return ""
+
+    styled_ms = (
+        ms_df.style
+        .format(fmt_dict)
+        .map(_color_gain, subset=[f"กำไรสุทธิ ({prefix})", "กำไร (%)"])
+        .set_properties(**{
+            "background-color": "rgba(30,33,64,0.6)",
+            "color": "#e2e8f0",
+            "border": "1px solid rgba(99,102,241,0.12)",
+            "font-family": "JetBrains Mono, monospace",
+            "font-size": "0.82rem",
+        })
+    )
+    st.dataframe(styled_ms, use_container_width=True)
+
+
+# ── Tab 5: Transaction History ────────────────────────────────────────────────────
 def render_transactions(tx_df: pd.DataFrame, current_tickers: set):
     if tx_df.empty:
         st.info("No transaction data found.")
@@ -1132,15 +1352,23 @@ def main():
     saved = load_targets()
     cash = float(saved.get("cash", 0.0))
 
+    # FX rate
+    fx_rate = get_usd_thb()
+
     # Header
-    st.markdown(
-        '<div class="portfolio-header">'
-        '<div class="header-title">💼 My Investment Portfolio</div>'
-        '<div class="header-sub">Real-time data · Google Sheets + yfinance · '
-        f'{datetime.now().strftime("%d %b %Y %H:%M")}</div>'
-        '</div>',
-        unsafe_allow_html=True,
-    )
+    hcol1, hcol2 = st.columns([5, 1])
+    with hcol1:
+        st.markdown(
+            '<div class="portfolio-header">'
+            '<div class="header-title">💼 My Investment Portfolio</div>'
+            '<div class="header-sub">Real-time data · Google Sheets + yfinance · '
+            f'{datetime.now().strftime("%d %b %Y %H:%M")} · USD/THB ฿{fx_rate:.2f}</div>'
+            '</div>',
+            unsafe_allow_html=True,
+        )
+    with hcol2:
+        st.markdown("<br>", unsafe_allow_html=True)
+        show_thb = st.toggle("🇹🇭 แสดงเป็นบาท", value=False, key="thb_toggle")
 
     with st.spinner("Loading..."):
         df = load_portfolio(cash=cash)
@@ -1152,20 +1380,23 @@ def main():
 
     current_tickers = set(df[df["ticker"] != "CASH"]["ticker"].tolist())
 
-    tab1, tab2, tab3, tab4 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
         "📊 Overview",
         "🎯 Allocation",
         "🧮 DCA Calc",
+        "📈 Compounding",
         "📋 Transactions",
     ])
 
     with tab1:
-        render_overview(df, tx_df)
+        render_overview(df, tx_df, fx_rate, show_thb)
     with tab2:
         render_allocation(df, saved)
     with tab3:
-        render_dca(df)
+        render_dca(df, fx_rate, show_thb)
     with tab4:
+        render_compound(df, fx_rate, show_thb)
+    with tab5:
         render_transactions(tx_df, current_tickers)
 
 

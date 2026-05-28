@@ -2385,6 +2385,19 @@ def parse_output_files() -> list[dict]:
     reports = []
     if not OUTPUT_DIR.exists():
         return reports
+    
+    # Load or initialize file times cache (preserves local mtimes on git checkouts)
+    cache_path = OUTPUT_DIR / ".file_times.json"
+    file_times = {}
+    if cache_path.exists():
+        try:
+            with open(cache_path, "r", encoding="utf-8") as f:
+                file_times = json.load(f)
+        except Exception:
+            pass
+            
+    cache_dirty = False
+    
     file_list = list(OUTPUT_DIR.glob("*.md"))
     for md_file in file_list:
         stem = md_file.stem
@@ -2405,16 +2418,31 @@ def parse_output_files() -> list[dict]:
         title = _extract_title(content) or rest.replace("_", " ").title()
         if not tickers:
             tickers = _extract_tickers(content[:800])
-        try:
-            mtime = md_file.stat().st_mtime
-            mtime_dt = datetime.fromtimestamp(mtime)
-        except Exception:
-            mtime_dt = datetime.now()
+            
+        # Get preserved modification time
+        filename = md_file.name
+        mtime_str = file_times.get(filename, "")
+        mtime_dt = None
+        if mtime_str:
+            try:
+                mtime_dt = datetime.fromisoformat(mtime_str)
+            except Exception:
+                pass
+                
+        if mtime_dt is None:
+            try:
+                mtime = md_file.stat().st_mtime
+                mtime_dt = datetime.fromtimestamp(mtime)
+                file_times[filename] = mtime_dt.isoformat()
+                cache_dirty = True
+            except Exception:
+                mtime_dt = datetime.now()
+                
         time_str = mtime_dt.strftime("%H:%M")
         reports.append({
             "date": date,
             "date_str": date_str,
-            "filename": md_file.name,
+            "filename": filename,
             "rest": rest,
             "title": title,
             "tickers": tickers,
@@ -2425,8 +2453,17 @@ def parse_output_files() -> list[dict]:
             "mtime": mtime_dt,
             "time_str": time_str,
         })
+        
+    if cache_dirty:
+        try:
+            with open(cache_path, "w", encoding="utf-8") as f:
+                json.dump(file_times, f, indent=2, ensure_ascii=False)
+        except Exception:
+            pass
+            
     reports.sort(key=lambda r: (r["date"], r["mtime"]), reverse=True)
     return reports
+
 
 
 def _card_html(rep: dict) -> str:

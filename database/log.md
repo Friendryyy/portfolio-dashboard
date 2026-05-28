@@ -1152,4 +1152,11 @@
 - **Portfolio DCA Impact:** ตรึงระบบ **Hard Buy Block** บน RKLB (29.66% ชนเพดาน 30%) สั่งถือนิ่งรันเทรนด์กำไรลอยตัว | คงแผน **DCA Tranche 1 Active** บน BTC ที่ราคาต่ำกว่า $74,000 เพื่อความปลอดภัยของวินัย
 - QA Score: 98/100 | Report: output/2026-05-28_youtube_cnbc_stock_market_wrap.md
 
+### [2026-05-28] — SYSTEM — Portfolio Strategic Audit & Risk Ceiling Alignment
+- **Joint Space Ceiling Conflict:** เปิดเผยประเด็นการชนเพดานของกลุ่มอวกาศ RKLB + SPCX (ห้ามสะสมรวมกันเกิน 35% ของพอร์ต) ปัจจุบัน RKLB ร้อนแรงจนขึ้นมาครอง 29.66% ชี้ชัดว่าห้ามซื้อ SPCX เต็ม target 20% ทันทีตอน IPO (จำกัด SPCX เหลือ 5.34% หรือ rebalance RKLB ลงมา)
+- **TSM Semiconductor Foundry Gap:** คัดกรองพบ TSM ต่ำกว่าเป้าหมายมากที่ 1.64% (เป้าหมาย 6.00%, ส่วนต่าง -4.36%) แนะนำเร่ง DCA สะสม TSM เพื่อเสริมความแข็งแกร่งระดับรากฐานให้กับ Hardware Cluster (จำกัดเพดาน 25% ร่วมกับ NVDA)
+- **SOFI Target vs Risk Discrepancy:** ตรวจพบข้อขัดแย้งของ SOFI ที่ตั้งเป้าหมายไว้ 10% ในระบบ แต่มี Risk Ceiling สูงสุดห้ามเกิน 8% จากผล Stress Test แนะนำปรับลดเป้าหมาย SOFI ลงเหลือ 6% เพื่อความปลอดภัยในระหว่างการสืบคดีบัญชี
+- QA Score: 99/100 | Report: output/2026-05-28_portfolio_strategic_audit.md
+
+
 

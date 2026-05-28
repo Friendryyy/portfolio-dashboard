@@ -19,6 +19,7 @@ TOOLS_DIR = Path(__file__).parent
 TARGETS_FILE = TOOLS_DIR / "portfolio_targets.json"
 SPREADSHEET_ID = "1JC_SMTlWNBwuqDne3MJ229CAOWRw5KMDZeQM8_Vcr4s"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
+SHEETS_SUMMARY = {}
 
 
 @st.cache_data(ttl=3600)
@@ -57,188 +58,373 @@ st.set_page_config(
 # ── Premium CSS ─────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
-  .stApp {
-    background: radial-gradient(ellipse at top left, #0f1229 0%, #0a0d1a 50%, #050710 100%);
-    font-family: 'Inter', sans-serif;
+  /* ── Design Tokens ── */
+  :root {
+    --bg:         #EDF4F9; /* Soothing sky base */
+    --surface:    #FFFFFF; /* Crisp white cards */
+    --elevated:   #F1F6FA; /* Light pastel blue-grey */
+    --overlay:    #E2EDF5; /* Muted pastel blue */
+    --border:     rgba(180, 200, 220, 0.45); /* Soft slate blue border */
+    --border-hi:  rgba(56, 189, 248, 0.6); /* Soft sky blue glow */
+    --violet:     #0284C7; /* Primary ocean blue */
+    --cyan:       #06B6D4; /* Secondary teal-sky blue */
+    --gold:       #D97706; /* Rich warm amber */
+    --rose:       #EF4444; /* Vivid soft red */
+    --blue:       #38BDF8; /* Sky blue */
+    --green:      #10B981; /* Emerald green */
+    --txt1:       #1E293B; /* Deep slate navy */
+    --txt2:       #475569; /* Slate grey */
+    --txt3:       #64748B; /* Muted slate text */
   }
 
-  /* Header */
+  /* ── Base ── */
+  .stApp {
+    background: var(--bg);
+    background-image:
+      radial-gradient(ellipse at 15% 0%,   rgba(2,132,199,0.06) 0%, transparent 55%),
+      radial-gradient(ellipse at 85% 100%, rgba(13,148,136,0.04)  0%, transparent 55%);
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  * { box-sizing: border-box; }
+
+  /* ── Header ── */
   .portfolio-header {
-    background: linear-gradient(135deg, #1a1d3a 0%, #12152b 100%);
-    border: 1px solid rgba(99, 102, 241, 0.3);
-    border-radius: 16px;
-    padding: 24px 32px;
-    margin-bottom: 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 26px;
+    margin-bottom: 18px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 4px 16px rgba(148,163,184,0.04);
   }
   .portfolio-header::before {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #6366f1, #00d4aa, #ffd166);
+    top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--violet) 0%, var(--cyan) 60%, var(--blue) 100%);
   }
   .header-title {
-    font-size: 1.9rem;
+    font-size: 1.55rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--txt1);
+    letter-spacing: -0.4px;
     margin: 0;
   }
-  .header-sub { color: #6b7280; font-size: 0.85rem; margin-top: 2px; }
+  .header-sub { color: var(--txt3); font-size: 0.78rem; margin-top: 3px; letter-spacing: 0.2px; }
 
-  /* Metric cards */
+  /* ── Metric cards ── */
   .metric-card {
-    background: linear-gradient(145deg, #1e2140 0%, #161929 100%);
-    border: 1px solid rgba(99, 102, 241, 0.2);
-    border-radius: 14px;
-    padding: 18px 22px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 15px 18px 15px 22px;
     margin: 4px 0;
-    transition: all 0.2s;
     position: relative;
     overflow: hidden;
+    transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+    box-shadow: 0 4px 12px rgba(148,163,184,0.03);
   }
-  .metric-card::before {
+  .metric-card::after {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: rgba(99, 102, 241, 0.5);
+    left: 0; top: 12%; bottom: 12%;
+    width: 3.5px;
+    border-radius: 0 3.5px 3.5px 0;
   }
-  .metric-card.card-value::before { background: linear-gradient(90deg, #6366f1, #818cf8); }
-  .metric-card.card-cost::before  { background: linear-gradient(90deg, #64748b, #94a3b8); }
-  .metric-card.card-gain-pos::before { background: linear-gradient(90deg, #00d4aa, #34d399); box-shadow: 0 0 12px rgba(0,212,170,0.5); }
-  .metric-card.card-gain-neg::before { background: linear-gradient(90deg, #f87171, #ef4444); }
-  .metric-card.card-hold::before  { background: linear-gradient(90deg, #ffd166, #f59e0b); }
-  .metric-card.card-cash::before  { background: linear-gradient(90deg, #38bdf8, #0ea5e9); }
-  .metric-card.card-gain-pos {
-    border-color: rgba(0, 212, 170, 0.3);
-    box-shadow: 0 0 20px rgba(0, 212, 170, 0.08);
-  }
-  .metric-card:hover { border-color: rgba(99, 102, 241, 0.5); transform: translateY(-1px); }
+  .metric-card.card-value::after  { background: var(--violet); box-shadow: 0 0 6px rgba(2,132,199,0.4); }
+  .metric-card.card-cost::after   { background: var(--txt3); }
+  .metric-card.card-gain-pos::after { background: var(--green); box-shadow: 0 0 6px rgba(16,185,129,0.4); }
+  .metric-card.card-gain-neg::after { background: var(--rose); box-shadow: 0 0 6px rgba(239,68,68,0.4); }
+  .metric-card.card-hold::after   { background: var(--gold); }
+  .metric-card.card-cash::after   { background: var(--blue); }
+  .metric-card.card-gain-pos { border-color: rgba(16,185,129,0.22); }
+  .metric-card:hover { border-color: var(--border-hi); transform: translateY(-1.5px); box-shadow: 0 6px 16px rgba(148,163,184,0.06); }
+
   .mc-label {
-    font-size: 0.7rem;
-    color: #6b7280;
+    font-size: 0.62rem;
+    color: var(--txt3);
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 500;
-    margin-bottom: 6px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 7px;
   }
   .mc-value {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #f1f5f9;
-    line-height: 1.2;
+    font-size: 1.42rem;
+    font-weight: 700;
+    color: var(--txt1);
+    line-height: 1.1;
+    letter-spacing: -0.5px;
   }
-  .mc-delta { font-size: 0.82rem; font-family: 'JetBrains Mono', monospace; margin-top: 4px; }
-  .pos { color: #00d4aa; }
-  .neg { color: #f87171; }
-  .neu { color: #a5b4fc; }
+  .mc-delta { font-size: 0.76rem; font-family: 'JetBrains Mono', monospace; margin-top: 5px; font-weight: 600; }
+  .pos { color: var(--green); }
+  .neg { color: var(--rose); }
+  .neu { color: var(--violet); }
 
-  /* Section headers */
+  /* ── Section titles ── */
   .section-title {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #6366f1;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--txt2);
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 20px 0 10px;
+    letter-spacing: 2.5px;
+    margin: 22px 0 10px;
+    padding-left: 10px;
+    border-left: 2.5px solid var(--violet);
   }
 
-  /* Glass cards */
+  /* ── Glass card ── */
   .glass-card {
-    background: rgba(30, 33, 64, 0.6);
-    border: 1px solid rgba(99, 102, 241, 0.15);
-    border-radius: 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
     padding: 16px 20px;
-    backdrop-filter: blur(10px);
     margin: 6px 0;
+    box-shadow: 0 4px 12px rgba(148,163,184,0.03);
   }
 
-  /* Allocation bar rows */
+  /* ── Allocation rows ── */
   .alloc-row {
-    background: rgba(30, 33, 64, 0.5);
-    border: 1px solid rgba(99, 102, 241, 0.12);
-    border-radius: 10px;
-    padding: 12px 16px;
-    margin: 5px 0;
-    transition: border-color 0.2s;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 11px 16px;
+    margin: 4px 0;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    box-shadow: 0 2px 8px rgba(148,163,184,0.02);
   }
-  .alloc-row:hover { border-color: rgba(99, 102, 241, 0.35); }
+  .alloc-row:hover { border-color: var(--border-hi); box-shadow: 0 4px 12px rgba(148,163,184,0.04); }
   .bar-track {
-    background: rgba(45, 48, 87, 0.8);
-    border-radius: 6px;
-    height: 8px;
+    background: var(--elevated);
+    border-radius: 3px;
+    height: 6px;
     width: 100%;
-    margin-top: 8px;
+    margin-top: 7px;
     overflow: hidden;
   }
-  .bar-fill { height: 8px; border-radius: 6px; }
+  .bar-fill { height: 6px; border-radius: 3px; }
 
-  /* Transaction rows */
+  /* ── Transaction rows ── */
   .tx-group-header {
-    background: linear-gradient(135deg, #1e2140 0%, #16192a 100%);
-    border: 1px solid rgba(99, 102, 241, 0.25);
-    border-radius: 10px;
-    padding: 12px 18px;
+    background: var(--elevated);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 16px;
     margin: 8px 0 2px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
   .tx-row {
-    background: rgba(20, 23, 40, 0.6);
-    border-left: 3px solid transparent;
-    border-radius: 0 8px 8px 0;
-    padding: 8px 16px 8px 14px;
+    background: var(--surface);
+    border-left: 3.5px solid transparent;
+    border-radius: 0 6px 6px 0;
+    padding: 7px 16px 7px 13px;
     margin: 2px 0 2px 8px;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.82rem;
+    font-size: 0.79rem;
+    box-shadow: 0 1px 4px rgba(148,163,184,0.01);
   }
-  .tx-buy { border-left-color: #00d4aa; }
-  .tx-sell { border-left-color: #f87171; }
-  .tx-div { border-left-color: #ffd166; }
+  .tx-buy  { border-left-color: var(--green); }
+  .tx-sell { border-left-color: var(--rose); }
+  .tx-div  { border-left-color: var(--gold); }
 
-  /* DCA */
+  /* ── DCA card ── */
   .dca-card {
-    background: linear-gradient(145deg, #1e2140 0%, #161929 100%);
-    border: 1px solid rgba(99, 102, 241, 0.2);
-    border-radius: 14px;
-    padding: 22px 26px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.9rem;
-    line-height: 2.1;
+    font-size: 0.88rem;
+    line-height: 2.05;
+    box-shadow: 0 4px 12px rgba(148,163,184,0.03);
   }
-  .dca-sep { border-top: 1px solid rgba(99,102,241,0.15); margin: 12px 0; }
+  .dca-sep { border-top: 1px solid var(--border); margin: 12px 0; }
 
-  /* Override Streamlit defaults */
+  /* ── Streamlit overrides ── */
   div[data-testid="stMetric"] {
-    background: rgba(30, 33, 64, 0.6) !important;
-    border: 1px solid rgba(99, 102, 241, 0.15) !important;
-    border-radius: 12px !important;
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 10px !important;
     padding: 14px 16px !important;
+    box-shadow: 0 4px 12px rgba(148,163,184,0.03) !important;
   }
-  .stDataFrame { border-radius: 12px; overflow: hidden; }
+  .stDataFrame { border-radius: 10px; border: 1px solid var(--border); }
+
+  /* Tab bar — pill style */
+  div[data-baseweb="tab-list"] {
+    background: var(--surface) !important;
+    border-radius: 10px !important;
+    padding: 4px 5px !important;
+    border: 1px solid var(--border) !important;
+    gap: 3px !important;
+    box-shadow: 0 2px 8px rgba(148,163,184,0.02) !important;
+  }
   button[data-baseweb="tab"] {
-    font-family: 'Inter', sans-serif !important;
-    font-size: 0.85rem !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-size: 0.81rem !important;
+    font-weight: 500 !important;
+    color: var(--txt2) !important;
+    border-radius: 7px !important;
+    padding: 6px 13px !important;
+    border-bottom: none !important;
+    transition: all 0.15s !important;
+  }
+  button[data-baseweb="tab"]:hover {
+    color: var(--txt1) !important;
+    background: var(--elevated) !important;
   }
   button[data-baseweb="tab"][aria-selected="true"] {
-    border-bottom: 2px solid #6366f1 !important;
-    color: #a5b4fc !important;
+    background: var(--violet) !important;
+    color: #ffffff !important;
+    border-bottom: none !important;
+    font-weight: 600 !important;
+    box-shadow: 0 2px 8px rgba(2,132,199,0.3) !important;
   }
-  .stCaption { color: #4b5563 !important; font-size: 0.78rem !important; }
+  div[data-baseweb="tab-highlight"],
+  div[data-baseweb="tab-border"] { display: none !important; }
+
+  .stCaption { color: var(--txt3) !important; font-size: 0.73rem !important; }
 
   /* Sidebar */
   section[data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #0f1229 0%, #0a0d1a 100%);
-    border-right: 1px solid rgba(99,102,241,0.15);
+    background: var(--surface) !important;
+    border-right: 1px solid var(--border) !important;
   }
+  section[data-testid="stSidebar"] > div { background: transparent !important; }
+
+  /* Buttons */
+  .stButton > button {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--txt2) !important;
+    border-radius: 8px !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 500 !important;
+    transition: all 0.15s !important;
+    box-shadow: 0 1px 3px rgba(148,163,184,0.03) !important;
+  }
+  .stButton > button:hover {
+    border-color: var(--border-hi) !important;
+    color: var(--txt1) !important;
+    background: var(--elevated) !important;
+  }
+  .stDownloadButton > button {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--txt2) !important;
+    border-radius: 8px !important;
+    font-size: 1.0rem !important;
+    transition: all 0.15s !important;
+    box-shadow: 0 1px 3px rgba(148,163,184,0.03) !important;
+  }
+  .stDownloadButton > button:hover {
+    border-color: var(--cyan) !important;
+    color: var(--cyan) !important;
+    background: var(--elevated) !important;
+  }
+
+  /* Select / Input */
+  .stSelectbox > div > div, .stMultiSelect > div > div {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    color: var(--txt1) !important;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2.5px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--border-hi); }
+
+  /* Expander */
+  details summary {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    color: var(--txt2) !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-size: 0.84rem !important;
+    box-shadow: 0 1px 4px rgba(148,163,184,0.01) !important;
+  }
+  details[open] summary { border-color: var(--border-hi) !important; color: var(--txt1) !important; }
+
+  /* ── News Tab ── */
+  .news-date-header {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: var(--txt2);
+    margin: 24px 0 10px;
+    padding: 0 0 7px 10px;
+    border-left: 2.5px solid var(--violet);
+    border-bottom: 1px solid var(--border);
+  }
+  .news-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 13px 17px;
+    margin-bottom: 8px;
+    transition: border-color 0.15s, transform 0.1s, box-shadow 0.15s;
+    box-shadow: 0 2px 8px rgba(148,163,184,0.02);
+  }
+  .news-card:hover { border-color: var(--border-hi); transform: translateX(2.5px); box-shadow: 0 4px 12px rgba(148,163,184,0.05); }
+  .news-card-title {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--txt1);
+    margin-bottom: 8px;
+    line-height: 1.45;
+  }
+  .news-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    letter-spacing: 0.3px;
+  }
+  .news-tag-ticker {
+    background: rgba(2,132,199,0.08);
+    color: var(--violet);
+    border: 1px solid rgba(2,132,199,0.22);
+  }
+  .news-tag-type { border: none; }
+  .news-content-wrapper {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-top: 8px;
+    box-shadow: 0 4px 12px rgba(148,163,184,0.03);
+  }
+
+  /* Reader meta bar */
+  .reader-meta-bar {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(148,163,184,0.04);
+  }
+  .reader-meta-bar::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 3px;
+    border-radius: 12px 12px 0 0;
+    background: linear-gradient(90deg, var(--violet), var(--cyan));
+  }
+  .reader-title { font-size: 1.35rem; font-weight: 700; color: var(--txt1); line-height: 1.4; margin-bottom: 10px; }
+  .reader-date  { color: var(--txt3); font-size: 0.78rem; margin-bottom: 8px; }
+  .reader-body  { max-width: 860px; color: var(--txt1); }
 </style>
 """, unsafe_allow_html=True)
 
@@ -253,7 +439,11 @@ def _sheets_service():
         st.stop()
 
     # ── Cloud mode: use Service Account from st.secrets ──────────────────────
-    if "gcp_service_account" in st.secrets:
+    try:
+        has_secret = "gcp_service_account" in st.secrets
+    except Exception:
+        has_secret = False
+    if has_secret:
         from google.oauth2 import service_account
         sa_info = dict(st.secrets["gcp_service_account"])
         # Fix literal \n in private_key (common Streamlit Secrets paste issue)
@@ -297,18 +487,38 @@ def _sheets_service():
 
 
 def _read_sheet(range_: str) -> list[list]:
-    try:
-        svc = _sheets_service()
-        result = svc.spreadsheets().values().get(
-            spreadsheetId=SPREADSHEET_ID, range=range_
-        ).execute()
-        return result.get("values", [])
-    except Exception as e:
-        if any(k in str(e) for k in ("invalid_grant", "Token", "revoked")):
-            _sheets_service.clear()
-            st.error("🔑 Google auth expired — please refresh the page.")
-            st.stop()
-        raise
+    import time
+    retries = 3
+    delay = 1.0
+    for attempt in range(retries):
+        try:
+            svc = _sheets_service()
+            result = svc.spreadsheets().values().get(
+                spreadsheetId=SPREADSHEET_ID, range=range_
+            ).execute()
+            return result.get("values", [])
+        except Exception as e:
+            # Handle Google Auth expiration immediately
+            if any(k in str(e) for k in ("invalid_grant", "Token", "revoked")):
+                _sheets_service.clear()
+                st.error("🔑 Google auth expired — please refresh the page.")
+                st.stop()
+            
+            # Detect transient socket/connection errors
+            err_str = str(e).lower()
+            is_transient = any(k in err_str or k in str(type(e)).lower() for k in (
+                "connection", "timeout", "socket", "winerror", "10053", "10054", "aborted", "reset"
+            ))
+            
+            if is_transient and attempt < retries - 1:
+                time.sleep(delay * (attempt + 1))  # Exponential backoff
+                continue
+            
+            # On the final attempt, display a clean user-facing error and stop cleanly
+            if attempt == retries - 1:
+                st.error("📡 Connection to Google Sheets API failed. Please check your internet connection or refresh the page.")
+                st.stop()
+            raise
 
 
 # ── Parse helpers ─────────────────────────────────────────────────────────────────
@@ -328,7 +538,9 @@ def _parse_thai_date(s: str) -> datetime | None:
         if len(parts) == 3:
             d, m, y = int(parts[0]), int(parts[1]), int(parts[2])
             if y > 2400:
-                y -= 543  # Thai Buddhist year → Gregorian
+                y -= 543          # full Thai Buddhist year → Gregorian
+            elif 1940 <= y <= 2100:
+                y += 57           # Google Sheets auto-shortened "69"→1969; recover: +600-543=+57
             return datetime(y, m, d)
     except Exception:
         pass
@@ -337,77 +549,181 @@ def _parse_thai_date(s: str) -> datetime | None:
 
 # ── Portfolio data ────────────────────────────────────────────────────────────────
 @st.cache_data(ttl=300)
-def _load_portfolio_raw() -> list[dict]:
+def _load_portfolio_raw() -> tuple[list[dict], float, dict]:
+    """Read all computed values directly from Google Sheets (single source of truth)."""
     values = _read_sheet("Portfolio!A:K")
     if not values:
-        return []
+        return [], 0.0, {}
     headers = values[0]
     rows = []
+    summary_total = 0.0
+    summary_cash_pct = 0.0
+    sheets_cash_val = 0.0
+    sheets_summary = {}
     for row in values[1:]:
         padded = row + [""] * (len(headers) - len(row))
         r = dict(zip(headers, padded))
         ticker = r.get("Tracker", "").strip()
-        if not ticker:
-            continue
-        shares = _parse_money(r.get("Shares", ""))
-        avg_cost = _parse_money(r.get(" Avg. Cost ", ""))
-        if shares > 0 and avg_cost > 0:
-            rows.append({
-                "ticker": ticker,
-                "name": r.get("Company Name", ticker).strip() or ticker,
-                "industry": r.get("Industry", "").strip(),
-                "shares": shares,
-                "avg_cost": avg_cost,
-            })
-    return rows
+        if ticker:
+            shares    = _parse_money(r.get("Shares", ""))
+            avg_cost  = _parse_money(r.get(" Avg. Cost ", ""))
+            if shares > 0 and avg_cost > 0:
+                gain_pct_raw = r.get("%Gain/Loss", "").replace("%", "").strip()
+                alloc_raw    = r.get("Alocation",  "").replace("%", "").strip()
+                try:
+                    gain_pct = float(gain_pct_raw)
+                except Exception:
+                    gain_pct = 0.0
+                try:
+                    allocation = float(alloc_raw)
+                except Exception:
+                    allocation = 0.0
+                rows.append({
+                    "ticker":      ticker,
+                    "name":        r.get("Company Name", ticker).strip() or ticker,
+                    "industry":    r.get("Industry", "").strip(),
+                    "shares":      shares,
+                    "avg_cost":    avg_cost,
+                    "price":       _parse_money(r.get("Share Price", "")),
+                    "total_value": _parse_money(r.get("Total Equity", "")),
+                    "total_cost":  _parse_money(r.get(" Total Cost ", "")),
+                    "gain_loss":   _parse_money(r.get("Total Gain/Loss", "")),
+                    "gain_pct":    gain_pct,
+                    "allocation":  allocation,
+                })
+        else:
+            # Summary rows: label in " Total Cost ", value in "Total Gain/Loss"
+            label = r.get(" Total Cost ", "").strip()
+            val   = r.get("Total Gain/Loss", "").strip()
+            val_thb = r.get("%Gain/Loss", "").strip()
+            if label:
+                if label == "Cash Flow":
+                    if "%" in val or (val.replace(".", "").replace("-", "").strip().isdigit() and float(val) < 1.0):
+                        try:
+                            summary_cash_pct = float(val.replace("%", "").strip()) / 100
+                        except Exception:
+                            pass
+                    else:
+                        try:
+                            sheets_cash_val = _parse_money(val)
+                            sheets_summary["Cash Flow"] = {
+                                "usd": sheets_cash_val,
+                                "thb": _parse_money(val_thb) if val_thb else 0.0
+                            }
+                        except Exception:
+                            pass
+                else:
+                    sheets_summary[label] = {
+                        "usd": _parse_money(val),
+                        "thb": _parse_money(val_thb) if val_thb else 0.0
+                    }
+            if label == "Total":
+                summary_total = _parse_money(val)
+            elif label == "Cash Flow" and ("%" in val or (val.replace(".", "").replace("-", "").strip().isdigit() and float(val) < 1.0)):
+                try:
+                    summary_cash_pct = float(val.replace("%", "").strip()) / 100
+                except Exception:
+                    pass
+    if sheets_cash_val > 0:
+        sheets_cash = sheets_cash_val
+    elif summary_total > 0 and summary_cash_pct > 0:
+        total_equity_sum = sum(r["total_value"] for r in rows)
+        sheets_cash = round(summary_total - total_equity_sum, 2)
+    else:
+        sheets_cash = 0.0
+    return rows, sheets_cash, sheets_summary
 
 
-@st.cache_data(ttl=60)
-def _fetch_prices(tickers: tuple) -> dict[str, float]:
-    try:
-        import yfinance as yf
-        prices = {}
-        for t in tickers:
-            try:
-                prices[t] = float(yf.Ticker(t).fast_info.last_price or 0)
-            except Exception:
-                prices[t] = 0.0
-        return prices
-    except ImportError:
-        return {t: 0.0 for t in tickers}
-
-
-def load_portfolio(cash: float = 0.0) -> pd.DataFrame:
-    rows = _load_portfolio_raw()
+def load_portfolio(cash: float = 0.0) -> tuple[pd.DataFrame, dict]:
+    """Build portfolio DataFrame using Sheets as single source of truth."""
+    rows, sheets_cash, sheets_summary = _load_portfolio_raw()
     if not rows:
-        return pd.DataFrame()
+        return pd.DataFrame(), {}
+    effective_cash = sheets_cash if sheets_cash > 0 else cash
     df = pd.DataFrame(rows)
-    prices = _fetch_prices(tuple(df["ticker"].tolist()))
-    df["price"] = df["ticker"].map(prices).fillna(0.0)
-    df["total_cost"] = df["shares"] * df["avg_cost"]
-    df["total_value"] = df["shares"] * df["price"]
-    df["gain_loss"] = df["total_value"] - df["total_cost"]
-    df["gain_pct"] = (df["gain_loss"] / df["total_cost"].replace(0, float("nan")) * 100).round(2)
 
-    # Add cash row
-    if cash > 0:
+    # Load targets to append missing targeted tickers with 0.0 values
+    try:
+        saved = load_targets()
+        saved_tgts = saved.get("targets", {})
+        for ticker in saved_tgts:
+            if ticker != "CASH" and ticker not in df["ticker"].values:
+                zero_row = pd.DataFrame([{
+                    "ticker":      ticker,
+                    "name":        ticker,
+                    "industry":    "Other",
+                    "shares":      0.0,
+                    "avg_cost":    0.0,
+                    "price":       0.0,
+                    "total_cost":  0.0,
+                    "total_value": 0.0,
+                    "gain_loss":   0.0,
+                    "gain_pct":    0.0,
+                    "allocation":  0.0,
+                }])
+                df = pd.concat([df, zero_row], ignore_index=True)
+    except Exception:
+        pass
+
+    # Add cash row — allocation = remainder after stocks
+    if effective_cash > 0:
+        stock_alloc = df["allocation"].sum()
+        cash_alloc  = round(max(0.0, 100.0 - stock_alloc), 2)
         cash_row = pd.DataFrame([{
-            "ticker": "CASH",
-            "name": "Cash / USD",
-            "industry": "Cash",
-            "shares": cash,
-            "avg_cost": 1.0,
-            "price": 1.0,
-            "total_cost": cash,
-            "total_value": cash,
-            "gain_loss": 0.0,
-            "gain_pct": 0.0,
+            "ticker":      "CASH",
+            "name":        "Cash / USD",
+            "industry":    "Cash",
+            "shares":      effective_cash,
+            "avg_cost":    1.0,
+            "price":       1.0,
+            "total_cost":  effective_cash,
+            "total_value": effective_cash,
+            "gain_loss":   0.0,
+            "gain_pct":    0.0,
+            "allocation":  cash_alloc,
         }])
         df = pd.concat([df, cash_row], ignore_index=True)
 
-    port_total = df["total_value"].sum()
-    df["allocation"] = (df["total_value"] / port_total * 100 if port_total > 0 else 0).round(2)
-    return df
+    return df, sheets_summary
+
+
+@st.cache_data(ttl=300)
+def _load_realized_breakdown_raw() -> tuple[list[dict], dict]:
+    """Read the realized profit breakdown from the spreadsheet tab."""
+    values = _read_sheet("Realized Profit Breakdown !A:D")
+    if not values or len(values) < 2:
+        return [], {}
+    headers = values[0]
+    rows = []
+    total = {}
+    for row in values[1:]:
+        padded = row + [""] * (len(headers) - len(row))
+        r = dict(zip(headers, padded))
+        ticker = r.get("ชื่อย่อหุ้น (Ticker)", "").strip()
+        if not ticker:
+            continue
+        if "รวมสุทธิ" in ticker or "Total" in ticker:
+            total = {
+                "sells": _parse_money(r.get("ยอดเงินที่ขายได้ทั้งหมด (Total Sells)", "")),
+                "cost": _parse_money(r.get("ต้นทุนของหุ้นส่วนที่ขายไป (Cost of Sells)", "")),
+                "profit": _parse_money(r.get("💰 กำไร/ขาดทุน สุทธิ (Net Realized Profit)", ""))
+            }
+        else:
+            rows.append({
+                "ticker": ticker,
+                "sells": _parse_money(r.get("ยอดเงินที่ขายได้ทั้งหมด (Total Sells)", "")),
+                "cost": _parse_money(r.get("ต้นทุนของหุ้นส่วนที่ขายไป (Cost of Sells)", "")),
+                "profit": _parse_money(r.get("💰 กำไร/ขาดทุน สุทธิ (Net Realized Profit)", ""))
+            })
+    return rows, total
+
+
+def load_realized_breakdown() -> tuple[pd.DataFrame, dict]:
+    """Build realized breakdown DataFrame and total dictionary."""
+    rows, total = _load_realized_breakdown_raw()
+    if not rows:
+        return pd.DataFrame(), {}
+    return pd.DataFrame(rows), total
 
 
 # ── Transaction data ──────────────────────────────────────────────────────────────
@@ -430,6 +746,20 @@ def load_transactions() -> pd.DataFrame:
         tx_type = r.get("Transaction", "").strip()
         date_raw = r.get("Date", "").strip()
         date = _parse_thai_date(date_raw)
+        dividend_val = _parse_money(r.get("Dividend", ""))
+        # Dividend DRIP: if qty > 0, count reinvested shares as a Buy entry too
+        if tx_type == "Dividend" and qty > 0:
+            rows.append({
+                "ticker": ticker,
+                "name": r.get("Stock Name", ticker).strip(),
+                "type": "Buy",
+                "date": date, "date_raw": date_raw,
+                "qty": qty, "price": price,
+                "dividend": dividend_val, "total": total,
+                "note": "DRIP",
+            })
+            tx_type = "Dividend"
+            qty = 0  # original dividend row keeps qty=0
         rows.append({
             "ticker": ticker,
             "name": r.get("Stock Name", ticker).strip(),
@@ -438,8 +768,9 @@ def load_transactions() -> pd.DataFrame:
             "date_raw": date_raw,
             "qty": qty,
             "price": price,
-            "dividend": _parse_money(r.get("Dividend", "")),
+            "dividend": dividend_val,
             "total": total,
+            "note": "",
         })
     df = pd.DataFrame(rows)
     if not df.empty and "date" in df.columns:
@@ -471,7 +802,7 @@ def get_target_pcts(df: pd.DataFrame, saved: dict) -> dict:
 
 # ── Color helpers ─────────────────────────────────────────────────────────────────
 def _gc(v: float) -> str:
-    return "#00d4aa" if v >= 0 else "#f87171"
+    return "#059669" if v >= 0 else "#EF4444"
 
 
 def _sign(v: float) -> str:
@@ -482,10 +813,10 @@ def _plotly_base() -> dict:
     return dict(
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
-        font=dict(color="#94a3b8", family="Inter, sans-serif", size=12),
+        font=dict(color="#475569", family="Space Grotesk, Inter, sans-serif", size=12),
         margin=dict(t=20, b=20, l=10, r=10),
-        xaxis=dict(gridcolor="rgba(99,102,241,0.08)", zerolinecolor="rgba(99,102,241,0.15)"),
-        yaxis=dict(gridcolor="rgba(99,102,241,0.08)", zerolinecolor="rgba(99,102,241,0.15)"),
+        xaxis=dict(gridcolor="rgba(148, 163, 184, 0.12)", zerolinecolor="rgba(148, 163, 184, 0.22)"),
+        yaxis=dict(gridcolor="rgba(148, 163, 184, 0.12)", zerolinecolor="rgba(148, 163, 184, 0.22)"),
     )
 
 
@@ -501,6 +832,9 @@ TICKER_COLORS = {
     "AMZN": "#fb923c",   # Amazon orange
     "NVO":  "#e879f9",   # purple
     "UNH":  "#38bdf8",   # sky blue
+    "TSM":  "#ffb703",   # TSMC gold-orange
+    "BTC":  "#f7931a",   # Bitcoin orange
+    "SPCX": "#005288",   # SpaceX blue
     "CASH": "#64748b",   # slate
 }
 
@@ -722,12 +1056,12 @@ def render_performance_chart(df: pd.DataFrame, tx_df: pd.DataFrame):
             line=dict(color=color, width=width, dash=dash),
             hovertemplate=f"<b>{name}</b><br>%{{x|%Y-%m-%d}}<br>{hover}<extra></extra>",
             fill="tozeroy" if (name == "My Portfolio" and not normalize) else None,
-            fillcolor="rgba(99,102,241,0.06)" if name == "My Portfolio" else None,
+            fillcolor="rgba(2, 132, 199, 0.08)" if name == "My Portfolio" else None,
         ))
 
-    _add_series(port_hist["portfolio"], "My Portfolio", "#6366f1", width=3)
+    _add_series(port_hist["portfolio"], "My Portfolio", "#0284C7", width=3)
 
-    index_colors = ["#00d4aa", "#ffd166", "#f87171", "#a78bfa"]
+    index_colors = ["#06B6D4", "#D97706", "#EF4444", "#8B5CF6"]
     for i, label in enumerate(compare_with):
         symbol = INDICES[label]
         idx_hist = load_index_history(symbol, period)
@@ -748,7 +1082,7 @@ def render_performance_chart(df: pd.DataFrame, tx_df: pd.DataFrame):
     )
     if normalize:
         fig.update_yaxes(ticksuffix="%", title="Return (%)")
-        fig.add_hline(y=0, line_color="rgba(255,255,255,0.1)", line_width=1)
+        fig.add_hline(y=0, line_color="rgba(15,23,42,0.1)", line_width=1)
     else:
         fig.update_yaxes(tickprefix="$", title="Portfolio Value ($)")
 
@@ -756,42 +1090,385 @@ def render_performance_chart(df: pd.DataFrame, tx_df: pd.DataFrame):
     st.plotly_chart(fig, use_container_width=True)
 
 
+# ── Portfolio Snapshot (PNG) ──────────────────────────────────────────────────────
+def generate_portfolio_snapshot(df: pd.DataFrame, fx_rate: float, show_thb: bool) -> bytes | None:
+    """Build a self-contained portfolio card PNG using Plotly + kaleido."""
+    try:
+        from plotly.subplots import make_subplots
+        global SHEETS_SUMMARY
+
+        stock_df = df[df["ticker"] != "CASH"]
+        cash_df  = df[df["ticker"] == "CASH"]
+
+        total_value = df["total_value"].sum()
+        stock_cost  = stock_df["total_cost"].sum()
+        stock_gain  = stock_df["gain_loss"].sum()
+        
+        gain_pct = (stock_gain / stock_cost * 100) if stock_cost > 0 else 0
+            
+        cash_val    = cash_df["total_value"].sum() if not cash_df.empty else 0.0
+        cash_pct    = (cash_val / total_value * 100) if total_value > 0 else 0
+        n_holdings  = len(stock_df)
+
+        # ── Build figure: 2 rows — metrics banner + (table | donut) ──────────
+        fig = make_subplots(
+            rows=2, cols=2,
+            row_heights=[0.12, 0.88],
+            column_widths=[0.57, 0.43],
+            specs=[[{"type": "xy", "colspan": 2}, None],
+                   [{"type": "table"},             {"type": "domain"}]],
+            vertical_spacing=0.02,
+            horizontal_spacing=0.03,
+        )
+
+        # ── Row 1: invisible scatter to anchor metric annotations ─────────────
+        fig.add_trace(go.Scatter(x=[0], y=[0], mode="markers",
+                                 marker=dict(opacity=0)), row=1, col=1)
+        fig.update_xaxes(visible=False, row=1, col=1)
+        fig.update_yaxes(visible=False, row=1, col=1)
+
+        # ── Row 2 left: Holdings table ────────────────────────────────────────
+        header_cols = ["Ticker", "Shares", "Avg Cost", "Price",
+                       "Value", "P/L ($)", "P/L %", "Alloc %"]
+        col_data: dict[str, list] = {h: [] for h in header_cols}
+        text_colors = []
+        for _, row in df.iterrows():
+            pl  = float(row["total_value"]) - float(row["total_cost"])
+            pct = (pl / float(row["total_cost"]) * 100) if float(row["total_cost"]) > 0 else 0
+            col_data["Ticker"].append(row["ticker"])
+            col_data["Shares"].append(f"{float(row['shares']):.4f}")
+            col_data["Avg Cost"].append(f"${float(row['avg_cost']):.2f}")
+            col_data["Price"].append(f"${float(row['price']):.2f}")
+            col_data["Value"].append(f"${float(row['total_value']):,.2f}")
+            col_data["P/L ($)"].append(f"{'+'if pl>=0 else ''}${pl:,.2f}")
+            col_data["P/L %"].append(f"{'+'if pct>=0 else ''}{pct:.2f}%")
+            col_data["Alloc %"].append(f"{float(row['allocation']):.1f}%")
+            text_colors.append("#10B981" if pl >= 0 else "#EF4444")
+
+        cell_bg = ["#ffffff" if i % 2 == 0 else "#f8fafc" for i in range(len(df))]
+        col_text_colors = [
+            ["#1E293B"] * len(df), # Ticker
+            ["#475569"] * len(df), # Shares
+            ["#475569"] * len(df), # Avg Cost
+            ["#475569"] * len(df), # Price
+            ["#1E293B"] * len(df), # Value
+            text_colors,           # P/L ($)
+            text_colors,           # P/L %
+            ["#0284C7"] * len(df), # Alloc %
+        ]
+
+        fig.add_trace(go.Table(
+            header=dict(
+                values=[f"<b>{h}</b>" for h in header_cols],
+                fill_color="#E2EDF5",
+                font=dict(color="#0284C7", size=11, family="Arial", bold=True),
+                align="center", height=30,
+                line=dict(color="rgba(180, 200, 220, 0.4)", width=1),
+            ),
+            cells=dict(
+                values=[col_data[h] for h in header_cols],
+                fill_color=[cell_bg] * len(header_cols),
+                font=dict(color=col_text_colors, size=11, family="Arial"),
+                align=["center"] * len(header_cols),
+                height=27,
+                line=dict(color="rgba(180, 200, 220, 0.2)", width=1),
+            ),
+        ), row=2, col=1)
+
+        # ── Row 2 right: Donut chart ──────────────────────────────────────────
+        snap_palette = ["#0284C7", "#06B6D4", "#D97706", "#EF4444", "#8B5CF6",
+                        "#10B981", "#FB923C", "#38BDF8", "#EC4899", "#10B981", "#94A3B8"]
+        pie_df = df[df["total_value"] > 0]
+        pie_colors = [TICKER_COLORS.get(t, snap_palette[i % len(snap_palette)])
+                      for i, t in enumerate(pie_df["ticker"])]
+        fig.add_trace(go.Pie(
+            labels=pie_df["ticker"],
+            values=pie_df["total_value"].round(2),
+            hole=0.55,
+            marker=dict(colors=pie_colors, line=dict(color="#FFFFFF", width=2)),
+            textinfo="percent+label",
+            textfont=dict(size=10, color="#1E293B", family="Arial"),
+            hoverinfo="skip",
+        ), row=2, col=2)
+
+        # ── Metric annotations (centred in row 1) ─────────────────────────────
+        pl_color = "#10B981" if stock_gain >= 0 else "#EF4444"
+        pl_sign  = "+" if stock_gain >= 0 else ""
+        ts = datetime.now().strftime("%d %b %Y %H:%M")
+
+        def _mv(label, val, sub=None, color="#1E293B"):
+            sub_part = f"<br><span style='color:#475569;font-size:11px;font-weight:600;'>{sub}</span>" if sub else ""
+            return (f"<span style='color:#64748B;font-size:10px;font-weight:600;letter-spacing:1px;'>{label}</span><br>"
+                    f"<span style='color:{color};font-size:17px;font-weight:bold;'>{val}</span>{sub_part}")
+
+        annotations = [
+            # Title
+            dict(text="<b>💼  My Investment Portfolio</b>",
+                 x=0.5, y=0.995, xref="paper", yref="paper",
+                 font=dict(size=18, color="#1E293B", family="Arial"),
+                 showarrow=False, align="center"),
+            # 5 metric cards (evenly spaced)
+            dict(text=_mv("PORTFOLIO VALUE",   f"${total_value:,.2f}"),
+                 x=0.04, y=0.925, xref="paper", yref="paper",
+                 font=dict(size=11, family="Arial"), showarrow=False),
+            dict(text=_mv("INVESTED (COST)",   f"${stock_cost:,.2f}"),
+                 x=0.22, y=0.925, xref="paper", yref="paper",
+                 font=dict(size=11, family="Arial"), showarrow=False),
+            dict(text=_mv("UNREALIZED P/L",
+                           f"{pl_sign}${stock_gain:,.2f}",
+                           f"{pl_sign}{gain_pct:.2f}%", pl_color),
+                 x=0.42, y=0.925, xref="paper", yref="paper",
+                 font=dict(size=11, color=pl_color, family="Arial"), showarrow=False),
+            dict(text=_mv("HOLDINGS",          str(n_holdings)),
+                 x=0.62, y=0.925, xref="paper", yref="paper",
+                 font=dict(size=11, family="Arial"), showarrow=False),
+            dict(text=_mv("CASH",
+                           f"${cash_val:,.2f}",
+                           f"{cash_pct:.1f}% of port", "#0284C7"),
+                 x=0.80, y=0.925, xref="paper", yref="paper",
+                 font=dict(size=11, color="#0284C7", family="Arial"), showarrow=False),
+            # Timestamp
+            dict(text=f"<i>Generated {ts}</i>",
+                 x=1.0, y=-0.01, xref="paper", yref="paper",
+                 font=dict(size=9, color="#64748B", family="Arial"),
+                 showarrow=False, align="right"),
+        ]
+
+        fig.update_layout(
+            paper_bgcolor="#EDF4F9",
+            plot_bgcolor="#FFFFFF",
+            font=dict(color="#475569", family="Arial"),
+            height=580, width=1200,
+            margin=dict(t=55, b=20, l=10, r=10),
+            annotations=annotations,
+            showlegend=False,
+        )
+
+        return fig.to_image(format="png", scale=2)
+
+    except ImportError:
+        return None  # kaleido not installed
+    except Exception:
+        return None
+
+
 # ── Tab 1: Portfolio Overview ─────────────────────────────────────────────────────
-def render_overview(df: pd.DataFrame, tx_df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = False):
+def render_overview(df: pd.DataFrame, tx_df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = False, sheets_summary: dict = None):
+    global SHEETS_SUMMARY
+    if sheets_summary:
+        SHEETS_SUMMARY = sheets_summary
     stock_df = df[df["ticker"] != "CASH"]
     cash_df = df[df["ticker"] == "CASH"]
 
     total_value = df["total_value"].sum()
     stock_cost  = stock_df["total_cost"].sum()
     stock_gain  = stock_df["gain_loss"].sum()
-    gain_pct    = (stock_gain / stock_cost * 100) if stock_cost > 0 else 0
-    cash_val    = cash_df["total_value"].sum() if not cash_df.empty else 0
+    
+    gain_pct = (stock_gain / stock_cost * 100) if stock_cost > 0 else 0
+        
+    cash_val    = cash_df["total_value"].sum() if not cash_df.empty else 0.0
 
     def _m(v): return fmt_money(v, fx_rate, show_thb)
 
-    # ── Top metrics ──────────────────────────────────────────────────────────
-    c1, c2, c3, c4, c5 = st.columns(5)
-    gain_card_cls = "card-gain-pos" if stock_gain >= 0 else "card-gain-neg"
-    gain_val = f"{_sign(stock_gain)}{_m(abs(stock_gain))}"
-    cash_pct = f"{cash_val/total_value*100:.1f}% of port" if total_value > 0 else None
-    metrics = [
-        ("💼 Portfolio Value", _m(total_value), None, "neu", "card-value"),
-        ("💵 Invested (Cost)", _m(stock_cost), None, "neu", "card-cost"),
-        ("📈 Unrealized P/L", gain_val, f"{_sign(gain_pct)}{gain_pct:.2f}%", "pos" if stock_gain >= 0 else "neg", gain_card_cls),
-        ("🏦 Holdings", f"{len(stock_df)}", None, "neu", "card-hold"),
-        ("💵 Cash", _m(cash_val), cash_pct, "neu", "card-cash"),
-    ]
-    for col, (label, val, delta, cls, card_cls) in zip([c1, c2, c3, c4, c5], metrics):
-        d_html = f'<div class="mc-delta {cls}">{delta}</div>' if delta else ""
-        col.markdown(
-            f'<div class="metric-card {card_cls}">'
-            f'<div class="mc-label">{label}</div>'
-            f'<div class="mc-value">{val}</div>'
-            f'{d_html}</div>',
-            unsafe_allow_html=True,
+    # ── True Return Calculations ─────────────────────────────────────────────
+    if tx_df is not None and not tx_df.empty:
+        total_buys = tx_df[tx_df["type"] == "Buy"]["total"].sum()
+        total_sells = tx_df[tx_df["type"] == "Sell"]["total"].sum()
+        total_dividends = tx_df[tx_df["type"] == "Dividend"]["total"].sum()
+        wallet_deployed = max(0.0, cash_val - total_sells - total_dividends + total_buys)
+        true_gain = total_value - wallet_deployed
+        true_gain_pct = (true_gain / wallet_deployed * 100) if wallet_deployed > 0 else 0.0
+    else:
+        wallet_deployed = stock_cost
+        true_gain = stock_gain
+        true_gain_pct = gain_pct
+
+    # ── View Mode Selector ────────────────────────────────────────────────────
+    col_lbl, col_sel = st.columns([6, 4])
+    with col_lbl:
+        st.markdown("<div class='section-title' style='margin-top:0;'>Portfolio Summary</div>", unsafe_allow_html=True)
+    with col_sel:
+        acc_mode = st.radio(
+            "Performance Mode",
+            ["💼 Standard (Holding Cost)", "💳 Audited (True Wallet Return)"],
+            horizontal=True,
+            label_visibility="collapsed",
+            key="accounting_mode_toggle_main"
         )
 
-    st.markdown("<div class='section-title'>Holdings</div>", unsafe_allow_html=True)
+    # ── Top metrics ──────────────────────────────────────────────────────────
+    cash_pct = f"{cash_val/total_value*100:.1f}% of port" if total_value > 0 else None
+    
+    if "Audited" in acc_mode:
+        # Sourcing exact metrics from Google Sheets summary
+        def _m_sheet(label, default_usd):
+            if show_thb:
+                thb_val = SHEETS_SUMMARY.get(label, {}).get("thb", 0.0)
+                if thb_val > 0:
+                    return f"฿{thb_val:,.0f}"
+                return f"฿{default_usd * fx_rate:,.0f}"
+            else:
+                usd_val = SHEETS_SUMMARY.get(label, {}).get("usd", 0.0)
+                if usd_val > 0:
+                    return f"${usd_val:,.2f}"
+                return f"${default_usd:,.2f}"
+
+        c1, c2, c3, c4, c5, c6 = st.columns(6)
+        sheet_true_gain = SHEETS_SUMMARY.get("True Net Profit", {}).get("usd", true_gain)
+        sheet_true_pct = SHEETS_SUMMARY.get("True Return %", {}).get("usd", true_gain_pct)
+        
+        if show_thb:
+            thb_gain = SHEETS_SUMMARY.get("True Net Profit", {}).get("thb", 0.0)
+            true_gain_val = f"{_sign(thb_gain)}฿{thb_gain:,.0f}" if thb_gain > 0 else f"{_sign(sheet_true_gain)}{_m(abs(sheet_true_gain))}"
+        else:
+            true_gain_val = f"{_sign(sheet_true_gain)}${sheet_true_gain:,.2f}"
+            
+        true_gain_pct_val = f"{_sign(sheet_true_pct)}{sheet_true_pct:.2f}%"
+        gain_card_cls = "card-gain-pos" if sheet_true_gain >= 0 else "card-gain-neg"
+        
+        metrics = [
+            ("💼 Portfolio Value", _m_sheet("Total", total_value), None, "neu", "card-value"),
+            ("💳 True Deployed", _m_sheet("True Deployed Capital", wallet_deployed), None, "neu", "card-cost"),
+            ("🚀 True Wallet Return", true_gain_val, true_gain_pct_val, "pos" if sheet_true_gain >= 0 else "neg", gain_card_cls),
+            ("💰 Realized Profit", _m_sheet("Realized profit", 0.0), None, "neu", "card-hold"),
+            ("🏦 Holdings", f"{len(stock_df)}", None, "neu", "card-hold"),
+            ("💵 Cash Flow", _m_sheet("Cash Flow", cash_val), cash_pct, "neu", "card-cash"),
+        ]
+        
+        for col, (label, val, delta, cls, card_cls) in zip([c1, c2, c3, c4, c5, c6], metrics):
+            d_html = f'<div class="mc-delta {cls}">{delta}</div>' if delta else ""
+            col.markdown(
+                f'<div class="metric-card {card_cls}">'
+                f'<div class="mc-label">{label}</div>'
+                f'<div class="mc-value">{val}</div>'
+                f'{d_html}</div>',
+                unsafe_allow_html=True,
+            )
+            
+        st.markdown(
+            f'''
+            <div style="background-color: rgba(2,132,199,0.06); border: 1px solid rgba(2,132,199,0.22); border-radius: 8px; padding: 12px 18px; margin-bottom: 20px; font-size: 0.88rem; color: var(--txt2);">
+                ✨ <b>โหมดต้นทุนเงินกระเป๋าจริง (True Return Audit - Live Sheets Precision):</b> ตัวเลขทั้งหมดถูกดึงและตรวจสอบทางบัญชีโดยตรงจาก Google Sheets แบบเรียลไทม์ โดยคำนวณจากเงินสดที่คุณเติมจริงลบยอดขายและปันผลสะสม เพื่อความถูกต้องของผลตอบแทนที่แท้จริง
+            </div>
+            ''',
+            unsafe_allow_html=True
+        )
+        
+        # Realized profit breakdown section
+        realized_df, realized_total = load_realized_breakdown()
+        if not realized_df.empty:
+            st.markdown("<div class='section-title' style='margin-top:20px;'>💰 Realized Profit Breakdown (สรุปกำไรสะสมรายตัวที่ขายจริง)</div>", unsafe_allow_html=True)
+            
+            display_realized = realized_df.copy()
+            display_realized.columns = ["Ticker", "Total Sells", "Cost of Sells", "Net Realized Profit"]
+            
+            def _style_profit(val):
+                if isinstance(val, (int, float)):
+                    return f"color: {_gc(val)}"
+                return ""
+            
+            if show_thb:
+                display_realized["Total Sells"] = display_realized["Total Sells"] * fx_rate
+                display_realized["Cost of Sells"] = display_realized["Cost of Sells"] * fx_rate
+                display_realized["Net Realized Profit"] = display_realized["Net Realized Profit"] * fx_rate
+                
+                fmt_dict = {
+                    "Total Sells": "฿{:,.0f}",
+                    "Cost of Sells": "฿{:,.0f}",
+                    "Net Realized Profit": "฿{:+,.0f}"
+                }
+            else:
+                fmt_dict = {
+                    "Total Sells": "${:,.2f}",
+                    "Cost of Sells": "${:,.2f}",
+                    "Net Realized Profit": "${:+,.2f}"
+                }
+                
+            styled_realized = (
+                display_realized.style
+                .format(fmt_dict)
+                .map(_style_profit, subset=["Net Realized Profit"])
+                .set_properties(**{
+                    "background-color": "#ffffff",
+                    "color": "#1e293b",
+                    "border": "1px solid rgba(180, 200, 220, 0.4)",
+                    "font-family": "JetBrains Mono, monospace",
+                    "font-size": "0.82rem",
+                })
+            )
+            st.dataframe(styled_realized, use_container_width=True, hide_index=True)
+            
+            if realized_total:
+                total_sells = realized_total.get("sells", 0.0)
+                total_cost = realized_total.get("cost", 0.0)
+                total_profit = realized_total.get("profit", 0.0)
+                
+                if show_thb:
+                    total_sells_str = f"฿{total_sells * fx_rate:,.0f}"
+                    total_cost_str = f"฿{total_cost * fx_rate:,.0f}"
+                    total_profit_str = f"฿{total_profit * fx_rate:,.0f}"
+                else:
+                    total_sells_str = f"${total_sells:,.2f}"
+                    total_cost_str = f"${total_cost:,.2f}"
+                    total_profit_str = f"${total_profit:,.2f}"
+                    
+                profit_color = "#059669" if total_profit >= 0 else "#EF4444"
+                
+                st.markdown(
+                    f'''
+                    <div style="background-color: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 18px; margin-top: 8px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono', monospace; font-size: 0.88rem;">
+                        <span style="font-weight: 700; color: var(--txt1);">🌟 รวมสุทธิ (Total Realized)</span>
+                        <span style="color: var(--txt2);">ยอดเงินขาย: {total_sells_str}</span>
+                        <span style="color: var(--txt3);">ต้นทุนหุ้นขาย: {total_cost_str}</span>
+                        <span style="font-weight: 700; color: {profit_color};">กำไรสุทธิ: {total_profit_str}</span>
+                    </div>
+                    ''',
+                    unsafe_allow_html=True
+                )
+    else:
+        c1, c2, c3, c4, c5 = st.columns(5)
+        gain_card_cls = "card-gain-pos" if stock_gain >= 0 else "card-gain-neg"
+        gain_val = f"{_sign(stock_gain)}{_m(abs(stock_gain))}"
+        metrics = [
+            ("💼 Portfolio Value", _m(total_value), None, "neu", "card-value"),
+            ("💵 Invested (Cost)", _m(stock_cost), None, "neu", "card-cost"),
+            ("📈 Unrealized P/L", gain_val, f"{_sign(gain_pct)}{gain_pct:.2f}%", "pos" if stock_gain >= 0 else "neg", gain_card_cls),
+            ("🏦 Holdings", f"{len(stock_df)}", None, "neu", "card-hold"),
+            ("💵 Cash", _m(cash_val), cash_pct, "neu", "card-cash"),
+        ]
+        
+        for col, (label, val, delta, cls, card_cls) in zip([c1, c2, c3, c4, c5], metrics):
+            d_html = f'<div class="mc-delta {cls}">{delta}</div>' if delta else ""
+            col.markdown(
+                f'<div class="metric-card {card_cls}">'
+                f'<div class="mc-label">{label}</div>'
+                f'<div class="mc-value">{val}</div>'
+                f'{d_html}</div>',
+                unsafe_allow_html=True,
+            )
+
+    # ── Holdings header + snapshot button ───────────────────────────────────
+    hdr_col, btn_col = st.columns([6, 1])
+    with hdr_col:
+        st.markdown("<div class='section-title'>Holdings</div>", unsafe_allow_html=True)
+    with btn_col:
+        snap_bytes = generate_portfolio_snapshot(df, fx_rate, show_thb)
+        if snap_bytes:
+            fname = f"portfolio_{datetime.now().strftime('%Y%m%d_%H%M')}.png"
+            st.download_button(
+                label="📷",
+                data=snap_bytes,
+                file_name=fname,
+                mime="image/png",
+                help="ดาวน์โหลด Portfolio Snapshot เป็น PNG",
+                use_container_width=True,
+            )
+        else:
+            st.markdown(
+                '<div style="color:#4b5563;font-size:0.75rem;text-align:center;padding-top:8px;" '
+                'title="pip install kaleido">📷 install kaleido</div>',
+                unsafe_allow_html=True,
+            )
 
     # ── Table + Donut ────────────────────────────────────────────────────────
     col_tbl, col_pie = st.columns([3, 2], gap="large")
@@ -824,14 +1501,14 @@ def render_overview(df: pd.DataFrame, tx_df: pd.DataFrame, fx_rate: float = 35.0
             })
             .map(_style_cell, subset=["P/L ($)", "P/L %"])
             .set_properties(**{
-                "background-color": "rgba(30,33,64,0.6)",
-                "color": "#e2e8f0",
-                "border": "1px solid rgba(99,102,241,0.12)",
+                "background-color": "#ffffff",
+                "color": "#1e293b",
+                "border": "1px solid rgba(180, 200, 220, 0.4)",
                 "font-family": "JetBrains Mono, monospace",
                 "font-size": "0.82rem",
             })
         )
-        st.dataframe(styled, use_container_width=True, height=360)
+        st.dataframe(styled, use_container_width=True, height=440, hide_index=True)
 
     with col_pie:
         pie_df = df[df["total_value"] > 0]
@@ -840,9 +1517,9 @@ def render_overview(df: pd.DataFrame, tx_df: pd.DataFrame, fx_rate: float = 35.0
             labels=pie_df["ticker"],
             values=pie_df["total_value"].round(2),
             hole=0.6,
-            marker=dict(colors=pie_colors, line=dict(color="#0a0d1a", width=2)),
+            marker=dict(colors=pie_colors, line=dict(color="#ffffff", width=2)),
             textinfo="percent+label",
-            textfont=dict(size=11, family="Inter"),
+            textfont=dict(size=11, family="Inter", color="#1e293b"),
             hovertemplate="<b>%{label}</b><br>$%{value:,.2f}<br>%{percent}<extra></extra>",
         ))
         fig_pie.update_layout(
@@ -853,7 +1530,7 @@ def render_overview(df: pd.DataFrame, tx_df: pd.DataFrame, fx_rate: float = 35.0
         # Center annotation
         fig_pie.add_annotation(
             text=f"<b>${total_value:,.0f}</b>",
-            font=dict(size=16, color="#f1f5f9", family="JetBrains Mono"),
+            font=dict(size=16, color="#1e293b", family="JetBrains Mono"),
             showarrow=False,
         )
         st.plotly_chart(fig_pie, use_container_width=True)
@@ -892,7 +1569,7 @@ def render_overview(df: pd.DataFrame, tx_df: pd.DataFrame, fx_rate: float = 35.0
             S1, R1 = tech["S1"], tech["R1"]
             status = _tech_status(price, rsi, S1, R1, tech["sma200"])
             ma_lbl = _ma_label(price, tech["sma20"], tech["sma50"], tech["sma200"])
-            rsi_color = "#f87171" if rsi > 70 else "#00d4aa" if rsi < 30 else "#ffd166"
+            rsi_color = "#EF4444" if rsi > 70 else "#059669" if rsi < 30 else "#D97706"
             tech_rows.append({
                 "Ticker": t,
                 "Price": price,
@@ -906,17 +1583,17 @@ def render_overview(df: pd.DataFrame, tx_df: pd.DataFrame, fx_rate: float = 35.0
         tech_df = pd.DataFrame(tech_rows).set_index("Ticker")
         def _color_rsi(val):
             if isinstance(val, float):
-                if val > 70: return "color: #f87171"
-                if val < 30: return "color: #00d4aa"
-            return "color: #ffd166"
+                if val > 70: return "color: #EF4444"
+                if val < 30: return "color: #059669"
+            return "color: #D97706"
         styled_t = (
             tech_df.style
             .format({"Price": "${:.2f}", "Support (S1)": "${:.2f}", "Resist (R1)": "${:.2f}", "RSI": "{:.0f}"})
             .map(_color_rsi, subset=["RSI"])
             .set_properties(**{
-                "background-color": "rgba(30,33,64,0.6)",
-                "color": "#e2e8f0",
-                "border": "1px solid rgba(99,102,241,0.12)",
+                "background-color": "#ffffff",
+                "color": "#1e293b",
+                "border": "1px solid rgba(180, 200, 220, 0.4)",
                 "font-family": "JetBrains Mono, monospace",
                 "font-size": "0.82rem",
             })
@@ -965,11 +1642,11 @@ def render_allocation(df: pd.DataFrame, saved: dict):
         bars_html += f"""
         <div class="alloc-row">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
-            <span style="font-family:'JetBrains Mono',monospace; font-weight:600; color:#f1f5f9; font-size:0.95rem;">{t}</span>
-            <span style="color:#6b7280; font-size:0.78rem;">{row['name']}</span>
+            <span style="font-family:'Space Grotesk',sans-serif; font-weight:600; color:var(--txt1); font-size:0.95rem;">{t}</span>
+            <span style="color:var(--txt3); font-size:0.78rem;">{row['name']}</span>
             <span style="font-family:'JetBrains Mono',monospace; font-size:0.82rem;">
               <span style="color:{bar_color}; font-weight:600;">{cur:.1f}%</span>
-              <span style="color:#4b5563;"> / tgt {tgt:.0f}% &nbsp;{icon} {diff_str}</span>
+              <span style="color:var(--txt3);"> / tgt {tgt:.0f}% &nbsp;{icon} {diff_str}</span>
             </span>
           </div>
           <div class="bar-track">
@@ -977,7 +1654,7 @@ def render_allocation(df: pd.DataFrame, saved: dict):
           </div>
           <div style="position:relative; height:0;">
             <div style="position:absolute; left:{tgt_pos:.1f}%; top:-8px; width:2px; height:8px;
-                        background:#ffd166; border-radius:1px;" title="Target {tgt:.0f}%"></div>
+                        background:var(--gold); border-radius:1px;" title="Target {tgt:.0f}%"></div>
           </div>
         </div>
         """
@@ -1000,11 +1677,11 @@ def render_allocation(df: pd.DataFrame, saved: dict):
 
     total_tgt = sum(new_targets.values())
     ok = abs(total_tgt - 100) < 0.5
-    tgt_color = "#00d4aa" if ok else "#f87171"
+    tgt_color = "#10B981" if ok else "#EF4444"
     st.markdown(
         f'<p style="font-family:JetBrains Mono,monospace; font-size:0.95rem;">'
         f'Total: <span style="color:{tgt_color}; font-weight:600;">{total_tgt:.1f}%</span>'
-        f'<span style="color:#4b5563;"> (target = 100%)</span></p>',
+        f'<span style="color:var(--txt3);"> (target = 100%)</span></p>',
         unsafe_allow_html=True,
     )
 
@@ -1043,14 +1720,14 @@ def render_allocation(df: pd.DataFrame, saved: dict):
     if rebal:
         rdf = pd.DataFrame(rebal)
         def _ac(v):
-            return "color: #00d4aa; font-weight:700" if v == "BUY" else "color: #f87171; font-weight:700"
+            return "color: #059669; font-weight:700" if v == "BUY" else "color: #EF4444; font-weight:700"
         styled_r = (
             rdf.style.map(_ac, subset=["Action"])
             .format({"Amount ($)": "${:,.2f}", "Shares": "{:.4f}",
                      "Current %": "{:.1f}%", "Target %": "{:.1f}%"})
             .set_properties(**{
-                "background-color": "rgba(30,33,64,0.6)", "color": "#e2e8f0",
-                "border": "1px solid rgba(99,102,241,0.12)",
+                "background-color": "#ffffff", "color": "#1e293b",
+                "border": "1px solid rgba(180, 200, 220, 0.4)",
                 "font-family": "JetBrains Mono, monospace", "font-size": "0.82rem",
             })
         )
@@ -1081,12 +1758,12 @@ def render_dca(df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = False):
 
         st.markdown(
             f'<div class="glass-card" style="display:flex; gap:32px; align-items:center; margin-bottom:12px;">'
-            f'<div><div style="color:#6b7280;font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;">ถืออยู่</div>'
-            f'<div style="font-size:1.3rem;font-weight:700;color:#f1f5f9;font-family:JetBrains Mono,monospace;">{row["shares"]:.4f} <span style="font-size:0.8rem;color:#6b7280;">shares</span></div></div>'
-            f'<div><div style="color:#6b7280;font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;">ต้นทุนเฉลี่ย</div>'
-            f'<div style="font-size:1.3rem;font-weight:700;color:#ffd166;font-family:JetBrains Mono,monospace;">${row["avg_cost"]:.2f}</div></div>'
-            f'<div><div style="color:#6b7280;font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;">ต้นทุนรวม</div>'
-            f'<div style="font-size:1.3rem;font-weight:700;color:#a5b4fc;font-family:JetBrains Mono,monospace;">{_m(row["total_cost"])}</div></div>'
+            f'<div><div style="color:var(--txt3);font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;">ถืออยู่</div>'
+            f'<div style="font-size:1.3rem;font-weight:700;color:var(--txt1);font-family:JetBrains Mono,monospace;">{row["shares"]:.4f} <span style="font-size:0.8rem;color:var(--txt3);">shares</span></div></div>'
+            f'<div><div style="color:var(--txt3);font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;">ต้นทุนเฉลี่ย</div>'
+            f'<div style="font-size:1.3rem;font-weight:700;color:var(--gold);font-family:JetBrains Mono,monospace;">${row["avg_cost"]:.2f}</div></div>'
+            f'<div><div style="color:var(--txt3);font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;">ต้นทุนรวม</div>'
+            f'<div style="font-size:1.3rem;font-weight:700;color:var(--violet);font-family:JetBrains Mono,monospace;">{_m(row["total_cost"])}</div></div>'
             f'</div>',
             unsafe_allow_html=True,
         )
@@ -1114,7 +1791,7 @@ def render_dca(df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = False):
     new_avg    = new_cost / new_shares
     avg_delta  = new_avg - cur_avg
     avg_delta_pct = avg_delta / cur_avg * 100
-    avg_color  = "#f87171" if avg_delta > 0 else "#00d4aa"
+    avg_color  = "#EF4444" if avg_delta > 0 else "#10B981"
     avg_arrow  = "↑" if avg_delta > 0 else "↓"
     vs_price   = (buy_price - new_avg) / new_avg * 100
     vs_color   = _gc(vs_price)
@@ -1128,12 +1805,12 @@ def render_dca(df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = False):
         r1, r2 = st.columns(2)
         r3, r4 = st.columns(2)
 
-        def _result_card(col, label, value, sub="", color="#f1f5f9"):
+        def _result_card(col, label, value, sub="", color="var(--txt1)"):
             col.markdown(
                 f'<div class="metric-card" style="text-align:center;padding:16px 12px;">'
                 f'<div class="mc-label">{label}</div>'
                 f'<div style="font-family:JetBrains Mono,monospace;font-size:1.4rem;font-weight:700;color:{color};line-height:1.2;">{value}</div>'
-                f'{"<div style=\"font-size:0.78rem;color:#6b7280;margin-top:4px;\">"+sub+"</div>" if sub else ""}'
+                f'{"<div style=\"font-size:0.78rem;color:var(--txt3);margin-top:4px;\">"+sub+"</div>" if sub else ""}'
                 f'</div>',
                 unsafe_allow_html=True,
             )
@@ -1142,14 +1819,14 @@ def render_dca(df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = False):
         _result_card(r2, "💰 ต้นทุนเฉลี่ยใหม่", f"${new_avg:.2f}",
                      f'{avg_arrow} {avg_delta:+.2f} ({avg_delta_pct:+.2f}%)', avg_color)
         _result_card(r3, "💵 ต้นทุนรวมหลังซื้อ", _m(new_cost))
-        _result_card(r4, "📊 สัดส่วนใหม่ในพอร์ต", f"{new_alloc:.1f}%", "", "#a5b4fc")
+        _result_card(r4, "📊 สัดส่วนใหม่ในพอร์ต", f"{new_alloc:.1f}%", "", "var(--violet)")
 
         st.markdown(
             f'<div class="glass-card" style="margin-top:8px;text-align:center;">'
-            f'<div style="color:#6b7280;font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">ราคาตลาด vs ต้นทุนใหม่</div>'
+            f'<div style="color:var(--txt3);font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">ราคาตลาด vs ต้นทุนใหม่</div>'
             f'<div style="font-family:JetBrains Mono,monospace;font-size:1.6rem;font-weight:700;color:{vs_color};">'
             f'{_sign(vs_price)}{vs_price:.2f}%</div>'
-            f'<div style="color:#6b7280;font-size:0.8rem;">{"📈 ราคาตลาดสูงกว่าต้นทุนใหม่" if vs_price >= 0 else "📉 ราคาตลาดต่ำกว่าต้นทุนใหม่"}</div>'
+            f'<div style="color:var(--txt3);font-size:0.8rem;">{"📈 ราคาตลาดสูงกว่าต้นทุนใหม่" if vs_price >= 0 else "📉 ราคาตลาดต่ำกว่าต้นทุนใหม่"}</div>'
             f'</div>',
             unsafe_allow_html=True,
         )
@@ -1164,17 +1841,17 @@ def render_dca(df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = False):
     fig.add_trace(go.Scatter(
         x=px_range[:len(avgs_y)], y=avgs_y,
         mode="lines+markers",
-        line=dict(color="#6366f1", width=2.5),
-        marker=dict(size=6, color="#6366f1"),
-        fill="tozeroy", fillcolor="rgba(99,102,241,0.07)",
+        line=dict(color="#0284C7", width=2.5),
+        marker=dict(size=6, color="#0284C7"),
+        fill="tozeroy", fillcolor="rgba(2,132,199,0.07)",
         hovertemplate="ซื้อ @ $%{x:.2f}<br>ต้นทุนใหม่: $%{y:.2f}<extra></extra>",
         name="New Avg Cost",
     ))
-    fig.add_hline(y=cur_avg, line_dash="dash", line_color="#ffd166",
-                  annotation_text=f"ต้นทุนเดิม ${cur_avg:.2f}", annotation_font_color="#ffd166",
+    fig.add_hline(y=cur_avg, line_dash="dash", line_color="#D97706",
+                  annotation_text=f"ต้นทุนเดิม ${cur_avg:.2f}", annotation_font_color="#D97706",
                   annotation_position="top left")
-    fig.add_vline(x=buy_price, line_dash="dot", line_color="#00d4aa",
-                  annotation_text=f"ราคาที่เลือก ${buy_price:.2f}", annotation_font_color="#00d4aa")
+    fig.add_vline(x=buy_price, line_dash="dot", line_color="#10B981",
+                  annotation_text=f"ราคาที่เลือก ${buy_price:.2f}", annotation_font_color="#10B981")
     fig.update_layout(height=300, showlegend=False, **_plotly_base())
     fig.update_xaxes(title="ราคาที่ซื้อ ($)", tickprefix="$")
     fig.update_yaxes(title="ต้นทุนเฉลี่ยใหม่ ($)", tickprefix="$")
@@ -1206,8 +1883,8 @@ def render_dca(df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = False):
         new_alloc_ps   = (row["total_value"] + ps_cost) / (port_val + ps_cost) * 100
 
         pr1, pr2, pr3, pr4 = st.columns(4)
-        def _ps_card(col, label, val, sub="", color="#f1f5f9"):
-            sub_html = f'<div style="font-size:0.78rem;color:#6b7280;margin-top:4px;">{sub}</div>' if sub else ""
+        def _ps_card(col, label, val, sub="", color="var(--txt1)"):
+            sub_html = f'<div style="font-size:0.78rem;color:var(--txt3);margin-top:4px;">{sub}</div>' if sub else ""
             col.markdown(
                 f'<div class="metric-card" style="text-align:center;">'
                 f'<div class="mc-label">{label}</div>'
@@ -1215,12 +1892,12 @@ def render_dca(df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = False):
                 f'{sub_html}</div>',
                 unsafe_allow_html=True,
             )
-        _ps_card(pr1, "💸 Max Loss ยอมรับได้", _m(max_loss_usd), f"{risk_pct}% ของพอร์ต", "#f87171")
+        _ps_card(pr1, "💸 Max Loss ยอมรับได้", _m(max_loss_usd), f"{risk_pct}% ของพอร์ต", "#EF4444")
         _ps_card(pr2, "📉 Risk ต่อ Share", f"${risk_per_share:.2f}", f"entry - stop")
         _ps_card(pr3, "📦 ซื้อได้", f"{ps_shares:.2f} shares", _m(ps_cost))
         _ps_card(pr4, "📊 Alloc หลังซื้อ", f"{new_alloc_ps:.1f}%",
                  f"ปัจจุบัน {cur_alloc:.1f}%",
-                 "#f87171" if new_alloc_ps > 30 else "#ffd166" if new_alloc_ps > 20 else "#00d4aa")
+                 "#EF4444" if new_alloc_ps > 30 else "#D97706" if new_alloc_ps > 20 else "#10B981")
     else:
         st.warning("Stop-loss ต้องต่ำกว่า Entry price")
 
@@ -1280,21 +1957,21 @@ def render_compound(df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = Fa
     # ── Summary cards ─────────────────────────────────────────────────────────
     st.markdown("<div class='section-title' style='margin-top:16px;'>ผลลัพธ์หลังจาก {} ปี</div>".format(years), unsafe_allow_html=True)
     sc1, sc2, sc3, sc4 = st.columns(4)
-    def _scard(col, label, val, sub="", color="#f1f5f9"):
+    def _scard(col, label, val, sub="", color="var(--txt1)"):
         col.markdown(
             f'<div class="metric-card" style="text-align:center;">'
             f'<div class="mc-label">{label}</div>'
             f'<div style="font-family:JetBrains Mono,monospace;font-size:1.3rem;font-weight:700;color:{color};">{val}</div>'
-            f'{"<div style=\"font-size:0.78rem;color:#6b7280;margin-top:4px;\">"+sub+"</div>" if sub else ""}'
+            f'{"<div style=\"font-size:0.78rem;color:var(--txt3);margin-top:4px;\">"+sub+"</div>" if sub else ""}'
             f'</div>',
             unsafe_allow_html=True,
         )
 
-    _scard(sc1, "💰 มูลค่าพอร์ตสุดท้าย", _m(final_val), f"@ {annual_r}%/yr", "#00d4aa")
+    _scard(sc1, "💰 มูลค่าพอร์ตสุดท้าย", _m(final_val), f"@ {annual_r}%/yr", "#10B981")
     _scard(sc2, "💵 เงินลงทุนสะสมรวม",   _m(total_invested))
-    _scard(sc3, "📈 กำไรสุทธิ",           _m(final_gain), f"+{final_gain_p:.0f}%", "#34d399")
+    _scard(sc3, "📈 กำไรสุทธิ",           _m(final_gain), f"+{final_gain_p:.0f}%", "#10B981")
     _scard(sc4, "📊 vs " + compare_label.split("(")[0].strip(),
-           _m(comp_final), f"@ {compare_r}%/yr", "#a5b4fc")
+           _m(comp_final), f"@ {compare_r}%/yr", "#0284C7")
 
     # ── Chart ─────────────────────────────────────────────────────────────────
     st.markdown("<div class='section-title' style='margin-top:20px;'>กราฟการเติบโตรายปี</div>", unsafe_allow_html=True)
@@ -1318,15 +1995,15 @@ def render_compound(df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = Fa
         x=year_labels, y=cv_disp,
         name=compare_label,
         mode="lines",
-        line=dict(color="#a5b4fc", width=2),
+        line=dict(color="#0284C7", width=2),
         hovertemplate=f"ปีที่ %{{x}}<br>{compare_label}: {prefix}%{{y:,.0f}}<extra></extra>",
     ))
     fig.add_trace(go.Scatter(
         x=year_labels, y=pv_disp,
         name=f"พอร์ตของเรา ({annual_r}%/yr)",
         mode="lines",
-        line=dict(color="#00d4aa", width=3),
-        fill="tonexty", fillcolor="rgba(0,212,170,0.06)",
+        line=dict(color="#10B981", width=3),
+        fill="tonexty", fillcolor="rgba(16,185,129,0.06)",
         hovertemplate=f"ปีที่ %{{x}}<br>พอร์ต: {prefix}%{{y:,.0f}}<extra></extra>",
     ))
 
@@ -1366,7 +2043,7 @@ def render_compound(df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = Fa
 
     def _color_gain(val):
         if isinstance(val, (int, float)):
-            return f"color: {'#00d4aa' if val >= 0 else '#f87171'}"
+            return f"color: {'#10B981' if val >= 0 else '#EF4444'}"
         return ""
 
     styled_ms = (
@@ -1374,9 +2051,9 @@ def render_compound(df: pd.DataFrame, fx_rate: float = 35.0, show_thb: bool = Fa
         .format(fmt_dict)
         .map(_color_gain, subset=[f"กำไรสุทธิ ({prefix})", "กำไร (%)"])
         .set_properties(**{
-            "background-color": "rgba(30,33,64,0.6)",
-            "color": "#e2e8f0",
-            "border": "1px solid rgba(99,102,241,0.12)",
+            "background-color": "#ffffff",
+            "color": "#1e293b",
+            "border": "1px solid rgba(180, 200, 220, 0.4)",
             "font-family": "JetBrains Mono, monospace",
             "font-size": "0.82rem",
         })
@@ -1474,14 +2151,19 @@ def render_transactions(tx_df: pd.DataFrame, current_tickers: set):
                     total_str = f"${tx['total']:,.2f}" if tx["total"] else "—"
                     price_str = f"${tx['price']:.2f}" if tx["price"] else "—"
                     qty_str = f"{tx['qty']:.4f}" if tx["qty"] else "—"
-
+                    note = tx.get("note", "")
+                    note_badge = (
+                        '<span style="background:rgba(16, 185, 129, 0.1);color:#10B981;'
+                        'font-size:0.62rem;padding:1px 5px;border-radius:4px;margin-left:6px;">DRIP</span>'
+                        if note == "DRIP" else ""
+                    )
                     rows_html += (
                         f'<div class="tx-row {css_cls}" style="opacity:{opacity};">'
-                        f'<span style="color:#6b7280; width:90px; display:inline-block;">{date_str}</span>'
-                        f'<span style="width:70px; display:inline-block;">{icon} {tx["type"]}</span>'
-                        f'<span style="color:#e2e8f0; width:90px; display:inline-block;">{qty_str} sh</span>'
-                        f'<span style="color:#ffd166; width:80px; display:inline-block;">@ {price_str}</span>'
-                        f'<span style="color:#a5b4fc; font-weight:600;">{total_str}</span>'
+                        f'<span style="color:var(--txt3); width:90px; display:inline-block;">{date_str}</span>'
+                        f'<span style="width:100px; display:inline-block; color:var(--txt1);">{icon} {tx["type"]}{note_badge}</span>'
+                        f'<span style="color:var(--txt2); width:90px; display:inline-block;">{qty_str} sh</span>'
+                        f'<span style="color:var(--gold); width:80px; display:inline-block;">@ {price_str}</span>'
+                        f'<span style="color:var(--violet); font-weight:600;">{total_str}</span>'
                         f'</div>'
                     )
                 st.markdown(rows_html, unsafe_allow_html=True)
@@ -1528,16 +2210,16 @@ def render_charts(df: pd.DataFrame):
     status = _tech_status(price, rsi, S1, R1, tech["sma200"])
     ma_lbl = _ma_label(price, tech["sma20"], tech["sma50"], tech["sma200"])
     sc1, sc2, sc3, sc4, sc5 = st.columns(5)
-    def _scard(col, lbl, val, color="#f1f5f9"):
+    def _scard(col, lbl, val, color="var(--txt1)"):
         col.markdown(
             f'<div class="metric-card" style="text-align:center;padding:12px 8px;">'
             f'<div class="mc-label">{lbl}</div>'
             f'<div style="font-family:JetBrains Mono,monospace;font-size:1.1rem;font-weight:700;color:{color};">{val}</div>'
             f'</div>', unsafe_allow_html=True)
-    _scard(sc1, "🟢 Support S1", f"${S1:.2f}", "#00d4aa")
-    _scard(sc2, "🔴 Resist R1",  f"${R1:.2f}", "#f87171")
-    _scard(sc3, "📊 Pivot",      f"${pivot:.2f}", "#a5b4fc")
-    rsi_color = "#f87171" if rsi > 70 else "#00d4aa" if rsi < 30 else "#ffd166"
+    _scard(sc1, "🟢 Support S1", f"${S1:.2f}", "#10B981")
+    _scard(sc2, "🔴 Resist R1",  f"${R1:.2f}", "#EF4444")
+    _scard(sc3, "📊 Pivot",      f"${pivot:.2f}", "#0284C7")
+    rsi_color = "#EF4444" if rsi > 70 else "#10B981" if rsi < 30 else "#D97706"
     _scard(sc4, "📈 RSI (14)",   f"{rsi:.0f}", rsi_color)
     _scard(sc5, "🧭 Status",     status)
 
@@ -1560,14 +2242,14 @@ def render_charts(df: pd.DataFrame):
         open=hist["Open"], high=hist["High"],
         low=hist["Low"],  close=hist["Close"],
         name=selected,
-        increasing=dict(line=dict(color="#00d4aa"), fillcolor="rgba(0,212,170,0.7)"),
-        decreasing=dict(line=dict(color="#f87171"), fillcolor="rgba(248,113,113,0.7)"),
+        increasing=dict(line=dict(color="#10B981"), fillcolor="rgba(16,185,129,0.7)"),
+        decreasing=dict(line=dict(color="#EF4444"), fillcolor="rgba(239,68,68,0.7)"),
     ), **cs_kwargs)
 
     ma_styles = {
-        "SMA20":  ("#ffd166", 1.5),
-        "SMA50":  ("#a5b4fc", 1.8),
-        "SMA200": ("#fb923c", 2.0),
+        "SMA20":  ("#D97706", 1.5),
+        "SMA50":  ("#0284C7", 1.8),
+        "SMA200": ("#EF4444", 2.0),
     }
     for ma in ma_opts:
         if ma in hist.columns:
@@ -1581,11 +2263,11 @@ def render_charts(df: pd.DataFrame):
 
     # Lines
     line_cfg = [
-        (avg_cost, "#ffd166", "dash",  f"Entry ${avg_cost:.2f}",  "bottom left"),
-        (S1,       "#00d4aa", "dot",   f"S1 ${S1:.2f}",           "bottom right"),
-        (R1,       "#f87171", "dot",   f"R1 ${R1:.2f}",           "top right"),
-        (S2,       "rgba(0,212,170,0.4)", "dashdot", f"S2 ${S2:.2f}", "bottom right"),
-        (R2,       "rgba(248,113,113,0.4)", "dashdot", f"R2 ${R2:.2f}", "top right"),
+        (avg_cost, "#D97706", "dash",  f"Entry ${avg_cost:.2f}",  "bottom left"),
+        (S1,       "#10B981", "dot",   f"S1 ${S1:.2f}",           "bottom right"),
+        (R1,       "#EF4444", "dot",   f"R1 ${R1:.2f}",           "top right"),
+        (S2,       "rgba(16,185,129,0.4)", "dashdot", f"S2 ${S2:.2f}", "bottom right"),
+        (R2,       "rgba(239,68,68,0.4)", "dashdot", f"R2 ${R2:.2f}", "top right"),
     ]
     hline_fn = fig.add_hline if not show_vol else lambda **kw: fig.add_hline(row=row_cs, col=1, **kw)
     for y_val, color, dash, ann_text, ann_pos in line_cfg:
@@ -1594,7 +2276,7 @@ def render_charts(df: pd.DataFrame):
                  annotation_position=ann_pos)
 
     if show_vol:
-        colors_vol = ["#00d4aa" if c >= o else "#f87171"
+        colors_vol = ["#10B981" if c >= o else "#EF4444"
                       for c, o in zip(hist["Close"], hist["Open"])]
         fig.add_trace(go.Bar(
             x=hist.index, y=hist["Volume"],
@@ -1602,25 +2284,334 @@ def render_charts(df: pd.DataFrame):
             hovertemplate="Volume: %{y:,.0f}<extra></extra>",
         ), row=row_vol, col=1)
         fig.update_yaxes(title_text="Volume", row=row_vol, col=1,
-                         gridcolor="rgba(99,102,241,0.08)")
+                         gridcolor="rgba(148,163,184,0.12)")
 
     fig.update_layout(
         height=560, showlegend=True,
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
-        font=dict(color="#94a3b8", family="Inter, sans-serif", size=12),
+        font=dict(color="#475569", family="Inter, sans-serif", size=12),
         margin=dict(t=20, b=20, l=10, r=10),
         legend=dict(orientation="h", y=1.04, x=0, bgcolor="rgba(0,0,0,0)", font=dict(size=11)),
     )
-    fig.update_xaxes(gridcolor="rgba(99,102,241,0.08)", showgrid=True, rangeslider_visible=False)
+    fig.update_xaxes(gridcolor="rgba(148,163,184,0.12)", showgrid=True, rangeslider_visible=False)
     if show_vol:
-        fig.update_yaxes(tickprefix="$", gridcolor="rgba(99,102,241,0.08)", row=1, col=1)
-        fig.update_yaxes(gridcolor="rgba(99,102,241,0.08)", row=2, col=1)
+        fig.update_yaxes(tickprefix="$", gridcolor="rgba(148,163,184,0.12)", row=1, col=1)
+        fig.update_yaxes(gridcolor="rgba(148,163,184,0.12)", row=2, col=1)
     else:
-        fig.update_yaxes(tickprefix="$", gridcolor="rgba(99,102,241,0.08)")
+        fig.update_yaxes(tickprefix="$", gridcolor="rgba(148,163,184,0.12)")
     st.plotly_chart(fig, use_container_width=True)
 
     st.caption(f"S1/R1/S2/R2 = Classic Pivot Points · Entry = ต้นทุนเฉลี่ย ${avg_cost:.2f} · RSI(14) = {rsi:.0f} · {ma_lbl}")
+
+
+# ── Tab 7: News & Research Reports ───────────────────────────────────────────────
+
+OUTPUT_DIR = TOOLS_DIR.parent / "output"
+
+_KNOWN_TICKERS = [
+    "NVDA", "RKLB", "ASTS", "SOFI", "NVO", "UNH", "AMZN", "GOOGL", "PLTR",
+    "META", "VST", "OKLO", "SPCX", "MSFT", "TSLA", "AAPL", "AMD", "INTC",
+    "ARM", "MSTR", "COIN", "SHOP", "SQ", "PYPL", "HOOD", "ABNB", "UBER",
+    "SPY", "QQQ", "IWM",
+]
+
+_TYPE_MAP = [
+    # (substring_in_filename_lower, icon, label, hex_color)
+    ("portfolio_analysis",  "📊", "Portfolio Analysis",  "#6366f1"),
+    ("portfolio_full",      "📊", "Portfolio Analysis",  "#6366f1"),
+    ("daily_evolve",        "⚡", "Daily Evolve",         "#a5b4fc"),
+    ("dream_review",        "💭", "Dream Review",         "#94a3b8"),
+    ("dca_",                "💵", "DCA Decision",         "#00d4aa"),
+    ("dca_assessment",      "💵", "DCA Decision",         "#00d4aa"),
+    ("dca_decision",        "💵", "DCA Decision",         "#00d4aa"),
+    ("monitoring_update",   "📡", "Monitoring Update",    "#ffd166"),
+    ("youtube_",            "📺", "YouTube Research",     "#f87171"),
+    ("youtube",             "📺", "YouTube Research",     "#f87171"),
+    ("macro_",              "🌍", "Macro",                "#fb923c"),
+    ("geopolitical",        "🗺️", "Geopolitical",         "#fb923c"),
+    ("trump_xi",            "🤝", "Geopolitical",         "#fb923c"),
+    ("israel",              "🗺️", "Geopolitical",         "#fb923c"),
+    ("china_taiwan",        "🗺️", "Geopolitical",         "#fb923c"),
+    ("fear_arbitrage",      "🎯", "Fear Arbitrage",       "#f87171"),
+    ("berkshire",           "🏛️", "Smart Money",          "#fb923c"),
+    ("shay_boloor",         "🧠", "Smart Money",          "#fb923c"),
+    ("energy_",             "⚡", "Sector — Energy",      "#ffd166"),
+    ("space_",              "🚀", "Sector — Space",       "#a5b4fc"),
+    ("_analysis",           "🔬", "Stock Analysis",       "#00d4aa"),
+    ("analysis",            "🔬", "Stock Analysis",       "#00d4aa"),
+    ("swarm_verdict",       "🤖", "Swarm Verdict",        "#a5b4fc"),
+    ("stress_audit",        "🔍", "Risk Audit",           "#f87171"),
+    ("thesis_breaker",      "🔍", "Risk Audit",           "#f87171"),
+    ("geopolitical",        "🗺️", "Geopolitical",         "#fb923c"),
+    ("system_upgrade",      "🔧", "System",               "#94a3b8"),
+    ("antigravity",         "🚀", "Feature Ideas",        "#a5b4fc"),
+]
+
+
+def _detect_report_type(rest: str):
+    low = rest.lower()
+    for key, icon, label, color in _TYPE_MAP:
+        if key in low:
+            return icon, label, color
+    return "📄", "Report", "#6b7280"
+
+
+def _extract_tickers(text: str) -> list[str]:
+    found = []
+    upper = text.upper()
+    for t in _KNOWN_TICKERS:
+        if t in upper:
+            found.append(t)
+    return found
+
+
+def _extract_title(content: str) -> str:
+    for line in content.splitlines():
+        line = line.strip()
+        if line.startswith("#"):
+            title = re.sub(r"^#+\s*", "", line)
+            title = re.sub(r"[📊📺🌍🗺️🔬💵💭⚡📡🎯🏛️🚀🤝📄🤖🔧]+\s*", "", title)
+            # Remove any raw HTML tags to prevent broken DOM layout
+            title = re.sub(r"<[^>]*>", "", title)
+            # Replace raw $ with fullwidth ＄ to prevent Streamlit LaTeX parser collision
+            title = title.replace("$", "＄")
+            return title.strip()[:120]
+    return ""
+
+
+@st.cache_data(ttl=30)
+def parse_output_files() -> list[dict]:
+    reports = []
+    if not OUTPUT_DIR.exists():
+        return reports
+    file_list = list(OUTPUT_DIR.glob("*.md"))
+    for md_file in file_list:
+        stem = md_file.stem
+        m = re.match(r"^(\d{4}-\d{2}-\d{2})_?(.*)", stem)
+        if not m:
+            continue
+        date_str, rest = m.group(1), m.group(2)
+        try:
+            date = datetime.strptime(date_str, "%Y-%m-%d").date()
+        except ValueError:
+            continue
+        type_icon, type_name, type_color = _detect_report_type(rest)
+        tickers = _extract_tickers(rest)
+        try:
+            content = md_file.read_text(encoding="utf-8")
+        except Exception:
+            content = ""
+        title = _extract_title(content) or rest.replace("_", " ").title()
+        if not tickers:
+            tickers = _extract_tickers(content[:800])
+        try:
+            mtime = md_file.stat().st_mtime
+            mtime_dt = datetime.fromtimestamp(mtime)
+        except Exception:
+            mtime_dt = datetime.now()
+        time_str = mtime_dt.strftime("%H:%M")
+        reports.append({
+            "date": date,
+            "date_str": date_str,
+            "filename": md_file.name,
+            "rest": rest,
+            "title": title,
+            "tickers": tickers,
+            "type_icon": type_icon,
+            "type_name": type_name,
+            "type_color": type_color,
+            "content": content,
+            "mtime": mtime_dt,
+            "time_str": time_str,
+        })
+    reports.sort(key=lambda r: (r["date"], r["mtime"]), reverse=True)
+    return reports
+
+
+def _card_html(rep: dict) -> str:
+    """Build the clickable card HTML for one report."""
+    import urllib.parse, html as _html
+    url = "?" + urllib.parse.urlencode({"report": rep["filename"]})
+    safe_title = _html.escape(rep["title"])  # prevent HTML in titles from breaking card structure
+    # Replace $ with fullwidth ＄ to prevent Streamlit's LaTeX engine from breaking DOM structure across multiple cards
+    safe_title = safe_title.replace("$", "＄")
+
+    ticker_tags = "".join(
+        f'<span class="news-tag news-tag-ticker">{t}</span>'
+        for t in rep["tickers"]
+    )
+    type_tag = (
+        f'<span class="news-tag news-tag-type" '
+        f'style="background:{rep["type_color"]}22;'
+        f'border:1px solid {rep["type_color"]}55;'
+        f'color:{rep["type_color"]};">'
+        f'{rep["type_icon"]} {rep["type_name"]}</span>'
+    )
+    time_tag = (
+        f'<span class="news-tag" style="background:rgba(148,163,184,0.1);'
+        f'border:1px solid rgba(148,163,184,0.25);color:#94a3b8;">'
+        f'🕒 {rep["time_str"]}</span>'
+    )
+    return (
+        f'<a href="{url}" target="_blank" style="text-decoration:none;display:block;">'
+        f'<div class="news-card">'
+        f'<div style="display:flex;justify-content:space-between;align-items:flex-start;">'
+        f'<div class="news-card-title" style="flex:1;margin-right:12px;">{safe_title}</div>'
+        f'<div style="color:#4b5563;font-size:1rem;margin-top:2px;">↗</div>'
+        f'</div>'
+        f'<div style="margin-top:8px;">{time_tag}{type_tag}{ticker_tags}</div>'
+        f'</div>'
+        f'</a>'
+    )
+
+
+def render_news():
+    reports = parse_output_files()
+    if not reports:
+        st.info("ไม่พบไฟล์ใน /output — รัน analysis ก่อนแล้วกลับมาใหม่")
+        return
+
+    # ── Filter bar ────────────────────────────────────────────────────────────
+    all_tickers = sorted({t for r in reports for t in r["tickers"]})
+    all_types   = sorted({r["type_name"] for r in reports})
+    all_dates   = sorted({r["date"] for r in reports}, reverse=True)
+
+    fc1, fc2, fc3 = st.columns([2, 2, 2])
+    with fc1:
+        sel_ticker = st.selectbox("🏷️ กรองตาม Ticker", ["ทั้งหมด"] + all_tickers, key="news_ticker")
+    with fc2:
+        sel_type = st.selectbox("📂 ประเภทรายงาน", ["ทั้งหมด"] + all_types, key="news_type")
+    with fc3:
+        if len(all_dates) >= 2:
+            date_range = st.select_slider(
+                "📅 ช่วงวันที่", options=all_dates,
+                value=(all_dates[-1], all_dates[0]),
+                format_func=lambda d: d.strftime("%d %b %y"),
+                key="news_dates",
+            )
+            date_min = min(date_range)
+            date_max = max(date_range)
+        else:
+            date_min = all_dates[-1] if all_dates else None
+            date_max = all_dates[0]  if all_dates else None
+
+    # ── Apply filters ─────────────────────────────────────────────────────────
+    filtered = [r for r in reports
+                if (sel_ticker == "ทั้งหมด" or sel_ticker in r["tickers"])
+                and (sel_type == "ทั้งหมด" or r["type_name"] == sel_type)
+                and (date_min is None or date_min <= r["date"] <= date_max)]
+
+    st.markdown(
+        f'<div style="color:#6b7280;font-size:0.8rem;margin:4px 0 12px;">'
+        f'แสดง {len(filtered)} จาก {len(reports)} รายงาน · คลิกการ์ดเพื่อเปิดอ่านในแท็บใหม่</div>',
+        unsafe_allow_html=True,
+    )
+
+    if not filtered:
+        st.warning("ไม่พบรายงานที่ตรงกับตัวกรอง")
+        return
+
+    # ── Group by date ─────────────────────────────────────────────────────────
+    from itertools import groupby
+    filtered.sort(key=lambda r: (r["date"], r["mtime"]), reverse=True)
+
+    THAI_MONTHS = {
+        1:"ม.ค.", 2:"ก.พ.", 3:"มี.ค.", 4:"เม.ย.", 5:"พ.ค.", 6:"มิ.ย.",
+        7:"ก.ค.", 8:"ส.ค.", 9:"ก.ย.", 10:"ต.ค.", 11:"พ.ย.", 12:"ธ.ค.",
+    }
+    WEEKDAY_TH = ["จันทร์","อังคาร","พุธ","พฤหัส","ศุกร์","เสาร์","อาทิตย์"]
+
+    for date_val, group in groupby(filtered, key=lambda r: r["date"]):
+        day_reports = list(group)
+        thai_date = f"{date_val.day} {THAI_MONTHS[date_val.month]} {date_val.year}"
+        weekday_th = WEEKDAY_TH[date_val.weekday()]
+        st.markdown(
+            f'<div class="news-date-header">วัน{weekday_th} · {thai_date} '
+            f'<span style="color:#4b5563;font-weight:400;">({len(day_reports)} รายงาน)</span></div>',
+            unsafe_allow_html=True,
+        )
+        cards_html = "".join(_card_html(r) for r in day_reports)
+        st.markdown(cards_html, unsafe_allow_html=True)
+
+
+def render_article_reader(filename: str):
+    """Full article reader — rendered when ?report=FILENAME is in the URL."""
+    reports = parse_output_files()
+    rep = next((r for r in reports if r["filename"] == filename), None)
+
+    # ── Reader CSS ────────────────────────────────────────────────────────────
+    st.markdown("""
+    <style>
+      .reader-meta-bar {
+        background: linear-gradient(135deg, #1a1d3a 0%, #12152b 100%);
+        border: 1px solid rgba(99,102,241,0.25);
+        border-radius: 14px;
+        padding: 20px 26px;
+        margin-bottom: 24px;
+        position: relative;
+      }
+      .reader-meta-bar::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 2px;
+        border-radius: 14px 14px 0 0;
+        background: linear-gradient(90deg, #6366f1, #00d4aa);
+      }
+      .reader-title {
+        font-size: 1.45rem;
+        font-weight: 700;
+        color: #e2e8f0;
+        line-height: 1.4;
+        margin-bottom: 12px;
+      }
+      .reader-date { color: #6b7280; font-size: 0.8rem; margin-bottom: 10px; }
+      .reader-body { max-width: 860px; }
+    </style>
+    """, unsafe_allow_html=True)
+
+    if rep is None:
+        st.error(f"ไม่พบรายงาน: {filename}")
+        return
+
+    # ── Metadata header ───────────────────────────────────────────────────────
+    ticker_tags = "".join(
+        f'<span class="news-tag news-tag-ticker">{t}</span>'
+        for t in rep["tickers"]
+    )
+    type_tag = (
+        f'<span class="news-tag news-tag-type" '
+        f'style="background:{rep["type_color"]}22;border:1px solid {rep["type_color"]}55;'
+        f'color:{rep["type_color"]};">'
+        f'{rep["type_icon"]} {rep["type_name"]}</span>'
+    )
+    THAI_MONTHS = {
+        1:"ม.ค.", 2:"ก.พ.", 3:"มี.ค.", 4:"เม.ย.", 5:"พ.ค.", 6:"มิ.ย.",
+        7:"ก.ค.", 8:"ส.ค.", 9:"ก.ย.", 10:"ต.ค.", 11:"พ.ย.", 12:"ธ.ค.",
+    }
+    WEEKDAY_TH = ["จันทร์","อังคาร","พุธ","พฤหัส","ศุกร์","เสาร์","อาทิตย์"]
+    d = rep["date"]
+    date_th = f"วัน{WEEKDAY_TH[d.weekday()]} · {d.day} {THAI_MONTHS[d.month]} {d.year}"
+
+    import html as _html
+    safe_reader_title = _html.escape(rep["title"]).replace("$", "＄")
+    st.markdown(
+        f'<div class="reader-meta-bar">'
+        f'<div class="reader-date">📅 {date_th} &nbsp;·&nbsp; 🕒 {rep["time_str"]} &nbsp;·&nbsp; 📁 {_html.escape(rep["filename"])}</div>'
+        f'<div class="reader-title">{safe_reader_title}</div>'
+        f'<div>{type_tag}{ticker_tags}</div>'
+        f'</div>',
+        unsafe_allow_html=True,
+    )
+
+    # ── Full content ──────────────────────────────────────────────────────────
+    st.markdown('<div class="reader-body">', unsafe_allow_html=True)
+    if rep["content"]:
+        st.markdown(rep["content"])
+    else:
+        st.warning("ไม่สามารถอ่านเนื้อหาของไฟล์นี้ได้")
+    st.markdown("</div>", unsafe_allow_html=True)
 
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────────
@@ -1636,6 +2627,15 @@ def render_sidebar():
 
 # ── Main ──────────────────────────────────────────────────────────────────────────
 def main():
+    # ── Article reader mode — triggered by ?report=FILENAME ──────────────────
+    try:
+        report_param = st.query_params.get("report", "")
+    except Exception:
+        report_param = ""
+    if report_param:
+        render_article_reader(report_param)
+        return
+
     render_sidebar()
 
     # Load config
@@ -1661,36 +2661,42 @@ def main():
         show_thb = st.toggle("🇹🇭 แสดงเป็นบาท", value=False, key="thb_toggle")
 
     with st.spinner("Loading..."):
-        df = load_portfolio(cash=cash)
+        df, sheets_summary = load_portfolio(cash=cash)
         tx_df = load_transactions()
 
     if df.empty:
         st.error("Could not load portfolio from Google Sheets.")
         st.stop()
 
-    current_tickers = set(df[df["ticker"] != "CASH"]["ticker"].tolist())
+    # Align 100% with Google Sheets — Keep BTC and SPCX in Overview
+    df_overview = df.copy().reset_index(drop=True)
+    tx_df_overview = tx_df.copy().reset_index(drop=True)
+    current_tickers_overview = set(df_overview[df_overview["ticker"] != "CASH"]["ticker"].tolist())
 
-    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
         "📊 Overview",
         "🎯 Allocation",
         "🧮 DCA Calc",
         "📈 Compounding",
         "📉 Charts",
         "📋 Transactions",
+        "📰 News",
     ])
 
     with tab1:
-        render_overview(df, tx_df, fx_rate, show_thb)
+        render_overview(df_overview, tx_df_overview, fx_rate, show_thb, sheets_summary)
     with tab2:
-        render_allocation(df, saved)
+        render_allocation(df, saved)  # Keeps full list including SPCX & BTC in Allocation tab
     with tab3:
-        render_dca(df, fx_rate, show_thb)
+        render_dca(df_overview, fx_rate, show_thb)
     with tab4:
-        render_compound(df, fx_rate, show_thb)
+        render_compound(df_overview, fx_rate, show_thb)
     with tab5:
-        render_charts(df)
+        render_charts(df_overview)
     with tab6:
-        render_transactions(tx_df, current_tickers)
+        render_transactions(tx_df_overview, current_tickers_overview)
+    with tab7:
+        render_news()
 
 
 if __name__ == "__main__":

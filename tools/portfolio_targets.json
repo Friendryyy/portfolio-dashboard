@@ -1,16 +1,18 @@
 {
   "targets": {
-    "NVDA": 25.0,
-    "RKLB": 25.0,
-    "SOFI": 8.0,
-    "GOOGL": 15.0,
-    "PLTR": 2.0,
-    "AMZN": 10.0,
-    "NVO": 8.0,
-    "UNH": 7.0,
+    "NVDA": 18.0,
+    "RKLB": 15.0,
+    "SOFI": 10.0,
+    "GOOGL": 10.0,
+    "TSM": 6.0,
+    "AMZN": 5.0,
+    "NVO": 6.0,
+    "UNH": 5.0,
+    "SPCX": 20.0,
+    "BTC": 5.0,
     "CASH": 0.0
   },
-  "cash": 1699.88,
-  "updated": "2026-05-15T20:53:29.757149",
+  "cash": 1097.78,
+  "updated": "2026-05-27T17:23:00.000000",
   "note": "Target % for each stock. Sum should equal 100. Edit via the Allocation Manager tab."
 }

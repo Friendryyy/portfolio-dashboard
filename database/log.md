@@ -1146,3 +1146,10 @@
 - **Gold Crash & Hawkish Fed:** ราคาทองคำโลกดิ่งหลุด $4,450/oz ต่ำสุดรอบ 2 เดือน จากความกังวล Fed คงดอกเบี้ยสูง/ขึ้นดอกเบี้ย ยืนยัน Bitcoin (4.64% พอร์ต) เป็น Store of Value ที่ดีกว่าทองคำ สนับสนุน DCA Tranche 1 Active ที่ <$74,000
 - QA Score: 98/100 | Report: output/2026-05-28_youtube_finnomena_morning_brief.md
 
+### [2026-05-28] — YOUTUBE — CNBC-TV18 Live: Crude Oil Meltdown & Nifty/Sensex Wrap
+- **Crude Oil Price Drop:** ราคาน้ำมันดิบ WTI ดิ่ง 5.6% ($88.68/bbl) และ Brent ดิ่ง 5.3% ($94.29/bbl) จากปัจจัยเจรจาสันติภาพและการเปิดช่องแคบฮอร์มุซ ซึ่งส่งผลบวกอย่างมากต่อการคลายตัวของเงินเฟ้อสหรัฐฯ และหนุน Liquidity กลับคืนสู่สินทรัพย์เติบโตสูงและ $BTC
+- **Nifty & Sensex Market Wrap:** ดัชนีตลาดหุ้นอินเดียเคลื่อนไหวผันผวนแต่ปิดทรงตัวแบบไร้ทิศทาง (Sensex -0.19%, Nifty -0.03%) โดยมี HDFC Bank (-2%) และกลุ่ม IT เป็นแรงฉุดหลัก ขณะที่กลุ่มยานยนต์ (Tata Motors, Bajaj Auto) และโลหะเหมืองแร่พุ่งแรงสวนทางตลาดเก็งยอดขาย
+- **Portfolio DCA Impact:** ตรึงระบบ **Hard Buy Block** บน RKLB (29.66% ชนเพดาน 30%) สั่งถือนิ่งรันเทรนด์กำไรลอยตัว | คงแผน **DCA Tranche 1 Active** บน BTC ที่ราคาต่ำกว่า $74,000 เพื่อความปลอดภัยของวินัย
+- QA Score: 98/100 | Report: output/2026-05-28_youtube_cnbc_stock_market_wrap.md
+
+

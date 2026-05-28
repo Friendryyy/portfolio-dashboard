@@ -74,3 +74,9 @@ Bitcoin คือ absolute digital scarcity ชิ้นแรกและชิ
 - **Thesis Maturation:** ยืนยันการวิวัฒนาการของ Bitcoin จากสกุลเงินใช้สอยเป็น "ทองคำดิจิทัล" (Digital Gold / Alternative Value Storage) ที่สอดคล้องกับพอร์ต DCA 30 ปีของเรา และการล่มสลายของ Web3 Hyper-Decentralization/เก็งกำไร NFT ชี้ชัดว่าแนวทางสะสมเฉพาะ BTC ของพอร์ตเราถูกต้อง
 - **Institutional Inflows Verified:** สแกนข้อมูลตลาดพบ U.S. Spot ETFs สะสมสุทธิ $536M ในปี 2026 และกองทุนน้องใหม่ Morgan Stanley Bitcoin Trust (MSBT) เปิดตัวเมื่อ April 8 กวาด $264M บ่งชี้ว่าสถาบันรายใหญ่เข้ามาล็อกความปลอดภัยรากฐานแล้ว
 - **Full Report:** output/2026-05-27_BTC_9arm_blockchain_swarm_verdict.md
+
+### [2026-05-28] — YOUTUBE — CNBC-TV18 Live: crude Oil Meltdown & Hormuz Ceasefire Optimism
+- **Ceasefire & Inflation Easing:** การดิ่งตัวกว่า 5% ของราคาน้ำมันดิบ WTI ($88.68) และ Brent ($94.29) บนความหวังเปิดช่องแคบฮอร์มุซ จะช่วยลดความกดดันเงินเฟ้อทั่วไป หนุน Liquidity ไหลเข้า $BTC ในฐานะ Sovereign Store of Value
+- **DCA Sizing Playbook:** หนุนระดับการเข้าสะสม **DCA Tranche 1 Active** บนเป้าหมายสัดส่วน 5% ที่ระดับราคาต่ำกว่า $74,000 ต่อไปอย่างมั่นคง
+- **Full Report:** output/2026-05-28_youtube_cnbc_stock_market_wrap.md
+

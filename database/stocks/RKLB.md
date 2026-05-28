@@ -182,6 +182,14 @@ Rocket Lab เป็นบริษัท space infrastructure ที่ integra
 - **RKLB Sizing Check:** น้ำหนักในพอร์ตอยู่ที่ 29.67% ล็อคสถานะ Hard Buy Block อย่างเข้มงวด ปล่อยรันเทรนด์ House Money ต่อเพื่อรองรับแรงกระแทก Capital Rotation ระยะสั้นจากการ IPO
 - **Full Report:** [2026-05-28_youtube_finnomena_morning_brief.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-05-28_youtube_finnomena_morning_brief.md)
 
+### [2026-05-28] — YOUTUBE — CNBC-TV18 Live: Emerging Markets Volatility & Defense Outlook
+- **Emerging Markets & Defense:** ความผันผวนทางภูมิรัฐศาสตร์ตะวันออกกลางแม้จะมีทิศทางผ่อนคลายความตึงเครียดของราคาน้ำมันลงชั่วคราว แต่ไม่ได้ลดทอนความต้องการจัดซื้อจัดจ้างเทคโนโลยีการป้องกันประเทศและการปล่อยดาวเทียมตรวจการณ์วงโคจร LEO
+- **Sizing Compliance Check:** สัดส่วน RKLB อยู่ที่ **29.66%** ตรึงกฎ **⚪ HOLD ONLY (Hard Buy Block Active)** อย่างรัดกุมที่สุด ห้ามเคาะซื้อเพิ่มเพื่อรักษาวินัยความเสี่ยง
+- **Full Report:** output/2026-05-28_youtube_cnbc_stock_market_wrap.md
+
+---
+
+
 ---
 
 
@@ -200,3 +208,6 @@ Rocket Lab เป็นบริษัท space infrastructure ที่ integra
   - https://youtu.be/n57coEW5Dw0
 - **rocketlabcorp.com** #catalyst #macro #product #sector
   - https://rocketlabcorp.com/updates/rocket-lab-awarded-90m-prime-contract-to-build-missile-defense-satellite-constellation-for-u-s-space-force/
+- **youtube.com** #youtube
+  - https://www.youtube.com/live/2HYKJt5hBMw
+

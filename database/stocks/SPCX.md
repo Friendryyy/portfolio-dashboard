@@ -154,8 +154,16 @@ Morgan Stanley (left-lead), Goldman Sachs (co-lead), Bank of America, Citigroup,
 - Report: output/2026-05-24_youtube_spacex_ipo_trap_swarm_verdict.md
 
 ### 2026-05-26 — Execution of SPCX Pre-IPO Reserve Holding
-- **Execution Update:** บันทึกการเข้าซื้อฐาน $SPCX จำนวน 1 หุ้น (Pre-split) ที่ราคาทุน $480.63 USD ดึงกระแสเงินสดสำรองจากพอร์ตสำเร็จ ปรับเป้าหมายเงินสดคงเหลือลงเป็น $979.37 USD ตามความเห็นชอบของแผน Rebalancing 2026
 - **Strategic Impact:** ปล่อยให้สัดส่วน SPCX รันตามระบบจองเป้าหมายระยะยาว 20.00% เพื่อเตรียมความพร้อมสำหรับ Roadshow และ IPO Pricing ในช่วงกลางเดือนมิถุนายน 2026
+
+### 2026-05-28 — S-1 Prospectus Release & SpaceXAI Capital Strategy
+- **S-1 Prospectus Disclosures:** ตรวจสอบเอกสารชี้ชวน S-1 (ยื่นต่อ SEC 20 พฤษภาคม 2026) ยืนยันเป้าหมายจดทะเบียน 12 มิถุนายน 2026 MCAP $1.75T-$2.0T เผย GAAP Net Loss ปี 2025 สูงถึง -$4.94B จากการควบรวม xAI (SpaceXAI) ที่แบกรับรายจ่ายลงทุนสร้าง compute infrastructure เกินกว่า $6B
+- **Anthropic Contract Catalyst:** พบความร่วมมือทางการค้าประวัติศาสตร์ SpaceXAI ขายสิทธิ์การประมวลผล Colossus ให้ Anthropic มูลค่า $1.25B/Month ($15B ARR) ช่วยเสริมกระแสเงินสดและลดผลกระทบของการเผาเงินสดลงทุน AI อย่างมีนัยสำคัญ
+- **DCA Capital Playbook:** วางแผนบริหารความเสี่ยงหลบ Day 1 Pop และรอเข้าช้อนช่วง Lock-up Expiry Dump ($70-80 ในช่วงปลายปี) พร้อมประยุกต์ใช้ Capital Rotation แบ่งสัดส่วนทุน RKLB เพื่อจำกัดพอร์ตกลุ่มอวกาศ RKLB+SPCX ไม่เกินเพดาน 35.00%
+- **Full Report:** output/2026-05-28_SPCX_IPO_S1_strategic_audit.md
+
+---
+
 
 ---
 

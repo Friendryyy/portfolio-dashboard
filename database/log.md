@@ -1158,5 +1158,12 @@
 - **SOFI Target vs Risk Discrepancy:** ตรวจพบข้อขัดแย้งของ SOFI ที่ตั้งเป้าหมายไว้ 10% ในระบบ แต่มี Risk Ceiling สูงสุดห้ามเกิน 8% จากผล Stress Test แนะนำปรับลดเป้าหมาย SOFI ลงเหลือ 6% เพื่อความปลอดภัยในระหว่างการสืบคดีบัญชี
 - QA Score: 99/100 | Report: output/2026-05-28_portfolio_strategic_audit.md
 
+### [2026-05-28] — SYSTEM — SpaceX ($SPCX) S-1 IPO Deep-Dive & Capital Allocation Playbook
+- **SpaceX S-1 Prospectus Audited:** SpaceX ยื่นหนังสือชี้ชวนต่อ SEC (เตรียมเปิดตัว 12 มิถุนายน 2026) เป้า MCAP $1.75T-$2.0T เผยงบปี 2025 รายได้ $18.7B, Adjusted EBITDA $6.6B และ GAAP Net Loss -$4.94B จากการควบรวม xAI (SpaceXAI) ที่เผาเงินสะสมสร้าง compute infrastructure เกินกว่า $6B
+- **Anthropic Compute Contract Catalyst:** ค้นพบดีลประวัติศาสตร์ SpaceXAI ทำสัญญาขายพลังประมวลผลซูเปอร์คอมพิวเตอร์ Colossus ให้ Anthropic มูลค่า $1.25B/Month ($15B ARR!) ซึ่งช่วยชดเชยการเผาเงินสด AI และผลักดัน valuation สู่จุดมั่นคง
+- **30-Year DCA Capital Playbook:** วาง 3 ขั้นตอน (1) หลบ Day 1 Pop Evasion (ห้ามซื้อที่ IPO Peak) (2) รอช้อนซื้อช่วง Lock-up Expiry Dump ($70-80 ในเดือนธันวาคม 2026) (3) ทำ Capital Rotation โยกน้ำหนักจาก RKLB เพื่อคุมน้ำหนักอวกาศ RKLB+SPCX รวมกันห้ามเกินเพดานความปลอดภัย 35%
+- QA Score: 99/100 | Report: output/2026-05-28_SPCX_IPO_S1_strategic_audit.md
+
+
 
 

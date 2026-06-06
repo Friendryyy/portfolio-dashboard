@@ -2311,9 +2311,9 @@ OUTPUT_DIR = TOOLS_DIR.parent / "output"
 
 _KNOWN_TICKERS = [
     "NVDA", "RKLB", "ASTS", "SOFI", "NVO", "UNH", "AMZN", "GOOGL", "PLTR",
-    "META", "VST", "OKLO", "SPCX", "MSFT", "TSLA", "AAPL", "AMD", "INTC",
-    "ARM", "MSTR", "COIN", "SHOP", "SQ", "PYPL", "HOOD", "ABNB", "UBER",
-    "SPY", "QQQ", "IWM",
+    "TSM", "BTC", "META", "MRVL", "MU", "OKLO", "SPCX", "VST",
+    "MSFT", "TSLA", "AAPL", "AMD", "INTC", "ARM", "MSTR", "COIN",
+    "SHOP", "SQ", "PYPL", "HOOD", "ABNB", "UBER", "SPY", "QQQ", "IWM",
 ]
 
 _TYPE_MAP = [
@@ -2361,7 +2361,8 @@ def _extract_tickers(text: str) -> list[str]:
     found = []
     upper = text.upper()
     for t in _KNOWN_TICKERS:
-        if t in upper:
+        pattern = r'(?<![A-Z0-9_])' + re.escape(t) + r'(?![A-Z0-9_])'
+        if re.search(pattern, upper):
             found.append(t)
     return found
 

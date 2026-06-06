@@ -2512,7 +2512,7 @@ def render_news():
     # ── Filter bar ────────────────────────────────────────────────────────────
     all_tickers = sorted({t for r in reports for t in r["tickers"]})
     all_types   = sorted({r["type_name"] for r in reports})
-    all_dates   = sorted({r["date"] for r in reports}, reverse=True)
+    all_dates   = sorted({r["date"] for r in reports})
 
     fc1, fc2, fc3 = st.columns([2, 2, 2])
     with fc1:
@@ -2523,7 +2523,7 @@ def render_news():
         if len(all_dates) >= 2:
             date_range = st.select_slider(
                 "📅 ช่วงวันที่", options=all_dates,
-                value=(all_dates[-1], all_dates[0]),
+                value=(all_dates[0], all_dates[-1]),
                 format_func=lambda d: d.strftime("%d %b %y"),
                 key="news_dates",
             )
@@ -2683,7 +2683,7 @@ def main():
     fx_rate = get_usd_thb()
 
     # Header
-    hcol1, hcol2 = st.columns([5, 1])
+    hcol1, hcol2, hcol3 = st.columns([4.2, 0.9, 0.9])
     with hcol1:
         st.markdown(
             '<div class="portfolio-header">'
@@ -2694,8 +2694,13 @@ def main():
             unsafe_allow_html=True,
         )
     with hcol2:
-        st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown("<div style='height: 10px;'></div>", unsafe_allow_html=True)
         show_thb = st.toggle("🇹🇭 แสดงเป็นบาท", value=False, key="thb_toggle")
+    with hcol3:
+        st.markdown("<div style='height: 8px;'></div>", unsafe_allow_html=True)
+        if st.button("🔄 ดึงข้อมูลสด", use_container_width=True, help="เคลียร์แคชและดึงข้อมูลสดจาก Google Sheets ทันที"):
+            st.cache_data.clear()
+            st.rerun()
 
     with st.spinner("Loading..."):
         df, sheets_summary = load_portfolio(cash=cash)

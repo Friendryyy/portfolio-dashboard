@@ -3,7 +3,7 @@ ticker: NVO
 company: Novo Nordisk A/S (ADR)
 sector: Healthcare / Pharma
 tags: [in-portfolio, conviction/medium, sector/healthcare, growth]
-last_updated: 2026-05-22
+last_updated: 2026-06-03
 conviction: 6.5/10
 thesis_status: ACTIVE
 ---
@@ -19,7 +19,7 @@ Novo Nordisk ครองตลาด GLP-1 obesity/diabetes drug ด้วย O
 
 | Metric | Value | Date |
 |---|---|---|
-| Price | **$44.19** | 2026-05-27 |
+| Price | **$42.00** | 2026-06-04 |
 | Wegovy Pill EU CHMP Positive Opinion | **OASIS 4 trial: -13.6% to -16.6% weight loss** (recommended GLP-1 weight pill) | 2026-05-22 |
 | Wegovy HD 7.2mg (Early Responders) | **-27.7% weight loss** (STEP UP trial, week 72) | 2026-05-12 |
 | Wegovy Pill US Market Share | **65% of new prescriptions** | 2026-05-17 |
@@ -66,11 +66,11 @@ Novo Nordisk ครองตลาด GLP-1 obesity/diabetes drug ด้วย O
 
 | Item | Value |
 |---|---|
-| Shares | 14.00 |
-| Avg Cost | $47.70 |
-| Price (last check) | **$44.19** (2026-05-27) |
-| Gain/Loss | -$3.51/share (**-7.36%**) |
-| Allocation | **6.78%** |
+| Shares | 16.33 |
+| Avg Cost | $47.07 |
+| Price (last check) | **$42.00** (2026-06-04) |
+| Gain/Loss | -$5.07/share (**-10.77%**) |
+| Allocation | **7.95%** |
 
 ## 🎬 Decision History
 
@@ -94,9 +94,29 @@ Novo Nordisk ครองตลาด GLP-1 obesity/diabetes drug ด้วย O
 |---|---|
 | [NVO IR — Quarterly Results](https://www.novonordisk.com/investor-relations.html) | ongoing |
 
----
-
 ## 📝 Research Log
+
+### [2026-06-03] — YOUTUBE — Yahoo Finance Live (June 3, 2026) Swarm Verdict
+- **GLP-1 Demand & Disruption:** ตลาดยังมีความต้องการยาลดน้ำหนัก Wegovy/Ozempic แข็งแกร่งอย่างต่อเนื่อง ส่งผลกระทบเชิงลบต่อกลุ่มสินค้าอุปโภคบริโภคอาหารแปรรูป ราคาแกว่งตัวทดสอบแนวรับ RSI 41.77 (Zone Neutral-Cool)
+- **Verdict & Sizing:** 🟡 HOLD (ถือครองเดิม 7.91% งดช้อนซื้อเพิ่มชั่วคราวเนื่องจากสัดส่วนเงินสดสำรองพอร์ต 9.00% ต่ำกว่าเกณฑ์ขั้นต่ำ 10%)
+- **Full Report:** [2026-06-03__Yahoo_Finance_Live_3_2026_NVDA_RKLB_MRVL_TSM_NVO__swarm_verdict.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-03__Yahoo_Finance_Live_3_2026_NVDA_RKLB_MRVL_TSM_NVO__swarm_verdict.md)
+
+### [2026-06-03] — YOUTUBE — Yahoo Finance Live (June 2, 2026)
+- **GLP-1 Diet Disruption & Food Sector Impact:** วิทยากรและนักวิเคราะห์ระบุให้หลีกเลี่ยงหุ้นผลิตอาหารแปรรูปอย่าง Post Holdings และ General Mills เนื่องจากยาลดน้ำหนักกลุ่ม GLP-1 ของ Novo Nordisk ($NVO) ส่งผลต่อพฤติกรรมผู้บริโภคในการลดการบริโภคคาร์โบไฮเดรตและน้ำตาลเฉลี่ย 20%-30% สะท้อนถึงคูเมืองที่แข็งแกร่งเชิงโครงสร้างประชากร (Demographic Dietary Shift) ของ NVO
+- **Portfolio DCA Sizing Action:** 🟢 DCA Priority #2 (ทยอยสะสม) สัดส่วนจริงพอร์ตอยู่ที่ 7.83% ถือครองต่ำกว่าต้นทุนเดิม (-8.82% G/L) ให้ดำเนินการช้อนสะสมในสัปดาห์นี้เพื่อลดต้นทุนเฉลี่ยสะสมและปิด gap สัดส่วนเป้าหมาย
+- **Full Report:** [2026-06-03_youtube_yahoo_finance_live_US_Iran_tensions_AI_optimism.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-03_youtube_yahoo_finance_live_US_Iran_tensions_AI_optimism.md)
+
+### [2026-06-03] — SYSTEM — /portfolio-analysis (June 3 Review)
+- **Portfolio Sizing & Execution:** อัปเดตสัดส่วนสะสมจริงเพิ่มขึ้นเป็น **7.83%** (16.33 หุ้น) จากการเข้าทำ DCA ไม้ 2 เพื่อดึงต้นทุนพอร์ตลดลงเหลือ $47.07
+- **Deep Value Opportunity:** ราคายืนบริเวณ $42.92 มอบส่วนลด Margin of Safety สูงถึง +22.0% เทียบกับ Fair Value $55.00 ถือเป็น DCA Priority #2
+- **ADA Scientific Sessions:** เตรียมจัดงาน R&D และแสดงผลทดลอง Phase 3 REIMAGINE สำหรับยากลุ่ม CagriSema ในวันที่ 5-8 มิถุนายน 2026
+- **Full Report:** [2026-06-03_portfolio_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-03_portfolio_analysis.md)
+
+### [2026-06-04] — SYSTEM — /portfolio-analysis (June 4 Review)
+- **Portfolio Sizing & Execution**: สัดส่วนพอร์ตสะสมอยู่ที่ **7.95%** (16.33 หุ้น) โดยราคาปิดย่อมาแถว $42.00 เพิ่มส่วนลด Margin of Safety ขึ้นเป็น **+30.95%** เทียบกับ Fair Value $55.00 ถือเป็น DCA Priority #2
+- **ADA Scientific Sessions**: ติดตามรายงานข้อมูล Phase 3 สำหรับ CagriSema ในวันที่ 5-8 มิถุนายนนี้
+- **Full Report**: [2026-06-04_portfolio_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-04_portfolio_analysis.md)
+
 
 ### [2026-05-27] — SYSTEM — 30-Year DCA & DRIP Swarm Audit
 - **30-Year Compounding Math:** Simulated 6.00% target allocation of ฿5,000 monthly budget (DCA ฿300/mo, total principal ฿108,000). Over 30 years, NVO DRIP turns this into **$36,975.88 USD** (฿1.20M THB, YOC 68.00%, total dividends $15.4K), outpacing UNH in the first 15 years due to superior starting yield (4.08%).
@@ -299,95 +319,7 @@ Novo Nordisk ครองตลาด GLP-1 obesity/diabetes drug ด้วย O
 ---
 
 ## 📎 Research Sources
-> อัปเดต 2026-05-28 | Sessions: Swarm DCA Verdict 2026-05-28
+> อัปเดต 2026-06-04 | Sessions: Swarm DCA Verdict 2026-06-04
 
-- **novonordisk.com** #IR
-  - https://www.novonordisk.com/investor-relations.html
-- **cnbc.com** #earnings #news #product
-  - https://www.cnbc.com/2026/05/06/wegovy-glp1-weight-loss-novo-nordisk-earnings-stock-nvo-ozempic.html
-- **cnbc.com** #news
-  - https://www.cnbc.com/2026/02/23/novo-nordisk-stock-cagrisema-trial-fails-weight-loss.html
-- **biotechreality.com** #news
-  - https://www.biotechreality.com/2026/04/novo-nordisk-clinical-trials-eco-2026-updates.html
-- **fiercepharma.com** #product
-  - https://www.fiercepharma.com/pharma/medicare-unveils-price-reductions-15-drugs-including-novos-semaglutide
-- **cnbc.com** #news
-  - https://www.cnbc.com/2025/11/26/why-medicare-price-cuts-matter-for-novo-nordisk-european-pharma.html
-- **gxpnews.net** #sector
-  - https://gxpnews.net/en/2026/05/eli-lilly-overtakes-novo-nordisk-in-glp-1-market-share-outside-us/
-- **247wallst.com** #news #sector
-  - https://247wallst.com/investing/2026/04/10/eli-lilly-vs-novo-nordisk-the-obesity-drug-race-has-a-new-leader/
-- **tikr.com** #news
-  - https://www.tikr.com/blog/novo-nordisk-has-fallen-56-from-its-high-is-nvo-finally-cheap-enough-to-buy-in-2026
-- **novonordisk.com** #news
-  - https://www.novonordisk.com/investors/annual-report.html
-- **macrotrends.net** #earnings #macro #technicals #valuation
-  - https://www.macrotrends.net/stocks/charts/NVO/novo-nordisk/revenue
-- **gurufocus.com** #macro #valuation
-  - https://www.gurufocus.com/term/forward-pe-ratio/NVO
-- **financecharts.com** #technicals
-  - https://www.financecharts.com/stocks/NVO/value/pe-ratio
-- **stockanalysis.com** #news #valuation
-  - https://stockanalysis.com/stocks/nvo/statistics/
-- **tradingview.com** #news
-  - https://www.tradingview.com/symbols/NYSE-NVO/
-- **altindex.com** #technicals
-  - https://altindex.com/ticker/nvo/technical-analysis
-- **investing.com** #news
-  - https://www.investing.com/equities/novo-nordis
-- **cnbc.com** #earnings #news
-  - https://www.cnbc.com/2026/02/04/eli-lilly-novo-nordisk-earnings-glp1-market.html
-- **novonordisk.com** #IR #earnings
-  - https://www.novonordisk.com/investors/financial-results.html
-- **stockanalysis.com** #analyst #news
-  - https://stockanalysis.com/stocks/nvo/forecast/
-- **macrotrends.net** #macro #technicals #valuation
-  - https://www.macrotrends.net/stocks/charts/NVO/novo-nordisk/pe-ratio
-- **simplywall.st** #valuation
-  - https://simplywall.st/stocks/us/pharmaceuticals-biotech/nyse-nvo/novo-nordisk/valuation
-- **cnn.com** #news
-  - https://www.cnn.com/markets/stocks/NVO
-- **chartmill.com** #technicals
-  - https://www.chartmill.com/stock/quote/NVO/technical-analysis
-- **marketbeat.com** #analyst #news
-  - https://www.marketbeat.com/stocks/NYSE/NVO/forecast/
-- **tipranks.com** #analyst
-  - https://www.tipranks.com/stocks/nvo/forecast
-- **investing.com** #news
-  - https://www.investing.com/equities/novo-nordis-consensus-estimates
-- **cnbc.com** #news #product
-  - https://www.cnbc.com/2026/05/12/healthy-returns-novo-nordisk-releases-new-high-dose-wegovy-data.html
-- **clinicaltrialsarena.com** #product
-  - https://www.clinicaltrialsarena.com/news/novo-nordisk-wegovy-high-dose-27-7-weight-loss-early-responders/
-- **finance.yahoo.com** #product
-  - https://finance.yahoo.com/news/novo-nordisk-high-dose-wegovy-113733630.html
-- **prnewswire.com** #IR #product #risk
-  - https://www.prnewswire.com/news-releases/novo-nordisk-files-for-fda-approval-of-a-higher-dose-of-wegovy-injection-7-2-mg-302626162.html
-- **globenewswire.com** #IR #product
-  - https://www.globenewswire.com/news-release/2026/03/19/3259259/0/en/Novo-Nordisk-A-S-Wegovy-HD-semaglutide-7-2-mg-approved-in-the-US-providing-20-7-mean-weight-loss.html
-- **benzinga.com** #news #product
-  - https://www.benzinga.com/news/health-care/26/05/52498930/novo-nordisk-presents-new-wegovy-data-showing-strong-weight-loss-fat-reduction
-- **finance.yahoo.com** #analyst
-  - https://finance.yahoo.com/news/novo-nordisk-nvo-bull-case-161541452.html
-- **tikr.com** #product
-  - https://www.tikr.com/blog/novo-nordisk-q1-2026-wegovy-pill-doubles-estimates-as-nvo-stock-recovers
-- **torghattencapital.substack.com** #news
-  - https://torghattencapital.substack.com/p/investment-thesis-novo-nordisk-nvo
-- **finance.yahoo.com** #sector
-  - https://finance.yahoo.com/sectors/healthcare/articles/novo-nordisk-sustain-glp-1-142000253.html
-- **benzinga.com** #news #product
-  - https://www.benzinga.com/money/ozempic-novo-nordisk-stock-price-prediction
-- **x.com** #news
-  - https://x.com/investseekers/status/2057405513818624123
-- **ro.co** #news
-  - https://ro.co/weight-loss/foundayo-cost/
-- **cms.gov** #IR
-  - https://www.cms.gov/newsroom/fact-sheets/medicare-glp1-bridge-demonstration-2026
-- **kff.org** #news
-  - https://www.kff.org/medicare/issue-brief/financial-impact-of-glp1-medicare-bridge-insurers/
-- **drugs.com** #news
-  - https://www.drugs.com/clinical_trials/orforglipron-fasting-bioavailability-profile.html
 - **api.alternative.me** #news
   - https://api.alternative.me/fng/
-- **x.com** #news
-  - https://x.com/investseekers/status/2057829710822887573?s=20

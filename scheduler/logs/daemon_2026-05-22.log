@@ -1,0 +1,11 @@
+2026-05-22 23:30:30,293 [INFO] ============================================================
+2026-05-22 23:30:30,294 [INFO]   Investment OS — Scheduler Daemon STARTED
+2026-05-22 23:30:30,294 [INFO]   Python: C:\Users\LENOVO\AppData\Local\Programs\Python\Python314\python.exe
+2026-05-22 23:30:30,294 [INFO]   Base Dir: C:\Users\LENOVO\OneDrive\文档\Second-Brain\Investment
+2026-05-22 23:30:30,320 [INFO]   Tasks configured: 4
+2026-05-22 23:30:30,320 [INFO]     • CAIOMorningBriefing: 07:00
+2026-05-22 23:30:30,320 [INFO]     • SentimentCrisisHunter: 09:00 [Mon-Fri only]
+2026-05-22 23:30:30,320 [INFO]     • DailyPortfolioCMO: 12:00
+2026-05-22 23:30:30,320 [INFO]     • WeeklyDCAShopping: 22:00 [Friday only]
+2026-05-22 23:30:30,321 [INFO]   Checking every 60 seconds...
+2026-05-22 23:30:30,321 [INFO] ============================================================

@@ -24,7 +24,7 @@ Alphabet ครอง search monopoly (~90% market share) + YouTube + Google Clo
 
 | Metric | Value | Date |
 |---|---|---|
-| Price | **$402.62** (+3.94% วันนี้) | 2026-05-14 — **New 52w HIGH $403.70** |
+| Price | **$358.99** | 2026-06-04 |
 | Market Cap | $4.88T | 2026-05-14 |
 | Revenue (Q1 2026) | $109.9B (+22% YoY) | 2026-04-29 |
 | Google Cloud Revenue | $20B (+63% YoY) — fastest | 2026-04-29 |
@@ -76,9 +76,9 @@ Alphabet ครอง search monopoly (~90% market share) + YouTube + Google Clo
 |---|---|
 | Shares | 2.43 |
 | Avg Cost | $190.35 |
-| Price (2026-05-14) | $402.62 — New 52w HIGH |
-| Gain/Loss | **+$516 (+111.5%)** |
-| Allocation | **10.94%** |
+| Price (last check) | **$358.99** (2026-06-04) |
+| Gain/Loss | +$168.64/share (**+88.59%**) |
+| Allocation | **10.12%** |
 | Verdict | **HOLD** — DCA zone $350-370 เท่านั้น |
 
 ## 🎬 Decision History
@@ -179,6 +179,12 @@ Alphabet ครอง search monopoly (~90% market share) + YouTube + Google Clo
 - **Margin of Safety:** ส่วนลดปัจจุบันน่าสนใจมาก (~20% discount จากมูลค่าพื้นฐาน $459.00 อิงผลสัมฤทธิ์โมเดล sensitivity ของ CFA)
 - **Verdict:** HOLD / ACCUMULATE | Price $382.97 | DCA zone $350-370
 - Report: output/2026-05-24_youtube_couch_investor_obvious_buys_swarm_verdict.md
+
+### [2026-06-04] — SYSTEM — /portfolio-analysis (June 4 Review)
+- **Portfolio Sizing & Execution**: สัดส่วนพอร์ตสะสมอยู่ที่ **10.12%** (2.43 หุ้น) มูลค่าถือครอง $873.71 USD (G/L +88.59%) รักษาสถานะสะสม DCA ตามแนวรับ
+- **$80 Billion AI Funding Program**: ประกาศแผนการระดมทุน 8.47 หมื่นล้านดอลลาร์ ขยายกรอบงบลงทุน CapEx เป็น $180B - $190B เพื่อเร่งขยาย compute supply รองรับดีมานด์
+- **Full Report**: [2026-06-04_portfolio_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-04_portfolio_analysis.md)
+
 
 ---
 
@@ -329,7 +335,7 @@ Alphabet ครอง search monopoly (~90% market share) + YouTube + Google Clo
 ---
 
 ## 📎 Research Sources
-> อัปเดต 2026-05-28 | Sessions: Swarm DCA Verdict 2026-05-28
+> อัปเดต 2026-06-03 | Sessions: Swarm DCA Verdict 2026-06-03
 
 - **abc.xyz** #IR
   - https://abc.xyz/investor/

@@ -1,0 +1,66 @@
+# NVDA Q1 FY2027 Earnings + Financial Analysis Sources — 2026-05-21
+
+# Official Earnings Results
+https://www.stocktitan.net/news/NVDA/nvidia-announces-financial-results-for-first-quarter-fiscal-fq78amc9h84m.html
+https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html
+https://www.kiplinger.com/investing/live/nvidia-earnings-live-updates-and-commentary-may-2026
+
+# Earnings Call Transcript & Presentation
+https://www.fool.com/earnings/call-transcripts/2026/05/20/nvidia-nvda-q1-2027-earnings-transcript/
+https://seekingalpha.com/article/4907285-nvidia-corporation-2027-q1-results-earnings-call-presentation
+
+# Earnings Beat Analysis
+https://www.quiverquant.com/news/NVIDIA+Corporation+%28NVDA%29+Releases+Q1+2027+Earnings%3A+Blockbuster+Revenue%2C+Profit+and+EPS+Beat
+https://www.shacknews.com/article/149225/nvidia-nvda-reports-75-q1-fy27-gross-margin
+
+# Analyst Coverage Post-Earnings
+https://intellectia.ai/news/stock/nvidia-ceo-jensen-huang-says-veru-cpus-have-arrived-at-ai-labs
+
+# Product & Technology (Vera CPU shipments)
+https://letsdatascience.com/news/topic/nvidia
+https://gecnewswire.com/dell-technologies-launches-local-agentic-ai-from-deskside-to-data-centre/
+
+# Pre-Earnings Analysis Sources
+https://www.tradingkey.com/analysis/stocks/us-stocks/261902589-nvidia-q1-fy2027-earnings-may-20-nvda-a-buy-at-224-before-most-important-print-tradingkey
+https://www.fool.com/investing/2026/05/13/nvidia-reports-its-fiscal-2027-q1-earnings-may-20/
+
+# === Added 2026-05-21 (YouTube Live Trading Analysis) ===
+
+# YouTube Source
+https://www.youtube.com/live/liRsG-3Jiu8
+
+# China / Trump-Xi Summit / H200
+https://www.cnbc.com/2026/05/14/nvidias-jensen-huang-on-china-trip-trump.html
+https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm
+https://www.artificialintelligence-news.com/news/nvidia-h200-china-deal-stalled-trump-xi-summit-2026/
+https://www.cnbc.com/2026/05/18/nvidia-earnings-call-drama-will-jensen-huang-talk-trump-and-china-chips-after-xi-summit.html
+
+# SEC CFO Commentary
+https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27cfocommentary.htm
+
+# Post-Earnings Reaction
+https://www.aljazeera.com/economy/2026/5/21/nvidia-posts-record-profit-and-revenue-amid-ai-chip-boom
+https://247wallst.com/investing/2026/05/14/nvidia-is-up-20-in-a-month-could-the-may-20-earnings-report-knock-it-right-back-down/
+https://www.marketbeat.com/earnings/reports/2026-5-20-nvidia-co-stock/
+
+# Valuation
+https://www.gurufocus.com/news/8872854/nvidia-nvda-q1-fy2027-eps-239-beats-175-est
+
+# Competitive (AMD MI350)
+https://tech-insider.org/nvidia-blackwell-vs-amd-mi350-2026/
+https://markets.financialcontent.com/stocks/article/tokenring-2026-1-30-the-great-gpu-war-of-2026-amds-mi350-series-challenges-nvidias-blackwell-hegemony
+
+# Inference / CoreWeave / Anthropic
+https://thenextweb.com/news/coreweave-has-agreed-a-multi-year-gpu-cloud-deal-with-anthropic-to-power-claude-at-production-scale-its-second-major-ai-infrastructure-announcement-in-48-hours
+https://www.coreweave.com/news/coreweave-advances-ai-native-cloud-platform-for-the-next-phase-of-production-scale-ai
+https://hyperframeresearch.com/2026/05/11/coreweave-reaches-a-new-scale-threshold-but-can-the-ai-neocloud-sustain-long-tail-demand/
+
+# Sovereign AI
+https://finance.yahoo.com/news/nvidia-deepens-role-global-ai-031845840.html
+https://www.thenationalnews.com/business/2026/03/27/what-the-uaes-mega-deal-with-nvidia-means-for-its-ai-sovereignty/
+https://futurumgroup.com/press-release/nvidias-european-ai-sovereignty-push-infrastructure-partnerships-and-policy-report-summary/
+https://www.nvidia.com/en-us/industries/global-public-sector/
+
+# Networking
+https://www.sdxcentral.com/news/nvidia-networking-is-booming-but-your-networks-cost-nothing/
+https://www.networkworld.com/article/4050881/nvidia-networking-roadmap-ethernet-infiniband-co-packaged-optics-will-shape-data-center-of-the-future.html

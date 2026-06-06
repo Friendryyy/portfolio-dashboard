@@ -1,0 +1,15 @@
+# TraderTV May 20, 2026 — NVDA-specific sources
+# Earnings Day: AI Infra Ecosystem + Sell-the-News + ASIC Threat Analysis
+
+# Primary video source
+https://www.youtube.com/live/5EGfTHh5uj8
+
+# AI Infrastructure Ecosystem
+https://www.fool.com/earnings/call-transcripts/2026/05/05/astera-labs-alab-q1-2026-earnings-transcript/
+https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-closes-the-gap-between-ai-ambition-and-ai-outcomes.htm
+https://www.sec.gov/Archives/edgar/data/0001769628/000176962826000220/coreweave1q26earningspress.htm
+
+# Custom ASIC Threat + CUDA Moat
+https://oplexa.com/custom-asic-market-2026-hyperscalers-ditching-nvidia/
+https://news.alphastreet.com/nvidias-cuda-lock-in-and-supply-scarcity-make-its-ai-chip-moat-harder-to-break-than-it-looks/
+https://www.heygotrade.com/en/blog/broadcom-vs-marvell-custom-ai-silicon-battle-2026/

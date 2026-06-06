@@ -250,7 +250,7 @@ Amazon คือ triple-engine growth machine: (1) AWS cloud dominance ที่
 ---
 
 ## 📎 Research Sources
-> อัปเดต 2026-05-28 | Sessions: Swarm DCA Verdict 2026-05-28
+> อัปเดต 2026-05-30 | Sessions: Swarm DCA Verdict 2026-05-30
 
 - **cnbc.com** #earnings #news
   - https://www.cnbc.com/2026/04/29/amazon-amzn-q1-earnings-report-2026.html

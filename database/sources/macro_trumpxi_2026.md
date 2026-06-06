@@ -26,6 +26,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 ### CSIS — Trump-Xi Summit: Managing the World's Most Important Relationship
 **Tags:** #macro #geopolitical  
 **สรุป:** ข้อมูลประกอบการศึกษา: Trump-Xi Summit | - Trump-Xi Summit Analysis — CSIS macro geopolitical | - 5 Takeaways from Trump-Xi Beijing — CNBC macro news  
@@ -119,6 +128,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 ### Tom's Hardware — China Blocks Nvidia H200 Purchases Despite US Approval
 **Tags:** #NVDA #risk #china  
 **สรุป:** ข้อมูลประกอบการศึกษา: - Xi Warns Trump on Taiwan — NBC News macro geopolitical | - China Blocks Nvidia H200 Purchases — Tom's Hardware NVDA macro | - US Clears H200 Sales to 10 China Firms — CNBC NVDA macro  
@@ -136,6 +154,15 @@
 ---
 
 ## 📊 3 ทหารเสือหุ้นจีน — Q1 2026 Earnings
+
+
+
+
+
+
+
+
+
 
 
 
@@ -209,6 +236,15 @@
 ---
 
 ## 🏦 แบงก์ญี่ปุ่น — FY2026 Earnings + BOJ Policy
+
+
+
+
+
+
+
+
+
 
 
 

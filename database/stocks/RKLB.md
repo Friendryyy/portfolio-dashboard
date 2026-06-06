@@ -19,7 +19,7 @@ Rocket Lab เป็นบริษัท space infrastructure ที่ integra
 
 | Metric | Value | Date |
 |---|---|---|
-| Price | **$144.30** | 2026-05-27 |
+| Price | **$114.70** | 2026-06-04 |
 | 52w High | **$150.78** (ATH) | 2026-05-27 |
 | Market Cap | **$83.53B** | 2026-05-27 |
 | P/S Ratio | **120.50x** | 2026-05-26 |
@@ -67,9 +67,9 @@ Rocket Lab เป็นบริษัท space infrastructure ที่ integra
 |---|---|
 | Shares | **18.46** (Micro-Trim 2.46 หุ้นเมื่อ 2026-05-24) |
 | Avg Cost | $22.86 |
-| Price (last check) | **$150.23** (2026-05-28) |
-| Gain/Loss | +$127.37/share (**+557.22%**) |
-| Allocation | **29.67%** ⚠️ (ชนเพดานเตือนภัย 30% ห้ามสะสมเพิ่มเด็ดขาด) |
+| Price (last check) | **$114.70** (2026-06-04) |
+| Gain/Loss | +$91.84/share (**+401.79%**) |
+| Allocation | **24.54%** |
 | **Cost Basis Status** | 🎉 **ZERO — House money position** |
 
 > **กฎเหล็ก:** ล็อคสถานะ HOLD ห้ามซื้อเพิ่มเด็ดขาด | รอมูลค่าสินทรัพย์อื่นเจือจางออร์แกนิกสู่เป้าหมาย 15%
@@ -102,9 +102,23 @@ Rocket Lab เป็นบริษัท space infrastructure ที่ integra
 | [GuruFocus GF Value $16.39](https://www.gurufocus.com/term/gf-value/RKLB) | 2026-05-09 |
 | [Investing.com Q1 slides](https://www.investing.com/news/company-news/rocket-lab-q1-2026-slides-record-revenue-up-64-backlog-hits-22b-93CH-4671036) | 2026-05-08 |
 
----
-
 ## 📝 Research Log
+
+### [2026-06-05] — YOUTUBE — Yahoo Finance Live (June 4, 2026) Swarm Analysis
+- **SpaceX Index Inclusion Easing & RKLB Moat:** วิเคราะห์เกณฑ์ดัชนี Russell 1000 และ S&P 500 สำหรับหุ้นขนาดใหญ่ที่ยังขาดทุน (unprofitable large cap) โดย S&P 500 ปฏิเสธการเข้าคำนววนแบบ Fast-track ขณะที่ Russell 1000 อนุมัติ ส่งผลให้กองทุนบำนาญสะสม SpaceX ผ่านเกณฑ์ของ Russell เท่านั้น ช่วยปกป้อง RKLB จากการย้ายเงินทุน Passive ระยะสั้น
+- **Portfolio Impact:** ⚪ HOLD (Hard Buy Block ทำงานปกติ น้ำหนักถือครอง 24.94% ใกล้เคียงเป้าหมาย 25%)
+- **Full Report:** output/2026-06-05_youtube_yfinance_portfolio_swarm_analysis.md
+
+### [2026-06-03] — YOUTUBE — Yahoo Finance Live (June 3, 2026) Swarm Verdict
+- **Space Infrastructure Backlog:** ยืนยันการดำเนินงานและการเติบโตอย่างมั่นคงของจรวด Electron และโครงการ Neutron ในปี 2026/2027 ท่ามกลางอุปสงค์ launch backlog ขนาดใหญ่และสัญญาความมั่นคงระดับชาติ ราคาประคองตัว RSI อยู่ที่ 49.60 (Zone Neutral)
+- **Verdict & Sizing:** 🟡 HOLD (ถือครองสัดส่วน 24.63% ใต้เพดานจำกัดความเสี่ยง 30% งดซื้อเพิ่มตามเกณฑ์เงินสดสำรองพอร์ต 9.00% ต่ำกว่าเกณฑ์ขั้นต่ำ 10%)
+- **Full Report:** [2026-06-03__Yahoo_Finance_Live_3_2026_NVDA_RKLB_MRVL_TSM_NVO__swarm_verdict.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-03__Yahoo_Finance_Live_3_2026_NVDA_RKLB_MRVL_TSM_NVO__swarm_verdict.md)
+
+### [2026-06-04] — SYSTEM — /portfolio-analysis (June 4 Review)
+- **Portfolio Sizing & Execution**: สัดส่วนพอร์ตสะสมอยู่ที่ **24.54%** (18.46 หุ้น) มูลค่าถือครอง $2,117.61 USD (G/L +401.79%) คงมาตรการ Hard Buy Block ต่อเนื่องเพื่อสกัดฟองสบู่และควบคุมความเสี่ยง
+- **Space Sector Selloff**: ราคายืดปรับฐานลงมาที่ $114.70 ตามแรงปรับฐานของกลุ่มหุ้นอวกาศ หลังกระแส SpaceX IPO คลายตัวลงเล็กน้อย และดีลการออกหุ้นเพิ่มทุนของ LUNR ถือเป็นการลดความร้อนแรง
+- **Full Report**: [2026-06-04_portfolio_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-04_portfolio_analysis.md)
+
 
 ### [2026-05-17] — Morning Brief Update
 - Price $124.77 (-5.87% ศุกร์ ตาม tech selloff) | 52w High $133.18
@@ -194,7 +208,7 @@ Rocket Lab เป็นบริษัท space infrastructure ที่ integra
 
 
 ## 📎 Research Sources
-> อัปเดต 2026-05-28 | Sessions: Swarm DCA Verdict 2026-05-28
+> อัปเดต 2026-06-05 | Sessions: Media Analysis June 5
 
 - **x.com** #news
   - https://x.com/StockSavvyShay/status/2057240232102359083?s=20
@@ -210,4 +224,6 @@ Rocket Lab เป็นบริษัท space infrastructure ที่ integra
   - https://rocketlabcorp.com/updates/rocket-lab-awarded-90m-prime-contract-to-build-missile-defense-satellite-constellation-for-u-s-space-force/
 - **youtube.com** #youtube
   - https://www.youtube.com/live/2HYKJt5hBMw
+- **youtube.com** #youtube
+  - https://www.youtube.com/live/J7PjwADcn9g?si=NgBMeQ34WuKGKCU1
 

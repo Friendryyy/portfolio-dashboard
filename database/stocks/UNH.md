@@ -3,8 +3,8 @@ ticker: UNH
 company: UnitedHealth Group
 sector: Healthcare / Insurance
 tags: [in-portfolio, conviction/medium, sector/healthcare, dca-active, no-sell]
-last_updated: 2026-05-26
-conviction: 5.5/10
+last_updated: 2026-06-04
+conviction: 6/10
 thesis_status: ACTIVE_DCA
 ---
 
@@ -21,6 +21,11 @@ UnitedHealth Group ร่วมกับ Novo Nordisk ($NVO) คือ **"เส
 | Metric | Value | Date |
 |---|---|---|
 | Price | **$376.86** | 2026-05-27 |
+| Price | **~$399.4** | 2026-06-04 |
+| Intraday Move | **+~6.0%** after BofA upgrade to Buy, PT $450 | 2026-06-04 |
+| Technical RSI | **67.98** | 2026-06-04 |
+| Bollinger Bands | Upper $402.71 / Mid $385.84 / Lower $368.98 | 2026-06-04 |
+| Portfolio Allocation | **7.56%** (1.67 shares, avg $339.17) | 2026-06-04 |
 | Recovery (1 month) | **+22.8%** จาก lows | 2026-05-26 |
 | DOJ Probe Scope | ขยายรวม **Optum Rx** + physician reimbursement (May 2026) | 2026-05-26 |
 | Trailing P/E | **28.40x** (กระทบชั่วคราว) | 2026-05-27 |
@@ -75,6 +80,7 @@ UnitedHealth Group ร่วมกับ Novo Nordisk ($NVO) คือ **"เส
 | Date | Action | Price | Rationale |
 |---|---|---|---|
 | 2026-05-26 | **BUY TRANCHE 1 🟢** | $378.78 | อนุมัติยิงคำสั่งตลาดสะสมเพิ่ม $150 USD คืนนี้ เนื่องจากราคาลงลึกใน DCA Gold Zone ($350-385) โดยที่ความเสี่ยง DOJ ยังอยู่ภายใต้เกณฑ์ควบคุม (ไม่มี Indictment) และ CMS GLP-1 Bridge ช่วย De-risk ความผันผวนฝั่งเคลมยา |
+| 2026-06-04 | **HOLD / MICRO-DCA ONLY 🟡** | ~$399 | BofA upgrade to Buy and PT $450 validates improving Q2 medical cost trend narrative, but allocation is already 7.56%; if target is 8.00%, gap is only ~$38.61. Do not chase above $399-405 except symbolic top-up. Real DCA zones: $385-390, $368-375, $344-350. |
 | 2026-05-24 | **DCA ACTIVE 🟢** | $393.85 | ปลดล็อคสถานะตามความต้องการลงทุนแบบ DCA ในระยะยาว กำหนดแผนการซื้อสะสมเมื่อเกิดการย่อตัว (Buy on Dips) ในโซน $350-385 พร้อมเงื่อนไข VETO หากมีการสั่งฟ้องอาญา |
 | 2024-2025 | BUY (DCA) | avg $326.85 | Defensive healthcare + Optum vertical integration |
 | 2026-05-08 | HOLD — no DCA | $370 | DOJ probe = upside เพียง 8.4% ไม่คุ้มความเสี่ยง bear -33% |
@@ -100,6 +106,12 @@ UnitedHealth Group ร่วมกับ Novo Nordisk ($NVO) คือ **"เส
 - **De-risked Medicare Bridge:** CMS GLP-1 Bridge program ($50 copay) operates outside Part D benefit flow, shielding UNH from any obesity drug claim liabilities in 2026-2027 and de-risking MLR (~88.8%).
 - **DCA Verdict:** **HOLD / CAUTIOUS DCA 🟡** Current price $376.86 offers a tight MoS of **+6.41%** (Base FV $401.00). Having activated Tranche 1 on May 26, our current allocation stands at 6.89%, which exceeds the target weight of 5.00%. We recommend holding and reinvesting dividends.
 - Report: [2026-05-27_healthcare_NVO_UNH_30Y_DCA_swarm_verdict.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-05-27_healthcare_NVO_UNH_30Y_DCA_swarm_verdict.md)
+
+### [2026-06-04] — Complete DCA Analysis & BofA Upgrade Review
+- **Catalyst:** BofA upgraded UNH to Buy and raised PT to $450 from $420, citing improving medical cost trends and a favorable Q2 earnings setup.
+- **Technical:** Price ~$399 pressed near 52-week high $404.15 and Bollinger upper $402.71; RSI 67.98 means strong but close to stretched. First clean retest zone is $385-390; better DCA zone $368-375; strong value zone $344-350.
+- **Portfolio:** Live allocation 7.56% with 1.67 shares at avg $339.17; if target is 8.00%, remaining gap is only ~$38.61, so current verdict is HOLD / MICRO-DCA ONLY.
+- Report: [2026-06-04_UNH_complete_dca_analysis.md](../../output/2026-06-04_UNH_complete_dca_analysis.md)
 
 ### [2026-05-26] — DECISION — UNH $150 USD DCA Buy Tranche 1 Activation
 - **UNH DCA Buy Approved:** ราคาตลาดปรับฐานลงลึกในกรอบ DCA Gold Zone ($350 - $385) ซื้อขายที่ **$378.78** (Base Fair Value $401.00, MoS +5.87%) อนุมัติยิงคำสั่งตลาดสะสมเพิ่ม **$150 USD (ประมาณ 0.40 หุ้น)** คืนนี้ทันทีเพื่อทดแทนส่วนต่างเป้าหมายที่ขาดอยู่ 1.77% (เป้าหมาย 7.00% vs ปัจจุบัน 5.23%)

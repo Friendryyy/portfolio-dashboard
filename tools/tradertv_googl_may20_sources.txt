@@ -1,0 +1,16 @@
+# TraderTV May 20, 2026 — GOOGL-specific sources
+# OpenAI IPO Context + Google I/O 2026 Gemini Counter-Attack
+
+# Primary video source
+https://www.youtube.com/live/5EGfTHh5uj8
+
+# OpenAI IPO
+https://www.cnbc.com/2026/05/20/openai-ipo-filing.html
+https://tech-insider.org/openai-122-billion-funding-round-852-billion-valuation-2026/
+https://finance.yahoo.com/news/openais-own-forecast-predicts-14-150445813.html
+https://www.bloomberg.com/news/articles/2026-05-19/why-openai-and-anthropic-ipos-may-be-dangerous-for-retail-buyers
+https://www.saastr.com/anthropic-just-passed-openai-in-revenue-while-spending-4x-less-to-train-their-models/
+
+# GOOGL I/O 2026 & Analyst Reactions
+https://www.benzinga.com/Opinion/26/05/52676168/googles-gemini-push-at-i-o-2026-forces-a-new-battle-over-agentic-ai
+https://watcher.guru/news/google-stock-price-target-wall-street-reacts-to-i-o-2026-event

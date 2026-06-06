@@ -1,0 +1,101 @@
+# Google I/O 2026 + NVDA Earnings Setup — Research Sources
+# Date: 2026-05-20
+# Video: https://www.youtube.com/live/Dxgp94qzPyY
+# Report: output/2026-05-20_youtube_google_io_crushes_adobe.md
+
+# YouTube Source
+https://www.youtube.com/live/Dxgp94qzPyY
+
+# Google I/O 2026 — Full Coverage
+https://9to5google.com/2026/05/19/google-io-2026-news/
+https://thetechportal.com/2026/05/20/google-introduces-gemini-omni-gemini-3-5-flash-ai-powered-search-upgrades-and-more-at-i-o-2026/
+https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/
+https://www.techradar.com/news/live/google-io-2026-live
+https://www.analyticsinsight.net/artificial-intelligence/google-io-2026-live-updates-gemini-android-17-xr-glasses-and-more
+https://www.macrumors.com/2026/05/19/google-io-2026-roundup/
+https://io.google/2026/
+
+# GOOGL Analyst Upgrades
+https://watcher.guru/news/google-stock-price-target-wall-street-reacts-to-i-o-2026-event
+https://www.gurufocus.com/news/3213999/googl-loop-capital-upgrades-alphabet-rating-and-raises-price-target-googl-stock-news
+https://finance.yahoo.com/news/loop-capital-upgrades-alphabet-inc-121112413.html
+https://www.nasdaq.com/articles/loop-capital-upgrades-alphabet-goog
+https://www.investing.com/news/analyst-ratings/alphabet-stock-rating-upgraded-by-loop-capital-on-ai-growth-93CH-4364179
+https://www.tradingkey.com/analysis/stocks/us-stocks/261894049-google-io-2026-alphabe-gemini-tradingkey
+https://fortune.com/2026/04/30/google-shares-all-time-high-earnings/
+
+# Google TPU External Sales
+https://tech-insider.org/google-40-billion-anthropic-investment-tpu-compute-2026/
+https://finance.biggo.com/news/202605090027_Anthropic_200B_Google_Cloud_Deal
+https://letsdatascience.com/news/google-cloud-begins-selling-tpus-to-select-customers-44e44f48
+https://newsletter.semianalysis.com/p/tpuv7-google-takes-a-swing-at-the
+https://thenextweb.com/news/google-tpu-compute-internal-researchers-anthropic
+https://247wallst.com/investing/2026/04/27/googles-latest-tpu-advances-make-the-ai-hardware-race-feel-less-one-sided/
+https://globalsemiresearch.substack.com/p/googles-tpu-challenge-to-nvidia-a
+
+# AI Search Zero-Click & Monetization
+https://www.digitalapplied.com/blog/google-ai-mode-75m-users-ads-in-ai-results-2026
+https://geafirst.com/google-ai-mode-75m-users-ads-25-percent/
+https://nobori.ai/blog/google-ai-mode-zero-click-rate-100m-users-2026
+https://almcorp.com/blog/google-search-63-billion-ai-mode-advertising-q4-2025/
+https://ppc.land/alphabet-q1-2026-google-network-ad-revenue-falls-4-as-ai-reshapes-the-web/
+https://www.searchenginejournal.com/google-ai-mode-and-the-future-of-search-monetization/548601/
+https://www.optimyzee.com/blog/google-ai-mode-ads-2026
+
+# Gemini Spark + Subscription
+https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/
+https://9to5google.com/2026/05/19/google-ai-ultra-100/
+https://www.techtimes.com/articles/316853/20260519/google-cuts-ai-ultra-100-launches-gemini-spark-agent-android-xr-glasses-i-o-2026.htm
+https://www.pcworld.com/article/3143445/googles-new-spark-ai-agent-will-run-your-digital-life-for-100-month.html
+https://the-decoder.com/google-overhauls-its-ai-subscriptions-at-i-o-2026-with-three-tiers-starting-at-10-a-month/
+https://winbuzzer.com/2026/05/19/google-restructures-its-ai-plans-introducing-a-100-xcxwbn/
+https://www.benzinga.com/Opinion/26/05/52676168/googles-gemini-push-at-i-o-2026-forces-a-new-battle-over-agentic-ai
+
+# Adobe ADBE
+https://swotpal.com/blog/adobe-swot-analysis-2026
+https://www.tradingkey.com/analysis/stocks/us-stocks/261808995-adobe-stock-buyback-ai-firefly-valuation-cashflow-ceo-ai-tradingkey
+https://www.tikr.com/blog/adobe-stock-is-down-28-in-2026-what-a-314-target-price-means
+https://www.tikr.com/blog/adobe-stock-is-down-24-in-2026-does-the-25-billion-buyback-change-the-math
+https://news.adobe.com/news/2025/10/adobe-max-2025-google-cloud
+https://www.androidheadlines.com/2026/05/adobe-creative-tools-google-gemini-integration-connector-premiere-android.html
+https://www.tipranks.com/news/the-market-thinks-ai-crushed-adobe-adbe-the-business-says-otherwise
+https://intellectia.ai/blog/why-adobe-stock-drop-earnings-beat-adbe-q1-2026-1773625092
+https://blog.adobe.com/en/publish/2026/04/15/adobe-extends-leadership-video-unleashing-new-ai-powered-creation-firefly-reinventing-color-editors-in-premiere
+
+# Gemini Omni vs Sora — Video AI
+https://www.geminiomnivideo.io/gemini-omni-vs-sora
+https://nerdbot.com/2026/05/15/game-over-for-sora-how-seedance-2-0-and-gemini-omni-are-winning-the-ai-video-wars/
+https://vocal.media/futurism/sora-retreated-google-doubled-down-the-logic-behind-gemini-cgdaq0mo0
+https://ocnjdaily.com/news/2026/may/14/googles-gemini-omni-lands-a-new-era-for-ai-video-generation-begins/
+https://aijourn.com/what-gemini-omni-signals-about-googles-ai-strategy-and-the-future-of-multimodal-models/
+
+# NVDA Earnings Tonight
+https://www.tradingkey.com/analysis/stocks/us-stocks/261902589-nvidia-q1-fy2027-earnings-may-20-nvda-a-buy-at-224-before-most-important-print-tradingkey
+https://finance.yahoo.com/markets/stocks/articles/nvidia-reports-earnings-may-20-171200265.html
+https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/05/nvidia-earnings-preview-q1-2027
+https://www.techi.com/nvda-earnings-may-20-q2-guide-q1-beat/
+https://www.kiplinger.com/investing/live/nvidia-earnings-live-updates-and-commentary-may-2026
+https://www.heygotrade.com/en/blog/nvidia-q1-fy2027-earnings-preview-may-20-setup-catalysts/
+https://www.indmoney.com/blog/us-stocks/nvidia-stock-earnings-preview-may-2026
+https://www.fool.com/investing/2026/05/16/nvidia-reports-earnings-may-20-metric-matters/
+
+# Android XR Glasses
+https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/
+https://www.androidauthority.com/samsung-google-android-xr-glasses-warby-parker-gentle-monster-google-io-2026-3668380/
+https://www.techradar.com/tech/warby-parker-and-gentle-monster-finally-showed-us-their-samsung-xr-glasses-but-forgot-to-tell-us-when-theyll-release-or-how-much-theyll-cost
+https://www.engadget.com/2176805/samsung-and-google-just-teased-their-upcoming-android-xr-smartglasses-at-google-io/
+https://siliconangle.com/2026/05/19/google-shows-off-first-intelligent-specs-running-android-xr/
+https://www.techtimes.com/articles/316697/20260515/google-brings-android-xr-glasses-i-o-2026-smart-glasses-face-privacy-reckoning.htm
+
+# Gemini 3.5 Flash API Pricing
+https://openrouter.ai/google/gemini-3.5-flash
+https://www.rdworldonline.com/googles-gemini-3-5-flash-scores-within-two-points-of-anthropics-flagship-at-a-third-of-the-price/
+https://llm-stats.com/blog/research/gemini-3.5-flash-launch
+https://cryptobriefing.com/google-gemini-3-5-flash-ai-model/
+
+# Universal Cart vs Amazon
+https://www.searchenginejournal.com/google-announces-new-universal-cart-at-i-o/575301/
+https://letsdatascience.com/news/google-unveils-universal-cart-and-agentic-commerce-tools-6923ef5e
+https://www.techtimes.com/articles/316867/20260519/googles-universal-cart-pushes-ai-deeper-checkout-race-it-hasnt-won-yet.htm
+https://www.androidauthority.com/google-announces-universal-cart-3668669/
+https://www.sec.gov/Archives/edgar/data/1018724/000110465926041034/tm263815d3_ex99-1.htm

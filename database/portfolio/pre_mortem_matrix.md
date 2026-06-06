@@ -142,14 +142,15 @@ FDA อนุมัติ oral GLP-1 ของ Eli Lilly (orforglipron) หร�
 ### 🚀 SPCX (0.00% — Pre-IPO Reserve)
 
 **Failure Narrative (2030):**
-งบ xAI บวมขึ้นเผาผลาญกำไร Starlink จนกระแสเงินสดติดลบต่อเนื่อง หรือ Starlink เผชิญปัญหาวงโคจรชนกันทำลายกลุ่มดาวเทียม หรือการ IPO ที่ราคาสูงเกินไปโดน index inclusion exit liquidity เทขายอย่างหนักช่วงหมดอายุ Lock-up
+งบ xAI บวมขึ้นเผาผลาญกำไร Starlink จนกระแสเงินสดติดลบต่อเนื่อง หรือ Starlink เผชิญปัญหาวงโคจรชนกันทำลายกลุ่มดาวเทียม หรือการ IPO ที่ราคาสูงเกินไป โดน index inclusion exit liquidity เทขายอย่างหนักช่วงหมดอายุ Lock-up หรือการเปลี่ยนแปลงเกณฑ์ดัชนีที่สกัดกระแสเงินทุนไหลเข้าจากกองทุน Passive
 
-**Single Point of Failure:** xAI cash drain + Starlink collision cascade (Kessler Syndrome) + Lock-up expiry dump
+**Single Point of Failure:** xAI cash drain + Starlink collision cascade (Kessler Syndrome) + Lock-up expiry dump + S&P 500 Index Exclusion
 
 **Early Warning Signals:**
-- งบ xAI ขาดทุนบวมเกิน $20B/ปี
-- SpaceX กู้เงินสดฉุกเฉินเพิ่มเติมเกิน $15B
+- งบ xAI ขาดทุนสะสมบวมโตเกิน $20B/ปี (SpaceX มีตัวเลขขาดทุนสุทธิ -$4.94B ในงบปี 2025 จากภาระพยุง xAI)
+- SpaceX กู้เงินสดฉุกเฉินเพิ่มเติมเพื่อเพิ่มสภาพคล่องเกิน $15B
 - อัตราความล้มเหลวการปล่อยดาวเทียม Starlink สูงเกิน 10%
+- **Index Gatekeeper Restriction (ตรวจพบ 2026-06-05):** คณะกรรมการดัชนี S&P 500 ปฏิเสธการผ่อนปรนเกณฑ์ GAAP Profitability ย้อนหลัง 4 ไตรมาสร่วมกับเกณฑ์ Seasoning 12 เดือน ส่งผลให้ SpaceX ไม่สามารถทำ Fast-track เข้า S&P 500 ได้ (เข้าได้เพียงดัชนี Russell 1000 ที่ใช้กลไก Fast-Entry Rule ภายใน 5 วันทำการ) ทำให้แรงขับดันด้านเงินทุน Passive ต่ำกว่าที่คาดการณ์
 
 ---
 
@@ -219,3 +220,8 @@ Portfolio-Level:
 ### [Geopolitical Stress Audit — 2026-05-22]
 * **Detected Catalyst:** Taiwan & Hormuz Strait premium pressure.
 * **Stress Indicators:** NVDA Supply Chain Risk flagged to High | RKLB & PLTR Defense buffer intact.
+
+### [Systemic Risk Cushion Audit — 2026-06-05]
+* **Detected Cushion Catalyst:** Better.com & Coinbase Pledged Crypto Mortgage framework.
+* **Cushion Mechanics:** อนุญาตให้กู้ซื้อบ้านโดยค้ำประกันด้วย BTC (Fannie Mae conforming) โดยไม่ต้องวางเงินดาวน์เป็นเงินสดและไม่ต้องขายเหรียญทำให้ไม่เสียภาษีลาภลอย (Capital Gains Tax) โดยมีเงื่อนไขสำคัญคือ **ไม่มีการเรียกหลักประกันเพิ่มระหว่างทาง (No Margin Calls / Volatility Liquidation)** ตราบใดที่ยังจ่ายค่างวดตามปกติ (ทริกเกอร์บังคับชำระหลักประกันต่อเมื่อค้างจ่ายค่างวดบ้าน > 60 วัน หรือ 60-day delinquency เท่านั้น)
+* **Risk Cushion Impact:** ยกระดับบิตคอยน์ขึ้นสู่การเป็นหลักทรัพย์ค้ำประกันทางเศรษฐกิจจริงของสหรัฐฯ (Sovereign Collateral Milestone) ช่วยเพิ่มเสถียรภาพ ลดความผันผวนจากการล้างพอร์ต และสนับสนุนสมมติฐาน DCA ระยะยาว 30 ปีอย่างแข็งแกร่ง

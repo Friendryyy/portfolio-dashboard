@@ -8,7 +8,25 @@
 
 ---
 
+## 2026-06-04 Delta Source
+
+### BofA Upgrade to Buy — Investing.com
+**Tags:** #analyst #news #technicals  
+**สรุป:** BofA upgraded UNH to Buy from Neutral and raised PT to $450 from $420, citing improving medical cost trends and a favorable Q2 earnings setup; this explains the June 4 intraday surge toward the 52-week high.  
+**URL:** https://za.investing.com/news/stock-market-news/bofa-lifts-unitedhealth-to-buy-says-q2-trend-data-sets-up-strong-riskreward-4314215
+
+---
+
 ## 📋 Official IR & Earnings Releases
+
+
+
+
+
+
+
+
+
 
 
 ### unitedhealthgroup.com
@@ -35,6 +53,15 @@
 ## 📊 Earnings & Financial Data
 
 
+
+
+
+
+
+
+
+
+
 ### CNBC Q1 2026
 **Tags:** #earnings #news  
 **สรุป:** ข้อมูลประกอบการศึกษา: Sources: CNBC Q1 2026 | MarketBeat Forecast  
@@ -47,6 +74,15 @@
 ---
 
 ## 🎯 Analyst Coverage & Price Targets
+
+
+
+
+
+
+
+
+
 
 
 ### MarketBeat Short Interest
@@ -66,6 +102,15 @@
 ---
 
 ## ⚠️ Risk Factors & Short Reports
+
+
+
+
+
+
+
+
+
 
 
 ### DOJ Structural Challenge Apr 2026
@@ -107,6 +152,15 @@
 ## 🏰 Competitive Moat & Market Position
 
 
+
+
+
+
+
+
+
+
+
 ### Healthcare Dive FY2025
 **Tags:** #moat  
 **สรุป:** ข้อมูลประกอบการศึกษา: Sources: StockAnalysis Financials | UNH Q1 2026 Official | Healthcare Dive FY2025  
@@ -121,6 +175,15 @@
 ## 🌍 Macro & Regulatory Environment
 
 
+
+
+
+
+
+
+
+
+
 ### AMA on Medicaid cuts
 **Tags:** #macro  
 **สรุป:** ข้อมูลประกอบการศึกษา: Sources: CMS 2026 Rate Fact Sheet | AMA on Medicaid cuts  
@@ -128,6 +191,15 @@
 ---
 
 ## 🦅 Smart Money & Institutional
+
+
+
+
+
+
+
+
+
 
 
 ### Fintel Institutional Ownership
@@ -139,6 +211,15 @@
 ## 📈 Technical Analysis
 
 
+
+
+
+
+
+
+
+
+
 ### altindex.com
 **Tags:** #technicals  
 **สรุป:** แหล่งข่าวสารหรือการรายงานความคืบหน้าของอุตสาหกรรมทางการเงินจากเว็บไซต์ altindex.com  
@@ -148,10 +229,30 @@
 ## 📰 News & General Coverage
 
 
+
+
+
+
+
+
+
+
+
 ### UNH Q1 2026 Earnings IR
 **Tags:** #news  
-**สรุป:** ข้อมูลประกอบการศึกษา: |---|---| | | UNH Q1 2026 Earnings IR | 2026-05-08 |  
+**สรุป:** รายงาน Short Report ของ Muddy Waters (17/03/2026) กล่าวหาระบบบัญชีของ SoFi เรื่องความโปร่งใสและมูลค่าสินทรัพย์หลักทรัพย์ — เป็นแหล่งข้อมูลหลักของ Thesis Breaker  
+**URL:** 
+---|---| | | UNH Q1 2026 Earnings IR | 2026-05-08 |  
 **URL:** https://ir.uhg.com/
+
+
+
+
+
+
+
+
+
 
 ### StockAnalysis Financials
 **Tags:** #news  

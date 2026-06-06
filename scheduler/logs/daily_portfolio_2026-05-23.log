@@ -1,0 +1,181 @@
+﻿[04:34:42] ==============================================
+[04:34:42]   INVESTMENT OS â€
+[04:36:26]       
+[04:36:26]       ==================================================
+[04:36:26]       ≡ƒñû SWARM BOOTUP: DYNAMIC MULTI-AGENT SWARM ORCHESTRATOR
+[04:36:26]       [*] Goal Target: "Daily portfolio review: analyze all holdings RKLB NVDA GOOGL UNH AMZN NVO SOFI PLTR and give DCA recommendations"
+[04:36:26]       [*] Target Tickers: AMZN, GOOGL, NVDA, NVO, PLTR, RKLB, SOFI, UNH
+[04:36:26]       ==================================================
+[04:36:26]       
+[04:36:26]       ≡ƒôÜ PRE-RESEARCH: Reading historical database and summaries from Obsidian & NotebookLM...
+[04:36:26]       [+] Loaded stock wiki: database/stocks/AMZN.md
+[04:36:26]           Γå│ Thesis: thesis_status: ACTIVE
+[04:36:26]       [+] Loaded source summaries: database/sources/AMZN.md
+[04:36:26]       [+] Pre-Research RAG: Resolved Stock Notebook ID for AMZN -> f380cc6e-a937-4bea-b00a-e62455ca8bd7
+[04:36:26]       [+] Loaded stock wiki: database/stocks/GOOGL.md
+[04:36:26]           Γå│ Thesis: thesis_status: ACTIVE ΓÇö HOLD; DCA zone $350-370
+[04:36:26]       [+] Loaded source summaries: database/sources/GOOGL.md
+[04:36:26]       [+] Pre-Research RAG: Resolved Stock Notebook ID for GOOGL -> f524cf09-7a96-4944-9af6-fe52d7476b34
+[04:36:26]       [+] Loaded stock wiki: database/stocks/NVDA.md
+[04:36:26]           Γå│ Thesis: thesis_status: ACTIVE
+[04:36:26]       [+] Loaded source summaries: database/sources/NVDA.md
+[04:36:26]       [+] Pre-Research RAG: Resolved Stock Notebook ID for NVDA -> 57c70879-a6e5-482e-ad9b-734bbf674950
+[04:36:26]       [+] Loaded stock wiki: database/stocks/NVO.md
+[04:36:26]           Γå│ Thesis: thesis_status: ACTIVE
+[04:36:26]       [+] Loaded source summaries: database/sources/NVO.md
+[04:36:26]       [+] Pre-Research RAG: Resolved Stock Notebook ID for NVO -> fd18c356-2817-45ff-9783-2268448f15da
+[04:36:26]       [+] Loaded stock wiki: database/stocks/PLTR.md
+[04:36:26]           Γå│ Thesis: thesis_status: WATCH
+[04:36:26]       [+] Loaded source summaries: database/sources/PLTR.md
+[04:36:26]       [+] Pre-Research RAG: Resolved Stock Notebook ID for PLTR -> a88d2b0b-6e2b-4961-a245-1d9c4f891238
+[04:36:26]       [+] Loaded stock wiki: database/stocks/RKLB.md
+[04:36:26]           Γå│ Thesis: thesis_status: ACTIVE
+[04:36:26]       [+] Loaded source summaries: database/sources/RKLB.md
+[04:36:26]       [+] Pre-Research RAG: Resolved Stock Notebook ID for RKLB -> 78530c2c-b394-4c3c-bc38-f9fd77ec0437
+[04:36:26]       [+] Loaded stock wiki: database/stocks/SOFI.md
+[04:36:26]           Γå│ Thesis: tags: [in-portfolio, conviction/medium, sector/fintech, growth, thesis/watch]
+[04:36:26]       [+] Loaded source summaries: database/sources/SOFI.md
+[04:36:26]       [+] Pre-Research RAG: Resolved Stock Notebook ID for SOFI -> 1f9f76c2-a545-45e0-83c4-421e05b05329
+[04:36:26]       [+] Loaded stock wiki: database/stocks/UNH.md
+[04:36:26]           Γå│ Thesis: tags: [in-portfolio, conviction/low, sector/healthcare, thesis/watch]
+[04:36:26]       [+] Loaded source summaries: database/sources/UNH.md
+[04:36:26]       [+] Pre-Research RAG: Resolved Stock Notebook ID for UNH -> 4acf1b84-0325-485e-b98b-fdd55c80318d
+[04:36:26]       ≡ƒôÜ Pre-Research Complete. Proceeding with Live Queries...
+[04:36:26]       
+[04:36:26]       [*] Swarm Sentinel: Fetching Fear & Greed Index...
+[04:36:26]       [+] Swarm Sentinel: FNG Index is 28 (Fear)
+[04:36:26]       [*] Swarm Data Worker: Querying Google Sheets portfolio live...
+[04:36:26]       [+] Swarm Data Worker: Google Sheets synced. Cash Cushion: 9.0% | RKLB Concentration: 32.16%
+[04:36:26]       
+[04:36:26]       [*] Swarm: Launching Parallel Data Workers on 8 stocks...
+[04:36:26]       [*] Swarm Worker: Spawning parallel queries for AMZN...
+[04:36:26]       [*] Swarm Worker: Spawning parallel queries for GOOGL...
+[04:36:26]       [*] Swarm Worker: Spawning parallel queries for NVDA...
+[04:36:26]       [*] Swarm Worker: Spawning parallel queries for NVO...
+[04:36:26]       [*] Swarm Worker: Spawning parallel queries for PLTR...
+[04:36:26]       [*] Swarm Worker: Spawning parallel queries for RKLB...
+[04:36:26]       [*] Swarm Worker: Spawning parallel queries for SOFI...
+[04:36:26]       [*] Swarm Worker: Spawning parallel queries for UNH...
+[04:36:26]       [-] yfinance price error for AMZN: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'price', 'AMZN']' timed out after 10 seconds
+[04:36:26]       [-] yfinance price error for SOFI: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'price', 'SOFI']' timed out after 10 seconds
+[04:36:26]       [-] yfinance price error for NVDA: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'price', 'NVDA']' timed out after 10 seconds
+[04:36:26]       [-] yfinance price error for RKLB: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'price', 'RKLB']' timed out after 10 seconds
+[04:36:26]       [-] yfinance price error for GOOGL: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'price', 'GOOGL']' timed out after 10 seconds
+[04:36:26]       [-] yfinance price error for NVO: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'price', 'NVO']' timed out after 10 seconds
+[04:36:26]       [-] yfinance price error for UNH: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'price', 'UNH']' timed out after 10 seconds
+[04:36:26]       [-] yfinance price error for PLTR: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'price', 'PLTR']' timed out after 10 seconds
+[04:36:26]       [-] yfinance insider error for AMZN: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'insider', 'AMZN']' timed out after 12 seconds
+[04:36:26]       [-] yfinance insider error for GOOGL: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'insider', 'GOOGL']' timed out after 12 seconds
+[04:36:26]       [-] yfinance holders error for GOOGL: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'holders', 'GOOGL']' timed out after 12 seconds
+[04:36:26]       [-] yfinance analyst error for NVDA: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'analyst', 'NVDA']' timed out after 12 seconds
+[04:36:26]       [-] yfinance holders error for AMZN: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'holders', 'AMZN']' timed out after 12 seconds
+[04:36:26]       [-] yfinance insider error for SOFI: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'insider', 'SOFI']' timed out after 12 seconds
+[04:36:26]       [-] yfinance insider error for RKLB: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'insider', 'RKLB']' timed out after 12 seconds
+[04:36:26]       [-] yfinance analyst error for NVO: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'analyst', 'NVO']' timed out after 12 seconds
+[04:36:26]       [-] yfinance analyst error for RKLB: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'analyst', 'RKLB']' timed out after 12 seconds
+[04:36:26]       [-] yfinance holders error for RKLB: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'holders', 'RKLB']' timed out after 12 seconds
+[04:36:26]       [-] yfinance holders error for NVO: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'holders', 'NVO']' timed out after 12 seconds
+[04:36:26]       [-] yfinance insider error for PLTR: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'insider', 'PLTR']' timed out after 12 seconds
+[04:36:26]       [-] yfinance holders error for SOFI: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'holders', 'SOFI']' timed out after 12 seconds
+[04:36:26]       [-] yfinance analyst error for PLTR: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'analyst', 'PLTR']' timed out after 12 seconds
+[04:36:26]       [-] yfinance analyst error for GOOGL: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'analyst', 'GOOGL']' timed out after 12 seconds
+[04:36:26]       [-] yfinance insider error for NVDA: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'insider', 'NVDA']' timed out after 12 seconds
+[04:36:26]       [-] yfinance holders error for NVDA: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'holders', 'NVDA']' timed out after 12 seconds
+[04:36:26]       [-] yfinance analyst error for SOFI: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'analyst', 'SOFI']' timed out after 12 seconds
+[04:36:26]       [-] yfinance insider error for UNH: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'insider', 'UNH']' timed out after 12 seconds
+[04:36:26]       [-] yfinance analyst error for AMZN: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'analyst', 'AMZN']' timed out after 12 seconds
+[04:36:26]       [-] yfinance insider error for NVO: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'insider', 'NVO']' timed out after 12 seconds
+[04:36:26]       [-] yfinance holders error for PLTR: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'holders', 'PLTR']' timed out after 12 seconds
+[04:36:26]       [-] yfinance analyst error for UNH: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'analyst', 'UNH']' timed out after 12 seconds
+[04:36:26]       [-] yfinance holders error for UNH: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'holders', 'UNH']' timed out after 12 seconds
+[04:36:26]       [-] yfinance info error for GOOGL: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'info', 'GOOGL']' timed out after 15 seconds
+[04:36:26]       [-] yfinance info error for RKLB: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'info', 'RKLB']' timed out after 15 seconds
+[04:36:26]       [-] yfinance financials error for AMZN: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'financials', 'AMZN']' timed out after 15 seconds
+[04:36:26]       [-] yfinance financials error for RKLB: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'financials', 'RKLB']' timed out after 15 seconds
+[04:36:26]       [-] yfinance financials error for NVDA: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'financials', 'NVDA']' timed out after 15 seconds
+[04:36:26]       [+] Swarm Worker: RKLB parallel queries complete. Price: $14.751000000000001 | RSI: 50.0
+[04:36:26]       [-] yfinance financials error for SOFI: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'financials', 'SOFI']' timed out after 15 seconds
+[04:36:26]       [-] yfinance info error for NVO: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'info', 'NVO']' timed out after 15 seconds
+[04:36:26]       [-] yfinance info error for NVDA: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'info', 'NVDA']' timed out after 15 seconds
+[04:36:26]       [+] Swarm Worker: NVDA parallel queries complete. Price: $173.70000000000002 | RSI: 50.0
+[04:36:26]       [-] yfinance financials error for UNH: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'financials', 'UNH']' timed out after 15 seconds
+[04:36:26]       [-] yfinance financials error for GOOGL: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'financials', 'GOOGL']' timed out after 15 seconds
+[04:36:26]       [+] Swarm Worker: GOOGL parallel queries complete. Price: $351.0 | RSI: 50.0
+[04:36:26]       [-] yfinance financials error for PLTR: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'financials', 'PLTR']' timed out after 15 seconds
+[04:36:26]       [-] yfinance info error for UNH: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'info', 'UNH']' timed out after 15 seconds
+[04:36:26]       [+] Swarm Worker: UNH parallel queries complete. Price: $360.90000000000003 | RSI: 50.0
+[04:36:26]       [-] yfinance info error for PLTR: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'info', 'PLTR']' timed out after 15 seconds
+[04:36:26]       [+] Swarm Worker: PLTR parallel queries complete. Price: $130.5 | RSI: 50.0
+[04:36:26]       [-] yfinance financials error for NVO: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'financials', 'NVO']' timed out after 15 seconds
+[04:36:26]       [+] Swarm Worker: NVO parallel queries complete. Price: $49.5 | RSI: 50.0
+[04:36:26]       [-] yfinance info error for SOFI: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'info', 'SOFI']' timed out after 15 seconds
+[04:36:26]       [+] Swarm Worker: SOFI parallel queries complete. Price: $16.2 | RSI: 50.0
+[04:36:26]       [-] yfinance info error for AMZN: Command '['python', 'C:\\Users\\LENOVO\\OneDrive\\µûçµíú\\Second-Brain\\Investment\\tools\\yfinance_bridge.py', 'info', 'AMZN']' timed out after 15 seconds
+[04:36:26]       [+] Swarm Worker: AMZN parallel queries complete. Price: $189.9 | RSI: 50.0
+[04:36:26]       [*] Swarm Architect: Loading subagents system prompt templates...
+[04:36:26]       [+] Loaded custom subagent: fundamental
+[04:36:26]       [+] Loaded custom subagent: insider
+[04:36:26]       [+] Loaded custom subagent: macro
+[04:36:26]       [+] Loaded custom subagent: risk
+[04:36:26]       [+] Loaded custom subagent: technical
+[04:36:26]       [*] Parallel Spawning: subagent_fundamental is processing raw data...
+[04:36:26]       [*] Parallel Spawning: subagent_insider is processing raw data...
+[04:36:26]       [*] Parallel Spawning: subagent_macro is processing raw data...
+[04:36:26]       [*] Parallel Spawning: subagent_risk is processing raw data...
+[04:36:26]       [*] Parallel Spawning: subagent_technical is processing raw data...
+[04:36:26]       [*] CIO Orchestrator (Agent 00): Synthesizing reports and resolving conflicts...
+[04:36:26]       [*] Compliance Auditor (Agent 14 Audit): Running strict stress-tests on financial formulas...
+[04:36:26]       [+] Compliance Auditor: Audit Complete. QA Score: 98/100 (APPROVED)
+[04:36:26]       
+[04:36:26]       [*] SyncEngine: Saving unified report to C:\Users\LENOVO\OneDrive\µûçµíú\Second-Brain\Investment\output\2026-05-23_Daily_portfolio_review_analyze_all_holdings_RKLB_N_swarm_verdict.md...
+[04:36:26]       [+] SyncEngine: Report file written successfully.
+[04:36:26]       [+] Updated sources txt for AMZN: 19 total URLs in C:\Users\LENOVO\OneDrive\µûçµíú\Second-Brain\Investment\tools\AMZN_sources.txt
+[04:36:27]       [+] Stock Notebook sync completed for AMZN
+[04:36:27]       [*] Rebuilding Obsidian stocks wiki sources for AMZN...
+[04:36:27]       [*] Rebuilding Obsidian dedicated source wiki page for AMZN...
+[04:36:27]       [+] Updated sources txt for GOOGL: 28 total URLs in C:\Users\LENOVO\OneDrive\µûçµíú\Second-Brain\Investment\tools\GOOGL_sources.txt
+[04:36:27]       [*] Uploading report and raw sources to stock notebook: GOOGL (ID: f524cf09-7a96-4944-9af6-fe52d7476b34)...
+[04:36:27]       [+] Stock Notebook sync completed for GOOGL
+[04:36:27]       [*] Rebuilding Obsidian stocks wiki sources for GOOGL...
+[04:36:27]       [*] Rebuilding Obsidian dedicated source wiki page for GOOGL...
+[04:36:27]       [+] Updated sources txt for NVDA: 42 total URLs in C:\Users\LENOVO\OneDrive\µûçµíú\Second-Brain\Investment\tools\NVDA_sources.txt
+[04:36:27]       [*] Uploading report and raw sources to stock notebook: NVDA (ID: 57c70879-a6e5-482e-ad9b-734bbf674950)...
+[04:36:27]       [+] Stock Notebook sync completed for NVDA
+[04:36:27]       [*] Rebuilding Obsidian stocks wiki sources for NVDA...
+[04:36:27]       [*] Rebuilding Obsidian dedicated source wiki page for NVDA...
+[04:36:27]       [+] Updated sources txt for NVO: 44 total URLs in C:\Users\LENOVO\OneDrive\µûçµíú\Second-Brain\Investment\tools\NVO_sources.txt
+[04:36:27]       [*] Uploading report and raw sources to stock notebook: NVO (ID: fd18c356-2817-45ff-9783-2268448f15da)...
+[04:36:27]       [+] Stock Notebook sync completed for NVO
+[04:36:27]       [*] Rebuilding Obsidian stocks wiki sources for NVO...
+[04:36:27]       [*] Rebuilding Obsidian dedicated source wiki page for NVO...
+[04:36:27]       [+] Updated sources txt for PLTR: 1 total URLs in C:\Users\LENOVO\OneDrive\µûçµíú\Second-Brain\Investment\tools\PLTR_sources.txt
+[04:36:27]       [*] Uploading report and raw sources to stock notebook: PLTR (ID: a88d2b0b-6e2b-4961-a245-1d9c4f891238)...
+[04:36:27]       [+] Stock Notebook sync completed for PLTR
+[04:36:27]       [*] Rebuilding Obsidian stocks wiki sources for PLTR...
+[04:36:27]       [*] Rebuilding Obsidian dedicated source wiki page for PLTR...
+[04:36:27]       [+] Updated sources txt for RKLB: 3 total URLs in C:\Users\LENOVO\OneDrive\µûçµíú\Second-Brain\Investment\tools\RKLB_sources.txt
+[04:36:27]       [*] Uploading report and raw sources to stock notebook: RKLB (ID: 78530c2c-b394-4c3c-bc38-f9fd77ec0437)...
+[04:36:27]       [+] Stock Notebook sync completed for RKLB
+[04:36:27]       [*] Rebuilding Obsidian stocks wiki sources for RKLB...
+[04:36:27]       [*] Rebuilding Obsidian dedicated source wiki page for RKLB...
+[04:36:27]       [+] Updated sources txt for SOFI: 66 total URLs in C:\Users\LENOVO\OneDrive\µûçµíú\Second-Brain\Investment\tools\SOFI_sources.txt
+[04:36:27]       [*] Uploading report and raw sources to stock notebook: SOFI (ID: 1f9f76c2-a545-45e0-83c4-421e05b05329)...
+[04:36:27]       [+] Stock Notebook sync completed for SOFI
+[04:36:27]       [*] Rebuilding Obsidian stocks wiki sources for SOFI...
+[04:36:27]       [*] Rebuilding Obsidian dedicated source wiki page for SOFI...
+[04:36:27]       [+] Updated sources txt for UNH: 30 total URLs in C:\Users\LENOVO\OneDrive\µûçµíú\Second-Brain\Investment\tools\UNH_sources.txt
+[04:36:27]       [*] Uploading report and raw sources to stock notebook: UNH (ID: 4acf1b84-0325-485e-b98b-fdd55c80318d)...
+[04:36:27]       [+] Stock Notebook sync completed for UNH
+[04:36:27]       [*] Rebuilding Obsidian stocks wiki sources for UNH...
+[04:36:27]       [*] Rebuilding Obsidian dedicated source wiki page for UNH...
+[04:36:27]       [*] SyncEngine: Appending research log to C:\Users\LENOVO\OneDrive\µûçµíú\Second-Brain\Investment\database\log.md...
+[04:36:27]       [+] SyncEngine: Obsidian log.md appended.
+[04:36:27]       [*] SyncEngine: Launching NotebookLM RAG Master Hub upload...
+[04:36:27]       [+] SyncEngine: NotebookLM RAG Master Hub upload complete.
+[04:36:27]       [*] SyncEngine: Launching advanced source distillation...
+[04:36:27]       [+] SyncEngine: Source distillation completed.
+[04:36:27]       [OK] Swarm completed.
+[04:36:27] [3/3] Daily Portfolio Machine complete.
+[04:36:27]       Output files saved to: C:\Users\LENOVO\OneDrive\文档\Second-Brain\Investment\output
+[04:36:27]       Log saved to: C:\Users\LENOVO\OneDrive\文档\Second-Brain\Investment\scheduler\logs\daily_portfolio_2026-05-23.log
+[04:36:27] ==============================================

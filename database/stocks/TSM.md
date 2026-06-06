@@ -3,7 +3,7 @@ ticker: TSM
 company: Taiwan Semiconductor Manufacturing Co.
 sector: Semiconductors / Technology
 tags: [watchlist, conviction/high, artificial-intelligence, monopoly]
-last_updated: 2026-05-27
+last_updated: 2026-06-05
 conviction: 8.5/10
 thesis_status: ACTIVE
 ---
@@ -13,23 +13,35 @@ thesis_status: ACTIVE
 **Sector:** Semiconductors | **Portfolio:** [[overview]] | **Decisions:** [[decision_log]] | **Related:** [[NVDA]] [[GOOGL]] [[AMZN]] [[SPCX]]
 
 ## 🎯 Investment Thesis
-TSMC คือรากฐานทางวิศวกรรมกายภาพเพียงหนึ่งเดียวของการปฏิวัติ AI ทั่วโลก (The Ultimate Physical Bottleneck of advanced technology) ด้วยการครองสัดส่วนตลาด Advanced Foundry < 5nm สูงสุดถึง 92% และถือครองสิทธิ์สิทธิบัตรระบบบรรจุชิปขั้นสูง CoWoS (คอขวดหลักของ AI GPU H100/B200) โครงสร้างการเชื่อมโยงอุตสาหกรรมขยายขอบเขตจาก AI Wave ไปสู่ระบบชิปอวกาศทนรังสีของดาวเทียม Starlink และชิปประมวลผล ASIC เหมืองขุดบิตคอยน์ระดับ 3 นาโนเมตรที่กำหนดเกณฑ์ Global Hash Rate ประเด็นความเสี่ยงภูมิรัฐศาสตร์จีน-ไต้หวันบีบให้ Forward P/E ซื้อขายในระดับต่ำลดหย่อน (PE 20.7x) ซึ่งมอบส่วนต่างความปลอดภัยที่ยอดเยี่ยมสำหรับการช้อนซื้อสะสม DCA เชิงโครงสร้างที่น้ำหนัก 5.00% - 7.00% ของพอร์ต
+TSMC คือรากฐานทางวิศวกรรมกายภาพเพียงหนึ่งเดียวของการปฏิวัติ AI ทั่วโลก (The Ultimate Physical Bottleneck of advanced technology) ด้วยการครองสัดส่วนตลาด Advanced Foundry < 5nm สูงสุดถึง 92% และถือครองสิทธิ์สิทธิบัตรระบบบรรจุชิปขั้นสูง CoWoS (คอขวดหลัก of AI GPU H100/B200) โครงสร้างการเชื่อมโยงอุตสาหกรรมขยายขอบเขตจาก AI Wave ไปสู่ระบบชิปอวกาศทนรังสีของดาวเทียม Starlink และชิปประมวลผล ASIC เหมืองขุดบิตคอยน์ระดับ 3 นาโนเมตรที่กำหนดเกณฑ์ Global Hash Rate ประเด็นความเสี่ยงภูมิรัฐศาสตร์จีน-ไต้หวันบีบให้ Forward P/E ซื้อขายในระดับต่ำลดหย่อน (PE 20.7x) ซึ่งมอบส่วนต่างความปลอดภัยที่ยอดเยี่ยมสำหรับการช้อนซื้อสะสม DCA เชิงโครงสร้างที่น้ำหนัก 5.00% - 7.00% ของพอร์ต
 
-## 📊 Key Metrics Snapshot (2026-05-24)
+## 📊 Key Metrics Snapshot (2026-06-05)
 
 | Metric | Value | Date | Source |
 |---|---|---|---|
-| Price (Live) | **$427.30** | 2026-05-27 | yfinance |
-| Market Cap | $2.09 Trillion | 2026-05-24 | yfinance |
-| Trailing P/E | 34.72x | 2026-05-24 | yfinance |
-| Forward P/E | 20.73x | 2026-05-24 | yfinance |
-| Gross Margin | 62.00% | 2026-05-24 | yfinance |
-| Operating Margin | 58.00% | 2026-05-24 | yfinance |
-| Net Cash Position | +NT$2.29 Trillion (USD ~$70B) | 2026-05-24 | yfinance |
-| ROE | 36.00% | 2026-05-24 | yfinance |
-| Fair Value Base Case | $428.50 | 2026-05-24 | Swarm DCF Model |
-| Daily RSI | 55.46 (Perfectly Neutral) | 2026-05-24 | Twelve Data |
-| Daily Bollinger Support | $402.59 (Middle Band) | 2026-05-24 | Twelve Data |
+| Price (Live) | **$427.62** | 2026-06-05 | yfinance |
+| Market Cap | $2.22 Trillion | 2026-06-05 | yfinance |
+| Trailing P/E | 38.18x | 2026-06-03 | yfinance |
+| Forward P/E | 22.89x | 2026-06-03 | yfinance |
+| Gross Margin | 62.00% | 2026-06-03 | yfinance |
+| Operating Margin | 58.00% | 2026-06-03 | yfinance |
+| Net Cash Position | +NT$2.29 Trillion (USD ~$70B) | 2026-06-03 | yfinance |
+| ROE | 36.00% | 2026-06-03 | yfinance |
+| Fair Value Base Case | $428.50 | 2026-06-03 | Swarm DCF Model |
+| 52W High / Low | $450.16 / $203.23 | 2026-06-05 | yfinance |
+| 50d MA / 200d MA | $387.68 / $325.39 | 2026-06-05 | yfinance |
+
+### 💼 Portfolio Position (Updated 2026-06-05)
+
+| Field | Value |
+|---|---|
+| **Shares Held** | **0.820 shares** |
+| **Avg Cost** | **$427.41** |
+| **Total Cost** | **$350.37** |
+| **Current Equity** | **$350.65** @ $427.62 |
+| **G/L** | **+$0.28 (+0.08%)** |
+| **Portfolio Allocation** | **4.07%** |
+| **Underweight Gap** | **-2.93%** จาก target 7.00% |
 
 ## 🏰 Moat & Advanced Foundry Hegemony
 - **Advanced Lithography Nodes Monopoly:** นำหน้าระดับ N3 และ N2 Commercial Mass Production ทิ้งห่างคู่แข่ง (Samsung/Intel) 3-5 ปี
@@ -100,10 +112,85 @@ TSMC คือรากฐานทางวิศวกรรมกายภา
 - **DCA Starter Validation:** ชื่นชมผลงานการเคาะซื้อสะสมของผู้ใช้วานนี้ที่ระดับ $412.79 (Tranche 1A) ซึ่งล็อกราคาแนวรับ Bollinger Middle Band ทันเวลาก่อนชาร์จข่าวขึ้นราคา 15% ปล่อยเก็บกำไรทันที +3.52% ในเวลา 1 วัน
 - **Full Report:** [2026-05-27_NVDA_TSM_decision_gate_swarm_verdict.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-05-27_NVDA_TSM_decision_gate_swarm_verdict.md)
 
+### [2026-05-30] — YOUTUBE — ลงทุน Diary: Computex 2026 & Vera Rubin Ramps Analysis
+- **Rubin Architecture Ramps:** Jensen Huang ปูทางแพลตฟอร์มถัดไป **Vera Rubin** ใน Computex Taipei และร่วมเจรจา C.C. Wei (CEO TSMC) เพื่อคุมสิทธิ์การผลิตชิปขั้นสูง 3nm/2nm โครงการ Constellation
+- **DCA Sizing Verdict: 🟢 DCA ACCUMULATE (DCA Priority #1):** สัดส่วนจริงพอร์ตหุ้นอยู่ที่ 1.86% (ต่ำกว่าเป้าหมาย 8.00% อย่างมีนัยสำคัญที่ -6.14% underweight) อนุมัติการทยอยตั้งคำสั่งช้อนสะสม DCA Tranche 1B/1C ในช่วงพักฐานแนวรับ $385 - $415 เพื่อปิด underweight gap โดยเร็ว
+- **Report:** [2026-05-30_youtube_longtundiary_live_tech_update.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-05-30_youtube_longtundiary_live_tech_update.md)
+
+### [2026-05-30] — RESEARCH — Ultimate Strategic Business Moat Refinement
+- **Moat & Leadership Analysis:** ปรับลดคณิตศาสตร์ซับซ้อนตามประสงค์ผู้ใช้ มุ่งเจาะลึก 6 เสาหลัก (คูเมือง ASML/Yield/CoWoS, ลูกค้า Apple/Nvidia/Hyperscalers, ปรัชญา Pure-Play, ซีอีโอ C.C. Wei, ฮาร์ดแวร์ล้ำยุค N3/N2/A16/CoWoS, และ Silicon Shield) เพื่อประเมินคุณค่าเชิงระบบของบริษัทอย่างลึกซึ้ง
+- **Portfolio Action:** ยืนยัน TSM เป็น DCA Priority #1 มุ่งทยอยช้อนสะสมโซนแนวรับ $385 - $415 เพื่อปิด Underweight Gap -6.14% (เป้าหมาย 8.00% บนพอร์ต 100% Equity base)
+- **Full Report:** [2026-05-30_TSM_ultimate_comprehensive_academic_mega_report.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-05-30_TSM_ultimate_comprehensive_academic_mega_report.md)
+
+### [2026-06-01] — YOUTUBE — CNBC Awaaz First Trade Live: Geopolitical Stress & IT Defensive Rotation
+- **IT Defensive Rotation:** ตลาดหุ้นอินเดียเผชิญสภาวะน้ำมันดิบ Brent spike 2% จากความกังวลตะวันออกกลาง ส่งผล Sensex ปิดลบ 250 จุด ทว่ากลุ่ม IT Sector (Nifty IT +3%) พุ่งสวนตลาดโดดเด่น คอนเฟิร์มความตึงตัวและความต้องการ Computing infrastructure ปลายน้ำ
+- **Swarm Playbook Action:** 🟢 ยืนยัน TSM เป็น DCA Priority #1 ซื้อสะสมเป้าหมายสัปดาห์นี้ $300.00 USD เพื่อดึงน้ำหนัก 1.64% ขึ้นสู่เป้าหมายระยะยาว
+- **Full Report:** [2026-06-01_youtube_cnbcawaaz_firsttrade.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-01_youtube_cnbcawaaz_firsttrade.md)
+
+### [2026-06-01] — YOUTUBE — Computex 2026 Keynote & AI Swarm Verdict (Jensen Huang)
+- **Advanced 3nm Nodes Pricing Moat:** ยุทธศาสตร์ความร่วมมือ RTX Spark (SoC ร่วมพัฒนา MediaTek 3nm) และการปูทาง Vera CPU + Rubin GPU ด้วย HBM4 และ CoWoS ตอกย้ำว่า TSMC คือผู้ผูกขาดกำลังผลิตแผ่นซิลิคอนขั้นสูงแต่เพียงผู้เดียว โชว์อำนาจ Pricing Power สูงสุดด้วยแผนการปรับขึ้นราคาแผ่นเวเฟอร์ 3nm ขึ้นอีก 15% ทันทีใน H2 2026
+- **Portfolio DCA Sizing Action:** 🟢 ยืนยัน TSM เป็น DCA Priority #1 ดึงกระแสเงินสด Deploy เข้าสะสมสะท้อนส่วนลดเป้าหมาย $300.00 USD เพื่อเติมเต็ม Underweight Gap หนักหน่วงถึง -4.36% (สัดส่วนพอร์ตจริง 1.64% เทียบเป้า Target 6.00%)
+- **Full Report:** [2026-06-01_youtube_nvidia_computex_keynote.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-01_youtube_nvidia_computex_keynote.md)
+
+### [2026-06-03] — YOUTUBE — Yahoo Finance Live (June 3, 2026) Swarm Verdict
+- **Foundry Pricing Power:** การเจรจาปรับขึ้นราคากลุ่มโหนดยอดนิยม 3nm +15% เสริมสร้างความแกร่งให้คูเมืองผูกขาด ท่ามกลางประเด็นคอขวด CoWoS Packaging และความเสี่ยงภูมิรัฐศาสตร์ช่องแคบไต้หวัน ราคาแกว่งตัวทดสอบแนวรับ RSI 65.84 (Zone Neutral)
+- **Verdict & Sizing:** 🟡 HOLD (ถือครองสัดส่วน 2.98% งด DCA เพิ่มชั่วคราวเนื่องจากเงินสดสำรองพอร์ต 9.00% ต่ำกว่าเกณฑ์ขั้นต่ำ 10%)
+- **Full Report:** [2026-06-03__Yahoo_Finance_Live_3_2026_NVDA_RKLB_MRVL_TSM_NVO__swarm_verdict.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-03__Yahoo_Finance_Live_3_2026_NVDA_RKLB_MRVL_TSM_NVO__swarm_verdict.md)
+
+### [2026-06-03] — SYSTEM — /portfolio-analysis (June 3 Review)
+- **Portfolio Sizing & Execution:** ขยายสัดส่วนพอร์ตจริงเพิ่มขึ้นเป็น **2.94%** (0.59 หุ้น) จากการเคาะ DCA ช้อนซื้อสยบความตึงเครียดในรอบก่อนหน้า แต่ยังห่างเป้าหมายเชิงกลยุทธ์ที่ 7.00% อย่างมีนัยสำคัญ ส่งผลให้เป็น **DCA Priority #1** ของพอร์ตต่อไป
+- **Ecosystem Moat Confirmed:** Computex 2026 ไทเป ยืนยันความผูกขาดระดับบนของ TSMC ในการเป็นโรงหล่อขั้นสูงให้กับชิป Edge PC GPU ของ NVIDIA (RTX Spark 3nm ร่วมกับ MediaTek) และชิป Rubin
+- **Full Report:** [2026-06-03_portfolio_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-03_portfolio_analysis.md)
+
+### [2026-06-03] — RESEARCH — Ultimate Qualitative Valuation and Analyst Debate
+- **Analyst & Moat Debate:** ชำแหละ 4 ข้อความลับที่รายย่อยมักไม่รู้ (ADR premium compression, High-NA EUV deferral, Arizona Premium pricing model, Glass substrates) และเปรียบเทียบแนวคิดทางเศรษฐศาสตร์ของนักวิเคราะห์ฝั่งกระทิง (Porter's Five Forces, Pure-play model) ปะทะฝั่งหมี (Geopolitical sovereign risk, Samsung GAA yield maturity, AI CapEx bubble)
+- **Financial Audit & Price Projections:** คำนวณงบ FCF ปรับปรุง SBC-Adjusted ในปี 2023 และทำแบบจำลองคาดการณ์ราคา 3 ช่วงเวลาล่วงหน้า (3Y Target: $456.89, 5Y Target: $670.97, 10Y Target: $1380.85) อ้างอิงตามกรอบ `subagent_forecast`
+- **DCA Sizing Action:** 🟢 DCA Priority #1 โดยคง GTC Limit Orders รอกลุ่มแนวรับที่ $415 (Tranche 2) และ $385 (Tranche 3) งดไล่ซื้อจุดสูงสุด ATH
+- **Full Report:** [2026-06-03_TSM_ultimate_comprehensive_academic_mega_report.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-03_TSM_ultimate_comprehensive_academic_mega_report.md)
+
+### [2026-06-03] — YOUTUBE — Yahoo Finance Live (June 2, 2026)
+- **AI CapEx & Supply Chain Constraints Moat:** อุปสงค์ความต้องการ AI Infrastructure จากบิ๊กเทคพุ่งสูงโดยบิ๊กเทคมีแผน CapEx รวมกันสูงกว่า $700,000 ล้านดอลลาร์ และ HPE แถลงย้ำว่า supply chain ชิปและไฟฟ้าจะตึงตัวยาวถึงปี 2027 คอนเฟิร์มความตึงตัวและความต้องการแผ่นเวเฟอร์ขั้นสูงรวมถึงคูเมือง Advanced Packaging CoWoS ของ TSMC ($TSM)
+- **Portfolio Sizing Verdict:** 🟢 DCA Priority #1 (ทยอยสะสม) สัดส่วนจริงพอร์ตอยู่ที่ 2.94% มี Underweight Gap ห่างจากเป้าหมายที่ -4.06% ให้สะสมตามแนวรับ (ตั้ง Limit order $415 และ $385) โดยคาดหวัง Expected Target 3 ปีที่ $456.89 และ 10 ปีที่ $1380.85
+- **Full Report:** [2026-06-03_youtube_yahoo_finance_live_US_Iran_tensions_AI_optimism.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-03_youtube_yahoo_finance_live_US_Iran_tensions_AI_optimism.md)
+
+### [2026-06-03] — SYSTEM — /portfolio-analysis (Market Open Delta Update)
+- **Geopolitical Market Open Sell-Off:** ราคาปรับฐานลงเล็กน้อยที่ $438.91 (-1.74%) ตามสภาวะตลาดกังวลตะวันออกกลาง คูเมืองการตั้งราคาชิป 3nm/2nm ยังแข็งแกร่ง รองรับการส่งผ่านต้นทุนเงินเฟ้อได้อย่างสมบูรณ์
+- **DCA Sizing Action:** 🟢 DCA Priority #1 ดำเนินการช้อนสะสมทันทีมูลค่า $200.00 USD เพื่อทยอยปิด Underweight Gap -4.07% (เป้าหมาย 7.00%)
+- **Full Report:** [2026-06-03_portfolio_market_open_delta_update.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-03_portfolio_market_open_delta_update.md)
+
+### [2026-06-04] — SYSTEM — /portfolio-analysis (June 4 Review)
+- **Portfolio Sizing & Execution**: สัดส่วนพอร์ตสะสมอยู่ที่ **2.98%** (0.59 หุ้น) มี Underweight Gap ห่างจากเป้าหมายที่ -4.02% ให้ดำเนินการสะสม DCA Priority #1 เพิ่มเติม
+- **15% Wafer Price Hike & Supply Shortage**: ซีอีโอเปิดเผยแผนปรับขึ้นราคาแผ่นเวเฟอร์ขั้นสูง 3nm อีก 15% ใน H2 2026 สะท้อนอำนาจต่อรองระดับผูกขาด ท่ามกลางอุปทานชิป AI ตึงตัวยาวนานหลายปี
+- **Full Report**: [2026-06-04_portfolio_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-04_portfolio_analysis.md)
+
+### [2026-06-04] — 🟢 DCA EXECUTED — Tranche 2: $100 ซื้อสะสมหลังเปิดตลาด (20:58 ICT)
+- **Execution:** ซื้อสะสมเพิ่ม **$100.00 USD** ที่ราคาตลาด ~**$433** (intraday session) — เพิ่ม **+0.231 หุ้น**
+- **Catalyst ที่กระตุ้นการตัดสินใจ:** CEO TSMC ยืนยันใน Computex 2026: *"AI chip shortage will last years + I'd like to hike chip prices"* — pricing power ระดับผูกขาดยืนยันซ้ำอีกครั้ง; 24/7 Wall St.: "TSM 2,095% gain over 10 years — Will it continue?"
+- **Updated Position:**
+  - Shares: **0.821** (จาก 0.590 หุ้น)
+  - Avg Cost: **$427.39** (จาก $425.23 — weighted average ใหม่หลัง DCA)
+  - Total Cost: **$350.89** ($250.89 + $100.00 ใหม่)
+  - Current Equity: ~**$355.97** @ $433.58
+  - G/L: +$5.08 (**+1.45%**)
+- **Allocation:** เพิ่มจาก **2.95% → ~4.09%** | Underweight Gap ลดลงจาก -4.05% → **-2.91%** จากเป้าหมาย 7.00%
+- **Next DCA Target:** สะสมต่อเมื่อมีเงินสด — Limit Order ที่ $415 (Tranche 3) และ $385 (Tranche 4) ยังคงใช้งาน
+
+### [2026-06-05] — YOUTUBE — Moneycontrol: Broadcom Earnings Crash & RBI Interest Rate Hold
+- **Broadcom AVGO Drop & CoWoS Bottleneck:** AVGO ร่วงหนัก -13% จาก flat AI guidance แต่ความจริงเกิดจากขีดจำกัดกำลังการผลิตชิปขั้นสูง (CoWoS packaging capacity bottleneck) ของ TSMC ($TSM) ที่เต็ม 100% ตอกย้ำอำนาจการต่อรองระดับผูกขาดสูงสุด (Pricing Power Moat) และสร้างจังหวะ DCA เพิ่มเติม
+- **RBI Policy Hold 5.25%:** ธนาคารกลางอินเดียคงดอกเบี้ย Repo เพื่อป้องกันเสถียรภาพค่าเงินรูปี (INR) และรับมือราคาน้ำมันดิบ Brent ทรงตัวในระดับสูง ส่งผลให้ Bank Nifty และกลุ่มกลาโหม (+12%) ดีดตัวบวก
+- **Portfolio Action:** ⚪ HOLD ทุกสินทรัพย์ชั่วคราวเนื่องจากเงินสดพอร์ตลดเหลือ 9.25% (ต่ำกว่าเกณฑ์ 10%)
+- **Full Report:** [2026-06-05_youtube_global_market_live_moneycontrol.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-05_youtube_global_market_live_moneycontrol.md)
+
+### [2026-06-05] — Technical & Support Audit
+- วิเคราะห์กรอบแนวรับสำคัญของ TSM ท่ามกลางการปรับฐานสะท้อนข่าว Broadcom earnings crash และ NFP ชะลอตัว
+- ล็อกราคา TSM ปัจจุบันที่ $427.62 ซึ่งเท่ากับระดับ Fair Value Base Case ($428.50) คอนเฟิร์มแนวรับสำคัญที่ $410-415 (Minor) และ $385 (Major - 50d MA)
+- รักษาวินัยตั้ง Limit Order วางราคาไว้ที่ $415 และ $385 เพื่อรักษาระดับเงินสดสำรองพอร์ต (9.53% ต่ำกว่าเกณฑ์ 10%) และป้องกันการไล่ซื้อสูงเกินไป
+- **Full Report:** [2026-06-05_TSM_BTC_support_levels_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-05_TSM_BTC_support_levels_analysis.md)
+
 ---
 
 ## 📎 Research Sources
-> อัปเดต 2026-05-28 | Sessions: Swarm DCA Verdict 2026-05-28
+> อัปเดต 2026-06-05 | Sessions: Swarm Media Analysis 2026-06-05
 
 - **finance.yahoo.com** #news
   - https://finance.yahoo.com
@@ -121,3 +208,9 @@ TSMC คือรากฐานทางวิศวกรรมกายภา
   - https://www.youtube.com/live/GTRC0jhpljU
 - **youtube.com** #youtube
   - https://www.youtube.com/watch?v=sYEPLYEkC_g
+- **youtube.com** #youtube
+  - https://www.youtube.com/watch?v=l62mCyBt8xg
+- **youtube.com** #youtube
+  - https://www.youtube.com/live/9jBJ9qH2oz0?si=U465Ni6grJ6qJC4h
+- **youtube.com** #youtube
+  - https://www.youtube.com/watch?v=C3BujIE6Sjg

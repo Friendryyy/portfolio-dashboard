@@ -3,7 +3,7 @@ ticker: NVDA
 company: NVIDIA Corporation
 sector: AI / Semiconductor
 tags: [in-portfolio, conviction/high, sector/ai, growth]
-last_updated: 2026-05-27
+last_updated: 2026-06-01
 conviction: 8/10
 thesis_status: ACTIVE
 ---
@@ -19,7 +19,7 @@ NVIDIA ครอง AI compute infrastructure ด้วย CUDA moat ที่�
 
 | Metric | Value | Date |
 |---|---|---|
-| Price | **$211.30** | 2026-05-27 |
+| Price | **$214.75** | 2026-06-04 |
 | ATH | **$235.74** (2026-05-14) | 2026-05-14 |
 | Market Cap | **$5.41 Trillion** | 2026-05-21 |
 | Forward P/E | **19.19x** (ต่ำสุดใน 2+ ปี) 🟢 | 2026-05-21 |
@@ -76,9 +76,9 @@ NVIDIA ครอง AI compute infrastructure ด้วย CUDA moat ที่�
 |---|---|
 | Shares | 7.56 |
 | Avg Cost | $127.01 |
-| Price (last check) | **$211.30** (2026-05-27) |
-| Gain/Loss | +$84.29/share (**+66.36%**) |
-| Allocation | **17.24%** |
+| Price (last check) | **$214.75** (2026-06-04) |
+| Gain/Loss | +$87.74/share (**+69.08%**) |
+| Allocation | **18.81%** |
 
 ## 🎬 Decision History
 
@@ -247,7 +247,36 @@ NVIDIA ครอง AI compute infrastructure ด้วย CUDA moat ที่�
 - **DCA Sizing Verdict: ⚪ HOLD (Buy Blocked)** แม้ว่ามูลค่าพื้นฐานจะจูงใจสูงมาก (Forward P/E 19.19x ต่ำสุดในรอบ 2 ปี, PEG 0.71x, FCF after SBC $46.9B คิดเป็นมาร์จิ้นสูงลิ่ว 57.50%) และราคาตลาดอยู่ใน DCA Entry Zone ($205-215) แต่ตามกฎควบคุมความกระจุกตัว เนื่องจากสัดส่วนของ NVDA อยู่ในระดับสูงถึง **17.24%** (ใกล้เป้า Target 18% และเพดาน Risk Sizing Ceiling 20%) และกระแสเงินสดสำรองจำต้องล็อคไว้ให้แก่ SOFI และ SPCX (SpaceX IPO) ระบบจึงสั่งห้ามเติมเงินซื้อเพิ่มเด็ดขาด ให้รักษาสถานะถือครอง 7.56 หุ้นเดิมไว้เงียบๆ
 - **Full Report:** [2026-05-27_NVDA_TSM_decision_gate_swarm_verdict.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-05-27_NVDA_TSM_decision_gate_swarm_verdict.md)
 
+### [2026-05-30] — YOUTUBE — TraderTV Live: Hormuz Ultimatum & US Stock Market Live (USO Spikes)
+- **VWAP Defense & Keynote Focus:** ราคาชิปประมวลผลป้องกันแนวรับ VWAP อย่างแข็งแรงแถว $211.14 EOD ก่อนเข้าสู่งาน Computex Taipei ในสัปดาห์หน้า คาด Jensen Huang เปิดตัว Vera CPU และแผนการขยายขอบเขต AI Data Center
+- **DCA Sizing Target Check:** อนุมัติการล็อค Hard Buy Block (พอร์ตสะสมอยู่ที่ 17.24% ใกล้เพดาน Risk Sizing 20% และเป้า Target 18%) รักษาสถานะถือครอง 7.56 หุ้นเดิมเพื่อรักษาวินัยความเสี่ยง
+- **Full Report:** [2026-05-30_youtube_US_Stock_Market_Live_USO_Spikes.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-05-30_youtube_US_Stock_Market_Live_USO_Spikes.md)
+
+### [2026-05-30] — YOUTUBE — ลงทุน Diary: Computex 2026 & Vera Rubin Platform Analysis
+- **Rubin Architecture Ramps:** Jensen Huang ปูทางระดับถัดไปสู่ **Vera Rubin** (Rubin GPU + Vera CPU) ในงาน Computex Taipei และร่วมหารือ C.C. Wei (CEO TSMC) เพื่อคุมสิทธิ์โควตาการผลิตชิปขั้นสูง 3nm/2nm โครงการ Constellation
+- **Swarm Sizing Verdict: ⚪ HOLD:** สัดส่วนจริงพอร์ตหุ้นอยู่ที่ 19.52% (ใกล้เป้า Target 20% และเพดาน Risk 20%) สั่งตรึง Hard Buy Block ห้ามเติมทุน ปล่อยให้ถือครองและเติบโตตามเป้า
+- **Report:** [2026-05-30_youtube_longtundiary_live_tech_update.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-05-30_youtube_longtundiary_live_tech_update.md)
+
+### [2026-06-01] — YOUTUBE — Computex 2026 Keynote & AI Swarm Verdict (Jensen Huang)
+- **Agentic AI & Accelerated Compute:** ยุคเอเจนต์ทวีคูณผลิตภาพซอฟต์แวร์ $3T เป็น $9T | คูเมือง libraries ปฏิวัติ (CU Litho, Parabricks, Aerial) และแร็ค Grace Blackwell 5,000 แอมป์ DLC 45°C
+- **Vera CPU & Rubin Platform:** ชิป Vera CPU 10-wide decode แรงกว่า ประหยัดไฟขึ้น 40% แก้คоขวด virtualized agent sandboxing | โครงสร้าง Rubin GPU HBM4 288GB 22 TB/s บน TSMC N3 โครงข่ายราคา $5M-$7M
+- **RTX Spark (SoC) & Nemotron Ultra:** ชิป Arm-MediaTek RTX Spark 3nm, GPU 6,144 คอร์, unified memory 128GB รัน 120B parameter โมเดลในเครื่อง ชน Qualcomm/Apple | Nemotron 3 Ultra 550B MoE Mamba-MoE Hybrid SSM ประหยัด 30%
+- **Swarm Sizing Verdict: ⚪ HOLD:** สัดส่วนพอร์ตจริงอยู่ที่ 17.21% ใกล้เพดานความปลอดภัย 20.00% ตรึง Hard Buy Block ปล่อยรันดอกเบี้ยทบต้น
+- Report: [2026-06-01_youtube_nvidia_computex_keynote.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-01_youtube_nvidia_computex_keynote.md)
+
+### [2026-06-03] — YOUTUBE — Yahoo Finance Live (June 3, 2026) Swarm Verdict
+- **Computex Ecosystem Leadership:** ความต้องการ Grace Blackwell NVL72 และ Vera Rubin Platform แกร่งต่อเนื่อง ท่ามกลางประเด็นภูมิรัฐศาสตร์และคอขวด CoWoS Packaging ของ TSMC ราคาประคองตัว RSI อยู่ที่ 52.72 (Zone Neutral)
+- **Verdict & Sizing:** 🟡 HOLD (ตรึงสัดส่วนเดิม 18.78% จ่อเพดาน 20.00% ล็อกการ DCA เพิ่มเติม และเงินสดสำรองพอร์ต 9.00% ต่ำกว่าเกณฑ์ขั้นต่ำ 10%)
+- **Full Report:** [2026-06-03__Yahoo_Finance_Live_3_2026_NVDA_RKLB_MRVL_TSM_NVO__swarm_verdict.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-03__Yahoo_Finance_Live_3_2026_NVDA_RKLB_MRVL_TSM_NVO__swarm_verdict.md)
+
+### [2026-06-04] — SYSTEM — /portfolio-analysis (June 4 Review)
+- **Portfolio Sizing & Execution**: สัดส่วนพอร์ตสะสมอยู่ที่ **18.81%** (7.56 หุ้น) มูลค่าถือครอง $1,623.10 USD (G/L +69.08%) ตรึงมาตรการ Hard Buy Block ต่อเนื่องเพื่อรักษาวินัยความเสี่ยง
+- **Rubin & RTX Spark Catalyst**: ความต้องการ Grace Blackwell และแพลตฟอร์ม Rubin ยังแกร่งอย่างสมบูรณ์ ท่ามกลางข่าวลือความขัดแย้งของข้อเสนอ Cerebras CS-3
+- **Full Report**: [2026-06-04_portfolio_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-04_portfolio_analysis.md)
+
+
 -----
+
 
 ## 📚 NotebookLM Full Archive (Migrated 2026-05-12)
 
@@ -350,97 +379,7 @@ NVIDIA ครอง AI compute infrastructure ด้วย CUDA moat ที่�
 ---
 
 ## 📎 Research Sources
-> อัปเดต 2026-05-28 | Sessions: Swarm DCA Verdict 2026-05-28
+> อัปเดต 2026-06-04 | Sessions: Swarm DCA Verdict 2026-06-04
 
-- **tomshardware.com** #macro #risk #sector
-  - https://www.tomshardware.com/tech-industry/artificial-intelligence/jensen-says-nvidia-now-has-zero-percent-market-share-in-china-says-us-export-policy-has-already-largely-backfired
-- **marketbeat.com** #earnings #news #risk
-  - https://www.marketbeat.com/originals/nvidias-china-connection-investor-risks-with-earnings-ahead/
-- **futurumgroup.com** #earnings
-  - https://futurumgroup.com/insights/nvidia-q3-fy-2026-record-data-center-revenue-higher-q4-guide/
-- **foreignpolicyjournal.com** #analyst #macro
-  - https://www.foreignpolicyjournal.com/2026/04/26/nvidia-nvda-stock-rating-raised-to-buy-as-export-controls-and-ai-demand-set-up-strong-second-half/
-- **247wallst.com** #news
-  - https://247wallst.com/investing/2026/03/15/government-drops-sweeping-ai-chip-export-rules-can-nvidia-start-growing-again/
-- **investor.nvidia.com** #IR
-  - https://investor.nvidia.com/financial-info/financial-reports/default.aspx
-- **nvidianews.nvidia.com** #IR #earnings
-  - https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026
-- **stockanalysis.com** #news #valuation
-  - https://stockanalysis.com/stocks/nvda/statistics/
-- **gurufocus.com** #macro #valuation
-  - https://www.gurufocus.com/term/forward-pe-ratio/NVDA
-- **macrotrends.net** #macro #technicals #valuation
-  - https://www.macrotrends.net/stocks/charts/NVDA/nvidia/pe-ratio
-- **marketbeat.com** #analyst #news
-  - https://www.marketbeat.com/stocks/NASDAQ/NVDA/forecast/
-- **247wallst.com** #analyst #news
-  - https://247wallst.com/investing/2026/05/01/nvidia-trades-23-below-analyst-price-targets-despite-rallying-20-this-month/
-- **tradingview.com** #news
-  - https://www.tradingview.com/symbols/NASDAQ-NVDA/
-- **barchart.com** #technicals
-  - https://www.barchart.com/stocks/quotes/NVDA/cheat-sheet
-- **investing.com** #news #technicals
-  - https://www.investing.com/equities/nvidia-corp-technical
-- **fxleaders.com** #risk #sector
-  - https://www.fxleaders.com/news/2026/05/05/nvda-stock-holds-under-200-as-china-lockout-and-trade-risks-cloud-ai-giants-outlook/
-- **nvidianews.nvidia.com** #news
-  - https://nvidianews.nvidia.com/_gallery/download_pdf/6837703d3d63320fddb3a9ee/
-- **sec.gov** #sec
-  - https://www.sec.gov/Archives/edgar/data/1045810/000104581025000115/q1fy26cfocommentary.htm
-- **analyticsinsight.net** #news
-  - https://www.analyticsinsight.net/stocks/nvidia-stock-price-at-198201-breakout-or-pause-ahead
-- **stockanalysis.com** #analyst #news
-  - https://stockanalysis.com/stocks/nvda/forecast/
-- **fool.com** #earnings #news
-  - https://www.fool.com/investing/2025/11/08/nvidias-ai-dominance-data-center-revenue-poised-fo/
-- **cnbc.com** #macro #news #risk
-  - https://www.cnbc.com/2026/05/14/nvidias-jensen-huang-on-china-trip-trump.html
-- **cnbc.com** #macro #news #risk
-  - https://www.cnbc.com/2026/05/13/nvidia-says-ceo-jensen-huang-is-joining-trumps-china-trip.html
-- **cnbc.com** #macro #news #risk
-  - https://www.cnbc.com/2026/05/12/nvidia-ceo-huang-trump-china-trip-chip-sales.html
-- **247wallst.com** #macro #news #risk
-  - https://247wallst.com/investing/2026/05/14/trump-brought-17-ceos-to-china-only-two-got-seats-on-air-force-one-elon-musk-and-jensen-huang/
-- **247wallst.com** #macro #news
-  - https://247wallst.com/investing/2026/05/13/trump-once-said-hed-never-heard-of-nvidia-ceo-jensen-huang-now-air-force-one-stopped-in-alaska-to-pick-him-up/
-- **scmp.com** #macro #risk
-  - https://www.scmp.com/economy/china-economy/article/3353346/nvidias-jensen-huang-joins-trumps-trip-china-after-all
-- **cnbc.com** #macro #news #risk
-  - https://www.cnbc.com/2026/05/13/trump-china-xi-beijing-meeting-ceos.html
-- **thestreet.com** #news
-  - https://www.thestreet.com/investing/stocks/goldman-sachs-sends-blunt-message-on-nvidia-stock-after-gtc
-- **finance.yahoo.com** #analyst
-  - https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-draws-bullish-goldman-235640305.html
-- **thestreet.com** #analyst
-  - https://www.thestreet.com/investing/stocks/morgan-stanley-sets-bold-new-price-target-on-nvidia-stock
-- **investing.com** #analyst #macro #news
-  - https://www.investing.com/news/analyst-ratings/morgan-stanley-reiterates-overweight-on-nvidia-stock-260-target-93CH-4565172
-- **thestreet.com** #news
-  - https://www.thestreet.com/investing/wall-street-has-a-stark-message-for-nvidia-investors
-- **heygotrade.com** #earnings
-  - https://www.heygotrade.com/en/blog/nvidia-q1-fy27-earnings-preview-may-20-2026/
-- **fool.com** #earnings #news
-  - https://www.fool.com/investing/2026/05/13/nvidia-reports-its-fiscal-2027-q1-earnings-may-20/
-- **tipranks.com** #analyst #earnings
-  - https://www.tipranks.com/news/nvidia-stock-hits-all-time-highs-ahead-of-q1-earnings-what-top-financial-analysts-expect-from-here
-- **intellectia.ai** #earnings
-  - https://intellectia.ai/blog/nvidia-earnings-preview-may-2026
-- **cnbc.com** #macro #news #risk
-  - https://www.cnbc.com/2026/05/18/china-april-retail-sales-industrial-output-investment-unemployment-iran-war.html
-- **cnbc.com** #catalyst #macro #news #risk
-  - https://www.cnbc.com/2026/05/18/us-china-announce-deals-after-trump-xi-summit.html
-- **cnbc.com** #macro #news
-  - https://www.cnbc.com/2026/05/15/trump-xi-summit-the-3-big-takeaways-from-historic-meeting-in-beijing.html
-- **semafor.com** #macro #risk
-  - https://www.semafor.com/article/05/18/2026/iran-war-squeezes-chinas-economic-growth
 - **api.alternative.me** #news
   - https://api.alternative.me/fng/
-- **youtu.be** #news
-  - https://youtu.be/YNy5a5GaKWw
-- **youtube.com** #youtube
-  - https://www.youtube.com/live/GTRC0jhpljU
-- **youtube.com** #youtube
-  - https://www.youtube.com/watch?v=sYEPLYEkC_g
-- **youtube.com** #youtube
-  - https://www.youtube.com/watch?v=UTvqlNBSjlM

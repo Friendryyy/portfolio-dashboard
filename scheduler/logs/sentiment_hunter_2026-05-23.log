@@ -1,0 +1,20 @@
+[13:06:38] ==============================================
+[13:06:38]   INVESTMENT OS — Sentiment Crisis Hunter (Python)
+[13:06:38]   Date: 2026-05-23
+[13:06:38] ==============================================
+[13:06:38] [1/3] Fetching CNN Fear & Greed Index...
+[13:06:40]       FNG: 28 — Fear
+[13:06:40]       [WARN] Fear zone (28). Monitoring closely.
+[13:06:40] [2/3] Checking price levels for holdings...
+[13:06:59]       RKLB price: $135.76
+[13:07:08]       NVDA price: $215.33
+[13:07:16]       GOOGL price: $382.97
+[13:07:25]       NVO price: $44.96
+[13:07:32]       SOFI price: $15.62
+[13:07:41]       UNH price: $388.47
+[13:07:49]       AMZN price: $266.32
+[13:07:49] [3/3] No crisis detected. Writing daily sentiment summary...
+[13:07:49]       Summary saved: C:\Users\LENOVO\OneDrive\文档\Second-Brain\Investment\output\2026-05-23_sentiment_daily_summary.md
+[13:07:49] ==============================================
+[13:07:49]   Sentiment Crisis Hunter — COMPLETE
+[13:07:49] ==============================================

@@ -1,0 +1,61 @@
+# TraderTV Live — May 19, 2026 Sources
+# Research session: 2026-05-20
+# Topics: AMD/ARM, Micron HBM4, Meta layoffs, Cybersecurity, PLTR, Home Depot, OpenAI/Musk
+
+# YouTube Source
+https://www.youtube.com/live/Zq891YwAnXc?si=OumYuk-iZFAxszHD
+
+# AMD
+https://au.investing.com/news/stock-market-news/evercore-isi-raises-amd-stock-price-target-on-cpu-demand-growth-93CH-4408938
+https://www.newscase.com/amds-china-bet-and-anthropic-win-spark-a-579-target-from-evercore/
+https://ca.investing.com/news/stock-market-news/baird-raises-amd-stock-price-target-to-625-on-ai-server-growth-93CH-4612547
+https://coincentral.com/is-amd-stock-a-buy-after-evercores-price-target-hike/
+
+# ARM
+https://newsroom.arm.com/news/arm-agi-cpu-launch
+https://www.nextplatform.com/compute/2026/03/25/arm-comes-full-circle-with-homegrown-ai-tuned-server-cpu/5211524
+https://mlq.ai/research/arm-agi-cpu/
+https://www.investing.com/news/stock-market-news/arm-holdings-gains-after-hsbc-upgrades-on-ai-server-shift-new-cpu-push-4572988
+
+# Micron HBM4 + Vera Rubin
+https://investors.micron.com/news-releases/news-release-details/micron-high-volume-production-hbm4-designed-nvidia-vera-rubin
+https://markets.financialcontent.com/stocks/article/marketminute-2026-3-26-micron-crushes-expectations-in-2026-memory-supercycle-peak-as-hbm4-demand-hits-fever-pitch
+https://247wallst.com/investing/2026/04/23/micron-is-up-68-ytd-as-hbm-demand-explodes-is-the-memory-rally-sustainable/
+https://www.digitimes.com/news/a20260107PD236/nvidia-hbm4-micron-2026-rubin.html
+https://www.techi.com/micron-nvidia-ai-memory-hbm-stock/
+
+# Meta AI Layoffs
+https://www.techrepublic.com/article/news-meta-ai-spending-job-cuts-may-2026/
+https://www.cnbc.com/2026/05/18/metas-layoffs-starting-this-week-underscore-zuckerbergs-ai-reality-.html
+https://www.foxbusiness.com/fox-news-tech/meta-ai-workforce-restructuring-layoffs
+https://www.newsbytesapp.com/news/business/meta-moves-7-000-employees-to-ai-roles-ahead-of-layoffs/story
+https://www.tradekaizen.in/trending-news/meta-ai-reassignment-1779191374
+https://thenextweb.com/news/gitlab-layoffs-agentic-era-devops-ai
+
+# Cybersecurity (CRWD / FTNT)
+https://247wallst.com/investing/2026/05/19/dz-bank-just-slapped-crowdstrike-with-a-sell-rating-is-the-700-bull-case-falling-apart/
+https://247wallst.com/investing/2026/05/19/fortinet-cut-to-hold-at-dz-bank-price-target-set-at-125-is-cybersecurity-losing-steam/
+https://www.gurufocus.com/news/2882147/crowdstrike-crwd-receives-downgrade-from-dz-bank-crwd-stock-news
+https://www.gurufocus.com/news/8844166/fortinet-ftnt-projects-strong-fy26-revenue-growth
+https://finance.yahoo.com/markets/stocks/articles/dz-bank-just-slapped-crowdstrike-161212575.html
+
+# PLTR Government
+https://www.techradar.com/pro/palantir-awarded-usd1-billion-dhs-contract-for-ai-and-data-analytics-rollout
+https://intellectia.ai/news/stock/palantir-secures-major-government-contracts-amid-valuation-concerns
+https://stateofsurveillance.org/news/dhs-billion-dollar-palantir-ai-surveillance-shopping-spree-2026/
+https://finance.yahoo.com/news/billion-dollar-palantir-contract-gives-213500997.html
+https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000028/pltr-20260331.htm
+
+# Home Depot Q1 2026
+https://finance.yahoo.com/markets/stocks/articles/home-depot-q1-2026-earnings-111523098.html
+https://www.cnbc.com/2026/05/19/home-depot-hd-q1-2026-earnings.html
+https://www.investing.com/news/transcripts/earnings-call-transcript-home-depot-q1-2026-beats-forecasts-stock-dips-93CH-4698988
+https://qz.com/home-depot-earnings-beat-full-year-guidance-reaffirmed-051926
+https://www.marketbeat.com/earnings/reports/2026-5-19-the-home-depot-inc-stock/
+
+# OpenAI / Musk Trial
+https://www.npr.org/2026/05/18/nx-s1-5822366/musk-altman-openai-jury-verdict-claims-dismissed
+https://www.techzine.eu/news/analytics/141434/openai-wins-elon-musks-lawsuit-clearing-the-way-for-an-ipo/
+https://www.newsweek.com/musk-openai-lawsuit-verdict-altman-ai-trial-11964171
+https://www.tradingkey.com/analysis/stocks/us-stocks/261908737-musk-openai-lawsuit-dismissed-statute-limitations-openai-ipo-spacex-tradingkey
+https://gulfnews.com/amp/story/world/americas/statute-of-limitations-why-a-us-jury-dismissed-elon-musks-lawsuit-against-openai-1.500545548

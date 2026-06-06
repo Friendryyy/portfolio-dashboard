@@ -12,15 +12,15 @@
 
 | Ticker | Shares | Avg Cost | Sector | Wiki Page |
 |---|---|---|---|---|
-| RKLB | 19.00 | $22.86 | Space/Defense | [[RKLB]] |
+| RKLB | 18.46 | $22.86 | Space/Defense | [[RKLB]] |
 | NVDA | 7.56 | $127.01 | AI/Semi | [[NVDA]] |
 | GOOGL | 2.43 | $190.35 | AI/Cloud | [[GOOGL]] |
 | AMZN | 1.92 | $215.96 | E-comm/Cloud | [[AMZN]] |
-| UNH | 1.27 | $326.85 | Healthcare | [[UNH]] |
+| UNH | 1.67 | $339.17 | Healthcare | [[UNH]] |
 | SOFI | 34.04 | $15.88 | Fintech | [[SOFI]] |
-| NVO | 13.99 | $47.76 | Pharma | [[NVO]] |
-| TSM | 1.11 | $404.52 | AI/Semi | [[TSM]] (DCA Active) |
-| BTC | 0.0059 | $76,658.44 | Digital Gold | [[BTC]] (DCA Active) |
+| NVO | 16.33 | $47.07 | Pharma | [[NVO]] |
+| TSM | 0.82 | $427.41 | AI/Semi | [[TSM]] (DCA Active) |
+| BTC | 0.00756 | $72,088.00 | Digital Gold | [[BTC]] (DCA Active) |
 | SPCX | — | — | Space Economy | [[SPCX]] (Pre-IPO) |
 | PLTR | 0.00 | $0.00 | AI/Defense | [[PLTR]] (Liquidated 2026-05-24) |
 
@@ -28,12 +28,12 @@
 
 ## Portfolio Rules & Constraints
 
-### Concentration Limits (อัปเดต 2026-05-24)
+### Concentration Limits (อัปเดต 2026-06-05)
 | Rule | Limit | Current Status |
 |---|---|---|
-| Single stock max | 15% | RKLB ~28.47% ⚠️ (เกินเป้า 15% หลัง Active Micro-Trim แต่ปลอดภัยใต้ 30% ceiling) |
-| Single sector max | 35% | Space ~28.47% ✅ (RKLB+SPCX อยู่ใต้เพดาน 35.00% ตามกฎ Joint Space Ceiling) |
-| Cash target | 0.00% | 17.11% (DCA Active deployment สภาพคล่องสำรองในบัญชี เพื่อโอนสลับ TSM/BTC/NVO) |
+| Single stock max | 15% | RKLB ~24.94% ⚠️ (เกินเป้า 15% แต่ปลอดภัยใต้ 30% ceiling / Hard Buy Block Active) |
+| Single sector max | 35% | Space ~24.94% ✅ (RKLB+SPCX อยู่ใต้เพดาน 35.00% ตามกฎ Joint Space Ceiling) |
+| Cash target | 10.66% | 9.25% (Live cash cushion - Hold DCA Status active due to cash < 10% limit) |
 
 ### Position Sizing Guidelines
 - **Core holding** (high conviction, proven fundamentals): 5-10%
@@ -44,9 +44,9 @@
 ### DCA Protocol
 - **คู่มือปฏิบัติการ:** ดูรายละเอียดเต็มรูปแบบที่ [[dca_rules]]
 - DCA ทุกเดือน ไม่ว่าตลาดจะเป็นอย่างไร โดยเน้นการจัดสรรตามระบบไร้อารมณ์ (De-emotionalized DCA)
-- ระงับการซื้อ RKLB เพิ่มชั่วคราว (Buy Block) เนื่องจากสัดส่วนเกิน 30% (มีสัดส่วน 31.68% ณ ปัจจุบัน)
-- Deploy เงินสดสำรอง (Cash 17.04%) ตามเกณฑ์ Market Correction Tiers
-- จัดลำดับความสำคัญตาม Priority Order สะสม (Priority 1: NVO, Priority 2: NVDA, Priority 3: AMZN)
+- ระงับการซื้อ RKLB เพิ่มชั่วคราว (Buy Block) เนื่องจากสัดส่วนพอร์ตสะสมอยู่ประชิดเพดาน (28.59% ปัจจุบัน)
+- Deploy เงินสดสำรองตามแผน Capital Rotation แผนใหม่ (โอนสลับ TSM/NVO และล็อกสำรอง SpaceX IPO)
+- จัดลำดับความสำคัญตาม Priority Order สะสม (Priority 1: TSM, Priority 2: NVO, Priority 3: BTC)
 
 ---
 

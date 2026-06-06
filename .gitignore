@@ -8,3 +8,13 @@ __pycache__/
 *.pyc
 *.pyo
 .env
+
+# Local IDE & Obsidian config
+.claude/
+.obsidian/
+.gemini/
+scratch/
+scratch_drawdowns.json
+scratch_trans.json
+streamlit_err.txt
+streamlit_out.txt

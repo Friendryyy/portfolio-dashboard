@@ -1,0 +1,44 @@
+# OKLO Research Sources — 2026-05-16
+# Add to NotebookLM OKLO notebook when created
+
+# Official IR & Regulatory
+https://oklo.com/regulatory/default.aspx
+https://oklo.com/newsroom/news-details/2025/Oklo-Selected-for-Three-Projects-Under-U-S--Department-of-Energys-Reactor-Pilot-Program/default.aspx
+https://oklo.com/newsroom/news-details/2025/Oklos-NRC-Principal-Design-Criteria-Topical-Report-Accepted-for-Review-Under-an-Accelerated-Timeline/default.aspx
+https://oklo.com/newsroom/news-details/2025/Oklo-Advances-Licensing-with-Completion-of-NRC-Readiness-Assessment/default.aspx
+https://oklo.com/newsroom/news-details/2026/Oklos-Atomic-Alchemy-Granted-U-S--Nuclear-Regulatory-Commission-License-for-Isotope-Material/default.aspx
+https://oklo.com/newsroom/news-details/2025/Oklo-Announces-U-S--Department-of-Energy-Approval-for-Nuclear-Safety-Design-Agreement-of-Aurora-Fuel-Fabrication-Facility/default.aspx
+https://oklo.com/newsroom/news-details/2025/Oklo-Announces-Fuel-Recycling-Facility-as-First-Phase-of-up-to-1-68-Billion-Advanced-Fuel-Center-in-Tennessee/default.aspx
+https://oklo.com/newsroom/news-details/2024/Oklo-and-Switch-Form-Landmark-Strategic-Relationship-to-Deploy-12-Gigawatts-of-Advanced-Nuclear-Power-One-of-the-Largest-Corporate-Clean-Power-Agreements-Ever-Signed/default.aspx
+https://oklo.com/newsroom/news-details/2025/Oklo-Announces-Chairman-Transition/default.aspx
+
+# DOE
+https://www.energy.gov/ne/articles/us-department-energy-signs-oklo-fuel-fabrication-facility-design-concept
+https://www.energy.gov/articles/energy-department-selects-four-companies-advanced-nuclear-fuel-line-pilot-projects
+https://www.energy.gov/ne/us-department-energy-reactor-pilot-program
+
+# NRC
+https://www.nrc.gov/reactors/new-reactors/large-lwr/col/aurora-oklo
+
+# Industry / News
+https://www.world-nuclear-news.org/articles/oklo-breaks-ground-for-first-aurora-powerhouse
+https://www.ans.org/news/2026-03-19/article-7855/oklo-provides-updates-on-doe-nrc-approvals/
+https://www.ans.org/news/2025-11-13/article-7538/nsda-approved-for-oklos-aurora-fuel-fabrication-facility/
+https://www.ans.org/news/2025-11-14/article-7543/the-progress-so-far-an-update-on-the-reactor-pilot-program/
+https://www.ans.org/news/2025-09-29/article-7414/oklo-breaks-ground-at-inl-on-aurora-reactor/
+
+# Customer Deals
+https://www.utilitydive.com/news/meta-nuclear-deal-oklo-vistra-terrapower-ai-data-centers/809215/
+https://www.datacenterdynamics.com/en/news/equinix-signs-deal-to-procure-up-to-500mw-of-nuclear-power-from-oklo-smrs-makes-25m-pre-payment/
+https://www.powermag.com/meta-locks-in-up-to-6-6-gw-of-nuclear-power-through-deals-with-vistra-oklo-and-terrapower/
+
+# Earnings / Financials
+https://tradethepool.com/uncategorized/oklo-earnings-reports-q1-2026-2-5b-cash-zero-revenue/
+https://finance.biggo.com/news/US_OKLO_2026-05-12
+
+# Analysis
+https://www.cnbc.com/2025/04/22/sam-altman-steps-down-as-oklo-chair-freeing-nuclear-company-up-to-work-with-more-ai-companies.html
+https://www.fool.com/investing/2026/05/02/oklo-vs-nuscale-both-are-falling-in-2026-but-on/
+https://lasvegassun.com/news/2026/may/12/oklo-and-idaho-national-laboratory-to-employ-ai-en/
+https://en.wikipedia.org/wiki/Oklo_Inc.
+https://en.wikipedia.org/wiki/Aurora_nuclear_reactor

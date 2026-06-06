@@ -1,7 +1,7 @@
 # 📎 AMZN — Research Sources
 > **Company:** AMZN Corporation  
 > **Thesis:** Long-term DCA investment target — risk: macroeconomic and business-specific constraints  
-> **Research Sessions:** Swarm DCA Verdict 2026-05-28 | **Updated:** 2026-05-28  
+> **Research Sessions:** Swarm DCA Verdict 2026-05-30 | **Updated:** 2026-05-30  
 > **Total Sources:** 21
 
 > 💡 **วิธีใช้:** อ่านหน้านี้แทนการเปิด URL — summary บอกว่าแต่ละ source พูดถึงอะไรและเกี่ยวกับ thesis ยังไง
@@ -9,6 +9,14 @@
 ---
 
 ## 📋 Official IR & Earnings Releases
+
+
+
+
+
+
+
+
 
 
 ### Amazon Investor Relations — Amazon.com Announces First Quarter 2026 Financial Results
@@ -20,6 +28,14 @@
 ## 📊 Earnings & Financial Data
 
 
+
+
+
+
+
+
+
+
 ### CNBC — Amazon Q1 2026 Earnings: AWS growth accelerates to 28% as AI demand surges
 **Tags:** #earnings #news  
 **สรุป:** ข้อมูลประกอบการศึกษา: 1. CNBC — Amazon Q1 2026 Earnings: AWS growth accelerates to 28% as AI demand surges news earnings AWS |  ระบุตัวเลขรายได้และอัตราการเติบโตที่แข็งแกร่งของฝั่งคลาวด์ แผนการเบิกจ่ายงบ CapEx  
@@ -27,6 +43,14 @@
 ---
 
 ## 🎯 Analyst Coverage & Price Targets
+
+
+
+
+
+
+
+
 
 
 ### MarketBeat Forecast
@@ -53,6 +77,14 @@
 ## 💰 Valuation & Financial Metrics
 
 
+
+
+
+
+
+
+
+
 ### Alpha Spread — Amazon.com Inc. ($AMZN) DCF Valuation Model & Intrinsic Value Base Case Analysis
 **Tags:** #valuation  
 **สรุป:** ข้อมูลประกอบการศึกษา: บทความชำแหละผลกระทบเชิงดุลบัญชีของ FCF ที่หายไปจากงบ CapEx AI | 4. Alpha Spread — Amazon.com Inc. ($AMZN) DCF Valuation Model & Intrinsic Value Base Case Analysis valuation DCF |  สถิติตัวคูณส่วนลด WACC และการคำนวณมูลค่ากระแสเงินสดทบต้น 10 ปี  
@@ -60,6 +92,14 @@
 ---
 
 ## ⚠️ Risk Factors & Short Reports
+
+
+
+
+
+
+
+
 
 
 ### 247WallSt Macro
@@ -71,6 +111,14 @@
 ## 🚀 Product & Catalyst News
 
 
+
+
+
+
+
+
+
+
 ### futurumgroup.com
 **Tags:** #product  
 **สรุป:** แหล่งข่าวสารหรือการรายงานความคืบหน้าของอุตสาหกรรมทางการเงินจากเว็บไซต์ futurumgroup.com  
@@ -78,6 +126,14 @@
 ---
 
 ## 🌍 Macro & Regulatory Environment
+
+
+
+
+
+
+
+
 
 
 ### cnbc.com
@@ -89,6 +145,14 @@
 ## 🦅 Smart Money & Institutional
 
 
+
+
+
+
+
+
+
+
 ### Fintel Institutional
 **Tags:** #smartmoney  
 **สรุป:** แหล่งข่าวสารหรือการรายงานความคืบหน้าของอุตสาหกรรมทางการเงินจากเว็บไซต์ fintel.io  
@@ -98,6 +162,14 @@
 ## 📈 Technical Analysis
 
 
+
+
+
+
+
+
+
+
 ### Altindex Technical
 **Tags:** #technicals  
 **สรุป:** แหล่งข่าวสารหรือการรายงานความคืบหน้าของอุตสาหกรรมทางการเงินจากเว็บไซต์ altindex.com  
@@ -105,6 +177,14 @@
 ---
 
 ## 📰 News & General Coverage
+
+
+
+
+
+
+
+
 
 
 ### StockAnalysis Financials

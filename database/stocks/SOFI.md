@@ -2,10 +2,10 @@
 ticker: SOFI
 company: SoFi Technologies
 sector: Fintech / Digital Banking
-tags: [in-portfolio, conviction/medium, sector/fintech, growth, thesis/watch]
-last_updated: 2026-05-22
+tags: [in-portfolio, conviction/low, sector/fintech, growth, thesis/watch]
+last_updated: 2026-06-05
 conviction: 4.0/10
-thesis_status: WATCH — ⚠️ MW ESCALATION + B2B SOFI SWARM ACTIVE
+thesis_status: WATCH — ⚠️ MW UNRESOLVED | Morningstar FV $19 Audit Completed
 ---
 
 # SOFI — SoFi Technologies
@@ -19,18 +19,23 @@ SoFi กำลัง disrupt ธนาคารแบบ traditional ด้ว�
 
 | Metric | Value | Date |
 |---|---|---|
-| Price | $15.44 | 2026-05-22 |
+| Price | **$16.97** | 2026-05-29 |
+| Pre-Market Surge | **+7% – +7.7%** | 2026-05-29 |
+| RSI (14d) | **55.60** (Neutral-Bullish) | 2026-05-29 |
+| MACD Histogram | **+0.149** (Bullish Momentum) | 2026-05-29 |
+| Bollinger Upper | $16.73 (price ทะลุ Upper Band!) | 2026-05-29 |
 | Forward P/E | **19.73x** | 2026-05-22 |
 | PEG Ratio | **0.98x** (under growth rate) | 2026-05-22 |
 | Gross Margin | 84% | 2026-05-22 |
 | Revenue Growth | +42% YoY | 2026-05-22 |
 | Earnings Growth | +101% YoY | 2026-05-22 |
-| Analyst Mean PT | **$21.10** (+36.7% upside) | 2026-05-22 |
+| Analyst Mean PT | **$21.10 – $22.50** (avg upside ~30%) | 2026-05-29 |
 | Short Float | **13% ⚠️** (Muddy Waters effect) | 2026-05-22 |
 | Revenue (Q1 2026) | $1.1B (+41% YoY) | 2026-05-08 |
 | Rule of 40 Score | 72% — 18th consecutive quarter | 2026-05-08 |
-| CEO Insider Buy | $2.0M+ cumulative ($250K May 11, $250K May 8) | 2026-05-22 |
+| CEO Insider Buy | $2.0M+ cumulative | 2026-05-22 |
 | Institutional | UBS +136.9%, Baillie Gifford +47% | 2026-05-08 |
+| **SoFiUSD Launch** | **First U.S. National Bank Stablecoin** (Ethereum + Solana) | **2026-05-27** |
 
 ## 🏰 Moat Analysis
 - **Bank charter (2022):** ต้นทุนเงินฝาก < 2% vs payday lenders 20%+ — structural advantage
@@ -63,9 +68,10 @@ SoFi กำลัง disrupt ธนาคารแบบ traditional ด้ว�
 |---|---|
 | Shares | 34.04 |
 | Avg Cost | $15.88 |
-| Price (last check) | **$16.17** (2026-05-28) |
-| Gain/Loss | +$0.29/share (**+1.83%**) |
-| Allocation | **5.89%** (Target Ceiling: 8.00%) |
+| Price (last check) | **$18.22** (2026-05-30) |
+| Gain/Loss | +$2.34/share (**+14.74%**) |
+| Total Value | **$620.21** |
+| Allocation | **~6.69%** (Target Ceiling: 6.00% Overweight ⚠️) |
 
 ## 🎬 Decision History
 
@@ -155,7 +161,42 @@ SoFi กำลัง disrupt ธนาคารแบบ traditional ด้ว�
 - **Muddy Waters Accounting Debate:** ประเด็น Adjusted EBITDA inflate ~90% และหนี้ซ่อน SPE $312M บริษัทยังไม่ยอมตอบคำถาม 100% แต่การที่ CEO Anthony Noto กว้านซื้อหุ้นเพิ่มด้วยเงินตัวเองสะสม $2M+ บ่งชี้ความกังวลทุจริตจริงระดับต่ำ (เพราะมีโทษจำคุกร้ายแรงหากร่วมปั่นแต่งบัญชีภายใต้กฎหมายสหรัฐฯ)
 - **Portfolio Sizing & DCA stance:** พอร์ตถือครอง 6.04% ($557.92 USD) ยอด Live avg cost $15.88 คงสถานะ **⚪ HOLD ONLY (Veto Suspended)** และล็อกเงินสด DCA สำรองไว้ $374.00 USD ห้ามสอยเพิ่ม รอจนกว่า SEC จะเคลียร์หรือยื่นฟ้องศาลแล้วเห็นข้อมูลจริง
 
+### [2026-05-29] — 📡 MONITORING — SoFiUSD Stablecoin Surge (+7.7% Pre-Market)
+- **Catalyst:** SoFi ประกาศ 27 พ.ค. เปิดตัว **SoFiUSD** — stablecoin ตัวแรกที่ออกโดย U.S. National Bank ให้ลูกค้า 15M คนใช้งานใน app ได้ทันที (Ethereum + Solana) | Partnership: Bullish Exchange (Institutional)
+- **Technicals Live:** Price $16.97 | RSI 55.60 (Neutral-Bullish) | MACD Histogram +0.149 (Bullish) | ราคาทะลุ Bollinger Upper Band $16.73 | ATR 0.825
+- **Portfolio Status:** $577.66 (+6.86% vs avg $15.88) | ⚪ HOLD ONLY ยังคงสถานะเดิม | Cash Lock $374 ยังล็อกอยู่
+- **VETO Triggers:** ไม่มีการเปลี่ยนแปลง — SEC ยังไม่เปิด Formal Investigation | Block & Leviton ยังไม่ยื่นฟ้องศาล
+- Report: output/2026-05-29_SOFI_stablecoin_surge_monitoring_update.md
+
+### [2026-05-29] — 🔬 RESEARCH — Kyle Whitegoat SoFiUSD Valuation Stress-Test
+- **X Signal:** โพสต์คุณ @kylewhitegoat เคลม "Rewrote Valuation Forever" และ P/B 2X ต่ำไปในมุมมอง Tech Platform
+- **Swarm Verdict:** ยืนยัน Regulatory Moat ของ U.S. National Bank (OCC-regulated) ที่เป็นผู้บุกเบิกตัวจริง (Ethereum + Solana) เหนือ Fintech อื่นๆ แต่มองมุมมูลค่าควรมีวินัยเชิงรับ (Hold) ป้องกันการไล่ซื้อตามอารมณ์ตลาดระยะสั้น
+- **DCA Stance:** สัดส่วนคงเดิม 6.16% | รักษาวินัย DCA Cash Reserve $374.00 USD ล็อกต่อไปจนกว่าจะผ่าน Catalyst งบไตรมาส Q2 ในเดือนกรกฎาคม
+- Report: output/2026-05-29_youtube_kylewhitegoat_sofi_stablecoin_valuation_verdict.md
+
+### [2026-05-30] — DECISION GATE — Capital Rotation & Target Reduction Execution
+- **Target Allocation Slashed:** ปรับลดเป้าหมายน้ำหนักการจัดสรร SOFI อย่างเป็นทางการในระบบจาก **10.00% เหลือ 6.00%** ทันที เพื่อป้องกันและควบคุมความกังวลเชิงบรรษัทภิบาล (Governance risk) จากประเด็นการสอบสวนของสำนักงาน Block & Leviton
+- **Capital Rotation Execution:** ปลดล็อกเงินสดสำรอง DCA Reserve ($374.00 USD) ที่ล็อกไว้เกินวินัย นำกลับเข้าสู่ Free Cash เพื่อนำไปยิงสะสม TSM (DCA Priority #1) และ NVO แทน คงระดับการถือครอง 34.04 หุ้นเดิมในสิทธิ ⚪ HOLD ONLY และไม่เติมเงินซื้อเพิ่มเด็ดขาด
+- **Full Report:** [2026-05-30_youtube_US_Stock_Market_Live_USO_Spikes.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-05-30_youtube_US_Stock_Market_Live_USO_Spikes.md)
+
+### [2026-05-30] — YOUTUBE — ลงทุน Diary: SoFiUSD Dual-Chain Analysis
+- **Stablecoin Architecture Ramps:** SoFiUSD ออกแบบเป็น dual-chain บน Ethereum และ Solana และเตรียมยื่นผสานระบบ Tokenized Deposits เพื่อจ่ายผลตอบแทนดอกเบี้ยสูงร่วมกับการคุ้มครองเงินฝาก FDIC
+- **Swarm Sizing Verdict: ⚪ HOLD ONLY:** สัดส่วนจริงอยู่ที่ 7.59% (คิดบนฐาน 100% Equity) ตรึงสถานะโฮลด์ไว้เพื่อความปลอดภัย รอการสะสางคดีของสำนักงาน Block & Leviton
+- **Report:** [2026-05-30_youtube_longtundiary_live_tech_update.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-05-30_youtube_longtundiary_live_tech_update.md)
+
+### [2026-06-01] — YOUTUBE — Levi Stocks: Acquisitions & Price Forecast Deep-Dive
+- **B2B Acquisitions Stacked:** ชำแหละดีลการควบรวมกิจการของ **PrimaryBid** (รับสิทธิ์และสิทธิบัตรระบบเทคโนโลยี DSP จัดสรรหุ้น IPO สำหรับรายย่อยทั่วโลก) และ **Peach Finance** (ระบบประมวลผลสินเชื่อองค์กร SaaS) ผสาน Galileo + Technisys ยกระดับเป็น Vertically Integrated Tech Stack หนึ่งเดียวที่Copyเลียนแบบไม่ได้
+- **Range-Based 3Y-5Y-10Y Forecast Added:** ประเมินเป้าหมายคาดการณ์ราคา 3 เคส (Probability Weighted Expected Price): **3-Year Target at $23.88 (+31.06%) | 5-Year Target at $36.22 (+98.79%) | 10-Year Target at $76.91 (+322.12%)** ภายใต้ CAGR รายได้ 25% (1-5Y) และ 18% (6-10Y) หักค่าใช้จ่าย SBC เต็มจำนวน
+- **Swarm Sizing Verdict: ⚪ HOLD ONLY:** ราคา EOD พุ่งแรงยืนเด่นที่ $18.22 ดันสัดส่วนพอร์ตจริงแตะ 6.70% (เป้าหมายคุมความผันผวน 6.00%) ตรึงสถานะโฮลด์เข้มแข็ง ห้าม FOMO ไล่ซื้อราคาดอยโดยเด็ดขาด ล็อกเงินสด DCA รอ Q2 ผลประกอบการปลายเดือนกรกฎาคม
+- **Report:** [2026-06-01_youtube_sofi_acquisitions_explosion.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-01_youtube_sofi_acquisitions_explosion.md)
+
+### [2026-06-03] — YOUTUBE — Yahoo Finance Live (June 2, 2026)
+- **B2B AI Integration & AI Coach:** SoFi Technologies ($SOFI) ได้เปิดตัวฟีเจอร์ AI Virtual Coach ช่วยให้คำแนะนำและวางแผนทางการเงินส่วนบุคคล รวมถึงการประเมินหนี้สินแบบตอบโต้เรียลไทม์ ซึ่งใช้โมเดลภายใต้ข้อกำหนดการเงินธนาคารเพื่อเพิ่มการแปลงสิทธิ์ (conversion) สมาชิกในการรีไฟแนนซ์หนี้สินนักเรียน (Student Loans) ซึ่งเป็นธุรกิจที่มีอัตรากำไรสูง
+- **Portfolio DCA Sizing Action:** 🟡 HOLD ONLY (ถือนิ่ง ไม่ไล่ราคา) หุ้น SOFI ในพอร์ตมีน้ำหนัก 6.75% ใกล้กรอบเป้าหมายสูงสุดที่ 7.00% หลังปรับลดเพดานเป้าหมายเพื่อจำกัด Governance Risk จากประเด็นการฟ้องคดีแบบกลุ่ม (Class Action) ในอดีต
+- **Full Report:** [2026-06-03_youtube_yahoo_finance_live_US_Iran_tensions_AI_optimism.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-03_youtube_yahoo_finance_live_US_Iran_tensions_AI_optimism.md)
+
 ---
+
 
 ## 📚 NotebookLM Full Archive (Migrated 2026-05-12)
 
@@ -292,137 +333,7 @@ SoFi กำลัง disrupt ธนาคารแบบ traditional ด้ว�
 ---
 
 ## 📎 Research Sources
-> อัปเดต 2026-05-28 | Sessions: Swarm DCA Verdict 2026-05-28
+> อัปเดต 2026-06-04 | Sessions: Swarm DCA Verdict 2026-06-04
 
-- **investing.com** #earnings #news #risk
-  - https://www.investing.com/news/company-news/sofi-q1-2026-slides-41-revenue-growth-stock-drops-on-concerns-93CH-4645538
-- **tikr.com** #earnings
-  - https://www.tikr.com/blog/sofi-stock-dropped-14-after-record-earnings-heres-what-comes-next-in-2026
-- **muddywatersresearch.com** #risk
-  - https://muddywatersresearch.com/research/2026/mw-short-0317/
-- **investors.sofi.com** #macro #risk
-  - https://investors.sofi.com/news/news-details/2026/SoFi-Responds-to-Inaccurate-Short-Seller-Report/default.aspx
-- **finance.yahoo.com** #news
-  - https://finance.yahoo.com/markets/stocks/articles/sofi-technologies-inc-q1-2026-164724498.html
-- **stockstory.org** #earnings #product
-  - https://stockstory.org/us/stocks/nasdaq/sofi/news/earnings-call/sofi-q1-2026-deep-dive-loan-growth-and-product-expansion-amidst-investor-caution
-- **stocktwits.com** #news #risk
-  - https://stocktwits.com/news-articles/markets/equity/sofi-stock-short-interest-rises-muddy-waters-transparency-questions/cZ3mRCPRIiw
-- **funanc1al.com** #smartmoney
-  - https://funanc1al.com/blogs/insider-purchases-inside-the-buy/sofi-stock-analysis-2026-ceo-insider-buys-crypto-ambition-and-the-path-to-30
-- **investors.sofi.com** #IR #earnings
-  - https://investors.sofi.com/financials/quarterly-results/default.aspx
-- **marketbeat.com** #analyst #news
-  - https://www.marketbeat.com/stocks/NASDAQ/SOFI/forecast/
-- **s27.q4cdn.com** #earnings
-  - https://s27.q4cdn.com/749715820/files/doc_financials/2026/q1/2026-Q1-Earnings-Release_FINAL.pdf
-- **fool.com** #news
-  - https://www.fool.com/investing/2026/05/02/sofi-technologies-just-delivered-record-growth-why/
-- **stockanalysis.com** #news
-  - https://stockanalysis.com/stocks/sofi/
-- **tipranks.com** #analyst
-  - https://www.tipranks.com/stocks/sofi/forecast
-- **tradingview.com** #news
-  - https://www.tradingview.com/symbols/NASDAQ-SOFI/
-- **barchart.com** #technicals
-  - https://www.barchart.com/stocks/quotes/SOFI/cheat-sheet
-- **altindex.com** #technicals
-  - https://altindex.com/ticker/sofi/technical-analysis
-- **investing.com** #earnings #news
-  - https://www.investing.com/news/transcripts/earnings-call-transcript-sofi-technologies-q1-2026-sees-revenue-growth-stock-dips-93CH-4645289
-- **marketbeat.com** #moat #news
-  - https://www.marketbeat.com/stocks/NASDAQ/SOFI/competitors-and-alternatives/
-- **markets.financialcontent.com** #sector
-  - https://markets.financialcontent.com/stocks/article/finterra-2026-2-9-sofi-technologies-sofi-2026-deep-dive-from-fintech-challenger-to-financial-powerhouse
-- **marketbeat.com** #news #risk
-  - https://www.marketbeat.com/stocks/NASDAQ/SOFI/short-interest/
-- **nasdaq.com** #smartmoney
-  - https://www.nasdaq.com/market-activity/stocks/sofi/insider-activity
-- **fintel.io** #smartmoney
-  - https://fintel.io/ss/us/sofi
-- **fortune.com** #news
-  - https://fortune.com/2026/03/25/muddy-waters-sofi-stock-accounting/
-- **muddywatersresearch.com** #news
-  - https://muddywatersresearch.com/wp-content/uploads/2026/03/MWR_20260317.pdf
-- **finance.yahoo.com** #news
-  - https://finance.yahoo.com/personal-finance/banking/comparison/sofi-vs-chime-142239074.html
-- **tipranks.com** #technicals
-  - https://www.tipranks.com/stocks/sofi/technical-analysis
-- **coindesk.com** #earnings #macro #news #sector
-  - https://www.coindesk.com/business/2026/05/07/sofi-s-relaunched-crypto-business-generated-usd121-6-million-in-q1-transaction-revenue
-- **bankingdive.com** #sector
-  - https://www.bankingdive.com/news/sofi-launches-stablecoin-infrastructure/808232/
-- **cnbc.com** #news
-  - https://www.cnbc.com/2026/05/04/private-student-loan-expansion.html
-- **cnbc.com** #news
-  - https://www.cnbc.com/2026/04/30/grad-school-loan-caps-final-rule.html
-- **stockanalysis.com** #news #valuation
-  - https://stockanalysis.com/stocks/sofi/statistics/
-- **barchart.com** #technicals
-  - https://www.barchart.com/stocks/quotes/SOFI/technical-analysis
-- **investing.com** #news #technicals
-  - https://www.investing.com/equities/social-capital-hedosophia-v-technical
-- **federalreserve.gov** #macro
-  - https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm
-- **goldmansachs.com** #macro
-  - https://www.goldmansachs.com/insights/articles/the-outlook-for-fed-rate-cuts-in-2026
-- **bloomberg.com** #news
-  - https://www.bloomberg.com/news/articles/2026-02-10/us-consumer-delinquencies-jump-to-highest-in-almost-a-decade
-- **newyorkfed.org** #macro
-  - https://www.newyorkfed.org/newsevents/news/research/2026/20260210
-- **galileo-ft.com** #catalyst
-  - https://www.galileo-ft.com/news/engagement-new-partnerships-drive-growth-for-sofi-tech-platform-in-q3/
-- **marketbeat.com** #news #smartmoney
-  - https://www.marketbeat.com/stocks/NASDAQ/SOFI/institutional-ownership/
-- **seekingalpha.com** #analyst #earnings #news
-  - https://seekingalpha.com/news/4581783-sofi-forecasts-q2-2026-adjusted-net-revenue-of-1_115b-and-eps-of-0_10-0_11-while-expanding
-- **fool.com** #earnings #news
-  - https://www.fool.com/earnings/call-transcripts/2026/04/29/sofi-sofi-q1-2026-earnings-call-transcript/
-- **fool.com** #news
-  - https://www.fool.com/investing/2026/05/08/is-now-best-time-to-buy-sofi-stock-or-the-worst/
-- **muddywatersresearch.com** #news
-  - https://muddywatersresearch.com/research/2026/sofi-11-questions/
-- **investors.robinhood.com** #IR #earnings
-  - https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-first-quarter-2026-results
-- **bankingdive.com** #news
-  - https://www.bankingdive.com/news/chime-discloses-ipo-price/749850/
-- **youtube.com** #youtube
-  - https://www.youtube.com/watch?v=u0fQYZSikMY
-- **youtube.com** #youtube
-  - https://www.youtube.com/watch?v=_TEImjufHYc
-- **youtube.com** #youtube
-  - https://www.youtube.com/watch?v=amFKk03RgNE
-- **youtube.com** #youtube
-  - https://www.youtube.com/watch?v=hO-fB8s38YY
-- **youtube.com** #youtube
-  - https://www.youtube.com/watch?v=K4pEcF05tF8
-- **youtube.com** #youtube
-  - https://www.youtube.com/watch?v=S6P3eoAHVy4
-- **youtube.com** #youtube
-  - https://www.youtube.com/watch?v=rp3EuSogfhc
-- **247wallst.com** #earnings #news
-  - https://247wallst.com/investing/2026/04/29/sofi-slides-9-after-q1-earnings-is-the-sell-on-beat-pattern-repeating-again/
-- **cnbc.com** #earnings #news
-  - https://www.cnbc.com/2026/04/29/sofi-ceo-defends-decision-to-hold-guidance-steady.html
-- **247wallst.com** #analyst #news
-  - https://247wallst.com/investing/2026/05/12/truist-cuts-sofi-price-target-to-17-loan-platform-slowdown-pressures-the-bull-case/
-- **investors.sofi.com** #sector
-  - https://investors.sofi.com/news/news-details/2025/SoFi-Launches-Fully-Reserved-Stablecoin-to-Power-Financial-Infrastructure-for-Banks-Fintechs-and-Enterprise-Partners/default.aspx
-- **ainvest.com** #macro #sector
-  - https://www.ainvest.com/news/sofi-credit-quality-growth-strategy-fintech-titan-path-long-term-profitability-2507/
-- **alphaspread.com** #IR #earnings #valuation
-  - https://www.alphaspread.com/security/nasdaq/sofi/investor-relations/earnings-call/q1-2026
-- **finance.yahoo.com** #analyst
-  - https://finance.yahoo.com/news/sofi-technologies-inc-sofi-bull-215627424.html
-- **insidermonkey.com** #analyst #smartmoney
-  - https://www.insidermonkey.com/blog/sofi-technologies-inc-sofi-a-bull-case-theory-11-1627715/
-- **seekingalpha.com** #macro #news
-  - https://seekingalpha.com/article/4897262-sofi-stock-q1-pullback-hides-bigger-story-reiterate-strong-buy
-- **finviz.com** #analyst
-  - https://finviz.com/news/303624/sofi-technologies-inc-sofi-a-bull-case-theory
-- **x.com** #news
-  - https://x.com/FunOfInvesting/status/2057268506249330882?s=20
-- **youtube.com** #youtube
-  - https://www.youtube.com/watch?v=gsNHUqFa6Gs
 - **api.alternative.me** #news
   - https://api.alternative.me/fng/

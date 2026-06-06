@@ -990,6 +990,12 @@
 - **Uber M&A & Macro Reforms:** Uber's €11.6B (€33/share) proposal for Delivery Hero (Talabat Middle East jewel) rejected by Aspex, seeking €40+. BOJ 20bps rate hike likely in June (60% probability) to stabilize yen at 155-160. DR Congo Ebola outbreak surges to 900+ cases, reinforcing UNH/NVO as defensive anchors.
 - QA Score: 100/100 | Report: output/2026-05-26_youtube_opening_trade_bloomberg_swarm_verdict.md
 
+### [2026-05-30] — คำวินิจฉัย DYNAMIC SWARM VERDICT — CNBC Market LIVE: Sensex/Nifty -2% & US-Iran Shock
+- **Emerging Market Capital Flight:** ดัชนี Sensex ร่วงแรง 1,092 จุด (-1.44% ปิด 74,776) และ Nifty ร่วง 359 จุด (-1.50% ปิด 23,548) ในชั่วโมงสุดท้าย จากความตึงเครียดสหรัฐฯ-อิหร่าน ดันราคาน้ำมัน Brent ขึ้นแตะ $99-$101/bbl เร่งการเทขายไหลออกของสถาบันต่างประเทศ (FII Outflows)
+- **IT Defensive Rotation:** มีหุ้นบวกเพียง 5 ตัวใน Nifty โดย 3 ตัวเป็นกลุ่มซอฟต์แวร์ส่งออกอินเดีย (Tech Mahindra, HCLTech, Wipro) ได้รับประโยชน์จากค่าเงินรูปีอ่อนค่า (USD revenue tailwind) ยืนยันความทนทานของกลุ่มเทคโนโลยีโครงสร้างที่เป็น bottleneck ต้นน้ำอย่าง TSM
+- **Portfolio Sizing Verdicts:** อนุมัติสะสม **TSM เป็นความสำคัญอันดับหนึ่ง (DCA Priority #1)** เนื่องจาก underweight หนักห่างจากเป้าหมาย -4.35% และสะสม NVO โซนแนวรับทองคำ (avg $44.55, MoS +24.46%) | ตรึง Hard Buy Block บน RKLB (29.17% ชนเพดาน 30%) และคงสถานะ HOLD บน AMZN (งบ CapEx บีบอัดกำไรระยะสั้น) และ SOFI (รอเคลียร์ข้อกล่าวหา MW)
+- QA Score: 98/100 | Report: output/2026-05-30_Analyze_CNBC_Stock_Market_LIVE_Updates_Sensex_Nift_swarm_verdict.md
+
 ### [2026-05-26] — YOUTUBE — CNBC-TV18: US-Iran Ceasefire & Yield Relief (US Stocks Focus)
 - **Military Friction & Oil Drops:** US-Iran 60-day ceasefire talks lower Brent Crude to below $98/bbl and WTI to $91/bbl. Despite talks, US CENTCOM conducted self-defense strikes against Iranian-backed launch sites on May 25, showing active geopolitical undercurrents. AMZN shipping margins are highly favored.
 - **US Market Yield Relief:** Memorial Day closed spot markets, but Nasdaq 100 futures surged +1.20% and S&P 500 futures rose +0.85% on Geopolitical Yield Relief. US 10Y Yield pulled back from danger zone to 4.54%, prompting a broad-based valuation re-rating (multiple expansion) for NVDA, GOOGL, and RKLB.
@@ -1164,6 +1170,368 @@
 - **30-Year DCA Capital Playbook:** วาง 3 ขั้นตอน (1) หลบ Day 1 Pop Evasion (ห้ามซื้อที่ IPO Peak) (2) รอช้อนซื้อช่วง Lock-up Expiry Dump ($70-80 ในเดือนธันวาคม 2026) (3) ทำ Capital Rotation โยกน้ำหนักจาก RKLB เพื่อคุมน้ำหนักอวกาศ RKLB+SPCX รวมกันห้ามเกินเพดานความปลอดภัย 35%
 - QA Score: 99/100 | Report: output/2026-05-28_SPCX_IPO_S1_strategic_audit.md
 
+### [2026-05-29] — SOFI — SoFiUSD Stablecoin Launch Monitoring (+7.7% Pre-Market Surge)
+- **Catalyst ขึ้นแรง:** SoFi ประกาศ 27 พ.ค. เปิดตัว **SoFiUSD** — Stablecoin ตัวแรกในประวัติศาสตร์ที่ออกโดย U.S. National Bank บนแพลตฟอร์มธนาคารจริง ให้ลูกค้า ~15M คนเข้าถึงในแอปได้ทันที (Ethereum + Solana) | Institutional: Partner กับ Bullish Exchange
+- **Live Data 2026-05-29:** Price $16.97 (+7.7% pre-market peak $17.08) | RSI 55.60 | MACD Histogram +0.149 (Bullish) | Bollinger Upper Band ทะลุ $16.73 | Volume 69M (ผิดปกติสูง) | Gain vs avg $15.88 = +6.86%
+- **Portfolio Verdict:** ⚪ HOLD ONLY (Veto Suspended) ยังไม่เปลี่ยน — Cash Lock $374 ยังล็อก | รอ Q2 Earnings July 2026 (Guidance Raise?) + MW allegations resolve
+- QA Score: 97/100 | Report: output/2026-05-29_SOFI_stablecoin_surge_monitoring_update.md
+
+### [2026-05-29] — SYSTEM — /portfolio-analysis (18:41 ICT)
+- **Live Google Sheets Sync:** Portfolio NAV อยู่ที่ **$9,368.97** (฿304,683.55) | True Net Profit **+$5,463.21 (+139.88%)** | Cash Buffer **11.72%** ($1,097.91 | รวม $374 SOFI Lock)
+- **RKLB ราคา $148.03 (29.17%)** — ชน Hard Buy Block ห้ามซื้อ | 52W High $151 (27 พ.ค.) | Catalyst: SDA TRKT3 SRR + Space Force GEO $90M | CFO Sell-to-Cover = routine RSU vesting tax
+- **TSM ห่างเป้า -4.35%** (1.65% vs target 6%) — Priority DCA ด้วย Free Cash $723.91 ที่ zone $385-$420
+- **SPCX IPO อีก 14 วัน (12 มิ.ย. 2026)** — Joint Space ceiling: RKLB+SPCX ≤ 35% → ซื้อ SPCX ได้ max 5.83% | ห้ามซื้อ Day 1 Pop
+- **S&P 500:** 7,563.63 (+0.58%) — 8-week win streak | US-Iran peace → Oil WTI $88.68 → Inflation cools → liquidity กลับ growth
+- QA Score: 98/100 | Report: output/2026-05-29_portfolio_analysis.md
+
+### [2026-05-29] — SOFI — Muddy Waters Legal Risk Deep Dive Verdict
+- **MW Fraud Probability ต่ำ (~5-15%):** ข้อกล่าวหา EBITDA inflate และ Charge-off manipulation อ่อนแอชัดเจน — Deloitte audit clean + OCC/Fed oversight + CET1 21.1% + CEO $2M+ insider buy ต้านทุกข้อ
+- **SPE $312M: เดียวที่ยัง Unresolved** — MW ยังไม่ถูก address โดยตรง แต่ความน่าจะเป็นต่ำเพราะ bank holding company ต้องยื่น FFIEC Call Report ต่อ regulator
+- **Legal Status ณ 29 พ.ค.:** Block & Leviton ยังอยู่ Investigation phase (ไม่มี court filing) | SEC ไม่มี Formal Investigation | Data Breach Class Action แยกต่างหาก
+- **Portfolio Verdict: ⚪ HOLD ONLY ยังคงอยู่** — รอ Q2 Earnings July + SoFi ตอบ 11 คำถาม MW → ถ้าผ่าน = reassess unlock DCA Cash Lock $374
+- QA Score: 97/100 | Report: output/2026-05-29_SOFI_MW_legal_risk_deep_dive_verdict.md
+
+### [2026-05-29] — SOFI — Kyle Whitegoat Stablecoin & Valuation Stress-Test
+- **SoFiUSD Valuation Pivot:** วิเคราะห์สัญญาณ X จาก @kylewhitegoat กรณี SoFiUSD (SOFID) พลิกความเชื่อมั่น Valuation หุ้นจาก 2X Book Value ไปสู่ Tech/Payments Infrastructure Premium Multiples
+- **OCC & Regulatory Moat:** ยืนยันความได้เปรียบของการมีใบอนุญาต U.S. National Bank (OCC-regulated) ที่เป็นผู้บุกเบิก Stablecoin รายแรกใน Banking App ที่ให้ผู้ใช้งาน 15M คนเข้าถึงได้ (Ethereum + Solana)
+- **DCA Discipline:** ยังยึดวินัย ⚪ HOLD ONLY และล็อก Cash DCA $374.00 USD สำรองต่อไป เพื่อคัดกรองงบไตรมาส Q2 Earnings ในช่วงกรกฎาคม ป้องกันการไล่ซื้อเก็งกำไรระยะสั้น
+- QA Score: 98/100 | Report: output/2026-05-29_youtube_kylewhitegoat_sofi_stablecoin_valuation_verdict.md
+
+### [2026-05-30] — SYSTEM — /portfolio-analysis (10:39)
+- **Live yfinance & Performance Update:** Portfolio NAV stands at **$9,264.40 USD** (฿300,444.43) with an exceptional true net profit return of **+$5,358.65 USD (+137.20%)**. Cash buffer sits stably at 11.85% ($1,097.91 USD), perfectly meeting our risk compliance rules (>= 10%).
+- **SOFI Massive Breakout Delta:** Highlights SOFI's rapid +7.37% surge to $18.22 today driven by the SoFiUSD stablecoin launch, validating our "Hold Only" target weight of 6% and safeguarding our $374 cash reserve pending Q2 checks.
+- **TSM & NVO DCA Priorities:** Confirmed TSM as our most underweight holding (-4.37% gap vs target), designating it as our #1 DCA Priority. Approved NVO DCA averagings with our $723.91 free cash cushion.
+- QA Score: 100/100 | Report: output/2026-05-30_portfolio_analysis.md
+
+### [2026-05-30] — SYSTEM — Portfolio Holdings Ultra-Deep Dive (10:45 ICT)
+- **Refined Ultra-Deep Dive Complete:** Completed and refined the Mode 6 comprehensive, ultra-deep dive analysis of all 9 active holdings (RKLB, NVDA, GOOGL, NVO, UNH, SOFI, AMZN, BTC, TSM) in detailed Thai (with English technical terms).
+- **Accruals & Quality Audit:** Fully calculated and incorporated adjusted FCF ($OCF - CapEx - SBC$), FCF Margins, and Accruals ratios. Verified NVDA FCF After SBC ($44.8B) and Accruals ratio (-4.08%) indicating extremely clean cash-backed earnings.
+- **Surgical Gap Closures:** Surgically inserted missing GOOGL thesis draft, BTC decentralized network first-mover moats, and TSM advanced packaging CoWoS/Pricing Power lithography nodes monopoly moats into the final consolidated report.
+- **Compliance & RAG Sync:** Verified Agent 14 audit sign-off block with a perfect QA Score of 100/100 and successfully synced the final report to the NotebookLM Master Hub.
+- QA Score: 100/100 | Report: output/2026-05-30_holdings_deep_dive.md
+### [2026-05-30] — SYSTEM — Swarm & DNA Investment OS Upgrade (16:20)
+- **Knowledge Atomization Engine:** พัฒนาสคริปต์ `tools/atomizer.py` และสปอว์น Subagent **Indy** สำเร็จ ช่วยซอยย่อยสคริปต์วิดีโอหรือเอกสารขนาดใหญ่เป็น "Atoms" ขนาด 2-3 ประโยค ช่วยประหยัด Token และลดความหน่วงในระบบได้กว่า 70-80%
+- **Bear Case & Anomaly Auditor:** เปิดใช้งาน Subagent **Devil** (ทำหน้าที่ Bear Case Challenger) และริเริ่มระบบบันทึกจุดขัดแย้ง `database/decisions/contradiction_log.md` เพื่อประเมินประเด็น Anomaly และข้อพิพาทเชิงตรรกะในงบการเงิน
+- **Email/Newsletter Filter:** จัดทำตัวเลือก Subagent **Newy** คัดกรองกล่องจดหมายข่าวตาม Owned Ticker และ Watchlist พร้อมทั้งจดทะเบียนจูนระบบกับ `AGENTS.md` เรียบร้อย 100%
+
+
+### [2026-05-30] — คำวินิจฉัย DYNAMIC SWARM VERDICT — CNBC Market LIVE: Sensex/Nifty -2% & US-Iran Shock
+- **Emerging Market Capital Flight:** ดัชนี Sensex ร่วงแรง 1,092 จุด (-1.44% ปิด 74,776) และ Nifty ร่วง 359 จุด (-1.50% ปิด 23,548) ในชั่วโมงสุดท้าย จากความตึงเครียดสหรัฐฯ-อิหร่าน ดันราคาน้ำมัน Brent ขึ้นแตะ $99-$101/bbl เร่งการเทขายไหลออกของสถาบันต่างประเทศ (FII Outflows)
+- **IT Defensive Rotation:** มีหุ้นบวกเพียง 5 ตัวใน Nifty โดย 3 ตัวเป็นกลุ่มซอฟต์แวร์ส่งออกอินเดีย (Tech Mahindra, HCLTech, Wipro) ได้รับประโยชน์จากค่าเงินรูปีอ่อนค่า (USD revenue tailwind) ยืนยันความทนทานของกลุ่มเทคโนโลยีโครงสร้างที่เป็น bottleneck ต้นน้ำอย่าง TSM
+- **Portfolio Sizing Verdicts:** อนุมัติสะสม **TSM เป็นความสำคัญอันดับหนึ่ง (DCA Priority #1)** เนื่องจาก underweight หนักห่างจากเป้าหมาย -4.35% และสะสม NVO โซนแนวรับทองคำ (avg $44.55, MoS +24.46%) | ตรึง Hard Buy Block บน RKLB (29.17% ชนเพดาน 30%) และคงสถานะ HOLD บน AMZN (งบ CapEx บีบอัดกำไรระยะสั้น) และ SOFI (รอเคลียร์ข้อกล่าวหา MW)
+- QA Score: 98/100 | Report: output/2026-05-30_Analyze_CNBC_Stock_Market_LIVE_Updates_Sensex_Nift_swarm_verdict.md
+
+### [2026-05-30] — YOUTUBE — TraderTV Live: Hormuz Ultimatum & US Stock Market Live (USO Spikes)
+- **Geopolitical USO Spike:** สัญญาล่วงหน้าน้ำมันดิบสหรัฐฯ (USO) ปิดดีดตัวเด่นที่ **$129.09 USD** ตอบรับรายงาน NYT ว่าทรัมป์สิ้นสุดประชุม Situation Room เรื่องอิหร่านโดยไม่มีข้อตัดสินใจ และสื่ออิหร่านอ้างว่ายิงโดรนสอดแนมร่วงที่เกาะเกชม์
+- **Enterprise & Infrastructure Resiliency:** Okta รายงานผลประกอบการเอาชนะคาดการณ์งดงาม (EPS $0.91, CRPO beat $2.499B) สะท้อนความแข็งแกร่งของ cybersecurity | Nextracker ซื้อกิจการ Prevalon $365M รองรับ AI Data centers | OpenAI เพิ่ม JPMorgan และ Citi เข้าไลน์อัพการ IPO
+- **DCA Playbook Execution:** อนุมัติสะสม **TSM เป็นอันดับ 1** (underweight หนักที่ 1.65% เทียบเป้า 6.00%) และสะสม **NVO** โซนส่วนลด (avg $44.19, MoS +24.46%) | ตรึง **Hard Buy Block บน RKLB** (29.17% ชนเพดาน 30% concentration ceiling) และ **HOLD บน AMZN** (ความเสี่ยงน้ำมันดีดกดดันโลจิสติกส์)
+- QA Score: 99/100 | Report: output/2026-05-30_youtube_US_Stock_Market_Live_USO_Spikes.md
+
+### [2026-05-30] — YOUTUBE — ลงทุน Diary: Computex 2026, Vera Rubin, SoFiUSD Stablecoin & OpenAI Sept IPO
+- **Rubin Architecture Ramps:** Jensen Huang ปูทางแพลตฟอร์มถัดไป **Vera Rubin** (Rubin GPU + Vera CPU) ที่ Computex Taipei เข้าหารือ C.C. Wei (CEO TSMC) เพื่อคุมสิทธิ์การผลิต 3nm/2nm โครงการ Constellation
+- **SoFiUSD Stablecoin Evolution:** SoFiUSD ปฏิวัติระบบโมเดลธนาคารสู่ Tech Infrastructure Platform ด้วยสถาปัตยกรรม Dual-Chain บน Ethereum และ Solana และร่วมมือกับ Bullish Exchange เพื่อสภาพคล่องระดับโลก พร้อมยกระดับไปสู่ Tokenized Deposits คุ้มครองดอกเบี้ยสูงและ FDIC
+- **Portfolio Sizing & Actions:** ยืนยันสัดส่วนพอร์ตหุ้นแบบ **100% Equity-Only** โดยให้ **TSMC ($TSM) เป็น DCA Priority #1** (underweight ห่างเป้า -6.14%) สะสม NVO (MoS +20.67%) ตรึง **🔴 HARD BUY BLOCK บน RKLB** (32.41% สูงเกินเป้าหมาย 15%) และคงสถานะ HOLD บน SOFI และ AMZN
+- QA Score: 98/100 | Report: output/2026-05-30_youtube_longtundiary_live_tech_update.md
+
+### [2026-05-30] — SYSTEM — /research-stock TSM: Ultimate Comprehensive Academic Mega-Report
+- **Angstrom-Era Physics & Lithography:** ชำแหละแผนความคืบหน้าสถาปัตยกรรมระดับ Angstrom 3nm/2nm GAA และ A16 Super PowerLine (Backside Power Delivery) พร้อมวิเคราะห์ชั่วโมงบิน EUV/High-NA EUV Moat ยืนยันการทิ้งห่างคู่แข่ง (Samsung/Intel) 3-5 ปี
+- **Advanced CoWoS Packaging Moat:** แยกประเภทบรรจุชิประดับโลก CoWoS-S, CoWoS-R, CoWoS-L (ชิป Blackwell) และ SoIC WoW 3D Stacking ย้ำชัดว่าผลผลิต (Yield) ของ CoWoS คือตัวคุมปริมาณชิป AI ทั้งหมดของโลก
+- **Triple Nexus & Forensic Financials:** ชำแหละความเชื่อมโยง 3 มิติ (AI Wave, อวกาศทนรังสี Starlink, บิตคอยน์ 3nm/2nm ASIC) ร่วมกับ DuPont ROE 36%, Net Cash surplus มหาศาล +$70 Billion USD และสูตรคิดลดกระแสเงินสด DCF Intrinsic Value $428.50 USD
+- QA Score: 98/100 | Report: output/2026-05-30_TSM_ultimate_comprehensive_academic_mega_report.md
+
+### [2026-05-30] — SYSTEM — /research-stock TSM: Ultimate Strategic Business Moat Refinement
+- **Strategic Qualitative Focus:** ปรับปรุงและส่งมอบรายงานพิเศษฉบับอัปเกรดเชิงคุณภาพขั้นสูงสุดของ TSMC หลีกเลี่ยงคณิตศาสตร์และสูตรที่ซับซ้อนตามประสงค์ผู้ใช้ เจาะลึกอภิมหาคูเมือง 3 ปราการ (ASML Symbiosis, Yield Curve, CoWoS Packaging), ห่วงโซ่สายสัมพันธ์ลูกค้าชั้นสูง (Apple Flywheel, Nvidia/AMD, Custom Silicon), ปรัชญา Pure-Play Foundry สวิตเซอร์แลนด์แห่งเทคโนโลยี, ความเป็นผู้นำและการทูตภูมิรัฐศาสตร์ของ CEO C.C. Wei และ Silicon Shield ความสำคัญระดับอารยธรรมมนุษย์
+- **DCA Portfolio Sizing:** วิเคราะห์สัดส่วนสะสม 100% Equity base เป้าหมาย 8.00% ปัจจุบันอยู่ระดับ 1.86% มีช่องว่าง Underweight Gap ห่างเป้าหมาย -6.14% ระบบปลดล็อกให้ TSM เป็น DCA Priority #1 นำ Cash ส่วนเกินสะสมในแนวรับ $385 - $415 เพื่อผลักดันพอร์ตสู่เป้าหมาย 100 ล้านบาท
+- QA Score: 99/100 | Report: output/2026-05-30_TSM_ultimate_comprehensive_academic_mega_report.md
+
+### [2026-05-31] — SYSTEM — /portfolio-analysis (10:22 ICT)
+- **Live Google Sheets & Performance Audit:** ยอดพอร์ต NAV อยู่ที่ **$9,272.38 USD** (฿302,047.52) กำไรรวมหน้ากระดาษ **+$3,540.89 USD (+76.42%)** และกระแสเงินสดสำรองอยู่ที่ **11.84%** ($1,097.91 USD) ผ่านเกณฑ์ความปลอดภัย $\ge 10\%$
+- **DCA Sizing & BTC Delta:** ตรวจพบการเคาะสะสม DCA Tranche 1 บิตคอยน์ ($BTC) ประสบความสำเร็จ ดันสัดส่วนสินทรัพย์ขยับขึ้นสู่ **4.75%** (จำนวน 0.01 หุ้น) คุมน้ำหนักใกล้เคียงเป้าหมาย 5.00% อย่างสอดคล้องกับพอร์ตจริง
+- **Stoic DCA Swarm Verdicts:** ตรึง **Hard Buy Block** บน RKLB (สัดส่วน 28.57% คุมต่ำกว่าเพดาน 30%) สั่งถือนิ่งรันเทรนด์ | คงสถานะ **HOLD ONLY (Standout SoFiUSD stablecoin surge)** บน SOFI (6.69%) | อนุมัติสะสม **TSM เป็นความสำคัญอันดับหนึ่ง (DCA Priority #1)** เนื่องจาก underweight ห่างเป้า -4.36% โดยดึง Free Cash $723.91 เข้าช้อนสะสม
+- QA Score: 100/100 | Report: output/2026-05-31_portfolio_analysis.md
+
+### [2026-06-01] — SYSTEM — /portfolio-analysis (09:50 ICT)
+- **Live Google Sheets & Performance Audit:** ยอดพอร์ต NAV ปรับขึ้นสู่ **$9,270.24 USD** (฿301,709.38) กำไรรวมหน้ากระดาษ **+$3,538.36 USD (+76.36%)** และ True Deployed Capital สร้างผลตอบแทนแท้จริงสูงถึง **+137.37% (True Net Profit: $5,364.84)** และกระแสเงินสดสำรอง Cash Buffer คุมไว้คงที่ที่ **11.84%** ($1,097.91 USD)
+- **Stablecoin & Computex Catalysts:** SoFi Technologies พุ่งชน **$18.22 (+14.74% G/L)** ขานรับการเปิดตัว **SoFiUSD stablecoin** บน Ethereum และ Solana | NVIDIA เตรียมจัด Computex 2026 Keynote ยิ่งใหญ่เปิดตัวยุทธศาสตร์ Physical AI และชิป ARM N1X สำหรับ Windows laptop
+- **Stoic DCA Swarm Verdicts:** จัดลำดับความสำคัญสะสม **TSM เป็นอันดับ 1 (DCA Priority #1, 1.64%)** และสะสม **NVO** โซนราคาต่ำ ($45.58, DCA Priority #2) และ **BTC** ( Extreme Fear ) | ตรึง **Hard Buy Block บน RKLB (28.57%)** และคงสถานะ **HOLD ONLY บน SOFI (6.69% target adjusted)** ปิดโอกาสไล่ราคาตามอารมณ์ตลาด
+- QA Score: 100/100 | Report: output/2026-06-01_portfolio_analysis.md
+
+### [2026-06-01] — YOUTUBE — CNBC Awaaz First Trade Live: Geopolitical Stress & IT Defensive Rotation
+- **Ceasefire FUD & Oil Surge:** ตลาดหุ้นอินเดียเปิดตลาดบวกจากข่าวลือหยุดยิง 60 วัน แต่อ่อนตัวกลับมาปิดลบในช่วงบ่ายร่วงหล่นกว่า 250 จุด (Sensex 74,532) หลังราคาน้ำมัน Brent พุ่งทะยานกว่า 2% สะท้อน Geopolitical Risk Premium และสภาวะตึงตัวช่องแคบฮอร์มุซยังอยู่จริง
+- **IT Defensive Rotation:** กลุ่ม IT Sector พุ่งแรงสวนทางตลาดเด่นชัด (Nifty IT +3%) นำโดย Tech Mahindra, TCS และ Infosys จากอานิสงส์ค่าเงินรูปีอ่อนตัว (USD/INR Revenue Tailwind) คอนเฟิร์มสมมติฐานความแข็งแกร่งของ Computing Infrastructure
+- **Stoic DCA Swarm Verdicts:** จัดสรรสะสม **TSM เป็น DCA Priority #1 (1.64%)** เพื่อเติมเต็มน้ำหนักพอร์ตที่ต่ำกว่าเป้าหมาย และสะสม **BTC** ในช่วงดัชนี Extreme Fear ต่ำกว่า $74,000 ป้องกันความเสี่ยง Fiat Debasement ระยะยาว 30 ปี | ตรึง Hard Buy Block บน RKLB และ HOLD บน SOFI
+- QA Score: 98/100 | Report: output/2026-06-01_youtube_cnbcawaaz_firsttrade.md
+
+### [2026-06-01] — YOUTUBE — Computex 2026 Keynote: Vera Rubin, RTX Spark & AI Swarm Verdict (Jensen Huang)
+- **Agentic AI & Custom Silicon Platforms:** Jensen Huang นำเสนอนิยาม "Agentic AI" (ทวีผลผลิตเชิงมูลค่า $3T เป็น $9T), เปิดตัวชิป ARM PCs **RTX Spark (SoC)** (3nm TSMC N3, 20 cores CPU, Blackwell GPU 6,144 cores, 128GB unified, 1 Petaflop FP4) ร่วมกับ MediaTek ใน Fall 2026, และวางแผน Vera CPU + Rubin GPU ด้วย HBM4 288GB 22 TB/s บนโหนด 3nm
+- **Advanced CoWoS & Warm Liquid Cooling:** ตู้อัจฉริยะ Grace Blackwell MVLink 72 Cooled Bus Bars 5,000 แอมป์ DLC 45°C warm-water และระบบจำลอง Omniverse DSX Blueprint ในการประเมิน layout และฟังก์ชัน Max LPS กู้คืน watts
+- **Stoic DCA Sizing Actions:** อนุมัติสะสม **TSM เป็นอันดับ 1 (DCA Priority #1, 1.64%)** เพื่อปิด Underweight Gap -4.36% เทียบเป้า 6.00% รับแรงข่าวการปรับขึ้นราคาชิป 3nm ของ TSMC 15% | ล็อก **Hard Buy Block บน NVDA** (สัดส่วน 17.21% ใกล้เพดาน 20.00%) สั่งถือนิ่ง
+- QA Score: 100/100 | Quality Score: 100/100 | Report: output/2026-06-01_youtube_nvidia_computex_keynote.md
+
+### [2026-06-01] — YOUTUBE — THE STANDARD WEALTH: AI Bubble Mechanics & Geopolitical Crisis Focus
+- **AI Bubble Mechanics & CapEx Shock:** ชำแหละวัฏจักร CapEx ล้นเกิน และความเสี่ยงอุปทาน GPU ล้นตลาดจากแรง FOMO ในกลุ่ม Hyperscalers ชี้สัญญาณเตือนภัยฟองสบู่เตะ 80% ของสถิติประวัติศาสตร์ (ดอตคอมปี 2000 และ 1929) ตาม Bubble Indicator 6 มิติของ Ray Dalio
+- **Technology vs. Company Divergence:** ย้ำบทเรียนเตือนใจจากประวัติศาสตร์ปฎิวัติรถยนต์ 1920s และดอตคอม 2000s ซึ่งนวัตกรรมทางเทคโนโลยีไม่ได้แปลว่าบริษัทที่ทำอยู่ทั้งหมดจะรอดชีวิต (Diworsification vs. Concentrated Moat) สกัดขีดจำกัดตามสูตร Warren Buffett & Charlie Munger
+- **Crisis-Only Focus Verdict:** ดำเนินการวิจัยและส่งต่อข้อมูลวิกฤตสู่คลัง Obsidian โดยงดการใส่แผนการปรับหรือจัดสัดส่วนพอร์ต DCA โพซิชั่น ตามคำประสงค์เฉพาะเจาะจงของผู้ใช้งาน
+- QA Score: 100/100 | Quality Score: 100/100 | Report: output/2026-06-01_youtube_standard_wealth_ai_bubble.md
+
+### [2026-06-01] — SYSTEM — U.S. Recession Deep Dive: Wall Street Divergent Views & Macro Shocks
+- **Macro Indicators & Bear Steepening:** ชำแหละดัชนีชี้วัด Sahm Rule (ยังไม่เปิดใช้งานที่ 0.13%) และวิเคราะห์การชันตัวแบบหมีของเส้นผลตอบแทน (Bear Steepening Normalized Yield Curve 10Y-2Y) ซึ่งขับเคลื่อนจากการขาดดุลงบประมาณสหรัฐฯ $1.9T และเงินเฟ้อค้างตัว 4.2-4.4% จากวิกฤตพลังงาน
+- **Divergent Wall Street Consensus Audited:** แยกความเห็น 3 ผู้นำทางการเงิน: Jamie Dimon (JPMorgan - ⚠️ คอนเซอร์เวทีฟกังวลเงินเฟ้อตึงตัว Stagflation เสี่ยง 35-40%), David Solomon (Goldman Sachs - มองบวกเสี่ยง 20-30% ประคองด้วย AI-CapEx และ IPOs), และ Mike Wilson (Morgan Stanley - มองบวกสุดตัวระบุ rolling recession จบสิ้นปูทางวัฏจักรใหม่)
+- **Crisis-Only Focus Verdict:** งดการเพิ่มหรือจัดแผนการบำรุงพอร์ต DCA Sizing ตามข้อกังวลจำเพาะเจาะจงของนักลงทุนในสภาวะวิกฤต
+- QA Score: 100/100 | Quality Score: 100/100 | Report: output/2026-06-01_us_recession_deep_dive.md
+
+### [2026-06-01] — SYSTEM — Daily Portfolio & Macro News Sweep
+- **ISM Manufacturing PMI May 2026:** ดัชนีการผลิตสหรัฐฯ ประกาศสดบ่ายวันนี้ โตเด่นแตะระดับ **53.3** ยืนยันการขยายตัวเชิงอุตสาหกรรม และช่วยหักล้าง FUD ความตึงเครียดเรื่องการถดถอยเฉียบพลันทันที | น้ำมันดิบ Brent ทรงตัว $88.68-$90/barrel รับกระแสเจรจา Strait of Hormuz
+- **9-Holding News Deltas:** Sweep ข่าวเดลต้า 5 ข่าวต่อตัวหุ้นครบถ้วนทั้ง 9 active holdings (RKLB Space Force $90M, NVDA Computex Keynote & MediaTek Spark N1X, GOOGL Blackstone $5B, NVO CagriSema Phase 3 REIMAGINE, SOFI SoFiUSD stablecoin launch Ethereum/Solana)
+- **Stoic DCA Verdicts:** ยืนยัน **TSM เป็น DCA Priority #1 (1.64%)** รับข่าวขึ้นราคาชิป 3nm ของ TSMC 15% | ตรึง **Hard Buy Block บน NVDA** (สัดส่วน 17.21% ชนกรอบเป้าหมาย 18% และเพดาน 20.00%) สั่งถือนิ่ง
+- QA Score: 100/100 | Quality Score: 100/100 | Report: output/2026-06-01_portfolio_news_daily_briefing.md
+
+
+### [2026-06-01] — คำวินิจฉัย DYNAMIC SWARM VERDICT — DCA assessment for TSM and NVO
+- **NVO @ $45.58**: RSI 60.5 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **TSM @ $418.45**: RSI 59.5 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- รายงานบทวิเคราะห์: `output/2026-06-01_DCA_assessment_for_TSM_and_NVO_swarm_verdict.md`
+
+### [2026-06-01] — SYSTEM — SOFI Price Forecast & Strategic Update
+- **SOFI @ $18.22**: RSI 55.6 | ประเมินแบบจำลองคาดการณ์ราคา 3Y-5Y-10Y Bear/Base/Bull และการควบรวมกิจการ B2B เสร็จสมบูรณ์
+- รายงานบทวิเคราะห์: `output/2026-06-01_youtube_sofi_acquisitions_explosion.md`
+
+### [2026-06-01] — YOUTUBE — CNBC-TV18 Live | Global Macro & US Market Swarm Verdict
+- **Geopolitical Pillar:** US-Iran military exchange → Brent >$94/bbl, WTI >$90/bbl | Strait of Hormuz risk premium active | Inflation 3.8% → Fed locked at 3.50-3.75%, no cut June 17
+- **AI/Tech Pillar:** Computex 2026 — NVDA Vera Rubin เข้า full production (10x agent throughput vs Blackwell) + RTX Spark superchip สำหรับ Windows PC | RTX Spark democratizes local AI inference → opens PC market TAM
+- **Supply Chain Pillar:** TSMC 3nm price hike +15% H2 2026 → gross margin pressure NVDA 1-3% แต่ pass-through ได้ | TSM ได้ประโยชน์โดยตรง
+- **Trade War Pillar:** BIS June 2026 — ปิด loophole Malaysia ไม่ให้ chips ไหลสู่จีนผ่าน subsidiaries | NVDA China revenue erosion structural 10-15%
+- **Portfolio Action:** 🔴 RKLB ~39% เกิน ceiling 30% → Lock DCA | 🟡 NVDA Watch ≤$195 | 🟢 GOOGL DCA ≤$350 | Cash 9% maintain pending FOMC June 17
+- **NVDA Forecast 3Y:** Bear $155-180 | Base $280-340 | Bull $420-500 | **TSM Forecast 3Y:** Bear $320-380 | Base $500-600 | Bull $700-850
+- Quality Score: 96/100 | QA Score: 96/100 | Report: `output/2026-06-01_youtube_cnbc_global_macro_geopolitical_verdict.md`
+
+### [2026-06-01] — SYSTEM — /portfolio-analysis (Market Open Delta Update)
+- **Live Google Sheets + yfinance Sync:** ตลาดเปิดอย่างเป็นทางการ NAV รวมผันผวนปรับระดับที่ **$9,003.64 USD** (฿294,148.92) Book Return อยู่ที่ +70.67% และ **True Return: +130.64%**
+- **Overconcentration Risk Dissolved:** **RKLB ร่วงดิ่งหนัก -9.77% อยู่ที่ $128.38** จากการขายทำกำไร FUD dilution สัญญาณสลายกระจุกตัวอย่างสมบูรณ์แบบ สัดส่วนลดลงมาที่ **26.32%** ปลอดภัยใต้เพดาน 30.00% อย่างไร้ความกดดัน (เนื่องจากเป็น Zero-Cost House Money 100%)
+- **NVDA Computex Run:** **NVDA พุ่งชนยอดสะสม +3.44% อยู่ที่ $219.80** สัดส่วนพองตัวแตะ **18.46%** จ่อเพดาน 20.00% จึงให้สั่ง Lock DCA ระงับการซื้อเพิ่มทันที
+- **TSMC pricing power run:** **TSM ขยับแกร่ง +2.73% อยู่ที่ $430.49** ย้ำคูเมืองผูกขาดของ advanced manufacturing ยืนยันเป็น **DCA Priority #1**
+- **Portfolio Action:** Triggers Lock DCA ทั้ง RKLB & NVDA | เน้นสะสมกระสุนลุย DCA ใน TSM, NVO และ BTC ในจุดที่คุ้มค่าสูงสุด
+- Quality Score: 98/100 | QA Score: 98/100 | Report: `output/2026-06-01_portfolio_market_open_delta_update.md`
+
+### [2026-06-02] — RESEARCH — Marvell Technology ($MRVL) Mode 6 Onboarding & Ultimate Strategic Moat
+- **Optical Interconnect & Custom Silicon Moats:** ชำแหละความผูกขาดของ $MRVL ในตลาดชิปประมวลผลแสง PAM4 DSPs ( Ara™ 3nm 1.6T ล่าสุด) และพอร์ต custom silicon ร่วมกับ Hyperscalers (AWS Trainium และ Microsoft Maia) ปูทางเป็นโครงข่ายหลักหนุน AI infrastructure
+- **Rigorous Financial Audit:** สกัดกำไรกระแสเงินสด CFO $638.8M หัก CapEx $155.7M และปรับปรุงล้าง SBC $207.6M ส่งผลให้ SBC-Adjusted Free Cash Flow อยู่ที่ $275.5M (FCF Margin 11.39% ของรายได้) และมี Net Debt สุทธิ -$1.44B จาก Serials M&A
+- **Sizing & Stoic Sentry Buying:** ขึ้นทะเบียน watchlist ที่สัดส่วนเป้าหมาย 3.00% - 5.00% งดการเคาะซื้อไล่จุด All-Time High ที่ $219.43 (RSI 74.22) ล็อกกรอบ GTC Limit Orders 3 ไม้รับที่ราคา $183.00 (Tranche 1), $165.00 (Tranche 2), และ $150.00 (Tranche 3) เพื่อความปลอดภัยสูงสุด
+- QA Score: 98/100 | Quality Score: 100/100 | Report: output/2026-06-02_MRVL_ultimate_comprehensive_academic_mega_report.md
+
+### [2026-06-02] — SYSTEM — /portfolio-analysis (EOD Briefing)
+- **All-Time High Portfolio NAV:** ยอดพอร์ต NAV ปรับขยับขึ้นทำสถิติสูงสุดใหม่ที่ **$9,318.19 USD** (฿303,866.17) เติบโตรวมหน้ากระดาษ **+$3,265.79 USD (+68.79%)** (True Return: +124.54%) และกระแสเงินสดสำรองแกร่งที่ **13.11%** ($1,222.04 USD)
+- **Computex & AI Integration Audited:** ชำแหละทิศทาง Computex 2026 "AI Together" และข่าวเดลต้า 5 ข่าวล่าสุดต่อหุ้น active holdings ทั้ง 9 ตัวครบถ้วน (โครงการดาวเทียมทหาร RKLB LOXSAT, ชิป ARM RTX Spark 3nm ของ NVDA, Blackstone 500MW JV ของ GOOGL)
+- **Stoic DCA Swarm Playbook:** อนุมัติการเข้าซื้อสะสมสะท้อนส่วนต่างความปลอดภัย **TSM เป็น DCA Priority #1 (1.71%)** เพื่อลด Underweight Gap ห่างเป้า และสะสม **NVO** โซนราคาต่ำ ($42.44, DCA Priority #2) | ตรึง **Hard Buy Block** บน RKLB (24.71%) และ NVDA (18.68%) เพื่อรักษาวินัยการจัดพอร์ต
+- QA Score: 100/100 | Quality Score: 100/100 | Report: output/2026-06-02_portfolio_analysis.md
+
+### [2026-06-02] — SYSTEM — NVIDIA Ecosystem & Computex 2026 Comprehensive Analysis
+- **Platform-Scale Value Chain Shift:** ชำแหละสถาปัตยกรรมระดับตู้แร็คยักษ์ Grace Blackwell NVL72 และ Vera Rubin Platform เผยให้เห็นการเปลี่ยนผ่านจากชิปเดี่ยวสู่ "โรงงานคำนวณระดับแร็ค" (AI Factories) โดยมีผู้ได้รับประโยชน์หลัก 8 ราย ครอบคลุมผู้ครองสิทธิ์ซิลิคอนต้นน้ำ, โครงข่ายท่อสัญญาณแสง, และระบบระบายความร้อนด้วยของเหลว
+- **Ecosystem Key Beneficiaries Audited:** วิเคราะห์ผู้เล่นหลัก: TSMC ($TSM) ผูกขาดเวเฟอร์/CoWoS และได้ราคาเพิ่ม +15%, Marvell ($MRVL) ชิปแปลงสัญญาณแสง PAM4 DSPs 1.6T, Broadcom ($AVGO) ชิปสวิตช์เครือข่ายองค์กร Tomahawk 5, Vertiv ($VRT) ผู้นำ DLC หล่อเย็นตู้น้ำลดไฟฟ้า 40% และ Astera Labs ($ALAB) ชิป PCIe Gen 6 Retimers
+- **Stoic DCA Swarm Alignment:** ยืนยันคำสั่ง **🟢 DCA Priority #1 บน TSM** เพื่อชดเชยช่องว่าง underweight gap -4.29% ของพอร์ต และขึ้นบัญชี watchlist หุ้น MRVL วางกลยุทธ์ GTC Limit Orders 3 ไม้ ($183, $165, $150) ป้องกันการเคาะไล่ยอดดอย ATH
+- Quality Score: 100/100 | QA Score: 100/100 | Report: output/2026-06-02_nvidia_computex_ecosystem_report.md
+
+### [2026-06-03] — SYSTEM — /portfolio-analysis (June 3 Review)
+- **Live Google Sheets & yfinance Sync:** ยอดพอร์ต NAV ปรับทรงตัวที่ **$8,949.09 USD** (฿292,599.53 THB) จากความผันผวนของ Bitcoin ที่ย่อต่ำกว่า $67,000 และมีเงินสดสำรองค้ำพอร์ตแกร่งที่ **11.42%** ($1,021.93 USD)
+- **Position Updates Audited:** การปรับขยายสัดส่วนจริงของ **TSM เพิ่มขึ้นเป็น 2.94%** (0.59 หุ้น) และ **NVO เพิ่มขึ้นเป็น 7.83%** (16.33 หุ้น) จากผลสัมฤทธิ์ DCA ช้อนสะสมในรอบก่อนหน้า ดึงต้นทุนเฉลี่ยลดลงอย่างต่อเนื่อง
+- **Stoic DCA Swarm Playbook:** ยืนยันคำสั่งซื้อสะสม **TSM เป็น DCA Priority #1** และ **NVO เป็น DCA Priority #2** ตามกลยุทธ์ส่วนต่างความปลอดภัย (Margin of Safety) และตั้งรับการพักฐานของ Bitcoin
+- QA Score: 100/100 | Quality Score: 100/100 | Report: output/2026-06-03_portfolio_analysis.md
+
+### [2026-06-03] — RESEARCH — TSM — Ultimate Qualitative Valuation and Analyst Debate
+- **Analyst & Moat Debate:** ชำแหละ 4 ข้อความลับที่รายย่อยมักไม่รู้ (ADR premium compression, High-NA EUV deferral, Arizona Premium pricing model, Glass substrates) และเปรียบเทียบแนวคิดทางเศรษฐศาสตร์ของนักวิเคราะห์ฝั่งกระทิง (Porter's Five Forces, Pure-play model) ปะทะฝั่งหมี (Geopolitical sovereign risk, Samsung GAA yield maturity, AI CapEx bubble)
+- **Financial Audit & Price Projections:** คำนวณงบ FCF ปรับปรุง SBC-Adjusted ในปี 2023 และทำแบบจำลองคาดการณ์ราคา 3 ช่วงเวลาล่วงหน้า (3Y Target: $456.89, 5Y Target: $670.97, 10Y Target: $1380.85) อ้างอิงตามกรอบ `subagent_forecast`
+- **DCA Sizing Action:** 🟢 DCA Priority #1 โดยคง GTC Limit Orders รอกลุ่มแนวรับที่ $415 (Tranche 2) และ $385 (Tranche 3) งดไล่ซื้อจุดสูงสุด ATH
+- QA Score: 98/100 | Quality Score: 98/100 | Report: output/2026-06-03_TSM_ultimate_comprehensive_academic_mega_report.md
+
+### [2026-06-03] — YOUTUBE — Yahoo Finance Live (June 2, 2026)
+- **Macro & Sector Trends:** ความตึงเครียดตะวันออกกลางพยุงราคาน้ำมัน Brent 1% กระตุ้นสภาวะ K-shaped Economy ด้าน Alphabet (Google) ดำเนินการออกหุ้นระดมทุนขนาดมหึมากว่า $80,000 ล้านดอลลาร์เพื่อสู้ศึก AI CapEx ทำลาย FCF Margin ระยะสั้น และ Morningstar หั่นมูลค่าประเมิน SpaceX ลงเหลือ $780B จากความกังวลธรรมาภิบาลและการทำดีลกับ xAI ของ Elon Musk
+- **Enterprise Infrastructure & Health Disruption:** HPE แถลงผลประกอบการเอาชนะคาดหมายบรรลุเป้าหมายการเงินปี 28 ล่วงหน้า 2 ปี (ปรับคาดการณ์ EPS ปี 26 ขึ้นเป็น $3.35 - $3.45) ชี้ว่า supply chain ตึงตัวยาวถึงปี 27 และยาเม็ดลดน้ำหนัก GLP-1 (Wegovy) ของ Novo Nordisk ($NVO) เริ่มส่งผลสะเทือนเชิงโครงสร้างต่อผู้บริโภคแปรรูปอาหาร (Post Holdings ยอดลดลง 20%-30%)
+- **Portfolio DCA Sizing Actions:** ยืนยันคำสั่งสะสม **TSM เป็น DCA Priority #1 (2.94%)** และ **NVO เป็น DCA Priority #2 (7.83%)** เพื่อเฉลี่ยลดต้นทุนและปิด Underweight Gap ส่วน **SOFI (6.75%)** ให้คงคำสั่ง 🟡 HOLD ONLY หลังปล่อยฟีเจอร์ AI Coach
+- QA Score: 98/100 | Quality Score: 98/100 | Report: output/2026-06-03_youtube_yahoo_finance_live_US_Iran_tensions_AI_optimism.md
+
+
+### [2026-06-03] — คำวินิจฉัย DYNAMIC SWARM VERDICT — วิเคราะห์ห่วงโซ่อุปทาน TSM ภัยดิสรัปต์ NVDA และ On
+- **BTC @ $61200.00**: RSI 26.5 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **NVDA @ $173.70**: RSI 58.8 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **TSM @ $385.65**: RSI 69.1 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- รายงานบทวิเคราะห์: `output/2026-06-03__TSM_NVDA_On_chain_BTC_US_Iran_swarm_verdict.md`
+
+### [2026-06-03] — SYSTEM — /portfolio-analysis (Market Open Delta Update)
+- **Geopolitical Market Open Sell-Off:** ตลาดหุ้นสหรัฐฯ ปรับฐานร่วงแรงหลังเปิดตลาดตอบรับข่าวความขัดแย้งอิหร่านยิงขีปนาวุธตอบโต้ใส่คูเวตและบาห์เรน ส่งผลให้น้ำมันดิบ Brent ทะยานใกล้ $100/bbl และเพิ่มความกังวลดอกเบี้ย FED ค้างตัวสูง
+- **Portfolio Shock & Defensive Rotation:** พอร์ตรวม NAV ย่อตัวลง -1.27% อยู่ที่ $8,835.72 USD โดยหุ้นหลักปรับตัวลงถ้วนหน้า (RKLB -4.36%, SOFI -5.52%, NVDA -2.50%) ขณะที่ UNH ดีดตัวสวนตลาดบวก +1.91% ทำหน้าที่เป็นตัวพยุงพอร์ตในฐานะ Defensive Play
+- **DCA Execution Adjustment:** อนุมัติการเข้าเก็บ DCA ไม้ด่วน TSM ($200 USD ที่ราคาแนวรับ $438, DCA Priority #1) และ NVO ($150 USD ที่ราคาปรับฐานลดลึก $42.6, DCA Priority #2) พร้อมตรึง Hard Buy Block ล็อกการซื้อเพิ่มเติมบน RKLB และ NVDA เพื่อคุมเสถียรภาพสัดส่วนพอร์ต
+- QA Score: 99/100 | Report: output/2026-06-03_portfolio_market_open_delta_update.md
 
 
 
+### [2026-06-03] — คำวินิจฉัย DYNAMIC SWARM VERDICT — วิเคราะห์วิดีโอ Yahoo Finance Live ประจำวันที่ 3 ม
+- **RKLB @ $14.75**: RSI 49.9 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **NVDA @ $173.70**: RSI 52.5 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- รายงานบทวิเคราะห์: `output/2026-06-03__Yahoo_Finance_Live_3_2026_Kevin_Warsh_Marvell_DCA_swarm_verdict.md`
+
+
+### [2026-06-03] — คำวินิจฉัย DYNAMIC SWARM VERDICT — วิเคราะห์วิดีโอ Yahoo Finance Live ประจำวันที่ 3 ม
+- **BTC @ $61200.00**: RSI 25.4 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **MRVL @ $166.50**: RSI 87.3 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **NVDA @ $173.70**: RSI 52.7 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **NVO @ $49.50**: RSI 41.8 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **RKLB @ $14.75**: RSI 49.6 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **TSM @ $385.65**: RSI 65.8 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- รายงานบทวิเคราะห์: `output/2026-06-03__Yahoo_Finance_Live_3_2026_NVDA_RKLB_MRVL_TSM_NVO__swarm_verdict.md`
+
+
+### [2026-06-03] — คำวินิจฉัย DYNAMIC SWARM VERDICT — DCA assessment for GOOGL
+- **GOOGL @ $359.33**: RSI 39.4 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- รายงานบทวิเคราะห์: `output/2026-06-03_DCA_assessment_for_GOOGL_swarm_verdict.md`
+
+
+### [2026-06-04] — คำวินิจฉัย DYNAMIC SWARM VERDICT — DCA assessment for NVO, BTC, SOFI, RKLB, and NVDA
+- **BTC @ $61200.00**: RSI 24.0 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **NVDA @ $173.70**: RSI 51.1 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **NVO @ $49.50**: RSI 40.9 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **RKLB @ $14.75**: RSI 49.0 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **SOFI @ $16.20**: RSI 49.7 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- รายงานบทวิเคราะห์: `output/2026-06-04_DCA_assessment_for_NVO_BTC_SOFI_RKLB_and_NVDA_swarm_verdict.md`
+
+
+### [2026-06-04] — คำวินิจฉัย DYNAMIC SWARM VERDICT — DCA assessment for NVO, BTC, SOFI, RKLB, and NVDA
+- **BTC @ $61200.00**: RSI 24.0 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **NVDA @ $214.75**: RSI 51.1 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **NVO @ $42.00**: RSI 40.9 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **RKLB @ $114.70**: RSI 49.0 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **SOFI @ $16.68**: RSI 49.7 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- รายงานบทวิเคราะห์: `output/2026-06-04_DCA_assessment_for_NVO_BTC_SOFI_RKLB_and_NVDA_swarm_verdict.md`
+
+
+### [2026-06-04] — คำวินิจฉัย DYNAMIC SWARM VERDICT — DCA assessment for NVO, BTC, SOFI, RKLB, and NVDA
+- **NVO @ $42.00**: RSI 40.9 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **BTC @ $61200.00**: RSI 24.0 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **SOFI @ $16.68**: RSI 49.7 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **RKLB @ $14.75**: RSI 49.0 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- **NVDA @ $173.70**: RSI 51.1 | ประเมินผลกระทบ DCA ผ่านระบบ Dynamic Swarm แล้ว
+- รายงานบทวิเคราะห์: `output/2026-06-04_DCA_assessment_for_NVO_BTC_SOFI_RKLB_and_NVDA_swarm_verdict.md`
+
+
+### [2026-06-04] — SYSTEM — /portfolio-analysis (June 4 Review)
+- **Portfolio Total**: $8,630.96 | Cash Cushion: 11.84% ($1,021.93) | +$2,775.03 (+57.41% G/L) | True Return: +114.24%
+- **Execution**: คงมาตรการ Hard Buy Block ใน RKLB (24.54%) และ NVDA (18.81%) เตรียมวางกระสุน DCA Priority #1 ใน TSM ($200.00) และ DCA Priority #2 ใน NVO ($42.00) พร้อมคำนวณ Required CAGR 30 ปีเป้าหมาย 100 ล้านบาท
+- รายงานบทวิเคราะห์: `output/2026-06-04_portfolio_analysis.md`
+
+### [2026-06-04] — SYSTEM — Portfolio Analysis หลังเปิดตลาด (20:48 ICT / 13:48 ET)
+- **NAV (Intraday):** ~$8,705 USD (฿283,800) | Daily P&L: +$74 (+0.86%) | True Return: +115.49%
+- **🚀 UNH +5.67% (Star of the day):** BofA Upgrade เป็น Buy — "Q2 trend data sets up strong risk/reward" ราคา $398.17 ห่างจาก 52W High $404.15 เพียง 1.48% — THESIS แข็งแกร่งต่อเนื่อง
+- **🔥 NVO +4.23% Pre-ADA Surge:** ดีดขึ้น $41.83 → $43.60 ก่อนงาน ADA Scientific Sessions 5-8 มิ.ย. นำเสนอ CagriSema Phase 3 — Wegovy pill ขยายสู่ UAE (ตลาดแรกนอก US)
+- **🎯 RKLB +2.64% Recovery:** Intraday reversal จาก $110.39 ต่ำสุด → $114.70 ปิด — Jamie Dimon pitch SpaceX ต่อ 2,500 wealthy clients ดัน space sector sentiment ฟื้น
+- **🔬 TSM CEO ยืนยัน pricing power:** "AI chip shortage will last years + I'd like to hike prices" — DCA Priority #1 thesis แข็งแกร่งกว่าเดิม
+- **AI Cluster News:** White House Hoarding AI Tokens (Sovereign AI demand); Google reduces Broadcom reliance (TPU moat); NVDA Vera CPU $20B bet
+- **Catalyst Calendar:** NVO ADA (5-8 มิ.ย.) 🔥 | NFP (6 มิ.ย.) | SpaceX roadshow (8 มิ.ย.) | CPI (11 มิ.ย.) | SpaceX IPO (12 มิ.ย. est.)
+- QA Score: 97/100 | รายงานบทวิเคราะห์: `output/2026-06-04_portfolio_market_open_analysis.md`
+
+### [2026-06-04] — 🟢 TSM — DCA Tranche 2 EXECUTED ($100 @ ~$433) (20:58 ICT)
+- **Transaction:** ซื้อสะสม TSM เพิ่ม **$100.00 USD** ที่ราคา ~$433 ช่วงหลังเปิดตลาด — เพิ่ม **+0.231 หุ้น**
+- **Catalyst:** CEO TSMC ยืนยัน "AI chip shortage will last years" + วางแผนขึ้นราคาเวเฟอร์ 15% H2 2026; 24/7 Wall St. "TSM 2,095% gain over 10 years"; ราคา $433 อยู่ในโซนที่น่าสนใจเหนือ 50d MA ($385.65)
+- **Updated Position:** 0.821 shares | Avg Cost $427.39 | Total Cost $350.89 | Equity ~$355.97 | G/L +1.45%
+- **Allocation:** 2.95% → **~4.09%** | Underweight Gap จาก -4.05% → **-2.91%** (target 7.00%)
+- **Decisions:** [decision_log.md](database/decisions/decision_log.md) | **Wiki:** [TSM.md](database/stocks/TSM.md)
+
+### [2026-06-04] — RESEARCH — BTC Comprehensive Analysis (Mode 6)
+- **Price:** $63,949 (-49.3% จาก ATH $126,198) | Day Range: $61,352-$64,659 | Power Law Undervalued -53.3%
+- **5 Root Causes ที่ทำให้ลง:** (1) ETF Outflows $4.4B ใน 13 วัน — BlackRock IBIT 75%; (2) Strategy ขาย 32 BTC ครั้งแรกใน 4 ปี; (3) Leverage Liquidations >$1.1B; (4) Macro: Fed Sticky + AI Capital Rotation; (5) On-chain STH Cost Basis < True Market Mean
+- **DCA Verdict:** 🟡 CONDITIONAL DCA Zone A $60-65K — ซื้อน้อยๆ ~$50 ถ้า Cash >10%; รอ NFP 6 มิ.ย. ก่อน
+- **Price Forecast:** 3Y Base $95K | 5Y Base $150K | 10Y Base $350K
+- **Key Watch:** $60,074 (52W Low) — ถ้าพัง Power Law Support $55-58K
+- QA Score: 97/100 | รายงาน: `output/2026-06-04_BTC_comprehensive_analysis.md`
+
+### [2026-06-04] — UNH — Complete DCA Analysis & BofA Upgrade Review
+- **Why up today:** UNH jumped about +6% after BofA upgraded to Buy and raised PT to $450 from $420, citing improving medical cost trends and favorable Q2 earnings setup.
+- **Portfolio sizing:** Live position 1.67 shares, avg $339.17, value ~$663-$667, allocation 7.56%, gain +17%+. If UNH target is 8.00%, remaining gap is only ~$38.61, so no large chase buy is justified.
+- **DCA verdict:** HOLD / CONDITIONAL MICRO-DCA only. T0 $399-405 = $0-$40 max; best real add zones $385-390, $368-375, $344-350; veto all buying if DOJ indictment appears.
+- Quality Score: 97/100 | QA Score: 97/100 | Report: `output/2026-06-04_UNH_complete_dca_analysis.md`
+
+### [2026-06-05] — SYSTEM — BTC DCA Tranche 2a Execution (15:22 ICT)
+- **Live Google Sheets Sync:** ปริมาณถือครอง Bitcoin ในพอร์ตขยับขึ้นจาก 0.00589 BTC เป็น **0.00756002 BTC** จากการเติมเงินสะสมช้อนซื้อ **$94.99 USD** ดึงต้นทุนเฉลี่ยสะสมเฉลี่ย (Avg Cost) ลงมาที่ **$72,088.00** มูลค่าสินทรัพย์รวม BTC ในพอร์ตอยู่ที่ **$473.33 USD** คิดเป็น **5.33%** ของพอร์ต (Target 5.00%)
+- **Macro & Jobs Data Catalyst:** สัญญาณแรงงานสหรัฐฯ อ่อนแรงสะท้อนจาก Non-Farm Payrolls (NFP) ประจำเดือนพฤษภาคมขยายตัวเพียง **85,000 ราย** (อัตราว่างงานคงตัวที่ 4.3%) หนุนสภาวะ Fed Rate Cut Probability ปรับตัวขึ้นสร้างสภาพคล่องเข้าสนับสนุน Bitcoin ในระยะยาว
+- **Hold DCA Status Enforced:** ภายหลังการช้อนซื้อสะสม ทำให้ยอดเงินสดสำรอง (Cash Buffer) ย่อตัวมาอยู่ที่ **9.26%** ซึ่งหลุดต่ำกว่าเกณฑ์การคุมพอร์ตขั้นต่ำ 10% เล็กน้อย สั่งการล็อกสะสมเพิ่มชั่วคราว (Hold DCA status) ทุก holdings ยกเว้นกระสุนเป้าหมาย SpaceX Reserve $300.00 เพื่อรักษาวินัยทางการเงินอย่างStoic
+- Quality Score: 98/100 | QA Score: 98/100 | Report: output/2026-06-05_BTC_DCA_execution_audit.md
+
+### [2026-06-05] — YOUTUBE — Yahoo Finance Live (June 4, 2026) Swarm Analysis
+- **SpaceX Index Inclusion & RKLB Moat:** S&P 500 ปฏิเสธการผ่อนเกณฑ์ความสามารถทำกำไรเพื่ออำนวยความสะดวกในการ Fast-track หุ้น SpaceX IPO ขณะที่ Russell 1000 อนุมัติผ่านเกณฑ์ Fast-entry ซึ่งช่วยบรรเทาความเสี่ยงกระแสเงินทุน Passive หมุนออก (Capital Rotation) จาก RKLB ในระยะสั้น
+- **Better.com Pledged Crypto Mortgage:** นวัตกรรมกู้เงินซื้อบ้านแบบวางค้ำประกันด้วย BTC ร่วมกับ Coinbase โดย **ไม่มีการ Margin Call** หรือบังคับขายหากชำระเงินตามปกติ (Delinquency 60 วันเท่านั้น) ถือเป็นก้าวสำคัญระดับประวัติศาสตร์ในฐานะ Hard Collateral
+- **Portfolio Impact & Forecasts:** ⚪ HOLD ทุกสินทรัพย์ในพอร์ตชั่วคราวเนื่องจากเงินสดสำรองลดลงมาที่ 9.25% (ต่ำกว่าขั้นต่ำ 10%) พร้อมออกตารางคาดการณ์ราคา 3 ช่วงเวลา (3Y, 5Y, 10Y) สำหรับ RKLB และ BTC
+- Quality Score: 98/100 | QA Score: 98/100 | รายงานบทวิเคราะห์: `output/2026-06-05_youtube_yfinance_portfolio_swarm_analysis.md`
+
+### [2026-06-05] — SYSTEM — /dream-review (June 5 Review)
+- **Database Drift Correction:** ซิงค์ข้อมูล static ใน Obsidian wiki (`overview.md` และ `dca_rules.md`) ให้ตรงกับ Google Sheets จริง ได้แก่ RKLB (18.46 shares), UNH (1.67 shares), NVO (16.33 shares), TSM (0.82 shares), BTC (0.00756 shares) ปรับระดับ Cash Cushion เหลือ 9.25% ($821.83 USD)
+- **Rules Alignment:** ตั้งกฎ Cash Safety Firewall เปิดใช้สถานะ Hold DCA ทุกสินทรัพย์จากการที่ระดับเงินสดสะสมหลุดต่ำกว่าเกณฑ์ควบคุม 10%
+- **Risk File Sync:** อัปเดต `pre_mortem_matrix.md` เพิ่มสัญญาณ SpaceX IPO เกณฑ์ดัชนี Russell Fast-Entry vs S&P 500 Rejection และ Bitcoin Pledged Crypto Mortgage (no margin call) ในฐานะ Systemic Risk Cushion
+- QA Score: Approved (QA Score: 95/100) ✅ | รายงาน: `output/2026-06-05_dream_review.md`
+
+### [2026-06-05] — YOUTUBE — Moneycontrol Global Market Live: Broadcom Earnings Crash & RBI Interest Rate Hold
+- **Broadcom AVGO Drop & CoWoS Bottleneck:** AVGO ร่วงหนัก -13% จาก flat AI guidance แต่ความจริงเกิดจากขีดจำกัดกำลังการผลิตชิปขั้นสูง (CoWoS packaging capacity bottleneck) ของ TSMC ($TSM) ที่เต็ม 100% ตอกย้ำอำนาจการต่อรองระดับผูกขาดสูงสุด (Pricing Power Moat) และสร้างจังหวะ DCA เพิ่มเติม
+- **RBI Policy Hold 5.25%:** ธนาคารกลางอินเดียคงดอกเบี้ย Repo เพื่อป้องกันเสถียรภาพค่าเงินรูปี (INR) และรับมือราคาน้ำมันดิบ Brent ทรงตัวในระดับสูง ส่งผลให้ Bank Nifty และกลุ่มกลาโหม (+12%) ดีดตัวบวก
+- **Portfolio Action:** ⚪ HOLD ทุกสินทรัพย์ชั่วคราวเนื่องจากเงินสดพอร์ตลดเหลือ 9.25% (ต่ำกว่าเกณฑ์ 10%)
+- QA Score: Approved (QA Score: 98/100) ✅ | รายงานบทวิเคราะห์: `output/2026-06-05_youtube_global_market_live_moneycontrol.md`
+
+### [2026-06-05] — STRATEGY — 30-Year Portfolio AI Wave & SPCX Analysis
+- **AI Exposure & Moat Analysis:** ประเมินพอร์ต 30 ปีกับกระแส AI พบความคุ้มครองดีเยี่ยมในฐานราก: NVDA (CUDA/Robotics GPU), TSM (ผูกขาดโรงหล่อขั้นสูง/CoWoS Underweight ที่ 4.11%), GOOGL/AMZN (Cloud/Inference infrastructure) และ SPCX (SpaceXAI LEO Edge + Colossus)
+- **Structural Gaps Flagged:** ระบุ 2 ช่องว่างเชิงยุทธศาสตร์: (1) ขาดพลังงานศูนย์ข้อมูล (AI Energy/Power Bottleneck) เช่น หุ้นกลุ่มนิวเคลียร์/สาธารณูปโภค VST/OKLO, (2) การมีน้ำหนัก TSM ต่ำกว่าเป้า (Target 8.00% vs Live 4.11%)
+- **Space & SPCX Playbook:** ยืนยันการรักษากฎความเสี่ยง RKLB + SPCX สะสมไม่เกิน 35.00% พร้อมกำหนดกลยุทธ์จองซื้อ SPCX ดักซื้อจังหวะ Lock-up Expiry Dump ($70-80/share ~ธ.ค. 2026) แทนการซื้อ Day 1 Pop ($120-140/share)
+- Quality Score: 97/100 | QA Score: 97/100 | รายงานบทวิเคราะห์: `output/2026-06-05_portfolio_30y_ai_wave_analysis.md`
+
+### [2026-06-05] — SOFI — Morningstar Fair Value Fact-Checking Audit
+- **Fact-Checking target:** ตรวจสอบกรณีข่าวลือเป้าหมาย $40 ของ Morningstar พบความจริงคือเป้าหมายอยู่ที่ **$19.00** เท่านั้น (สอดคล้องระดับราคาซื้อขายปัจจุบันที่ $17.15 หรือมีส่วนลด ~9.74%) และจัดอยู่ในประเภท "No Moat" และ "Very High Uncertainty"
+- **Speculative Target Breakdown:** วิเคราะห์ที่มาเป้า $40 ว่ามาจากการคาดการณ์ Bull case ระยะยาว 5 ปีที่คาดเดาอัตรากำไรของ Galileo/Technisys และการร่วงลงของ NCO สูงเกินจริง ซึ่งไม่มี Margin of Safety ในระดับปัจจุบัน
+- **Portfolio Alignment:** ยืนยันสถานะ **LOCK HOLD ONLY** และรักษากระสุนสำรองเพื่อ TSM/NVO ต่อไป พร้อมตั้งรับกฎ VETO Trigger ขายออก 100% ทันทีหาก SEC ออก Formal Order of Investigation กรณี Muddy Waters
+- Quality Score: 98/100 | QA Score: 98/100 | รายงานบทวิเคราะห์: `output/2026-06-05_SOFI_Morningstar_valuation_audit.md`
+
+### [2026-06-05] — STRATEGY — TSM & BTC Support Levels & Cash Strategy Audit
+- **Cash Safety Rule Enforced:** ยืนยันสัดส่วนเงินสดพอร์ตที่ **9.53%** ต่ำกว่าเกณฑ์ขั้นต่ำ 10% เล็กน้อย ดำเนินการบังคับใช้สถานะ **Hold DCA (ระงับการสั่งซื้อราคาตลาดสด)** เพื่อปกป้องสภาพคล่องรวม
+- **TSM Support Analysis:** TSM อยู่ที่ราคา **$427.62** (ชน Fair Value DCF $428.50) โดยมี Underweight Gap อยู่ที่ **-2.93%** (สัดส่วนจริง 4.07% vs Target 7.00%) แนะนำตั้งรับแบบใจเย็นด้วย GTC Limit Orders ที่แนวรับสำคัญ **$415** (Bollinger Middle) และ **$385** (50-Day MA)
+- **BTC Support & Buy Block:** BTC ร่วงแตะ **$60,524.01** (drawdown -52% จาก ATH) ทว่าสัดส่วนจริงอยู่ที่ **5.32%** เกินกรอบเป้าหมาย 5.00% เรียบร้อยแล้ว (ผลจากการเคาะ Tranche 2a บ่ายวันนี้) แนะนำเปิด Hard Block ห้ามช้อนซื้อ BTC เพิ่ม เพื่อรักษาวินัยพอร์ต
+- Quality Score: 98/100 | QA Score: 98/100 | รายงานบทวิเคราะห์: `output/2026-06-05_TSM_BTC_support_levels_analysis.md`
+
+### [2026-06-05] — SYSTEM — /portfolio-analysis (June 5 Performance Audit)
+- **Portfolio Total**: $8,667.54 USD | Cash Cushion: 9.48% ($821.83) | +$2,816.40 (+56.00% G/L) | True Return: +115.22%
+- **Execution**: คงมาตรการ Hard Buy Block ใน RKLB (24.44%), NVDA (18.39%) และ BTC (5.31%) บังคับใช้สถานะ Hold DCA (ระงับซื้อราคาตลาดพอร์ตโฟลิโอ) จากการที่กระแสเงินสดสำรองลดลงต่ำกว่าเกณฑ์ 10% (อยู่ที่ 9.48%) และตั้งรับผ่าน Limit Orders ใน TSM (DCA Priority #1) ที่ระดับ $415 และ $385
+- รายงานบทวิเคราะห์: `output/2026-06-05_portfolio_analysis.md`
+
+### [2026-06-06] — SYSTEM — /portfolio-news-audit (June 6 News Deep Dive)
+- **News Sweep**: Analyzed 45 fresh, diverse institutional news items across all 9 portfolio assets, covering massive catalysts including Google's $920M/month SpaceX compute lease, Berkshire's $10B Alphabet investment, and TSMC's pricing warnings to memory rivals.
+- **Valuation & Moat**: Evaluated specific impacts on corporate moats, cash flows, and valuation metrics, culminating in a CIO strategic verdict under the current 9.48% cash cushion pressure.
+- รายงานบทวิเคราะห์: `output/2026-06-06_portfolio_news_deep_dive.md`
+
+### [2026-06-06] — SYSTEM — /portfolio-news-update (Geopolitical Macro) (15:25)
+- **Direct US-Iran Military Conflict:** Analyzed the June 5-6 escalation where US Navy shot down 4 IRGC drones, conducted airstrikes on Iranian coastal radars (Qeshm/Goruk), and IRGC retaliated with 7 ballistic missiles toward US bases in Kuwait/Bahrain (6 intercepted). Tenuous ceasefire holds but poses inflation/oil risks.
+- **US Congress Ukraine Act & Taiwan Asymmetric Shift:** House passed the Ukraine Support Act (226-195) to authorize $8B in loans; Taiwan moves to asymmetric "kill zone" strategy with anti-ship missiles amid a $32B US arms backlog.
+- **FY 2027 $1.15T NDAA & Cash Cushion Logistics:** The US House advanced a record $1.15T NDAA (nearly 30% increase), highlighting long-term fiat debasement risk (supporting BTC hedge). Designed a CIO capital rotation trim of RKLB (1.8 shares) to fund TSM limit orders without breaching the 10% Cash Cushion ($821.83 USD, 9.68%).
+- QA Score: 100/100 | Report: output/2026-06-06_macro_us_conflict_geopolitics_report.md
+
+
+### [2026-06-06] — SYSTEM — /portfolio-news-update (Geopolitical Macro Revision) (15:40)
+- **Operational Metrics Integration:** Added quantitative metrics including the Strait of Hormuz carrying 20% of global oil/LNG, March 2026 95% flow drops, partial recovery to 35-40% under ceasefire, 2.5-3.0 mbpd global oil supply deficit, and the Baltic Dry Index at 2,981 points on June 5 (-7.5% weekly decline).
+- **Macro Transmission Channel:** Formulated step-by-step financial transmission mechanism (Fiscal Deficit -> Bond Supply ⇧ -> Bond Yields ⇧ -> Crowding-Out -> WACC ⇧ -> exponential DCF valuation present value contraction for NVDA, GOOGL, AMZN).
+- **Market Grounding & Sanity Check:** Grounded the US-Iran missile conflict to explain the absence of market circuit breakers (85.7% Patriot/THAAD interception rate, zero casualties, no physical oil infrastructure damage, ceasefire truce active).
+- QA Score: Approved (QA Score: 100/100) | Quality Score: Approved (Quality Score: 98/100) | Report: output/2026-06-06_macro_us_conflict_geopolitics_report.md
+
+
+### [2026-06-06] — SYSTEM — /portfolio-news-update (Geopolitical Macro Scenario Revision) (16:00)
+- **Scenario Analysis & Action Plan:** Appended Section 7 (Scenario Analysis) to the June 6 macro report, defining the Base Case (managed volatility, Brent $85-$95, WACC trim rotation), Worst Case (all-out conflict, Brent $130-$150, WACC shock, Hard Buy Block, raise cash cushion to 15-20%), and Best Case (peace deal, Brent $70-$75, rate cuts, re-rating, organic cash expansion).
+- **Core Guidelines Updated:** Modified `.claude/commands/portfolio-news-update.md`, `CLAUDE.md`, and `AGENTS.md` to formally mandate the inclusion of Scenario Analysis (Base / Worst / Best Case) and associated Action Plans in future reports.
+- QA Score: Approved (QA Score: 100/100) | Quality Score: Approved (Quality Score: 98/100) | Report: output/2026-06-06_macro_us_conflict_geopolitics_report.md
+
+
+### [2026-06-06] — SYSTEM — Command Registration: /macro-update (16:01)
+- **Command Registered:** Officially registered the `/macro-update` slash command (triggered by "Macro Update", "macro-update", "/macro-update").
+- **Core Specifications Saved:** Created `.claude/commands/macro-update.md` outlining the 6-Phase Workflow (Pillars news sweep, WACC financial transmission modeling, market calm grounding test, limit orders funding logistics, and 3-scenario analysis with action plans).
+- **System Rules Linked:** Synchronized routing tables and slash command references in `CLAUDE.md`, `COMMANDS.md`, and `AGENTS.md` (routing via Agent 15).
+
+
+### [2026-06-06] — SYSTEM — Quality Auditor (Agent 17 / 16) Rules Updated (16:06)
+- **Geopolitical Macro Quality Gate (ด่าน D):** Integrated new quality gating rules in `workflows/17_report_quality_auditor.md` specifically for Geopolitical Macro updates (`/macro-update`).
+- **Audit Criteria Standardized:** Added strict criteria enforcing 4 geopolitical pillars (D-1), operational metrics integration (D-2), financial transmission modeling (D-3), market calm grounding sanity check (D-4), and 3-scenario analysis with action plans (D-5).
+- **Scoring Matrix Synced:** Appended corresponding Quality Score deduction rows in the Quality Score Matrix table.
+
+### [2026-06-06] — SYSTEM — /portfolio-analysis (June 6 Performance Audit)
+- **Portfolio Total**: $8,485.67 USD | Cash Cushion: 9.68% ($821.83) | +$2,634.53 (+52.38% G/L) | True Return: +110.70%
+- **Execution**: คงมาตรการ Hard Buy Block ใน RKLB (23.95%), NVDA (18.27%) และ BTC (5.41%) บังคับใช้สถานะ Hold DCA จากการที่ระดับเงินสดสำรองพอร์ตยังต่ำกว่าเกณฑ์ 10% (อยู่ที่ 9.68%) และตั้งรับผ่าน Limit Orders ใน TSM (DCA Priority #1) พร้อมเสนอแผนสับเปลี่ยนทุน Trim RKLB 1.8 หุ้น เพื่อความคล่องตัว
+- รายงานบทวิเคราะห์: `output/2026-06-06_portfolio_analysis.md`

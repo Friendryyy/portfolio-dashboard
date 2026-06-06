@@ -1,0 +1,74 @@
+# AI & Data Center Power Demand
+https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai
+https://www.goldmansachs.com/insights/articles/ai-to-drive-165-increase-in-data-center-power-demand-by-2030
+https://www.goldmansachs.com/insights/articles/how-ai-is-transforming-data-centers-and-ramping-up-power-demand
+https://www.benzinga.com/markets/equities/26/04/51796110/ai-power-boom-is-accelerating-as-goldman-sachs-forecasts-data-centers-demand-to-surge-220-by-2030
+https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/ai-power-expanding-data-center-capacity-to-meet-growing-demand
+
+# Jensen Huang Speeches
+https://fortune.com/2026/05/11/jensen-huang-tells-electricians-and-plumbers-this-is-your-time/
+https://www.energypolicy.columbia.edu/jensen-huang-the-power-of-intelligence-infrastructure/
+https://www.foxbusiness.com/technology/nvidia-ceo-says-ai-boom-fueling-largest-infrastructure-buildout-history
+https://www.tomshardware.com/pc-components/gpus/jensen-huang-ces-2026-q-and-a
+
+# Tech Company Nuclear & PPA Deals
+https://introl.com/blog/nuclear-power-ai-data-centers-microsoft-google-amazon-2025
+https://www.esgtoday.com/amazon-meta-google-microsoft-account-for-half-of-global-clean-energy-purchase-deals-in-2025-report/
+https://enkiai.com/nuclear/microsoft-constellation-ai-data-centers/
+https://www.softwareseni.com/why-tech-giants-are-going-nuclear-the-ai-power-crisis-driving-trillion-dollar-energy-deals/
+
+# Nuclear & SMR
+https://www.wwt.com/blog/big-techs-nuclear-bet-key-small-modular-reactors-for-cloud-power
+https://www.ainvest.com/news/small-modular-reactors-oklo-constellation-powering-nuclear-renaissance-2505/
+https://carboncredits.com/2026-the-year-nuclear-power-reclaims-relevance-with-15-reactors-ai-demand-and-chinas-expansion/
+https://www.mintz.com/insights-center/viewpoints/2151/2026-03-04-inside-nuclear-renaissance-policy-shifts-tech-demand-and
+
+# Constellation Energy (CEG)
+https://stockanalysis.com/stocks/ceg/
+https://tickernerd.com/stock/ceg-forecast/
+
+# Vistra Energy (VST)
+https://finance.yahoo.com/markets/stocks/articles/vistra-vst-best-power-generation-052751738.html
+https://www.marketbeat.com/stocks/NYSE/VST/forecast/
+
+# Cameco / Uranium (CCJ)
+https://www.schaeffersresearch.com/content/analysis/2026/04/17/top-stock-picks-of-2026-this-uranium-stock-is-an-energy-winner
+https://www.marketbeat.com/stocks/NYSE/CCJ/forecast/
+https://carboncredits.com/uranium-prices-2026-supply-crunch-and-rising-demand-fuel-a-nuclear-bull-market/
+https://investingnews.com/uranium-forecast/
+
+# SMR Stocks (OKLO, SMR, NNE)
+https://exoswan.com/small-modular-reactor-stocks/
+https://www.fool.com/investing/2026/05/08/better-nuclear-energy-stock-nuscale-power-vs-oklo/
+
+# Utilities (NEE, ETR, DUK, SO, AEP)
+https://www.marketbeat.com/stocks/NYSE/NEE/forecast/
+https://markets.financialcontent.com/stocks/article/finterra-2026-3-30-the-utility-renaissance-how-entergy-etr-is-powering-the-ai-future-via-the-meta-grid-deal
+https://fortune.com/2026/04/25/utility-giant-duke-energy-spend-industry-record-103-billion-growth-data-centers-affordability/
+
+# Natural Gas & LNG
+https://stockanalysis.com/stocks/lng/
+https://www.benzinga.com/opinion/26/02/50615291/3-natural-gas-stocks-to-buy-as-ai-energy-demand-skyrockets
+
+# Midstream Infrastructure (WMB, KMI, ET)
+https://seekingalpha.com/article/4825275-ai-infrastructure-williams-beating-kinder-morgan-in-race-to-power-data-centers
+https://www.indexbox.io/blog/natural-gas-infrastructure-boom-energy-transfer-and-kinder-morgan-lead-2026-growth/
+https://www.stockinvestor.com/energy-infrastructure-in-secular-bull-trend/
+
+# Solar (FSLR, ENPH)
+https://stockanalysis.com/stocks/fslr/
+https://www.indexbox.io/blog/enphase-stock-rises-on-solar-sector-optimism-after-first-solars-strong-q1-2026-results/
+
+# Alternative Energy (BE, PLUG)
+https://247wallst.com/investing/2026/04/14/bloom-energy-rockets-23-as-fuel-cell-tech-becomes-the-ai-data-center-power-play-of-2026/
+
+# Oil Majors (XOM, CVX)
+https://www.tipranks.com/news/xom-and-cvx-stocks-jump-as-oil-prices-spike-which-energy-giant-has-more-upside-now
+
+# Sector Timing & Outlook
+https://www.jpmorgan.com/insights/global-research/outlook/energy-outlook
+https://rsmus.com/insights/industries/energy/power-utilities-2026-outlook-growth-meets-delivery-constraints.html
+https://www.deloitte.com/us/en/insights/industry/renewable-energy/renewable-energy-industry-outlook.html
+https://www.deloitte.com/us/en/insights/industry/power-and-utilities/power-and-utilities-industry-outlook.html
+https://www.rystadenergy.com/news/12-predictions-for-2026-in-energy
+https://www.spglobal.com/energy/en/news-research/special-reports/energy-transition/horizons-top-cleantech-trends-2026

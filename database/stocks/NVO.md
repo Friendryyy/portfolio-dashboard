@@ -319,6 +319,11 @@ Novo Nordisk ครองตลาด GLP-1 obesity/diabetes drug ด้วย O
 ---
 
 ## 📎 Research Sources
+> อัปเดต 2026-06-07 | Sessions: Portfolio News Update 2026-06-07
+
+- **Novo Nordisk Wegovy clinical trials (ADA 2026 Sessions)** #news
+  - https://www.novonordisk.com
+
 > อัปเดต 2026-06-04 | Sessions: Swarm DCA Verdict 2026-06-04
 
 - **api.alternative.me** #news

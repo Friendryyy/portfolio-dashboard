@@ -108,7 +108,14 @@ Alphabet ครอง search monopoly (~90% market share) + YouTube + Google Clo
 - Cloud AI data: investing.com Q1 2026 slides
 - Sources file: `tools/GOOGL_sources.txt`
 
-## 📎 Research Sources (2026-05-20 — Google I/O Deep Dive)
+## 📎 Research Sources
+> อัปเดต 2026-06-07 | Sessions: Portfolio News Update & Bloomberg Analysis 2026-06-07
+
+- **Bloomberg Television — Bloomberg This Weekend (2026-06-06)** #youtube
+  - https://youtu.be/ZfhpO64cb-E?si=JFFJL0EdntCpRaPu
+- **Alphabet Inc. ($80 Billion Equity Raise for AI CapEx)** #news
+  - https://finance.yahoo.com
+ (2026-05-20 — Google I/O Deep Dive)
 
 - **[Loop Capital $490 Upgrade — AI full-stack advantage]** #analyst #googl
   - https://www.gurufocus.com/news/3213999/googl-loop-capital-upgrades-alphabet-rating-and-raises-price-target-googl-stock-news
@@ -146,6 +153,11 @@ Alphabet ครอง search monopoly (~90% market share) + YouTube + Google Clo
 ---
 
 ## 📝 Research Log
+
+### [2026-06-07] — YOUTUBE — Bloomberg This Weekend (June 6, 2026) Swarm Analysis
+- **Trump's AI Government Stake Proposal & Anthropic Deal:** วิเคราะห์แนวนโยบายแทรกแซงร่วมทุนผู้พัฒนา AI ของ Donald Trump (เช่น OpenAI, Anthropic) ซึ่งเพิ่มระดับความเสี่ยงทางกฎระเบียบกลุ่มบิ๊กเทค แต่ยืนยันความแข็งแกร่งของ Google-Anthropic TPU Cloud deal มูลค่า $920M ที่ช่วยรับประกัน TAM รายได้ TPU ของกูเกิลไปจนถึงปี 2029 สัดส่วนพอร์ตอยู่ที่ 10.56% ล็อกสถานะ Hold DCA ท่ามกลางเงินสดสำรอง 9.68%
+- **Portfolio Impact:** ⚪ HOLD (คงสถานะล็อก DCA ปิดกั้นการซื้อเพิ่มจากวินัยเงินสดสำรอง 9.68% ซึ่งน้อยกว่า 10%)
+- **Full Report:** [2026-06-07_youtube_bloomberg_weekend_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-07_youtube_bloomberg_weekend_analysis.md)
 
 ### [2026-05-11] — FIRST FULL ANALYSIS (Portfolio Review)
 - Q1 2026: Revenue $109.9B (+22%), Cloud $20B (+63%), Search $59.66B (+19%) — strongest in years
@@ -334,66 +346,3 @@ Alphabet ครอง search monopoly (~90% market share) + YouTube + Google Clo
 
 ---
 
-## 📎 Research Sources
-> อัปเดต 2026-06-03 | Sessions: Swarm DCA Verdict 2026-06-03
-
-- **abc.xyz** #IR
-  - https://abc.xyz/investor/
-- **fool.com** #earnings #news
-  - https://www.fool.com/earnings/call-transcripts/2026/04/29/alphabet-googl-q1-2026-earnings-call-transcript/
-- **ng.investing.com** #macro #news #sector
-  - https://ng.investing.com/news/company-news/alphabet-q1-2026-slides-cloud-surges-63-ai-investments-accelerate-93CH-2477915
-- **pymnts.com** #risk
-  - https://www.pymnts.com/google/2026/justice-department-to-appeal-ruling-in-google-search-antitrust-case/
-- **tech-insider.org** #risk #smartmoney
-  - https://tech-insider.org/google-antitrust-appeal-doj-search-monopoly-2026/
-- **io.google** #news
-  - https://io.google/2026/
-- **technology.inquirer.net** #sector
-  - https://technology.inquirer.net/146626/everything-launched-at-google-i-o-2026
-- **androidauthority.com** #news
-  - https://www.androidauthority.com/android-xr-glasses-preview-google-io-2026-3665773/
-- **techtimes.com** #sector
-  - https://www.techtimes.com/articles/316344/20260505/alphabet-stock-rises-google-cloud-ai-boom-fuels-optimism-2026.htm
-- **earezki.com** #news
-  - https://earezki.com/ai-financial-news/2026-03-16-googl/
-- **waymo.com** #product
-  - https://waymo.com/blog/2026/02/waymo-raises-usd16-billion-investment-round/
-- **finance.yahoo.com** #product
-  - https://finance.yahoo.com/news/alphabet-doubles-down-waymo-gemini-100907934.html
-- **benzinga.com** #analyst #news
-  - https://www.benzinga.com/quote/GOOGL/analyst-ratings
-- **stockanalysis.com** #news
-  - https://stockanalysis.com/stocks/googl/
-- **finance.yahoo.com** #news
-  - https://finance.yahoo.com/quote/GOOGL/
-- **macrotrends.net** #earnings #macro #technicals #valuation
-  - https://www.macrotrends.net/stocks/charts/GOOGL/revenue
-- **finance.yahoo.com** #analyst
-  - https://finance.yahoo.com/news/alphabet-inc-googl-bull-case-182531691.html
-- **247wallst.com** #analyst #news
-  - https://247wallst.com/investing/2026/04/14/google-price-prediction-bull-and-bear-case/
-- **247wallst.com** #analyst #earnings #news
-  - https://247wallst.com/investing/2026/05/04/analysts-see-10-upside-for-alphabet-following-q1-earnings/
-- **insidermonkey.com** #analyst #smartmoney
-  - https://www.insidermonkey.com/blog/alphabet-inc-googl-a-bull-case-theory-9-1673403/
-- **finance.yahoo.com** #analyst
-  - https://finance.yahoo.com/markets/stocks/articles/bull-case-alphabet-googl-could-170458027.html
-- **finance.yahoo.com** #analyst
-  - https://finance.yahoo.com/news/alphabet-bull-case-vs-bear-111006495.html
-- **androidcentral.com** #product
-  - https://www.androidcentral.com/phones/live/google-io-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news
-- **aixploria.com** #product
-  - https://www.aixploria.com/en/ai-radar/google-io-2026-gemini-announcements-preview/
-- **coincentral.com** #news
-  - https://coincentral.com/alphabet-googl-stock-nears-5-trillion-market-cap-ahead-of-google-i-o-tuesday/
-- **parameter.io** #news
-  - https://parameter.io/should-you-buy-alphabet-googl-stock-before-google-i-o-conference-on-may-19/
-- **cnbc.com** #catalyst #macro #news #risk
-  - https://www.cnbc.com/2026/05/18/us-china-announce-deals-after-trump-xi-summit.html
-- **api.alternative.me** #news
-  - https://api.alternative.me/fng/
-- **youtu.be** #news
-  - https://youtu.be/73hIUQeSKck
-- **youtube.com** #youtube
-  - https://www.youtube.com/live/5WB8-lcIlME

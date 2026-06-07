@@ -6,7 +6,7 @@ Run: streamlit run tools/portfolio_dashboard.py
 
 import json
 import re
-from datetime import datetime
+from datetime import datetime, timedelta, date
 from pathlib import Path
 
 import pandas as pd
@@ -2521,12 +2521,20 @@ def render_news():
     with fc2:
         sel_type = st.selectbox("📂 ประเภทรายงาน", ["ทั้งหมด"] + all_types, key="news_type")
     with fc3:
-        if len(all_dates) >= 2:
+        # Create a continuous range of dates from the first report date to June 30, 2026 (or the latest report date)
+        target_end_date = date(2026, 6, 30)
+        start_date = all_dates[0] if all_dates else target_end_date
+        end_date = max(all_dates[-1], target_end_date) if all_dates else target_end_date
+        
+        delta = end_date - start_date
+        all_continuous_dates = [start_date + timedelta(days=i) for i in range(delta.days + 1)]
+        
+        if len(all_continuous_dates) >= 2:
             date_range = st.select_slider(
-                "📅 ช่วงวันที่", options=all_dates,
-                value=(all_dates[0], all_dates[-1]),
+                "📅 ช่วงวันที่", options=all_continuous_dates,
+                value=(all_continuous_dates[0], all_continuous_dates[-1]),
                 format_func=lambda d: d.strftime("%d %b %y"),
-                key="news_dates",
+                key="news_dates_fixed",
             )
             date_min = min(date_range)
             date_max = max(date_range)

@@ -1535,3 +1535,21 @@
 - **Portfolio Total**: $8,485.67 USD | Cash Cushion: 9.68% ($821.83) | +$2,634.53 (+52.38% G/L) | True Return: +110.70%
 - **Execution**: คงมาตรการ Hard Buy Block ใน RKLB (23.95%), NVDA (18.27%) และ BTC (5.41%) บังคับใช้สถานะ Hold DCA จากการที่ระดับเงินสดสำรองพอร์ตยังต่ำกว่าเกณฑ์ 10% (อยู่ที่ 9.68%) และตั้งรับผ่าน Limit Orders ใน TSM (DCA Priority #1) พร้อมเสนอแผนสับเปลี่ยนทุน Trim RKLB 1.8 หุ้น เพื่อความคล่องตัว
 - รายงานบทวิเคราะห์: `output/2026-06-06_portfolio_analysis.md`
+
+### [2026-06-07] — YOUTUBE — Bizwithturb: หุ้น TSMC ทำไมถึงเป็นลูกรัก CEO Nvidia 🔺 l Stock Highlights Swarm Analysis
+- **Monopoly Moat & Wafer Price Hike:** วิเคราะห์ความผูกขาดระดับล่างของ TSMC ในการรับผลิต Blackwell GPU ให้ NVIDIA ยืนยันแผนขึ้นราคาเวเฟอร์ 3nm อีก 15% H2 2026 และราคาเวเฟอร์ 2nm ที่สูงทะลุ $30,000 ต่อเวเฟอร์
+- **Reinvestment & High-NA EUV:** วิเคราะห์ความเหมาะสม CapEx ปี 2023 (NT$949B) FCF after SBC (NT$292B) และการซื้อเครื่องจักร High-NA EUV เพื่อใช้สำหรับ R&D เท่านั้นเพื่อความคุ้มค่าทางเศรษฐกิจ
+- **DCA Portfolio Action:** 🟡 HOLD (Hold DCA active จากระดับเงินสดสำรองพอร์ต 9.68% ซึ่งน้อยกว่า 10.00%) แนะนำตั้งรับ GTC Limit Orders ใน TSM (DCA Priority #1) ที่ระดับ $415 และ $385 และคงสถานะ Hard Buy Block ใน NVDA & RKLB
+- รายงานบทวิเคราะห์: `output/2026-06-07_youtube_TSM_Nvidia_highlights_analysis.md`
+### [2026-06-07] — SYSTEM — /portfolio-news-update (Deep-Dive Portfolio News Audit)
+- **Portfolio Total**: ,493.38 USD | Cash Cushion: 9.68% (.83) | +,642.23 (+52.54% G/L)
+- **Live News Sweep**: ทำการรวบรวมและสแกนข่าวสารล่าสุดจำนวน 50 ข่าวสำหรับ 10 สินทรัพย์เป้าหมาย (NVDA, RKLB, GOOGL, AMZN, UNH, NVO, SOFI, PLTR, ASTS, BTC) ข้อมูลสำคัญครอบคลุมการระดมทุน  ของ GOOGL สำหรับ AI CapEx ซึ่งสร้างแรงกดดันการเจือจางหุ้น, การตั้งเป้า AI CapEx ของ AWS สูงถึง  ต่อปี, สัญญากองทัพของ RKLB มูลค่า , การประกาศขึ้นปันผล 5% ของ UNH, และการปรับฐานที่รุนแรงของบิตคอยน์หลุดระดับ ,000 จากประเด็นการโยกเงินกลับเข้าเทคและแรงเทขายของ MicroStrategy
+- **Quantitative Funding & Scenario Matrix**: วางแผนจัดสรรเงินสดสำรองและจำลอง 3 ฉากทัศน์ (Base, Worst, Best Cases) เพื่อรับมือความผันผวนของตลาด ปรับปรุงกลยุทธ์การตั้งรับ Limit Orders ของ TSM และ BTC โดยเสนอทางเลือก RKLB Trim หรือการฝากเงิน DCA เพิ่มเติมเพื่อรักษาระดับเงินสดสำรองพอร์ตให้ปลอดภัยเหนือระดับ 10.0%
+- **RAG Sync Status**: ดึงข่าวและสร้างรายงานสำเร็จ แต่การซิงค์ข้อมูลผ่าน NotebookLM ติดปัญหาเซสชันหมดอายุ (Authentication Expired) จึงเตรียมการเขียนแหล่งข่าวลงไฟล์ และรอผู้ใช้ดำเนินการ re-authenticate
+- รายงานบทวิเคราะห์: output/2026-06-07_portfolio_news_deep_dive.md
+
+### [2026-06-07] — YOUTUBE — Bloomberg This Weekend (June 6, 2026) Swarm Analysis (21:11)
+- **Macro & Yield Pressures:** วิเคราะห์ตัวเลข May NFP ที่จ้างงานพุ่ง 172,000 ตำแหน่ง (สวนคาดการณ์) ดันอัตราผลตอบแทน 10Y ยืนเหนือ 4.60% เร่งโอกาสปรับขึ้นดอกเบี้ยนโยบายของ Fed และเพิ่มความผันผวนต่อบิตคอยน์ที่ย่อตัวแตะระดับแนวรับจิตวิทยา $60,000 (Capital Rotation)
+- **Trump's AI Equity Stake Proposal:** ข้อเสนอสุดล้ำในการให้รัฐร่วมถือหุ้นผู้พัฒนา AI เพื่อแลกปันปันผลสาธารณะ (Inspired by Intel CHIPS Act 10% stake) เพิ่มความกังวลการคลังและการคุมข้อมูลของรัฐ แต่ดีล Google-Anthropic $920M TPU Cloud ยืนยันกระแสดีมานด์ฮาร์ดแวร์แข็งแกร่ง
+- **SpaceX IPO & Portfolio Action:** SpaceX ($SPCX) กำหนดเทรด 12 มิ.ย. ที่มูลค่า $1.75T สร้างแรงกระเพื่อมชั่วคราวต่อ RKLB ($110.08, G/L +381.58%) สั่งคงสถานะ Hard Buy Block ทุกสินทรัพย์ในพอร์ตตามเกณฑ์เงินสดสำรอง 9.68% (ต่ำกว่า 10.00%)
+- รายงานบทวิเคราะห์: output/2026-06-07_youtube_bloomberg_weekend_analysis.md

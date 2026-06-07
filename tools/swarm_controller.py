@@ -252,18 +252,38 @@ class SwarmOrchestrator:
         return ticker_result
 
     def load_subagent_prompts(self):
-        """Reads System Prompts dynamically from Obsidian subagents directory."""
+        """Reads System Prompts dynamically from subagents directory in Google Skill format."""
         print("[*] Swarm Architect: Loading subagents system prompt templates...")
         if os.path.exists(SUBAGENTS_DIR):
+            # 1. Load from subdirectory-based Google Skill folders
+            for item in os.listdir(SUBAGENTS_DIR):
+                item_path = os.path.join(SUBAGENTS_DIR, item)
+                if os.path.isdir(item_path):
+                    skill_path = os.path.join(item_path, "SKILL.md")
+                    if os.path.exists(skill_path):
+                        try:
+                            with open(skill_path, "r", encoding="utf-8") as f:
+                                content = f.read()
+                            # Parse and strip YAML frontmatter
+                            prompt_body = content
+                            match = re.match(r'^---\s*\n(.*?)\n---\s*\n(.*)', content, re.DOTALL)
+                            if match:
+                                prompt_body = match.group(2)
+                            self.subagent_prompts[item] = prompt_body
+                        except Exception as e:
+                            print(f"[-] Swarm Architect: Failed to read {skill_path}: {e}")
+            
+            # 2. Fallback to legacy flat subagent_*.md files for backward compatibility
             for filename in os.listdir(SUBAGENTS_DIR):
                 if filename.startswith("subagent_") and filename.endswith(".md"):
                     name = filename[len("subagent_"):-3]  # Extract name
-                    file_path = os.path.join(SUBAGENTS_DIR, filename)
-                    try:
-                        with open(file_path, "r", encoding="utf-8") as f:
-                            self.subagent_prompts[name] = f.read()
-                    except Exception as e:
-                        print(f"[-] Swarm Architect: Failed to read {file_path}: {e}")
+                    if name not in self.subagent_prompts:
+                        file_path = os.path.join(SUBAGENTS_DIR, filename)
+                        try:
+                            with open(file_path, "r", encoding="utf-8") as f:
+                                self.subagent_prompts[name] = f.read()
+                        except Exception as e:
+                            print(f"[-] Swarm Architect: Failed to read legacy file {file_path}: {e}")
         
         # Ensure fallback defaults exist if no files are found or directory is missing
         if not self.subagent_prompts:

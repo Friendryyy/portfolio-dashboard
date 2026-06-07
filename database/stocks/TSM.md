@@ -3,7 +3,7 @@ ticker: TSM
 company: Taiwan Semiconductor Manufacturing Co.
 sector: Semiconductors / Technology
 tags: [watchlist, conviction/high, artificial-intelligence, monopoly]
-last_updated: 2026-06-05
+last_updated: 2026-06-07
 conviction: 8.5/10
 thesis_status: ACTIVE
 ---
@@ -187,6 +187,11 @@ TSMC คือรากฐานทางวิศวกรรมกายภา
 - รักษาวินัยตั้ง Limit Order วางราคาไว้ที่ $415 และ $385 เพื่อรักษาระดับเงินสดสำรองพอร์ต (9.53% ต่ำกว่าเกณฑ์ 10%) และป้องกันการไล่ซื้อสูงเกินไป
 - **Full Report:** [2026-06-05_TSM_BTC_support_levels_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-05_TSM_BTC_support_levels_analysis.md)
 
+### [2026-06-07] — YouTube Swarm: "หุ้น TSMC ทำไมถึงเป็นลูกรัก CEO Nvidia 🔺 l Stock Highlights"
+- **Moat & Pricing Power Validated:** ชำแหละจุดเด่นกำลังการผลิต Utilization Rate 95%+ และการขึ้นราคาเวเฟอร์ 3nm อีก 15% H2 2026 ท่ามกลางอุปสงค์ Blackwell GPU ตึงตัว
+- **Portfolio Action:** 🟡 HOLD (Hold DCA active จาก Cash 9.68% < 10.00%) แต่คงการตั้ง Limit Orders ช้อนรับที่ราคา $415 และ $385
+- **Full Report:** [2026-06-07_youtube_TSM_Nvidia_highlights_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-07_youtube_TSM_Nvidia_highlights_analysis.md)
+
 ---
 
 ## 📎 Research Sources
@@ -214,3 +219,6 @@ TSMC คือรากฐานทางวิศวกรรมกายภา
   - https://www.youtube.com/live/9jBJ9qH2oz0?si=U465Ni6grJ6qJC4h
 - **youtube.com** #youtube
   - https://www.youtube.com/watch?v=C3BujIE6Sjg
+- **youtube.com** #youtube #moat #pricing-power
+  - https://youtu.be/H2WPPDZV-KA?si=wiV2qch4IOSoYy_1
+

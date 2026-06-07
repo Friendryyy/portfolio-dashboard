@@ -59,6 +59,11 @@ Bitcoin คือ absolute digital scarcity ชิ้นแรกและชิ
 
 ## 📝 Research Log
 
+### [2026-06-07] — YOUTUBE — Bloomberg This Weekend (June 6, 2026) Swarm Analysis
+- **BTC Speculation Purge:** วิเคราะห์ความผันผวนของ Bitcoin ที่ปรับฐานทดสอบแนวรับจิตวิทยา $60,000 จากประเด็นการโยกย้ายเงินลงทุนเข้าสู่หุ้นเทคขนาดใหญ่ (Capital Rotation) และแรงกดดันการกังวลดอกเบี้ยของ Fed ยืนยันบทบาทในฐานะสินทรัพย์สะท้อนความตื่นตระหนกสภาพคล่อง (Risk-off Indicator)
+- **Portfolio Impact:** ⚪ HOLD (คงสถานะล็อก DCA ปิดกั้นการซื้อเพิ่มจากวินัยเงินสดสำรอง 9.68% ซึ่งน้อยกว่า 10%) และตั้งรับผ่าน Limit Orders แนวรับสำคัญถัดไป
+- **Full Report:** [2026-06-07_youtube_bloomberg_weekend_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-07_youtube_bloomberg_weekend_analysis.md)
+
 ### [2026-06-05] — Technical & Support Audit
 - วิเคราะห์กรอบแนวรับสำคัญของ BTC ท่ามกลางการปรับฐานดิ่งลง -5.15% ในรอบวันลงมาแตะแนวรับจิตวิทยา $60,524.01 (ใกล้จุดต่ำสุดของปี 52W Low $60,074.20)
 - ชี้วัดสถานะพอร์ตโฟลิโอสะสม BTC อยู่ที่ 5.32% เกินระดับเป้าหมาย (Target 5.00%) เรียบร้อยแล้ว (หลังช้อนซื้อ Tranche 2a $94.99 ไปเมื่อบ่ายวันนี้)
@@ -118,6 +123,13 @@ Bitcoin คือ absolute digital scarcity ชิ้นแรกและชิ
 ---
 
 ## 📎 Research Sources
+> อัปเดต 2026-06-07 | Sessions: Portfolio News Update & Bloomberg Analysis 2026-06-07
+
+- **Bloomberg Television — Bloomberg This Weekend (2026-06-06)** #youtube
+  - https://youtu.be/ZfhpO64cb-E?si=JFFJL0EdntCpRaPu
+- **Bitcoin Crypto Market News (Drop below $63k & derivatives liquidations)** #news
+  - https://www.binance.com
+
 > อัปเดต 2026-06-05 | Sessions: Media Analysis June 5
 
 - **api.alternative.me** #news

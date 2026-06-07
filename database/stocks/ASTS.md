@@ -214,6 +214,11 @@ ASTS กำลังสร้าง space-based cellular broadband network ท�
 ---
 
 ## 📎 Research Sources
+> อัปเดต 2026-06-07 | Sessions: Portfolio News Update 2026-06-07
+
+- **AST SpaceMobile (BlueBird 8, 9, 10 launch & Falcon 9 schedule)** #news
+  - https://www.ast-science.com
+
 > 23 sources พร้อม descriptions + tags — ดูรายละเอียดที่ [[sources/ASTS]]
 
 | หมวด | จำนวน source |

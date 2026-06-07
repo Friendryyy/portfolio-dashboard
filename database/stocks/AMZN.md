@@ -84,7 +84,12 @@ Amazon คือ triple-engine growth machine: (1) AWS cloud dominance ที่
 |---|---|
 | [Amazon IR Q1 2026](https://ir.aboutamazon.com/) | 2026-05-08 |
 
-## 📎 Research Sources (2026-05-20 — Google I/O E-Commerce Threat)
+## 📎 Research Sources
+> อัปเดต 2026-06-07 | Sessions: Portfolio News Update 2026-06-07
+
+- **Amazon.com Inc. (Prime Day 2026 & AWS $200B Infrastructure Spend)** #news
+  - https://finance.yahoo.com
+ (2026-05-20 — Google I/O E-Commerce Threat)
 
 - **[Google Universal Cart vs Amazon — ecommerce threat analysis]** #amzn #googl #competitor #risk
   - https://www.techtimes.com/articles/316867/20260519/googles-universal-cart-pushes-ai-deeper-checkout-race-it-hasnt-won-yet.htm
@@ -249,48 +254,3 @@ Amazon คือ triple-engine growth machine: (1) AWS cloud dominance ที่
 
 ---
 
-## 📎 Research Sources
-> อัปเดต 2026-05-30 | Sessions: Swarm DCA Verdict 2026-05-30
-
-- **cnbc.com** #earnings #news
-  - https://www.cnbc.com/2026/04/29/amazon-amzn-q1-earnings-report-2026.html
-- **ir.aboutamazon.com** #IR #earnings #sector
-  - https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-First-Quarter-Results/
-- **stockanalysis.com** #news
-  - https://stockanalysis.com/stocks/amzn/financials/
-- **alphaspread.com** #valuation
-  - https://www.alphaspread.com/security/nasdaq/amzn/dcf-valuation/base-case
-- **247wallst.com** #news
-  - https://247wallst.com/investing/2026/05/05/amazons-free-cash-flow-just-collapsed-from-26-billion-to-1-2-billion-the-market-barely-blinked/
-- **altindex.com** #technicals
-  - https://altindex.com/ticker/amzn/technical-analysis
-- **marketbeat.com** #analyst #news
-  - https://www.marketbeat.com/stocks/NASDAQ/AMZN/forecast/
-- **cms.gov** #news
-  - https://www.cms.gov
-- **247wallst.com** #macro #news #risk
-  - https://247wallst.com/investing/2026/03/27/amazon-drops-3-what-macro-pressure-and-ai-spending-concerns-mean-for-amzn-stock-right-now/
-- **futurumgroup.com** #news
-  - https://futurumgroup.com/insights/amazon-q1-fy-2026-aws-momentum-builds-as-ai-infrastructure-spend-surges/
-- **fintel.io** #smartmoney
-  - https://fintel.io/so/us/amzn
-- **cnbc.com** #news
-  - https://www.cnbc.com/2026/04/09/amazon-ceo-andy-jassy-ai-spending.html
-- **cnbc.com** #macro #news
-  - https://www.cnbc.com/2026/03/31/amazon-settles-teamsters-warehouse-strike.html
-- **benzinga.com** #analyst #news
-  - https://www.benzinga.com/trading-ideas/long-ideas/25/12/49584626/amazons-2026-bull-case-isnt-retail-its-aws-ai-and-margin-discipline
-- **finance.yahoo.com** #news
-  - https://finance.yahoo.com/news/amazon-amzn-seen-one-strongest-203638058.html
-- **247wallst.com** #analyst #news
-  - https://247wallst.com/investing/2026/04/13/amazon-price-prediction-bull-and-bear-case/
-- **247wallst.com** #news
-  - https://247wallst.com/investing/2026/05/15/heres-why-amazon-amzn-might-be-the-ultimate-hard-asset-and-ai-infrastructure-stock/
-- **investing.com** #analyst #news #sector
-  - https://www.investing.com/analysis/amazons-custom-silicon-and-cloud-expansion-drive-bull-case-for-stock-200679539
-- **api.alternative.me** #news
-  - https://api.alternative.me/fng/
-- **youtu.be** #news
-  - https://youtu.be/JhAQ6zjKP90
-- **youtu.be** #news
-  - https://youtu.be/JDkS3bUrcQU

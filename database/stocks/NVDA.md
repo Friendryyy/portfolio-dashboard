@@ -105,6 +105,11 @@ NVIDIA ครอง AI compute infrastructure ด้วย CUDA moat ที่�
 
 ## 📝 Research Log
 
+### [2026-06-07] — YOUTUBE — Bloomberg This Weekend (June 6, 2026) Swarm Analysis
+- **Trump's AI Government Stake Proposal & Macro Check:** วิเคราะห์แนวนโยบายของ Donald Trump ในการนำรัฐบาลเข้าร่วมทุนในผู้พัฒนา AI ชั้นนำ ซึ่งเพิ่มความเสี่ยงทางกฎระเบียบ (Regulatory Risk) แต่ยืนยันความต้องการชิปฝั่งประมวลผล (Inference Demand) จากการนำเสนอข้อมูล Grindr ที่หันมาใช้ AI เขียนโค้ดถึง 80% ปัจจุบันสัดส่วนพอร์ตอยู่ที่ 18.25% (เป้าหมาย 18.00%) ยึดมั่นวินัย Hard Buy Block
+- **Portfolio Impact:** ⚪ HOLD (คงสถานะล็อก DCA ปิดกั้นการซื้อเพิ่มจากวินัยเงินสดสำรอง 9.68% ซึ่งน้อยกว่า 10%)
+- **Full Report:** [2026-06-07_youtube_bloomberg_weekend_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-07_youtube_bloomberg_weekend_analysis.md)
+
 ### [2026-05-17] — Morning Brief Update
 - Price $225.32 (-4.42% ศุกร์) | ATH $235.74 (May 14) | Market Cap $5.7T at peak
 - Jensen Huang Air Force One: ไม่ถูกเชิญ → Trump call → ขึ้น Air Force One ที่ Alaska → Beijing; เป็น 1 ใน 2 CEO ที่ขึ้น Air Force One (Musk + Huang)
@@ -379,6 +384,13 @@ NVIDIA ครอง AI compute infrastructure ด้วย CUDA moat ที่�
 ---
 
 ## 📎 Research Sources
+> อัปเดต 2026-06-07 | Sessions: Portfolio News Update & Bloomberg Analysis 2026-06-07
+
+- **Bloomberg Television — Bloomberg This Weekend (2026-06-06)** #youtube
+  - https://youtu.be/ZfhpO64cb-E?si=JFFJL0EdntCpRaPu
+- **GTC Taipei & NVIDIA News (RTX Spark & Vera Rubin Production)** #news
+  - https://finance.yahoo.com
+
 > อัปเดต 2026-06-04 | Sessions: Swarm DCA Verdict 2026-06-04
 
 - **api.alternative.me** #news

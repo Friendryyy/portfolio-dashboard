@@ -94,7 +94,12 @@ Palantir สร้าง data analytics + AI platform สำหรับ governm
 - **[[output/2026-05-21_PLTR_comprehensive_analysis.md]]** — รายงานบทวิเคราะห์เจาะลึก 13-Agent Full Analysis ฉบับสมบูรณ์ (2026-05-21)
 - **[[database/sources/PLTR.md]]** — รวบรวมแหล่งข้อมูลอ้างอิงและประวัติข่าวสารสืบค้นรายไตรมาส
 
-## 📎 Research Sources (2026-05-20 — Competitive Context)
+## 📎 Research Sources
+> อัปเดต 2026-06-07 | Sessions: Portfolio News Update 2026-06-07
+
+- **Palantir Technologies (AIPCon 10 & UK NHS contract scrutiny)** #news
+  - https://www.palantir.com
+ (2026-05-20 — Competitive Context)
 
 - **[Agentic AI Battle: Google Gemini Spark vs Anthropic vs OpenAI — PLTR overlap]** #pltr #competitor #googl
   - https://www.benzinga.com/Opinion/26/05/52676168/googles-gemini-push-at-i-o-2026-forces-a-new-battle-over-agentic-ai
@@ -271,12 +276,4 @@ Palantir สร้าง data analytics + AI platform สำหรับ governm
 - [ ] Alex Karp ลาออก (founder-led company risk)
 
 ---
-
-## 📎 Research Sources
-> อัปเดต 2026-05-23 | Sessions: Swarm DCA Verdict 2026-05-23
-
-- **api.alternative.me** #news
-  - https://api.alternative.me/fng/
-- **[Bear Bull Traders Live — สงครามอิหร่าน-อิสราเอล และผลกระทบต่อความมั่นคงทหาร/กลาโหม]** #youtube #moat #news #macro
-  - https://www.youtube.com/live/vV07Sra7uyY
 

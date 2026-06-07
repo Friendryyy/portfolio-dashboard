@@ -98,6 +98,11 @@ SoFi กำลัง disrupt ธนาคารแบบ traditional ด้ว�
 
 ## 📝 Research Log
 
+### [2026-06-07] — YOUTUBE — Bloomberg This Weekend (June 6, 2026) Swarm Analysis
+- **Sofi Stadium Strike Authorization & Brand Risk:** วิเคราะห์กรณีสหภาพแรงงานของสนาม Sofi Stadium โหวตนัดหยุดงานประท้วงเรื่องสิทธิ์ค่าจ้างและการแทรกแซงของเจ้าหน้าที่ ICE ซึ่งเป็นเพียงปัจจัยลบด้านภาพลักษณ์ภายนอก (Sentiment Overhang) และไม่ได้เชื่อมโยงทางตรงต่อพื้นฐานหรือผลประกอบการธุรกิจหลักของ SoFi Technologies ปัจจุบันสัดส่วนพอร์ตอยู่ที่ 6.42% (เป้าหมาย 6.00%) ล็อกสถานะ Hold DCA 
+- **Portfolio Impact:** ⚪ HOLD (คงสถานะล็อก DCA ปิดกั้นการซื้อเพิ่มจากวินัยเงินสดสำรอง 9.68% ซึ่งน้อยกว่า 10%)
+- **Full Report:** [2026-06-07_youtube_bloomberg_weekend_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-07_youtube_bloomberg_weekend_analysis.md)
+
 ### [2026-05-06] — Full 8-Agent Analysis (Session 1)
 - Revenue Q1 2026: $1.1B (+41% YoY) — record
 - Rule of 40 score 72% — 18th consecutive quarter (strong execution)
@@ -333,6 +338,13 @@ SoFi กำลัง disrupt ธนาคารแบบ traditional ด้ว�
 ---
 
 ## 📎 Research Sources
+> อัปเดต 2026-06-07 | Sessions: Portfolio News Update & Bloomberg Analysis 2026-06-07
+
+- **Bloomberg Television — Bloomberg This Weekend (2026-06-06)** #youtube
+  - https://youtu.be/ZfhpO64cb-E?si=JFFJL0EdntCpRaPu
+- **SoFi Technologies (Fintech pullback, SoFi Coach AI Launch & Stadium strike vote)** #news
+  - https://finance.yahoo.com
+
 > อัปเดต 2026-06-04 | Sessions: Swarm DCA Verdict 2026-06-04
 
 - **api.alternative.me** #news

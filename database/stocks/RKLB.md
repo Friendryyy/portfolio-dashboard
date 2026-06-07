@@ -104,6 +104,11 @@ Rocket Lab เป็นบริษัท space infrastructure ที่ integra
 
 ## 📝 Research Log
 
+### [2026-06-07] — YOUTUBE — Bloomberg This Weekend (June 6, 2026) Swarm Analysis
+- **SpaceX IPO Rotation & Sizing Check:** วิเคราะห์กระแสข่าวการเปิดเทรด SpaceX ($SPCX) วันที่ 12 มิ.ย. ที่มูลค่า $1.75T ซึ่งสร้างความผันผวนด้านสภาพคล่องทางอวกาศ (Capital Rotation) กดดันราคา RKLB ปรับฐานลงมาอยู่ที่ $110.08 (G/L +381.58%) สั่งล็อกสถานะ Hold DCA อย่างต่อเนื่องเนื่องจากสัดส่วนยังคงสูงที่ 23.93% (เกือบชนเป้าหมายพอร์ต 25.00%)
+- **Portfolio Impact:** ⚪ HOLD (คงสถานะล็อก DCA ปิดกั้นการซื้อเพิ่มจากวินัยเงินสดสำรอง 9.68% ซึ่งน้อยกว่า 10%)
+- **Full Report:** [2026-06-07_youtube_bloomberg_weekend_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-07_youtube_bloomberg_weekend_analysis.md)
+
 ### [2026-06-05] — YOUTUBE — Yahoo Finance Live (June 4, 2026) Swarm Analysis
 - **SpaceX Index Inclusion Easing & RKLB Moat:** วิเคราะห์เกณฑ์ดัชนี Russell 1000 และ S&P 500 สำหรับหุ้นขนาดใหญ่ที่ยังขาดทุน (unprofitable large cap) โดย S&P 500 ปฏิเสธการเข้าคำนววนแบบ Fast-track ขณะที่ Russell 1000 อนุมัติ ส่งผลให้กองทุนบำนาญสะสม SpaceX ผ่านเกณฑ์ของ Russell เท่านั้น ช่วยปกป้อง RKLB จากการย้ายเงินทุน Passive ระยะสั้น
 - **Portfolio Impact:** ⚪ HOLD (Hard Buy Block ทำงานปกติ น้ำหนักถือครอง 24.94% ใกล้เคียงเป้าหมาย 25%)
@@ -208,6 +213,13 @@ Rocket Lab เป็นบริษัท space infrastructure ที่ integra
 
 
 ## 📎 Research Sources
+> อัปเดต 2026-06-07 | Sessions: Portfolio News Update & Bloomberg Analysis 2026-06-07
+
+- **Bloomberg Television — Bloomberg This Weekend (2026-06-06)** #youtube
+  - https://youtu.be/ZfhpO64cb-E?si=JFFJL0EdntCpRaPu
+- **Space Force & Space Development Agency (SDA contracts & HASTE Launch)** #news
+  - https://www.rocketlabusa.com
+
 > อัปเดต 2026-06-05 | Sessions: Media Analysis June 5
 
 - **x.com** #news

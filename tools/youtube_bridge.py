@@ -54,17 +54,31 @@ def get_transcript(url: str) -> dict:
         except Exception as e:
             return {"error": str(e), "url": url}
 
+    # Find available subtitle languages from info metadata to avoid errors
+    available_langs = []
+    if info.get("subtitles"):
+        available_langs.extend(info["subtitles"].keys())
+    if info.get("automatic_captions"):
+        available_langs.extend(info["automatic_captions"].keys())
+
+    preferred_langs = ["en", "en-orig", "th", "th-orig"]
+    sub_langs = [lang for lang in preferred_langs if lang in available_langs]
+    if not sub_langs:
+        sub_langs = preferred_langs
+
     # Try to get subtitles via yt-dlp's subtitle extraction
     sub_opts = {
         "quiet": True,
         "no_warnings": True,
         "writeautomaticsub": True,
         "writesubtitles": True,
-        "subtitleslangs": ["en", "en-orig"],
+        "subtitleslangs": sub_langs,
         "skip_download": True,
         "outtmpl": str(Path.home() / "yt_tmp_%(id)s"),
         "subtitlesformat": "json3",
+        "ignoreerrors": True,
     }
+
 
     import tempfile, os
     with tempfile.TemporaryDirectory() as tmpdir:

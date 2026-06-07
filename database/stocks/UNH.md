@@ -305,6 +305,11 @@ UnitedHealth Group ร่วมกับ Novo Nordisk ($NVO) คือ **"เส
 ---
 
 ## 📎 Research Sources
+> อัปเดต 2026-06-07 | Sessions: Portfolio News Update 2026-06-07
+
+- **UnitedHealth Group (5% Dividend Increase & Annual Shareholder Meeting)** #news
+  - https://www.unitedhealthgroup.com
+
 > อัปเดต 2026-05-28 | Sessions: Swarm DCA Verdict 2026-05-28
 
 - **ir.uhg.com** #news

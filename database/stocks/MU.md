@@ -3,7 +3,7 @@ ticker: MU
 company: Micron Technology, Inc.
 sector: Technology / Semiconductors (Memory)
 tags: [research-only, sector-study, semiconductor, AI, memory]
-last_updated: 2026-05-27
+last_updated: 2026-06-07
 conviction: N/A (research only)
 thesis_status: RESEARCH_ONLY
 ---
@@ -19,21 +19,21 @@ thesis_status: RESEARCH_ONLY
 ## 📊 Key Metrics Snapshot
 | Metric | Value | Date |
 |---|---|---|
-| Price | $895.88 | 2026-05-27 |
-| Market Cap | $846.93B | 2026-05-26 |
-| Revenue (TTM) | $58.12B | 2026-05-26 |
-| Net Income (TTM) | $24.11B | 2026-05-26 |
-| Free Cash Flow (TTM) | $2.89B | 2026-05-26 |
-| SBC (TTM) | ~$0.90B | 2026-05-26 |
-| FCF after SBC (TTM) | ~$1.99B | 2026-05-26 |
-| FCF after SBC Margin | 3.42% | 2026-05-26 |
-| Trailing P/E | 35.46x | 2026-05-26 |
-| Forward P/E | 7.31x | 2026-05-26 |
-| Forward EPS | $102.74 | 2026-05-26 |
-| Debt-to-Equity (D/E) | 0.21 | 2026-05-26 |
-| Total Cash | $14.59B | 2026-05-26 |
-| Total Debt | $10.80B | 2026-05-26 |
-| Net Cash Position | +$3.79B | 2026-05-26 |
+| Price | $864.01 | 2026-06-07 |
+| Market Cap | $974.37B | 2026-06-07 |
+| Revenue (TTM) | $58.12B | 2026-06-07 |
+| Net Income (TTM) | $24.11B | 2026-06-07 |
+| Free Cash Flow (TTM) | $2.89B | 2026-06-07 |
+| SBC (TTM) | ~$0.90B | 2026-06-07 |
+| FCF after SBC (TTM) | ~$1.99B | 2026-06-07 |
+| FCF after SBC Margin | 3.42% | 2026-06-07 |
+| Trailing P/E | 35.46x | 2026-06-07 |
+| Forward P/E | 8.41x | 2026-06-07 |
+| Forward EPS | $102.74 | 2026-06-07 |
+| Debt-to-Equity (D/E) | 0.21 | 2026-06-07 |
+| Total Cash | $14.59B | 2026-06-07 |
+| Total Debt | $10.80B | 2026-06-07 |
+| Net Cash Position | +$3.79B | 2026-06-07 |
 
 ## 🏰 Moat Analysis
 - **High Switching Cost & Technology Lock-in:** การออกแบบสถาปัตยกรรม HBM3E ร่วมกับแพลตฟอร์มชิปเร่งความเร็ว Blackwell ของ NVIDIA ทำให้ Micron เข้าไปฝังตัวในอภิมหาโปรเจกต์ AI Data Center ของโลก การสลับซัพพลายเออร์ส่งผลเสียต่อการประหยัดพลังงานและการนำส่งข้อมูล
@@ -54,13 +54,14 @@ thesis_status: RESEARCH_ONLY
 |---|---|
 | Shares | 0.00 |
 | Avg Cost | $0.00 |
-| Current Price | $750.79 (2026-05-26) |
+| Current Price | $864.01 (2026-06-07) |
 | Gain/Loss | 0% |
 | Allocation | 0% of portfolio |
 
 ## 🎬 Decision History
 | Date | Action | Price | Rationale |
 |---|---|---|---|
+| 2026-06-07 | RESEARCH ONLY | $864.01 | ผู้ใช้ตัดสินใจตั้งรับสะสมจำลองเฉพาะไม้ 2-3 ($700-750 และ $600-630) เลี่ยงไม้ 1 เนื่องจากราคาสูงไป |
 | 2026-05-26 | RESEARCH ONLY | $750.79 | วิเคราะห์เพื่อศึกษา sector AI Memory/HBM เท่านั้น — ไม่ได้วางแผนเพิ่มในพอร์ต |
 
 ## 📡 KPI Watchlist (Next Review)
@@ -90,3 +91,8 @@ thesis_status: RESEARCH_ONLY
 - **Insights:** ราคา Micron ทะยานพุ่งแตะ $895.88 USD (+19.29%) ภายในวันเดียว ดัน RSI พุ่งทะลุ 81.20 (Extreme Overbought) และราคาประเมินความปลอดภัยติดลบ MoS -10.70%
 - **Stoic Verdict:** 🔴 AVOID / Watchlist Only — สั่งห้ามวิ่งไล่ซื้อยอดดอยเด็ดขาด รักษาวินัยตั้งรับแถวโซน $735 - $740 เท่านั้น
 - **Full Report:** [2026-05-27_youtube_japan_korea_sk_hynix_swarm_verdict.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-05-27_youtube_japan_korea_sk_hynix_swarm_verdict.md)
+
+### [2026-06-07] — Support Zone Strategy Check
+- **Event:** ติดตามราคาย่อตัวของ MU และประเมินจุดสะสมเชิงตั้งรับร่วมกับ SNDK
+- **Insights:** ราคาปรับฐานย่อยลงมาปิดที่ $864.01 (-11.09%) ชิดเส้น Bollinger Middle Band ($849.82) ส่งผลให้ Forward P/E ลดลงเหลือเพียง 8.41x (Forward EPS $102.74)
+- **Stoic Verdict:** 📚 RESEARCH ONLY — ตั้งรับสะสมเฉพาะไม้ 2-3 ($700-750 และ $600-630) เลี่ยงไม้ 1

@@ -59,7 +59,7 @@ thesis_status: RESEARCH_ONLY
 ## 🎬 Decision History
 | Date | Action | Price | Rationale |
 |---|---|---|---|
-| 2026-06-07 | RESEARCH ONLY | $1,559.32 | ทำการวิเคราะห์หุ้นครั้งแรก (Mode 6) ศึกษาประเด็น WDC spin-off และโครงสร้างตลาด DRAM/NAND ในอุตสาหกรรม AI Memory — ไม่ได้มีแผนเพิ่มในพอร์ต |
+| 2026-06-07 | RESEARCH ONLY | $1,559.32 | ทำการวิเคราะห์หุ้นครั้งแรก (Mode 6) — ผู้ใช้ตัดสินใจตั้งรับสะสมจำลองเฉพาะไม้ 2-3 ($1,350-1,420 และ $1,200-1,280) งดสะสมไม้ 1 เนื่องจากราคาสูงไป |
 
 ## 📡 KPI Watchlist (Next Review)
 - [ ] **Next Earnings Release (August 2026):** ติดตามยอดส่งมอบชิป BiCS10 (332-layer eSSD) ให้กลุ่ม Hyperscalers
@@ -80,5 +80,5 @@ thesis_status: RESEARCH_ONLY
 - **Event:** วิเคราะห์ SNDK เป็นครั้งแรกหลังจากเหตุการณ์แยกตัวสำเร็จจาก Western Digital ในปี 2025
 - **Insights:** ยืนยันศักยภาพกระแสเงินสดหลังปรับปรุง SBC (FCF after SBC ~$2.08B margin 15.76%) สะท้อนความแข็งแกร่งของความต้องการ eSSD สำหรับ AI data lakes โดยโครงสร้าง Forward EPS $177.84 ชี้ให้เห็นว่าบริษัทซื้อขายบน Forward P/E ต่ำเพียง 8.77x แม้จะมีความเสี่ยงเรื่องวัฏจักรราคา NAND แต่การร่วมทุนกับ Kioxia ถึงปี 2034 ช่วยเสริมปราการการผลิต
 - **Technical:** RSI อยู่ที่ 54.89 (Neutral) โดยราคาปรับฐานลงมาทดสอบแนวรับบริเวณเส้น Bollinger Middle Band ที่ระดับ $1,553.68 ซึ่งเป็นไม้แรกของการสะสมจำลอง
-- **Stoic Verdict:** 📚 RESEARCH ONLY — ศึกษาเปรียบเทียบในเซกเตอร์ Memory เท่านั้น ไม่มีเป้าหมายเพิ่มเข้าพอร์ตจริง
+- **Stoic Verdict:** 📚 RESEARCH ONLY — ตั้งรับสะสมเฉพาะไม้ 2-3 ($1,350-1,420 และ $1,200-1,280) เลี่ยงไม้ 1
 - **Full Report:** [2026-06-07_SNDK_ultimate_comprehensive_academic_mega_report.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-07_SNDK_ultimate_comprehensive_academic_mega_report.md)

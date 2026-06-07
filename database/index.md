@@ -87,6 +87,7 @@
 - [output/2026-06-02_nvidia_computex_ecosystem_report.md](../output/2026-06-02_nvidia_computex_ecosystem_report.md) — NVIDIA Computex 2026 Ecosystem Report
 - [output/2026-06-06_macro_us_conflict_geopolitics_report.md](../output/2026-06-06_macro_us_conflict_geopolitics_report.md) — US Geopolitical Conflicts & Macro Defense Audit (June 2026)
 - [output/2026-06-07_global_memory_shortage_dram_nand_essd_report.md](../output/2026-06-07_global_memory_shortage_dram_nand_essd_report.md) — Global Memory (DRAM & NAND) Structural Shortage Report (2026-2027)
+- [output/2026-06-07_AI_supercycle_comprehensive_thematic_report.md](../output/2026-06-07_AI_supercycle_comprehensive_thematic_report.md) — The AI Supercycle Thematic & Infrastructure Report (2026-2030)
 
 ### Research Sources (แยกหน้าต่อหุ้น — มี title + summary + tags ทุก URL)
 - [sources/NVDA.md](sources/NVDA.md) — 21 sources | IR, Earnings, Risk, Technicals

@@ -105,6 +105,11 @@ NVIDIA ครอง AI compute infrastructure ด้วย CUDA moat ที่�
 
 ## 📝 Research Log
 
+### [2026-06-07] — THEMATIC — The AI Supercycle & MU-NVDA Coattail Analysis
+- **Event:** วิเคราะห์ธีมการร่วมขบวน AI Supercycle และเปรียบเทียบความแข็งแกร่งของ MU กับ NVDA
+- **Insights:** ยืนยันความตึงตัวของ HBM3E ค้ำจุนวัฏจักรราคา DRAM ระยะยาว แต่ประเมินว่าคูเมืองซอฟต์แวร์ CUDA และแพลตฟอร์ม Grace Blackwell / Vera Rubin ของ NVDA ยังคงให้ระดับการป้องกันมูลค่าและความสามารถการแปลง FCF (FCF Conversion) ที่มั่นคงและปลอดภัยกว่าการเกาะปีกทองของ MU ในระยะยาว
+- **Full Report:** [2026-06-07_AI_supercycle_comprehensive_thematic_report.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-07_AI_supercycle_comprehensive_thematic_report.md)
+
 ### [2026-06-07] — YOUTUBE — Bloomberg This Weekend (June 6, 2026) Swarm Analysis
 - **Trump's AI Government Stake Proposal & Macro Check:** วิเคราะห์แนวนโยบายของ Donald Trump ในการนำรัฐบาลเข้าร่วมทุนในผู้พัฒนา AI ชั้นนำ ซึ่งเพิ่มความเสี่ยงทางกฎระเบียบ (Regulatory Risk) แต่ยืนยันความต้องการชิปฝั่งประมวลผล (Inference Demand) จากการนำเสนอข้อมูล Grindr ที่หันมาใช้ AI เขียนโค้ดถึง 80% ปัจจุบันสัดส่วนพอร์ตอยู่ที่ 18.25% (เป้าหมาย 18.00%) ยึดมั่นวินัย Hard Buy Block
 - **Portfolio Impact:** ⚪ HOLD (คงสถานะล็อก DCA ปิดกั้นการซื้อเพิ่มจากวินัยเงินสดสำรอง 9.68% ซึ่งน้อยกว่า 10%)

@@ -96,3 +96,8 @@ thesis_status: RESEARCH_ONLY
 - **Event:** ติดตามราคาย่อตัวของ MU และประเมินจุดสะสมเชิงตั้งรับร่วมกับ SNDK
 - **Insights:** ราคาปรับฐานย่อยลงมาปิดที่ $864.01 (-11.09%) ชิดเส้น Bollinger Middle Band ($849.82) ส่งผลให้ Forward P/E ลดลงเหลือเพียง 8.41x (Forward EPS $102.74)
 - **Stoic Verdict:** 📚 RESEARCH ONLY — ตั้งรับสะสมเฉพาะไม้ 2-3 ($700-750 และ $600-630) เลี่ยงไม้ 1
+
+### [2026-06-07] — THEMATIC — The AI Supercycle & MU-NVDA Coattail Analysis
+- **Event:** วิเคราะห์ธีมการร่วมขบวน AI Supercycle และเปรียบเทียบความแข็งแกร่งของ MU กับ NVDA
+- **Insights:** ยืนยันความตึงตัวของอุปสงค์ HBM3E ค้ำจุนวัฏจักรราคา DRAM ระยะยาว แต่เตือนจุดบอดของ MU เรื่องวัฏจักรสินค้าโภคภัณฑ์เทคโนโลยี (High Cyclicality) และการไร้คูเมืองด้านซอฟต์แวร์ (No Software Lock-in) เมื่อเทียบกับ CUDA ของ NVDA
+- **Full Report:** [2026-06-07_AI_supercycle_comprehensive_thematic_report.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-07_AI_supercycle_comprehensive_thematic_report.md)

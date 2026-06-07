@@ -1566,4 +1566,10 @@
 - **NAND & eSSD Boom:** คาดการณ์แนวโน้มราคา eSSD ที่ปรับตัวพุ่งแรงหนุนกำไรผู้ผลิต และการเข้ามาทดแทนระบบจานเก็บข้อมูลดั้งเดิม (HDD) เพื่อลดปัญหาคอขวดป้อนข้อมูลเข้า Blackwell GPU ในงานศูนย์ข้อมูล AI
 - รายงานบทวิเคราะห์: `output/2026-06-07_global_memory_shortage_dram_nand_essd_report.md`
 
+### [2026-06-07] — THEMATIC — The AI Supercycle & Infrastructure Deep-Dive
+- **AI Supercycle Theory:** วิเคราะห์รายละเอียดขนาดของการลงทุนสะสม (Cumulative Capex) ตั้งแต่ปัจจุบันถึงปี 2030 ในธีมโครงสร้างพื้นฐาน AI ดาต้าเซ็นเตอร์ และห่วงโซ่อุปทานระดับกายภาพ ที่คาดว่าจะสูงถึง $7.6 Trillion ตามมุมมองของ Goldman Sachs ปะทะยุทธศาสตร์ "Selling the Work" ของ Sequoia Capital
+- **Upstream & Energy Bottlenecks:** ชี้ชัดคоขวดที่ระดับกายภาพของเครื่องพิมพ์แสง ASML EUV, บรรจุภัณฑ์ TSMC CoWoS, พื้นที่เวเฟอร์ HBM3E และการปฏิวัติการซื้อพลังงานนิวเคลียร์ PPA 24/7 Baseload (Constellation, Vistra, Kairos, Oklo) เพื่อป้อนกำลังไฟฟ้าสะสมระดับ 190 GW ภายในปี 2030
+- **MU vs NVDA Coattails & Portfolio Action:** เปรียบเทียบสมมติฐานการลงทุนเกาะปีกทองของ Micron ($MU) เทียบกับผู้กุมความลับ CUDA อย่าง NVIDIA ($NVDA) ชี้ความเสี่ยงของ MU ในฐานะสินค้าโภคภัณฑ์เทคโนโลยีผันผวนสูง (High Cyclicality) และขาด Software Lock-in; ในด้านพอร์ตจริง (Cash 9.68%) ให้ดำเนินการตั้งรับผ่าน Limit Orders ใน TSM (DCA Priority #1) ที่ระดับ $415 (T3) และ $385 (T4) และตรึง Hard Buy Block ใน NVDA & BTC
+- รายงานบทวิเคราะห์: `output/2026-06-07_AI_supercycle_comprehensive_thematic_report.md`
+
 

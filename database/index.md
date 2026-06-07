@@ -59,6 +59,7 @@
 | Ticker | Company | Note |
 |---|---|---|
 | MU | Micron Technology | AI DRAM (HBM3E) — วิเคราะห์เพื่อเปรียบเทียบ sector; ไม่ได้วางแผนเพิ่มในพอร์ต |
+| SNDK | SanDisk Corporation | AI NAND Flash & eSSD (WDC spin-off) — วิเคราะห์เพื่อศึกษาเปรียบเทียบเซกเตอร์; ไม่ได้วางแผนเพิ่มในพอร์ต |
 
 ---
 
@@ -75,6 +76,7 @@
 - [stocks/GOOGL.md](stocks/GOOGL.md) — Alphabet — full analysis + NotebookLM archive ✅
 - [stocks/PLTR.md](stocks/PLTR.md) — Palantir — full analysis + NotebookLM archive ✅
 - [stocks/MU.md](stocks/MU.md) — Micron Technology — Research Only (sector study) + NotebookLM archive ✅
+- [stocks/SNDK.md](stocks/SNDK.md) — SanDisk Corporation — Research Only (WDC spin-off) + NotebookLM archive ✅
 - [stocks/BTC.md](stocks/BTC.md) — Bitcoin — digital gold store of value
 - [stocks/TSM.md](stocks/TSM.md) — TSMC — advanced semiconductor foundry monopoly
 - [stocks/MRVL.md](stocks/MRVL.md) — Marvell Technology — 1 research session
@@ -96,6 +98,7 @@
 - [sources/AMZN.md](sources/AMZN.md) — 13 sources | AWS, Q1 Earnings, FCF collapse
 - [sources/PLTR.md](sources/PLTR.md) — 7 sources | Q1 Earnings, AIP, Valuation
 - [sources/MU.md](sources/MU.md) — 2 sources | Fundamentals & Technicals
+- [sources/SNDK.md](sources/SNDK.md) — 4 sources | WDC spin-off, Kioxia JV, DRAM & NAND
 - [sources/MRVL.md](sources/MRVL.md) — 9 sources | Q1 FY2027 Earnings, Ara 3nm DSP, yfinance, Twelve Data
 
 ### System

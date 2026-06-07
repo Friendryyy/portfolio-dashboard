@@ -20,6 +20,7 @@
 
 | Date | Ticker | Action | Price | Conviction | Rationale | Next Review |
 |---|---|---|---|---|---|---|
+| 2026-06-07 | SNDK | **RESEARCH ONLY** 📚 | ~$1,559.32 | N/A | วิเคราะห์เพื่อศึกษาเซกเตอร์ AI Memory และผลกระทบของการ Spin-off จาก WDC — ไม่ได้วางแผนซื้อสะสมเพิ่มในพอร์ต | Q3 FY26 Earnings (Aug 2026) |
 | 2026-06-05 | BTC | **DCA BUY (TRANCHE 2a)** 🟢 | ~$62,609.70 | 7.5/10 | ซื้อสะสมเพิ่มเติม $95.00 USD (เพิ่ม +0.00166 BTC) ดึงราคาเฉลี่ยลงมาที่ $72,088.00 สะสมในโซนแนวรับ Zone A ($60K-$65K) หลัง NFP อ่อนแอ 85,000 ราย ดันอัตราว่างงานค้าง 4.3% คาดปูทางสำหรับการปรับลดดอกเบี้ยของ Fed | CPI (11 มิ.ย.) / FOMC (18 มิ.ย.) |
 | 2026-06-04 | UNH | **HOLD / MICRO-DCA ONLY** | ~$399 | 6.0/10 | BofA upgrade to Buy and PT $450 validates improving Q2 medical cost trend narrative, but live portfolio allocation is already 7.56%; if target is 8.00%, gap is only ~$38.61. Do not chase $399-405 except tiny micro-top-up. Real DCA zones: $385-390, $368-375, $344-350; VETO all buys if DOJ indictment appears. | Q2 MLR / DOJ update |
 | 2026-06-04 | TSM | **DCA BUY (TRANCHE 2)** 🟢 | ~$433.00 | 7.0/10 | ซื้อสะสม $100 USD หลังเปิดตลาด — CEO TSMC ยืนยันขาดแคลน AI จะยังยาวหลายปี + วางแผนขึ้นราคาเวเฟอร์ 15% — สะสมจาก 0.59 → **0.821 shares** avg $427.39, allocation 2.95% → **~4.09%** | Limit $415/$385 (T3/T4) |

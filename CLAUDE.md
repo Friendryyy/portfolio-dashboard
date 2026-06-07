@@ -830,6 +830,7 @@ python tools/notebooklm_bridge.py add-report <id> "output/2026-05-08_NVDA_monito
 | Stock Analysis: BTC | `cc13e1b0-c53e-49d6-98ed-faed1ca2ec92` |
 | Stock Analysis: TSM | `120452e3-54ed-496b-af74-0ebca59b2e85` |
 | Stock Analysis: MU | `3f7c13c9-58dd-458b-a43d-bd246f01a4ed` |
+| Stock Analysis: SNDK | `29245326-20ad-49d4-bb2c-b9cc406caef5` |
 | Sector: Energy & AI Power Wave | `0eff28fe-9d35-4296-9a67-19f2981f16dc` |
 | The Intelligent Investor | `80beb152-ccef-4492-9f16-c52dd988911a` |
 | HSK1 | `e156241d-0e30-4eb2-9dbb-3929d86cbf93` |

@@ -1553,3 +1553,10 @@
 - **Trump's AI Equity Stake Proposal:** ข้อเสนอสุดล้ำในการให้รัฐร่วมถือหุ้นผู้พัฒนา AI เพื่อแลกปันปันผลสาธารณะ (Inspired by Intel CHIPS Act 10% stake) เพิ่มความกังวลการคลังและการคุมข้อมูลของรัฐ แต่ดีล Google-Anthropic $920M TPU Cloud ยืนยันกระแสดีมานด์ฮาร์ดแวร์แข็งแกร่ง
 - **SpaceX IPO & Portfolio Action:** SpaceX ($SPCX) กำหนดเทรด 12 มิ.ย. ที่มูลค่า $1.75T สร้างแรงกระเพื่อมชั่วคราวต่อ RKLB ($110.08, G/L +381.58%) สั่งคงสถานะ Hard Buy Block ทุกสินทรัพย์ในพอร์ตตามเกณฑ์เงินสดสำรอง 9.68% (ต่ำกว่า 10.00%)
 - รายงานบทวิเคราะห์: output/2026-06-07_youtube_bloomberg_weekend_analysis.md
+
+### [2026-06-07] — RESEARCH — SNDK Initial Coverage & Memory Market Deep Dive (21:44)
+- **SanDisk Corporation (SNDK) Pure-Play Thesis:** ศึกษาประเด็นการ Spin-off จาก WDC เมื่อกุมภาพันธ์ 2025 โดยแยก SNDK เป็น Pure-play แฟลชเมมโมรี่และ eSSD สำหรับเก็บข้อมูลป้อนระบบ AI (AI Data Lakes) ร่วมทุนกับ Kioxia ในญี่ปุ่นขยายเวลาถึงปี 2034 ลดความเสี่ยงทางภูมิรัฐศาสตร์
+- **Financial Math & Valuation:** คำนวณยอดกระแสเงินสด FCF หลังหักค่าใช้จ่ายหุ้นพนักงาน (SBC Adjusted FCF) อยู่ที่ ~$2.08B (FCF margin 15.76% TTM) มีสถานะเงินสดสุทธิป้อมปราการ (Net Cash) +$3.53B ปรับตัวขึ้นจากรอบวิกฤต FY25 (CFO $84M, CapEx $204M) การประเมิน Intrinsic Value ที่ $1,750 บน Forward EPS $177.84 ให้ Margin of Safety (MoS) อยู่ที่ +12.23% (Forward P/E ต่ำเพียง 8.77x)
+- **Memory RAM Market Overview:** ตลาด DRAM ตกอยู่ในภาวะตึงตัว (DRAM structural shortage) จากความต้องการชิป HBM3E/HBM4 ซึ่งดึงกำลังการผลิตแผ่นเวเฟอร์ไป (HBM capacity crowd-out) ดันราคากลาง DRAM ปกติพุ่งขึ้น 90% ขณะที่ NAND Flash ได้รับแรงส่งจาก eSSD ที่พุ่งขึ้นเป็น 43% ในไตรมาส 1 และคาดว่าจะเกิน 60% ในสิ้นปี 2026 เพื่อใช้จัดเก็บข้อมูลฝึกสอนโมเดล AI
+- รายงานบทวิเคราะห์: `output/2026-06-07_SNDK_ultimate_comprehensive_academic_mega_report.md`
+

@@ -1560,3 +1560,10 @@
 - **Memory RAM Market Overview:** ตลาด DRAM ตกอยู่ในภาวะตึงตัว (DRAM structural shortage) จากความต้องการชิป HBM3E/HBM4 ซึ่งดึงกำลังการผลิตแผ่นเวเฟอร์ไป (HBM capacity crowd-out) ดันราคากลาง DRAM ปกติพุ่งขึ้น 90% ขณะที่ NAND Flash ได้รับแรงส่งจาก eSSD ที่พุ่งขึ้นเป็น 43% ในไตรมาส 1 และคาดว่าจะเกิน 60% ในสิ้นปี 2026 เพื่อใช้จัดเก็บข้อมูลฝึกสอนโมเดล AI
 - รายงานบทวิเคราะห์: `output/2026-06-07_SNDK_ultimate_comprehensive_academic_mega_report.md`
 
+### [2026-06-07] — RESEARCH — Global Memory Shortage Market Report (21:56)
+- **Sector Shortage Analysis:** วิเคราะห์อุปสงค์และอุปทานตลาดหน่วยความจำทั่วโลก (DRAM & NAND) ชี้สัญญาณสภาวะขาดแคลนเชิงโครงสร้างลากยาวตลอดปี 2026 ถึงปี 2027 โดยซัพพลายใหม่จากบรรดาโรงงานสร้างใหม่ (New Fabs) จะยังไม่เริ่มผลิตเชิงพาณิชย์ก้อนใหญ่จนกระทั่งช่วงครึ่งหลังปี 2027 และปี 2028
+- **New Fabs Timelines:** เจาะลึกไทม์ไลน์โรงงานใหม่ของผู้เล่นรายใหญ่ ได้แก่ Pyeongtaek P4/P5 ของ Samsung (2027-2029), Cheongju M15X และ Yongin Cluster ของ SK Hynix (2026-2027), Idaho 1/2 Fabs และ Singapore Fabs ของ Micron (2027-2028), และ Kitakami K2 ของ Kioxia/SNDK (2026-2027)
+- **NAND & eSSD Boom:** คาดการณ์แนวโน้มราคา eSSD ที่ปรับตัวพุ่งแรงหนุนกำไรผู้ผลิต และการเข้ามาทดแทนระบบจานเก็บข้อมูลดั้งเดิม (HDD) เพื่อลดปัญหาคอขวดป้อนข้อมูลเข้า Blackwell GPU ในงานศูนย์ข้อมูล AI
+- รายงานบทวิเคราะห์: `output/2026-06-07_global_memory_shortage_dram_nand_essd_report.md`
+
+

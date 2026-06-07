@@ -832,6 +832,7 @@ python tools/notebooklm_bridge.py add-report <id> "output/2026-05-08_NVDA_monito
 | Stock Analysis: MU | `3f7c13c9-58dd-458b-a43d-bd246f01a4ed` |
 | Stock Analysis: SNDK | `29245326-20ad-49d4-bb2c-b9cc406caef5` |
 | Sector: Energy & AI Power Wave | `0eff28fe-9d35-4296-9a67-19f2981f16dc` |
+| Sector: Memory and Storage | `79e31495-4a4c-445e-820c-7534f9a2aade` |
 | The Intelligent Investor | `80beb152-ccef-4492-9f16-c52dd988911a` |
 | HSK1 | `e156241d-0e30-4eb2-9dbb-3929d86cbf93` |
 | เตรียมสอบ IC P1 | `1a53a63e-a976-4247-b3d7-16d1697d64fd` |

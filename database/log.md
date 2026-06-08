@@ -1572,4 +1572,10 @@
 - **MU vs NVDA Coattails & Portfolio Action:** เปรียบเทียบสมมติฐานการลงทุนเกาะปีกทองของ Micron ($MU) เทียบกับผู้กุมความลับ CUDA อย่าง NVIDIA ($NVDA) ชี้ความเสี่ยงของ MU ในฐานะสินค้าโภคภัณฑ์เทคโนโลยีผันผวนสูง (High Cyclicality) และขาด Software Lock-in; ในด้านพอร์ตจริง (Cash 9.68%) ให้ดำเนินการตั้งรับผ่าน Limit Orders ใน TSM (DCA Priority #1) ที่ระดับ $415 (T3) และ $385 (T4) และตรึง Hard Buy Block ใน NVDA & BTC
 - รายงานบทวิเคราะห์: `output/2026-06-07_AI_supercycle_comprehensive_thematic_report.md`
 
+### [2026-06-08] — SYSTEM — /macro-update (Geopolitical Macro & Stress Test Audit)
+- **US-Iran Peace Negotiations:** วิเคราะห์ประเด็น Trump แถลง Netanyahu "ไม่มีทางเลือก" นอกเหนือจากต้องยอมรับข้อตกลงของสหรัฐฯ ชี้ชัดความพยายามระงับความตึงเครียดของสหรัฐฯ (Unilateral De-escalation) ดึงตลาดล่วงหน้า S&P 500 ดีดตัวบวกในพรีมาร์เก็ตเช้าวันจันทร์เพื่อบรรเทา FUD ราคาน้ำมัน
+- **US War Funding & HASC Markup:** ผ่านร่างพระราชบัญญัติสนับสนุนยูเครน (Ukraine Support Act) อนุมัติวงเงินกู้สินเชื่อทางทหาร $8,000 ล้านดอลลาร์ และ HASC ผ่านร่าง NDAA ประจำปีงบประมาณ 2027 วงเงินฐาน $1.15 ล้านล้านดอลลาร์ (เป้าหมายฝ่ายบริหาร $1.50 ล้านล้านดอลลาร์)
+- **Financial Transmission & Portfolio Action:** คำนวณแบบจำลองต้นทุนทางการเงินเฉลี่ย (WACC) ผ่าน CAPM คาดการณ์การขยายตัวของ Yield พันธบัตรสหรัฐฯ 10 ปี (4.64%) ที่กดดันมูลค่าปัจจุบันของนวัตกรรม Long-duration (NVDA, GOOGL, AMZN); ในด้านพอร์ตจริง (Cash 9.66%) แนะนำคุมวินัย Hold DCA และจัดเตรียม Trim RKLB 1.8 หุ้นเพื่อเตรียมช้อน TSM Limit Orders ($415 / $385)
+- รายงานบทวิเคราะห์: `output/2026-06-08_macro_us_conflict_geopolitics_report.md`
+
 

@@ -59,8 +59,13 @@ Bitcoin คือ absolute digital scarcity ชิ้นแรกและชิ
 
 ## 📝 Research Log
 
+### [2026-06-08] — YOUTUBE — Predictive History: Founding Members #1 YouTube Swarm Analysis
+- **CBDC & Fiat Debasement:** วิเคราะห์กรณีขีดจำกัดถือครองเงินดิจิทัลของรัฐ (CBDC Holding Limits) และความพยายามจำกัดการใช้เงินสด (Cash limits) ของทางการ ยืนยันวิทยานิพนธ์หลัก 30 ปีในการสะสม Bitcoin ในฐานะสินทรัพย์ต้านทานระบบเซ็นเซอร์ (Censorship Resistant Hard Money) เพื่อป้องกันปัญหาเงินเสื่อมค่า
+- **Portfolio Action:** 🟢 ACCUMULATE BTC / LONG-TERM THESIS CONFIRMED ทว่าในระยะสั้นมีสถานะ ⚪ HOLD / BUY BLOCK ACTIVE เนื่องจากสัดส่วนบิตคอยน์จริงในพอร์ต (5.41%) เกินเป้าหมาย 5.00% เรียบร้อยแล้ว
+- **Full Report:** [2026-06-08_youtube_predictive_history_founding_members_1.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-08_youtube_predictive_history_founding_members_1.md)
+
 ### [2026-06-07] — YOUTUBE — Bloomberg This Weekend (June 6, 2026) Swarm Analysis
-- **BTC Speculation Purge:** วิเคราะห์ความผันผวนของ Bitcoin ที่ปรับฐานทดสอบแนวรับจิตวิทยา $60,000 จากประเด็นการโยกย้ายเงินลงทุนเข้าสู่หุ้นเทคขนาดใหญ่ (Capital Rotation) และแรงกดดันการกังวลดอกเบี้ยของ Fed ยืนยันบทบาทในฐานะสินทรัพย์สะท้อนความตื่นตระหนกสภาพคล่อง (Risk-off Indicator)
+- **BTC Speculation Purge:** วิเคราะห์ความผันผวนของ Bitcoin ที่ปรับฐานทดสอบแนวรับจิตวิทยา $60,000 จากประเด็นการโยกย้ายเงินลงทุนเข้าสู่หุ้นเทคขนาดใหญ่ (Capital Rotation) และแรงกดดันการกังวลดอกเบี้ย of Fed ยืนยันบทบาทในฐานะสินทรัพย์สะท้อนความตื่นตระหนกสภาพคล่อง (Risk-off Indicator)
 - **Portfolio Impact:** ⚪ HOLD (คงสถานะล็อก DCA ปิดกั้นการซื้อเพิ่มจากวินัยเงินสดสำรอง 9.68% ซึ่งน้อยกว่า 10%) และตั้งรับผ่าน Limit Orders แนวรับสำคัญถัดไป
 - **Full Report:** [2026-06-07_youtube_bloomberg_weekend_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-07_youtube_bloomberg_weekend_analysis.md)
 

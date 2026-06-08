@@ -192,6 +192,12 @@ TSMC คือรากฐานทางวิศวกรรมกายภา
 - **Portfolio Action:** 🟡 HOLD (Hold DCA active จาก Cash 9.68% < 10.00%) แต่คงการตั้ง Limit Orders ช้อนรับที่ราคา $415 และ $385
 - **Full Report:** [2026-06-07_youtube_TSM_Nvidia_highlights_analysis.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-07_youtube_TSM_Nvidia_highlights_analysis.md)
 
+### [2026-06-08] — YOUTUBE — Predictive History: Founding Members #1 YouTube Swarm Analysis
+- **Geopolitical & Shipping Risks:** วิเคราะห์ปฏิบัติการความมั่นคงทางเรือ (Law Enforcement) ของจีนใน Bashi Channel และน่านน้ำตะวันออกของไต้หวันเพื่อตอบโต้การคุยเขต EEZ ของฟิลิปปินส์-ญี่ปุ่น ซึ่งเพิ่มแรงกดดันต่อช่องแคบยุทธศาสตร์และเส้นทางการขนส่งสินค้าของ TSMC ($TSM)
+- **Portfolio Action:** 🟡 HOLD (Hold DCA active จาก Cash 9.66% < 10.00%) ยืนยันการตั้งรับสะสมเฉพาะผ่าน GTC Limit Orders ที่แนวรับสำคัญราคา **$415** (Tranche 3) และ **$385** (Tranche 4) เพื่อรักษา Margin of Safety
+- **Full Report:** [2026-06-08_youtube_predictive_history_founding_members_1.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-08_youtube_predictive_history_founding_members_1.md)
+
+
 ---
 
 ## 📎 Research Sources

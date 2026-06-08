@@ -1,11 +1,11 @@
 # 📚 Investment Wiki — Master Index
-> **Last Updated:** 2026-06-06 | **Maintained by:** Claude (auto-updated each research session)
+> **Last Updated:** 2026-06-08 | **Maintained by:** Claude (auto-updated each research session)
 
 ---
 
 ## 💼 Portfolio Holdings (In-Order by Allocation)
 
-> **Portfolio Total (2026-06-06 EOD):** $8,485.67 USD (฿277,718.95 THB) | +$2,634.53 USD (+52.38% G/L) | Equity $7,663.84 + Cash $821.83 (9.68%) | 715 วัน
+> **Portfolio Total (2026-06-08 EOD):** $8,485.67 USD (฿277,718.95 THB) | +$2,634.53 USD (+52.38% G/L) | Equity $7,663.84 + Cash $821.83 (9.66%) | 717 วัน
 > **🟢 NVO & TSM DCA ไม้เด็ดสำเร็จ — หักเงินสด Webull ครบถ้วน ยืนยอดบัญชีสะท้อนความจริง 100%!**
 
 | Ticker | Company | Allocation | Conviction | Thesis Status | Last Researched |
@@ -13,13 +13,13 @@
 | [[RKLB]] | Rocket Lab USA | **23.95%** | 7/10 | HOLD (house money) — $110.08 (+381.58% G/L); SpaceX cooling sector pressure | 2026-06-06 |
 | [[NVDA]] | NVIDIA | **18.27%** | 8/10 | HOLD (Buy Block Active) — $205.10 (+61.48% G/L); Cerebras CS-3 CEO warning | 2026-06-06 |
 | [[GOOGL]] | Alphabet (Google) | **10.57%** | 7/10 | HOLD / DCA — $368.53 (+93.61% G/L); $80B AI Funding program | 2026-06-06 |
-| 💵 Cash | — | **9.68%** | — | Dry powder — ลดลงหลัง DCA BTC $95; ต่ำกว่าเกณฑ์ความปลอดภัย 10% (Hold DCA) | 2026-06-06 |
+| 💵 Cash | — | **9.66%** | — | Dry powder — ลดลงหลัง DCA BTC $95; ต่ำกว่าเกณฑ์ความปลอดภัย 10% (Hold DCA) | 2026-06-08 |
 | [[NVO]] | Novo Nordisk | **8.27%** | 6.5/10 | HOLD (Hold DCA) — $42.96 (-8.73% G/L); ดึงต้นทุนลงเหลือ $47.07 | 2026-06-06 |
 | [[UNH]] | UnitedHealth Group | **7.85%** | 5.5/10 | HOLD (Hold DCA) — $399.47 (+17.78% G/L); BofA upgrade to Buy | 2026-06-06 |
 | [[SOFI]] | SoFi Technologies | **6.43%** | 5/10 | HOLD ONLY — $16.03 (+0.94% G/L); Mastercard Stablecoin Settlement | 2026-06-06 |
 | [[AMZN]] | Amazon | **5.56%** | 5.5/10 | HOLD — $246.03 (+13.92% G/L); AI Warehouse Proteus robot in EU | 2026-06-06 |
-| [[BTC]] | Bitcoin | **5.41%** | 6.5/10 | HOLD (Buy Blocked) — $60,735.92 (-15.75% G/L); ช้อนเพิ่ม Tranche 2a บ่ายวันนี้ | 2026-06-06 |
-| [[TSM]] | TSMC | **4.01%** 🔬🟢 | 7/10 | 🟢 **LIMIT ORDER ACTIVE** — $415.17 (-2.86% G/L); CEO ยืนยัน shortage หลายปี + ขึ้นราคา 15% | 2026-06-06 |
+| [[BTC]] | Bitcoin | **5.41%** | 6.5/10 | HOLD (Buy Blocked) — $60,735.92 (-15.75% G/L); ช้อนเพิ่ม Tranche 2a บ่ายวันนี้ | 2026-06-08 |
+| [[TSM]] | TSMC | **4.01%** 🔬🟢 | 7/10 | 🟢 **LIMIT ORDER ACTIVE** — $415.17 (-2.86% G/L); CEO ยืนยัน shortage หลายปี + ขึ้นราคา 15% | 2026-06-08 |
 
 
 

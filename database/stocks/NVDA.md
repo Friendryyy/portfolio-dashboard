@@ -3,7 +3,7 @@ ticker: NVDA
 company: NVIDIA Corporation
 sector: AI / Semiconductor
 tags: [in-portfolio, conviction/high, sector/ai, growth]
-last_updated: 2026-06-01
+last_updated: 2026-06-08
 conviction: 8/10
 thesis_status: ACTIVE
 ---
@@ -104,6 +104,11 @@ NVIDIA ครอง AI compute infrastructure ด้วย CUDA moat ที่�
 ---
 
 ## 📝 Research Log
+
+### [2026-06-08] — YOUTUBE — Predictive History: Game Theory #25 — Trump Visits China Swarm Analysis
+- **Nvidia China Markets & Supply Chain:** วิเคราะห์ความร่วมมือและการเยือนปักกิ่งอย่างลับๆ ของ Jensen Huang ร่วมกับคณะผู้แทนของทรัมป์ เพื่อเจรจารักษาตลาดจีน (10-15% of revenue) และสิทธิ์การส่งออกชิป AI พร้อมสกัดประเด็นการคว่ำบาตรชิปและการพึ่งพาสูงในห่วงโซ่การทดสอบบรรจุชิป (CoWoS/TSMC)
+- **Portfolio Impact:** ⚪ HOLD (คงสถานะล็อก DCA ปิดกั้นการซื้อเพิ่มจากวินัยเงินสดสำรอง 9.66% ซึ่งน้อยกว่า 10% และสัดส่วนพอร์ตจริง 18.27% เกินน้ำหนักสูงสุดที่กำหนดไว้ 15.00% เรียบร้อยแล้ว)
+- **Full Report:** [2026-06-08_youtube_predictive_history_game_theory_25.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-08_youtube_predictive_history_game_theory_25.md)
 
 ### [2026-06-07] — THEMATIC — The AI Supercycle & MU-NVDA Coattail Analysis
 - **Event:** วิเคราะห์ธีมการร่วมขบวน AI Supercycle และเปรียบเทียบความแข็งแกร่งของ MU กับ NVDA

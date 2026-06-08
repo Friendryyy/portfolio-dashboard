@@ -11,7 +11,7 @@
 | Ticker | Company | Allocation | Conviction | Thesis Status | Last Researched |
 |---|---|---|---|---|---|
 | [[RKLB]] | Rocket Lab USA | **23.95%** | 7/10 | HOLD (house money) — $110.08 (+381.58% G/L); SpaceX cooling sector pressure | 2026-06-06 |
-| [[NVDA]] | NVIDIA | **18.27%** | 8/10 | HOLD (Buy Block Active) — $205.10 (+61.48% G/L); Cerebras CS-3 CEO warning | 2026-06-06 |
+| [[NVDA]] | NVIDIA | **18.27%** | 8/10 | HOLD (Buy Block Active) — $205.10 (+61.48% G/L); Cerebras CS-3 CEO warning | 2026-06-08 |
 | [[GOOGL]] | Alphabet (Google) | **10.57%** | 7/10 | HOLD / DCA — $368.53 (+93.61% G/L); $80B AI Funding program | 2026-06-06 |
 | 💵 Cash | — | **9.66%** | — | Dry powder — ลดลงหลัง DCA BTC $95; ต่ำกว่าเกณฑ์ความปลอดภัย 10% (Hold DCA) | 2026-06-08 |
 | [[NVO]] | Novo Nordisk | **8.27%** | 6.5/10 | HOLD (Hold DCA) — $42.96 (-8.73% G/L); ดึงต้นทุนลงเหลือ $47.07 | 2026-06-06 |
@@ -89,6 +89,8 @@
 - [output/2026-06-07_global_memory_shortage_dram_nand_essd_report.md](../output/2026-06-07_global_memory_shortage_dram_nand_essd_report.md) — Global Memory (DRAM & NAND) Structural Shortage Report (2026-2027)
 - [output/2026-06-07_AI_supercycle_comprehensive_thematic_report.md](../output/2026-06-07_AI_supercycle_comprehensive_thematic_report.md) — The AI Supercycle Thematic & Infrastructure Report (2026-2030)
 - [output/2026-06-08_macro_us_conflict_geopolitics_report.md](../output/2026-06-08_macro_us_conflict_geopolitics_report.md) — US Geopolitical Conflicts & Macro Defense Audit (June 8, 2026)
+- [output/2026-06-08_youtube_predictive_history_founding_members_1.md](../output/2026-06-08_youtube_predictive_history_founding_members_1.md) — Founding Members #1: Geopolitics & AI Infrastructure Swarm Analysis (June 8, 2026)
+- [output/2026-06-08_youtube_predictive_history_game_theory_25.md](../output/2026-06-08_youtube_predictive_history_game_theory_25.md) — Game Theory #25: Trump Visits China Swarm Analysis (June 8, 2026)
 
 ### Research Sources (แยกหน้าต่อหุ้น — มี title + summary + tags ทุก URL)
 - [sources/NVDA.md](sources/NVDA.md) — 21 sources | IR, Earnings, Risk, Technicals

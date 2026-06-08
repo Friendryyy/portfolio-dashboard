@@ -3,7 +3,7 @@ ticker: BTC
 company: Bitcoin
 sector: Digital Asset / Hard Money
 tags: [target, conviction/high, digital-gold, L1-settlement]
-last_updated: 2026-06-05
+last_updated: 2026-06-08
 conviction: 8/10
 thesis_status: ACTIVE
 ---
@@ -58,6 +58,11 @@ Bitcoin คือ absolute digital scarcity ชิ้นแรกและชิ
   - **Tranche 3 (Crisis Buy <$62K):** ฿5,015.65 ($152.94)
 
 ## 📝 Research Log
+
+### [2026-06-08] — YOUTUBE — Predictive History: Game Theory #25 — Trump Visits China Swarm Analysis
+- **GENIUS Act & Stablecoin Reserves:** วิเคราะห์กลไกพยุงคลังสหรัฐฯ มูลค่า $39T ผ่าน พรบ. Genius Act บังคับผู้ออกเหรียญ Stablecoins ซื้อพันธบัตรระยะสั้น 1-to-1 และการแทรกแซงนโยบายพลังงานในเวเนซุเอลา ยืนยันสมมติฐานการกดขี่ทางการเงิน (Financial Repression) ซึ่งช่วยหนุนความต้องการสะสม Bitcoin ในฐานะเครื่องมือรักษามูลค่าที่เป็นอิสระ
+- **Portfolio Impact:** ⚪ HOLD (ตรึงสถานะล็อก DCA ปิดกั้นการซื้อเพิ่มจากวินัยเงินสดสำรอง 9.66% ซึ่งน้อยกว่า 10% และสัดส่วนบิตคอยน์จริง 5.41% เกินน้ำหนักเป้าหมาย 5.00% เรียบร้อยแล้ว)
+- **Full Report:** [2026-06-08_youtube_predictive_history_game_theory_25.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-08_youtube_predictive_history_game_theory_25.md)
 
 ### [2026-06-08] — YOUTUBE — Predictive History: Founding Members #1 YouTube Swarm Analysis
 - **CBDC & Fiat Debasement:** วิเคราะห์กรณีขีดจำกัดถือครองเงินดิจิทัลของรัฐ (CBDC Holding Limits) และความพยายามจำกัดการใช้เงินสด (Cash limits) ของทางการ ยืนยันวิทยานิพนธ์หลัก 30 ปีในการสะสม Bitcoin ในฐานะสินทรัพย์ต้านทานระบบเซ็นเซอร์ (Censorship Resistant Hard Money) เพื่อป้องกันปัญหาเงินเสื่อมค่า

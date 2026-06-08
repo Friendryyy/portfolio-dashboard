@@ -1584,5 +1584,11 @@
 - **Bashi Channel & Geopolitical Tail Risk:** สังเกตการณ์ปฏิบัติการความมั่นคงทางเรือ (Law Enforcement) ของจีนใน Bashi Channel เพื่อตอบโต้การคุยเขต EEZ ของญี่ปุ่นและฟิลิปปินส์ หนุนการคุมความเสี่ยง HOLD DCA พอร์ต และตั้งรับ TSM Limit Orders ($415 / $385)
 - QA Score: Approved (QA Score: 98/100) | Quality Score: Approved (Quality Score: 98/100) | รายงานบทวิเคราะห์: `output/2026-06-08_youtube_predictive_history_founding_members_1.md`
 
+### [2026-06-08] — YOUTUBE — Predictive History: Game Theory #25 — Trump Visits China Swarm Analysis (11:10)
+- **Trump's High-Level Delegation:** วิเคราะห์การร่วมเยือนปักกิ่งของทรัมป์กับแกนนำบิ๊กเทคและ Wall Street (BlackRock, Tesla, Apple) ชี้เป้ายุทธศาสตร์เจรจา Grand Bargain ทางเศรษฐกิจเพื่อหลีกเลี่ยงการพังทลายของระบบการเงินและภูมิรัฐศาสตร์ (เปรียบเทียบ Nixon Shock ปี 1972)
+- **GENIUS Act & Energy Control:** ตรวจสอบ พรบ. GENIUS Act (2025) ที่บังคับให้ผู้ออก Stablecoins ซื้อตั๋วเงินคลังสหรัฐฯ 1-to-1 เพื่อเป็นผู้รับซื้อหนี้รายสุดท้าย ($39T debt crisis) และปฏิบัติการคุมสิทธิ์น้ำมันในเวเนซุเอลาปี 2026 ยืนยันกระแส Dollar Debasement หนุน Thesis ระยะยาวของ Bitcoin ($BTC)
+- **Nvidia & Semiconductor Moat:** วิเคราะห์ปฏิบัติการเจรจาลับของ CEO Nvidia Jensen Huang ในปักกิ่งและอุปสรรคการพัฒนาชิป AI ของจีนด้วย Rare Earths และคูเมืองพึ่งพาการประกอบบรรจุชิป (CoWoS/TSMC) ตรึงสถานะ Hard Buy Block ใน NVDA, RKLB และ BTC พร้อมตั้งรับ TSM Limit Orders ($415 / $385)
+- QA Score: Approved (QA Score: 98/100) | Quality Score: Approved (Quality Score: 98/100) | Report: output/2026-06-08_youtube_predictive_history_game_theory_25.md
+
 
 

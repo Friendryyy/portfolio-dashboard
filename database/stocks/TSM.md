@@ -3,7 +3,7 @@ ticker: TSM
 company: Taiwan Semiconductor Manufacturing Co.
 sector: Semiconductors / Technology
 tags: [watchlist, conviction/high, artificial-intelligence, monopoly]
-last_updated: 2026-06-07
+last_updated: 2026-06-08
 conviction: 8.5/10
 thesis_status: ACTIVE
 ---
@@ -197,6 +197,10 @@ TSMC คือรากฐานทางวิศวกรรมกายภา
 - **Portfolio Action:** 🟡 HOLD (Hold DCA active จาก Cash 9.66% < 10.00%) ยืนยันการตั้งรับสะสมเฉพาะผ่าน GTC Limit Orders ที่แนวรับสำคัญราคา **$415** (Tranche 3) และ **$385** (Tranche 4) เพื่อรักษา Margin of Safety
 - **Full Report:** [2026-06-08_youtube_predictive_history_founding_members_1.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-08_youtube_predictive_history_founding_members_1.md)
 
+### [2026-06-08] — YOUTUBE — Predictive History: Game Theory #25 — Trump Visits China Swarm Analysis
+- **Geopolitical & Tech Compromise:** วิเคราะห์กรอบเจรจา Grand Bargain ของทรัมป์ในปักกิ่งและผลกระทบต่อประเด็นไต้หวันกับการเปิดภาคการเงินให้กลุ่ม Wall Street และการประนีประนอมในตลาดชิป AI ของ Nvidia ($NVDA) และการควบคุมแร่ Rare Earth ของจีนที่สร้าง Geopolitical Premium
+- **Portfolio Action:** 🟡 HOLD (Hold DCA active จาก Cash 9.66% < 10.00%) ยืนยันมาตรการตั้งรับสะสมเฉพาะผ่าน GTC Limit Orders ที่ราคา **$415** (Tranche 3) และ **$385** (Tranche 4) โดยจำกัดสัดส่วนพอร์ต TSM ไม่ให้เกิน 7.00% เพื่อคุม Tail Risk
+- **Full Report:** [2026-06-08_youtube_predictive_history_game_theory_25.md](file:///c:/Users/LENOVO/OneDrive/文档/Second-Brain/Investment/output/2026-06-08_youtube_predictive_history_game_theory_25.md)
 
 ---
 

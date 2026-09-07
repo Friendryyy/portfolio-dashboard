@@ -2,7 +2,12 @@
 # -*- coding: utf-8 -*-
 """
 Cloud Investment News Bot (LINE Messenger + Gemini AI)
-Designed to run standalone or on GitHub Actions without requiring local PC on.
+Supports familiar investment keywords:
+- portfolio-news-update
+- portfolio-analysis
+- dca-queue
+- market-pulse
+- macro-geopolitical
 """
 
 import sys
@@ -72,20 +77,17 @@ def query_gemini(prompt: str) -> str:
     
     system_prompt = (
         "คุณคือ Chief Investment Officer (Agent 00) ของพอร์ตโฟลิโอ DCA ระยะยาว 30 ปี มุ่งสู่เป้าหมาย 100 ล้านบาท\n"
-        "บุคลิก: มืออาชีพ, คมชัด, มีวินัย Stoic, โฟกัสพื้นฐานและ Moat ทางธุรกิจ\n"
+        "บุคลิก: มืออาชีพ, คมชัด, มีวินัย Stoic ปราศจากอารมณ์ร่วม, มองที่ปัจจัยพื้นฐาน (Fundamentals) และ Moat ทางธุรกิจ\n"
+        "สินทรัพย์ในพอร์ต: NVDA (20% cap), TSM, RKLB (House Money), GOOGL, AMZN, NVO, UNH, SOFI, BTC, SpaceX ($SPCX $300 cash reserve)\n"
+        "สถานะปัจจุบัน: NAV ~$8,612 USD, Cash Cushion 12.02% (ปลดล็อก Buy Lock พร้อมซื้อ)\n"
         "รูปแบบการตอบ: ภาษาไทยวิเคราะห์การเงินระดับสูง ใช้ศัพท์เทคนิคภาษาอังกฤษกำกับ ฟอร์แมตด้วย Emoji และ Bullet Points ชัดเจน อ่านง่ายบนหน้าจอมือถือ LINE\n"
-        "โครงสร้างข้อความบังคับ:\n"
-        "1. 🚨 [หัวข้ออีเวนต์ / หัวข้อข่าว]\n"
-        "2. 🔍 สรุปประเด็นสำคัญ (3-4 bullets สั้นกระชับได้เนื้อหา)\n"
-        "3. 🎯 ผลกระทบต่อพอร์ตโฟลิโอ & คำแนะนำ DCA (เช่น ลำดับคิว DCA, จุดรับ Limit, เพดานความเสี่ยง)\n"
-        "4. 📅 Catalyst ถัดไปที่ต้องจับตา\n"
     )
     
     payload = {
         "contents": [
             {
                 "parts": [
-                    {"text": f"{system_prompt}\n\nโจทย์ที่ต้องสรุป:\n{prompt}"}
+                    {"text": f"{system_prompt}\n\nโจทย์ที่ต้องวิเคราะห์และสรุป:\n{prompt}"}
                 ]
             }
         ],
@@ -115,37 +117,57 @@ def query_gemini(prompt: str) -> str:
             
     return f"Gemini API All Models Failed. Last Error: {last_error}"
 
-def run_event_brief(event_type: str):
-    print(f"[Running] Generating brief for event: {event_type}")
+def run_investment_command(command: str):
+    # Normalize command keyword
+    cmd = command.lower().replace("_", "-").replace(" ", "-").strip()
+    if cmd.startswith("/"):
+        cmd = cmd[1:]
+        
+    print(f"[Running Command] {cmd}")
     
     prompts = {
-        "test": (
-            "ช่วยแนะนำตัวและทดสอบระบบ Investment Alert ประจำพอร์ตโฟลิโอ DCA 30 ปี ให้ผู้ใช้ทราบว่า "
-            "ขณะนี้ระบบคลาวด์อัตโนมัติ (Gemini AI + LINE Bot) เชื่อมต่อสมบูรณ์ 100% แล้ว พร้อมระบุสถานะพอร์ตคร่าวๆ "
-            "(NAV $8,612 USD / Cash 12.02% ปลดล็อก Buy Lock พร้อมเข้าซื้อ NVO, UNH, SOFI ตามลำดับ)"
+        "portfolio-news-update": (
+            "รันคำสั่ง /portfolio-news-update:\n"
+            "สรุปเจาะลึกข่าวสารและ Strategic Deltas ล่าสุดของ 10 สินทรัพย์ในพอร์ต (NVDA, TSM, RKLB, GOOGL, AMZN, NVO, UNH, SOFI, BTC, SPCX)\n"
+            "คัดเฉพาะ 3-5 ข่าวสำคัญระดับ Game-Changer ที่กระทบต่อมูลค่าพื้นฐาน (เช่น ยา Amycretin ของ NVO, งาน Goldman Sachs ของ SOFI, AI Backlog ของ Big Tech, ความคืบหน้า Neutron ของ RKLB)\n"
+            "พร้อมระบุ 'วิเคราะห์ผลกระทบเชิงกลยุทธ์ & มูลค่าหุ้น' และข้อสรุปว่าส่งผลต่อแผน DCA ประจำสัปดาห์นี้อย่างไร"
         ),
-        "sofi": (
-            "สรุปงานสัมมนา Goldman Sachs Communacopia Conference: ถ้อยแถลงสำคัญของ Anthony Noto (CEO SoFi) "
-            "โดยเน้นไปที่: การเติบโตของ Tech Platform (Galileo/Technisys), การขยายตัวของ Loan Origination, "
-            "การรับมือช่วงดอกเบี้ยขาลง และกลยุทธ์ของพอร์ตโฟลิโอเราในการสะสมคิว 3 ($119 DCA)"
+        "portfolio-analysis": (
+            "รันคำสั่ง /portfolio-analysis:\n"
+            "ตรวจสุขภาพพอร์ตโฟลิโอภาพรวม (Portfolio Health Check) สำหรับเป้าหมาย 30 ปี 100 ล้านบาท:\n"
+            "1. สภาพคล่อง & สัดส่วนเงินสด (Cash Cushion 12.02% ปลดล็อก Buy Lock)\n"
+            "2. การควบคุมเพดานความเสี่ยง (NVDA ติดเพดาน 20% Hard Sizing Cap ห้ามซื้อเพิ่ม, RKLB ถือรันเทรนด์แบบ House Money)\n"
+            "3. ผลตอบแทน True Return (+89.68%) และ NAV ปัจจุบัน (~$8,612 USD)\n"
+            "4. แผนปฏิบัติการสัปดาห์นี้ (Action Items 🔴/🟡/🟢)"
         ),
-        "oracle": (
-            "สรุปงบการเงินไตรมาส 1 FY2027 ของ Oracle ($ORCL) หลังปิดตลาด: ตรวจสอบยอด AI Cloud Infrastructure Revenue, "
-            "RPO (Remaining Performance Obligations) Backlog ที่เติบโตอย่างร้อนแรง, และการจัดสรรงบ CapEx เพื่อซื้อชิปประมวลผล "
-            "พร้อมวิเคราะห์ผลบวกทางตรงต่อ NVIDIA ($NVDA) และ TSMC ($TSM) ในพอร์ตโฟลิโอ"
+        "dca-queue": (
+            "รันคำสั่ง DCA Queue & Capital Allocation Review:\n"
+            "ประเมินลำดับคิวการเข้าซื้อสะสมหุ้นในพอร์ตโฟลิโอตามวินัยการเงิน:\n"
+            "• คิว 1 (Top Priority): NVO (~$100 DCA) เหตุผลเชิงคุณค่าและ Moat ยาลดน้ำหนัก\n"
+            "• คิว 2: UNH (~$195 DCA) เหตุผลการปลดล็อกความเสี่ยงค่าเงินและการฟื้นตัวของ Cash Flow\n"
+            "• คิว 3: SOFI (~$119 DCA) เหตุผลการขยาย Tech Platform Galileo & สัมมนา Goldman Sachs\n"
+            "• โซนดักซื้อ GTC Limit: TSM ($405-$415)\n"
+            "• เงินสดล็อกสำรอง: SpaceX ($SPCX) $300 ห้ามแตะต้องเพื่อรอ Private Entry ($80-$90)\n"
+            "สรุปแผนการจัดสรรเงินแบบคมชัด Stoic และระเบียบวินัยเหล็ก"
         ),
-        "cpi": (
-            "สรุปรายงานตัวเลขเงินเฟ้อสหรัฐฯ U.S. August 2026 CPI Release: วิเคราะห์ตัวเลข Headline CPI และ Core CPI (MoM/YoY) "
-            "เทียบกับ Consensus ของตลาด ผลกระทบต่อ US 10-Yr Treasury Yield, การคาดการณ์มติการประชุม Fed FOMC วันที่ 16 ก.ย. "
-            "และผลกระทบต่อสินทรัพย์เสี่ยง (Tech Equities & Bitcoin)"
+        "market-pulse": (
+            "รันคำสั่ง Market Pulse & Pre-Market Briefing:\n"
+            "สรุปชีพจรตลาดด่วนก่อนเปิดทำการ:\n"
+            "1. ทิศทาง US Stock Futures และดัชนีหลัก (S&P 500, Nasdaq)\n"
+            "2. ราคาน้ำมัน WTI และความเสี่ยงภูมิรัฐศาสตร์\n"
+            "3. ความเคลื่อนไหวของ Bitcoin ($BTC) ในกรอบ $79k-$81k\n"
+            "4. ปฏิทิน Catalyst สำคัญที่ตลาดจับตาในสัปดาห์นี้ (SoFi Keynote, Oracle Earnings, U.S. CPI Inflation)\n"
+            "5. สรุปความพร้อมของนักลงทุน: จุดสังเกตและกลยุทธ์ตั้งรับวันนี้"
         ),
-        "daily": (
-            "สรุปภาพรวมตลาดประจำวัน (Daily Market Wrap) และความพร้อมของพอร์ตโฟลิโอ: ตรวจสอบสถานะดัชนีหลัก, ราคาน้ำมัน WTI, "
-            "Bitcoin และทบทวนความพร้อมของเงินสดสำรอง 12.02% กับคิว DCA (NVO, UNH, SOFI) และคำสั่ง GTC Limit ของ TSM ($405-$415)"
+        "macro-geopolitical": (
+            "รันคำสั่ง Macro & Geopolitical Risk Assessment:\n"
+            "วิเคราะห์สถานการณ์ความตึงเครียดในตะวันออกกลาง (ช่องแคบฮอร์มุซ) และผลกระทบต่อราคาน้ำมันดิบ WTI แถว $90/บาร์เรล\n"
+            "ผลกระทบต่อเงินเฟ้อสหรัฐฯ (CPI) และแนวโน้มดอกเบี้ยของ Fed FOMC ในการประชุม 16 ก.ย.\n"
+            "พร้อมวิเคราะห์ว่าพอร์ตของเรา (ซึ่งเน้น Secular Growth & Health Care) มีภูมิคุ้มกันอย่างไร และจุดใดที่เป็นความเสี่ยงเชิงระบบ"
         )
     }
     
-    prompt = prompts.get(event_type.lower(), prompts["daily"])
+    prompt = prompts.get(cmd, prompts["portfolio-news-update"])
     analysis_text = query_gemini(prompt)
     print("\n--- Generated Analysis ---")
     try:
@@ -158,7 +180,13 @@ def run_event_brief(event_type: str):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Cloud Investment News Bot")
-    parser.add_argument("--event", type=str, default="test", choices=["test", "sofi", "oracle", "cpi", "daily"], help="Event type to analyze")
+    parser.add_argument(
+        "--command", 
+        type=str, 
+        default="portfolio-news-update", 
+        choices=["portfolio-news-update", "portfolio-analysis", "dca-queue", "market-pulse", "macro-geopolitical"], 
+        help="Investment command keyword to execute"
+    )
     args = parser.parse_args()
     
-    run_event_brief(args.event)
+    run_investment_command(args.command)

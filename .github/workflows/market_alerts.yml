@@ -1,0 +1,72 @@
+name: Portfolio Investment Alerts (LINE + Gemini)
+
+on:
+  schedule:
+    # 1. Daily Pre-Market Briefing at 20:00 BKK (13:00 UTC) Mon-Fri
+    - cron: '0 13 * * 1-5'
+    # 2. Event 1: Goldman Sachs SoFi Keynote (Sep 8 at 22:00 BKK / 15:00 UTC)
+    - cron: '0 15 8 9 *'
+    # 3. Event 2: Oracle Q1 FY27 Earnings (Sep 10 at 20:30 UTC / Sep 11 03:30 BKK)
+    - cron: '30 20 10 9 *'
+    # 4. Event 3: US August CPI Inflation (Sep 11 at 19:35 BKK / 12:35 UTC)
+    - cron: '35 12 11 9 *'
+  workflow_dispatch:
+    inputs:
+      event:
+        description: 'Select event to analyze and send to LINE'
+        required: true
+        default: 'daily'
+        type: choice
+        options:
+          - test
+          - daily
+          - sofi
+          - oracle
+          - cpi
+
+jobs:
+  run-alert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests python-dotenv
+
+      - name: Determine Event Trigger
+        id: event-selector
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "EVENT_TYPE=${{ github.event.inputs.event }}" >> $GITHUB_ENV
+          else
+            # Determine based on current UTC time/date
+            UTC_HOUR=$(date -u +%H)
+            UTC_DAY=$(date -u +%d)
+            UTC_MONTH=$(date -u +%m)
+
+            if [ "$UTC_DAY" = "08" ] && [ "$UTC_HOUR" = "15" ]; then
+              echo "EVENT_TYPE=sofi" >> $GITHUB_ENV
+            elif [ "$UTC_DAY" = "10" ] && [ "$UTC_HOUR" = "20" ]; then
+              echo "EVENT_TYPE=oracle" >> $GITHUB_ENV
+            elif [ "$UTC_DAY" = "11" ] && [ "$UTC_HOUR" = "12" ]; then
+              echo "EVENT_TYPE=cpi" >> $GITHUB_ENV
+            else
+              echo "EVENT_TYPE=daily" >> $GITHUB_ENV
+            fi
+          fi
+
+      - name: Run Cloud News Bot & Push to LINE
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+        run: |
+          python tools/cloud_news_bot.py --event $EVENT_TYPE
